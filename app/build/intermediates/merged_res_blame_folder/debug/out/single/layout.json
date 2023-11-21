@@ -1,0 +1,150 @@
+[
+    {
+        "merged": "C:\\Users\\Raluca\\.gradle\\daemon\\7.5\\com.example.sportmatch.app-mergeDebugResources-5:\\layout\\activity_maps.xml",
+        "source": "C:\\Users\\Raluca\\.gradle\\daemon\\7.5\\com.example.sportmatch.app-main-8:\\layout\\activity_maps.xml"
+    },
+    {
+        "merged": "C:\\Users\\Raluca\\.gradle\\daemon\\7.5\\com.example.sportmatch.app-mergeDebugResources-5:\\layout\\list_sportfields.xml",
+        "source": "C:\\Users\\Raluca\\.gradle\\daemon\\7.5\\com.example.sportmatch.app-main-8:\\layout\\list_sportfields.xml"
+    },
+    {
+        "merged": "C:\\Users\\Raluca\\.gradle\\daemon\\7.5\\com.example.sportmatch.app-mergeDebugResources-5:\\layout\\main_recycler_row_item.xml",
+        "source": "C:\\Users\\Raluca\\.gradle\\daemon\\7.5\\com.example.sportmatch.app-main-8:\\layout\\main_recycler_row_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Raluca\\.gradle\\daemon\\7.5\\com.example.sportmatch.app-mergeDebugResources-5:\\layout\\activity_event_details_admin.xml",
+        "source": "C:\\Users\\Raluca\\.gradle\\daemon\\7.5\\com.example.sportmatch.app-main-8:\\layout\\activity_event_details_admin.xml"
+    },
+    {
+        "merged": "C:\\Users\\Raluca\\.gradle\\daemon\\7.5\\com.example.sportmatch.app-mergeDebugResources-5:\\layout\\category_row_items.xml",
+        "source": "C:\\Users\\Raluca\\.gradle\\daemon\\7.5\\com.example.sportmatch.app-main-8:\\layout\\category_row_items.xml"
+    },
+    {
+        "merged": "C:\\Users\\Raluca\\.gradle\\daemon\\7.5\\com.example.sportmatch.app-mergeDebugResources-5:\\layout\\activity_newevent.xml",
+        "source": "C:\\Users\\Raluca\\.gradle\\daemon\\7.5\\com.example.sportmatch.app-main-8:\\layout\\activity_newevent.xml"
+    },
+    {
+        "merged": "C:\\Users\\Raluca\\.gradle\\daemon\\7.5\\com.example.sportmatch.app-mergeDebugResources-5:\\layout\\activity_choose_avatar.xml",
+        "source": "C:\\Users\\Raluca\\.gradle\\daemon\\7.5\\com.example.sportmatch.app-main-8:\\layout\\activity_choose_avatar.xml"
+    },
+    {
+        "merged": "C:\\Users\\Raluca\\.gradle\\daemon\\7.5\\com.example.sportmatch.app-mergeDebugResources-5:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\Raluca\\.gradle\\daemon\\7.5\\com.example.sportmatch.app-main-8:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Raluca\\.gradle\\daemon\\7.5\\com.example.sportmatch.app-mergeDebugResources-5:\\layout\\list_time.xml",
+        "source": "C:\\Users\\Raluca\\.gradle\\daemon\\7.5\\com.example.sportmatch.app-main-8:\\layout\\list_time.xml"
+    },
+    {
+        "merged": "C:\\Users\\Raluca\\.gradle\\daemon\\7.5\\com.example.sportmatch.app-mergeDebugResources-5:\\layout\\activity_eventpreview.xml",
+        "source": "C:\\Users\\Raluca\\.gradle\\daemon\\7.5\\com.example.sportmatch.app-main-8:\\layout\\activity_eventpreview.xml"
+    },
+    {
+        "merged": "C:\\Users\\Raluca\\.gradle\\daemon\\7.5\\com.example.sportmatch.app-mergeDebugResources-5:\\layout\\activity_menu.xml",
+        "source": "C:\\Users\\Raluca\\.gradle\\daemon\\7.5\\com.example.sportmatch.app-main-8:\\layout\\activity_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\Raluca\\.gradle\\daemon\\7.5\\com.example.sportmatch.app-mergeDebugResources-5:\\layout\\activity_event_details_participant.xml",
+        "source": "C:\\Users\\Raluca\\.gradle\\daemon\\7.5\\com.example.sportmatch.app-main-8:\\layout\\activity_event_details_participant.xml"
+    },
+    {
+        "merged": "C:\\Users\\Raluca\\.gradle\\daemon\\7.5\\com.example.sportmatch.app-mergeDebugResources-5:\\layout\\content_choose_avatar.xml",
+        "source": "C:\\Users\\Raluca\\.gradle\\daemon\\7.5\\com.example.sportmatch.app-main-8:\\layout\\content_choose_avatar.xml"
+    },
+    {
+        "merged": "C:\\Users\\Raluca\\.gradle\\daemon\\7.5\\com.example.sportmatch.app-mergeDebugResources-5:\\layout\\activity_chat.xml",
+        "source": "C:\\Users\\Raluca\\.gradle\\daemon\\7.5\\com.example.sportmatch.app-main-8:\\layout\\activity_chat.xml"
+    },
+    {
+        "merged": "C:\\Users\\Raluca\\.gradle\\daemon\\7.5\\com.example.sportmatch.app-mergeDebugResources-5:\\layout\\list_player.xml",
+        "source": "C:\\Users\\Raluca\\.gradle\\daemon\\7.5\\com.example.sportmatch.app-main-8:\\layout\\list_player.xml"
+    },
+    {
+        "merged": "C:\\Users\\Raluca\\.gradle\\daemon\\7.5\\com.example.sportmatch.app-mergeDebugResources-5:\\layout\\activity_editprofile.xml",
+        "source": "C:\\Users\\Raluca\\.gradle\\daemon\\7.5\\com.example.sportmatch.app-main-8:\\layout\\activity_editprofile.xml"
+    },
+    {
+        "merged": "C:\\Users\\Raluca\\.gradle\\daemon\\7.5\\com.example.sportmatch.app-mergeDebugResources-5:\\layout\\activity_profile.xml",
+        "source": "C:\\Users\\Raluca\\.gradle\\daemon\\7.5\\com.example.sportmatch.app-main-8:\\layout\\activity_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\Raluca\\.gradle\\daemon\\7.5\\com.example.sportmatch.app-mergeDebugResources-5:\\layout\\list_item.xml",
+        "source": "C:\\Users\\Raluca\\.gradle\\daemon\\7.5\\com.example.sportmatch.app-main-8:\\layout\\list_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Raluca\\.gradle\\daemon\\7.5\\com.example.sportmatch.app-mergeDebugResources-5:\\layout\\activity_request_item.xml",
+        "source": "C:\\Users\\Raluca\\.gradle\\daemon\\7.5\\com.example.sportmatch.app-main-8:\\layout\\activity_request_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Raluca\\.gradle\\daemon\\7.5\\com.example.sportmatch.app-mergeDebugResources-5:\\layout\\fragment_second.xml",
+        "source": "C:\\Users\\Raluca\\.gradle\\daemon\\7.5\\com.example.sportmatch.app-main-8:\\layout\\fragment_second.xml"
+    },
+    {
+        "merged": "C:\\Users\\Raluca\\.gradle\\daemon\\7.5\\com.example.sportmatch.app-mergeDebugResources-5:\\layout\\content_menu.xml",
+        "source": "C:\\Users\\Raluca\\.gradle\\daemon\\7.5\\com.example.sportmatch.app-main-8:\\layout\\content_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\Raluca\\.gradle\\daemon\\7.5\\com.example.sportmatch.app-mergeDebugResources-5:\\layout\\date_item.xml",
+        "source": "C:\\Users\\Raluca\\.gradle\\daemon\\7.5\\com.example.sportmatch.app-main-8:\\layout\\date_item.xml"
+    },
+    {
+        "merged": "com.example.sportmatch.app-mergeDebugResources-5:/layout/main_recycler_row_item.xml",
+        "source": "com.example.sportmatch.app-main-8:/layout/main_recycler_row_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Raluca\\.gradle\\daemon\\7.5\\com.example.sportmatch.app-mergeDebugResources-5:\\layout\\activity_register.xml",
+        "source": "C:\\Users\\Raluca\\.gradle\\daemon\\7.5\\com.example.sportmatch.app-main-8:\\layout\\activity_register.xml"
+    },
+    {
+        "merged": "C:\\Users\\Raluca\\.gradle\\daemon\\7.5\\com.example.sportmatch.app-mergeDebugResources-5:\\layout\\fragment_first.xml",
+        "source": "C:\\Users\\Raluca\\.gradle\\daemon\\7.5\\com.example.sportmatch.app-main-8:\\layout\\fragment_first.xml"
+    },
+    {
+        "merged": "C:\\Users\\Raluca\\.gradle\\daemon\\7.5\\com.example.sportmatch.app-mergeDebugResources-5:\\layout\\activity_requests.xml",
+        "source": "C:\\Users\\Raluca\\.gradle\\daemon\\7.5\\com.example.sportmatch.app-main-8:\\layout\\activity_requests.xml"
+    },
+    {
+        "merged": "C:\\Users\\Raluca\\.gradle\\daemon\\7.5\\com.example.sportmatch.app-mergeDebugResources-5:\\layout\\activity_admin_events.xml",
+        "source": "C:\\Users\\Raluca\\.gradle\\daemon\\7.5\\com.example.sportmatch.app-main-8:\\layout\\activity_admin_events.xml"
+    },
+    {
+        "merged": "C:\\Users\\Raluca\\.gradle\\daemon\\7.5\\com.example.sportmatch.app-mergeDebugResources-5:\\layout\\list_sport.xml",
+        "source": "C:\\Users\\Raluca\\.gradle\\daemon\\7.5\\com.example.sportmatch.app-main-8:\\layout\\list_sport.xml"
+    },
+    {
+        "merged": "C:\\Users\\Raluca\\.gradle\\daemon\\7.5\\com.example.sportmatch.app-mergeDebugResources-5:\\layout\\activity_create_new_profile.xml",
+        "source": "C:\\Users\\Raluca\\.gradle\\daemon\\7.5\\com.example.sportmatch.app-main-8:\\layout\\activity_create_new_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\Raluca\\.gradle\\daemon\\7.5\\com.example.sportmatch.app-mergeDebugResources-5:\\layout\\activity_bottom_nav.xml",
+        "source": "C:\\Users\\Raluca\\.gradle\\daemon\\7.5\\com.example.sportmatch.app-main-8:\\layout\\activity_bottom_nav.xml"
+    },
+    {
+        "merged": "C:\\Users\\Raluca\\.gradle\\daemon\\7.5\\com.example.sportmatch.app-mergeDebugResources-5:\\layout\\activity_event_details_feed.xml",
+        "source": "C:\\Users\\Raluca\\.gradle\\daemon\\7.5\\com.example.sportmatch.app-main-8:\\layout\\activity_event_details_feed.xml"
+    },
+    {
+        "merged": "C:\\Users\\Raluca\\.gradle\\daemon\\7.5\\com.example.sportmatch.app-mergeDebugResources-5:\\layout\\activity_login.xml",
+        "source": "C:\\Users\\Raluca\\.gradle\\daemon\\7.5\\com.example.sportmatch.app-main-8:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\Raluca\\.gradle\\daemon\\7.5\\com.example.sportmatch.app-mergeDebugResources-5:\\layout\\activity_view_profile.xml",
+        "source": "C:\\Users\\Raluca\\.gradle\\daemon\\7.5\\com.example.sportmatch.app-main-8:\\layout\\activity_view_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\Raluca\\.gradle\\daemon\\7.5\\com.example.sportmatch.app-mergeDebugResources-5:\\layout\\activity_only_participates_events.xml",
+        "source": "C:\\Users\\Raluca\\.gradle\\daemon\\7.5\\com.example.sportmatch.app-main-8:\\layout\\activity_only_participates_events.xml"
+    },
+    {
+        "merged": "C:\\Users\\Raluca\\.gradle\\daemon\\7.5\\com.example.sportmatch.app-mergeDebugResources-5:\\layout\\item_message.xml",
+        "source": "C:\\Users\\Raluca\\.gradle\\daemon\\7.5\\com.example.sportmatch.app-main-8:\\layout\\item_message.xml"
+    },
+    {
+        "merged": "C:\\Users\\Raluca\\.gradle\\daemon\\7.5\\com.example.sportmatch.app-mergeDebugResources-5:\\layout\\registered_event_item.xml",
+        "source": "C:\\Users\\Raluca\\.gradle\\daemon\\7.5\\com.example.sportmatch.app-main-8:\\layout\\registered_event_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Raluca\\.gradle\\daemon\\7.5\\com.example.sportmatch.app-mergeDebugResources-5:\\layout\\activity_editevent.xml",
+        "source": "C:\\Users\\Raluca\\.gradle\\daemon\\7.5\\com.example.sportmatch.app-main-8:\\layout\\activity_editevent.xml"
+    }
+]

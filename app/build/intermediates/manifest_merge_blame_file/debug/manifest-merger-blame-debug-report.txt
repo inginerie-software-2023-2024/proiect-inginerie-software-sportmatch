@@ -1,0 +1,421 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.sportmatch"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+8-->C:\SportMatchpre\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->C:\SportMatchpre\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+11-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:5:5-80
+11-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:5:22-77
+12    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+12-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:6:5-79
+12-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:6:22-76
+13    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+13-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:7:5-81
+13-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:7:22-78
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:8:5-67
+14-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:8:22-64
+15
+16    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+17    <!-- <uses-sdk android:minSdkVersion="14"/> -->
+18    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+18-->[com.google.firebase:firebase-database:20.2.0] C:\Users\Raluca\.gradle\caches\transforms-3\044272472e8eea04ec17792347252681\transformed\firebase-database-20.2.0\AndroidManifest.xml:24:5-79
+18-->[com.google.firebase:firebase-database:20.2.0] C:\Users\Raluca\.gradle\caches\transforms-3\044272472e8eea04ec17792347252681\transformed\firebase-database-20.2.0\AndroidManifest.xml:24:22-76
+19
+20    <uses-feature
+20-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\acef2a44a7e3301fa64384949a60f84f\transformed\play-services-maps-18.1.0\AndroidManifest.xml:26:5-28:35
+21        android:glEsVersion="0x00020000"
+21-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\acef2a44a7e3301fa64384949a60f84f\transformed\play-services-maps-18.1.0\AndroidManifest.xml:27:9-41
+22        android:required="true" />
+22-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\acef2a44a7e3301fa64384949a60f84f\transformed\play-services-maps-18.1.0\AndroidManifest.xml:28:9-32
+23
+24    <queries>
+24-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\acef2a44a7e3301fa64384949a60f84f\transformed\play-services-maps-18.1.0\AndroidManifest.xml:30:5-34:15
+25
+26        <!-- Needs to be explicitly declared on Android R+ -->
+27        <package android:name="com.google.android.apps.maps" />
+27-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\acef2a44a7e3301fa64384949a60f84f\transformed\play-services-maps-18.1.0\AndroidManifest.xml:33:9-64
+27-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\acef2a44a7e3301fa64384949a60f84f\transformed\play-services-maps-18.1.0\AndroidManifest.xml:33:18-61
+28    </queries>
+29
+30    <permission
+30-->[androidx.core:core:1.9.0] C:\Users\Raluca\.gradle\caches\transforms-3\f3d51bfea696170ddff80dae282a5b7c\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+31        android:name="com.example.sportmatch.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+31-->[androidx.core:core:1.9.0] C:\Users\Raluca\.gradle\caches\transforms-3\f3d51bfea696170ddff80dae282a5b7c\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+32        android:protectionLevel="signature" />
+32-->[androidx.core:core:1.9.0] C:\Users\Raluca\.gradle\caches\transforms-3\f3d51bfea696170ddff80dae282a5b7c\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+33
+34    <uses-permission android:name="com.example.sportmatch.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+34-->[androidx.core:core:1.9.0] C:\Users\Raluca\.gradle\caches\transforms-3\f3d51bfea696170ddff80dae282a5b7c\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+34-->[androidx.core:core:1.9.0] C:\Users\Raluca\.gradle\caches\transforms-3\f3d51bfea696170ddff80dae282a5b7c\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+35
+36    <application
+36-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:10:5-100:19
+37        android:allowBackup="true"
+37-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:11:9-35
+38        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+38-->[androidx.core:core:1.9.0] C:\Users\Raluca\.gradle\caches\transforms-3\f3d51bfea696170ddff80dae282a5b7c\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+39        android:dataExtractionRules="@xml/data_extraction_rules"
+39-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:12:9-65
+40        android:debuggable="true"
+41        android:extractNativeLibs="false"
+42        android:fullBackupContent="@xml/backup_rules"
+42-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:13:9-54
+43        android:icon="@mipmap/ic_launcher"
+43-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:14:9-43
+44        android:label="@string/app_name"
+44-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:15:9-41
+45        android:supportsRtl="true"
+45-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:16:9-35
+46        android:testOnly="true"
+47        android:theme="@style/Theme.SportMatch" >
+47-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:17:9-48
+48        <meta-data
+48-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:20:9-22:71
+49            android:name="com.google.android.geo.API_KEY"
+49-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:21:13-58
+50            android:value="AIzaSyDLCBmP9VNRDUHLpWWptp6AZhUSIThi_nY" />
+50-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:22:13-68
+51
+52        <activity
+52-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:24:9-27:59
+53            android:name="com.example.sportmatch.MapsActivity"
+53-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:25:13-41
+54            android:exported="false"
+54-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:26:13-37
+55            android:label="@string/title_activity_maps" />
+55-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:27:13-56
+56        <activity
+56-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:28:9-30:40
+57            android:name="com.example.sportmatch.ChatActivity"
+57-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:29:13-41
+58            android:exported="false" />
+58-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:30:13-37
+59        <activity
+59-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:31:9-33:40
+60            android:name="com.example.sportmatch.ViewProfileActivity"
+60-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:32:13-48
+61            android:exported="false" />
+61-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:33:13-37
+62        <activity
+62-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:34:9-36:40
+63            android:name="com.example.sportmatch.OnlyParticipatesEvents"
+63-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:35:13-51
+64            android:exported="false" />
+64-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:36:13-37
+65        <activity
+65-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:37:9-39:40
+66            android:name="com.example.sportmatch.AdminEventsActivity"
+66-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:38:13-48
+67            android:exported="false" />
+67-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:39:13-37
+68        <activity
+68-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:40:9-42:40
+69            android:name="com.example.sportmatch.BottomNavActivity"
+69-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:41:13-46
+70            android:exported="false" />
+70-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:42:13-37
+71        <activity
+71-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:43:9-45:40
+72            android:name="com.example.sportmatch.EditProfileActivity"
+72-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:44:13-48
+73            android:exported="false" />
+73-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:45:13-37
+74        <activity
+74-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:46:9-48:40
+75            android:name="com.example.sportmatch.ProfileActivity"
+75-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:47:13-44
+76            android:exported="false" />
+76-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:48:13-37
+77        <activity
+77-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:49:9-53:67
+78            android:name="com.example.sportmatch.MenuActivity"
+78-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:50:13-41
+79            android:exported="false"
+79-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:51:13-37
+80            android:label="@string/title_activity_menu"
+80-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:52:13-56
+81            android:theme="@style/Theme.SportMatch.NoActionBar" />
+81-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:53:13-64
+82        <activity
+82-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:54:9-56:40
+83            android:name="com.example.sportmatch.RegisterActivity"
+83-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:55:13-45
+84            android:exported="false" />
+84-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:56:13-37
+85        <activity
+85-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:57:9-59:40
+86            android:name="com.example.sportmatch.LoginActivity"
+86-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:58:13-42
+87            android:exported="false" />
+87-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:59:13-37
+88        <activity
+88-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:60:9-62:40
+89            android:name="com.example.sportmatch.CreateEventActivity"
+89-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:61:13-48
+90            android:exported="false" />
+90-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:62:13-37
+91        <activity
+91-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:63:9-65:40
+92            android:name="com.example.sportmatch.EventDetailsActivity"
+92-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:64:13-49
+93            android:exported="false" />
+93-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:65:13-37
+94        <activity
+94-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:66:9-68:36
+95            android:name="com.example.sportmatch.EventDetailsAdminActivity"
+95-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:67:13-54
+96            android:exported="false" />
+96-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:68:9-33
+97        <activity
+97-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:69:9-71:40
+98            android:name="com.example.sportmatch.EventPreview"
+98-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:70:13-41
+99            android:exported="false" />
+99-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:71:13-37
+100        <activity
+100-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:72:9-74:40
+101            android:name="com.example.sportmatch.OtherProfileActivity"
+101-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:73:13-49
+102            android:exported="false" />
+102-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:74:13-37
+103        <activity
+103-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:76:9-79:40
+104            android:name="com.example.sportmatch.RequestActivity"
+104-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:77:13-44
+105            android:exported="false"
+105-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:79:13-37
+106            android:theme="@style/DialogActivityTheme" />
+106-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:78:13-55
+107        <!--
+108            <activity
+109            android:name=".RequestAdapter"
+110            android:exported="false" />
+111        -->
+112        <activity
+112-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:83:9-85:40
+113            android:name="com.example.sportmatch.EditEventDetails"
+113-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:84:13-45
+114            android:exported="false" />
+114-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:85:13-37
+115        <activity
+115-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:87:9-95:20
+116            android:name="com.example.sportmatch.MainActivity"
+116-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:88:13-41
+117            android:exported="true" >
+117-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:89:13-36
+118            <intent-filter>
+118-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:90:13-94:29
+119                <action android:name="android.intent.action.MAIN" />
+119-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:91:17-69
+119-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:91:25-66
+120
+121                <category android:name="android.intent.category.LAUNCHER" />
+121-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:93:17-77
+121-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:93:27-74
+122            </intent-filter>
+123        </activity>
+124
+125        <meta-data
+125-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:97:9-99:57
+126            android:name="preloaded_fonts"
+126-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:98:13-43
+127            android:resource="@array/preloaded_fonts" />
+127-->C:\SportMatchpre\app\src\main\AndroidManifest.xml:99:13-54
+128
+129        <service
+129-->[com.google.firebase:firebase-database-ktx:20.2.0] C:\Users\Raluca\.gradle\caches\transforms-3\96f18a4cbec0f1eec01e51e4f2117d93\transformed\firebase-database-ktx-20.2.0\AndroidManifest.xml:11:9-17:19
+130            android:name="com.google.firebase.components.ComponentDiscoveryService"
+130-->[com.google.firebase:firebase-database-ktx:20.2.0] C:\Users\Raluca\.gradle\caches\transforms-3\96f18a4cbec0f1eec01e51e4f2117d93\transformed\firebase-database-ktx-20.2.0\AndroidManifest.xml:12:13-84
+131            android:directBootAware="true"
+131-->[com.google.firebase:firebase-common:20.3.2] C:\Users\Raluca\.gradle\caches\transforms-3\4b4bd688355610aded40bdc032a95f7d\transformed\firebase-common-20.3.2\AndroidManifest.xml:34:13-43
+132            android:exported="false" >
+132-->[com.google.firebase:firebase-database-ktx:20.2.0] C:\Users\Raluca\.gradle\caches\transforms-3\96f18a4cbec0f1eec01e51e4f2117d93\transformed\firebase-database-ktx-20.2.0\AndroidManifest.xml:13:13-37
+133            <meta-data
+133-->[com.google.firebase:firebase-database-ktx:20.2.0] C:\Users\Raluca\.gradle\caches\transforms-3\96f18a4cbec0f1eec01e51e4f2117d93\transformed\firebase-database-ktx-20.2.0\AndroidManifest.xml:14:13-16:85
+134                android:name="com.google.firebase.components:com.google.firebase.database.ktx.FirebaseDatabaseKtxRegistrar"
+134-->[com.google.firebase:firebase-database-ktx:20.2.0] C:\Users\Raluca\.gradle\caches\transforms-3\96f18a4cbec0f1eec01e51e4f2117d93\transformed\firebase-database-ktx-20.2.0\AndroidManifest.xml:15:17-124
+135                android:value="com.google.firebase.components.ComponentRegistrar" />
+135-->[com.google.firebase:firebase-database-ktx:20.2.0] C:\Users\Raluca\.gradle\caches\transforms-3\96f18a4cbec0f1eec01e51e4f2117d93\transformed\firebase-database-ktx-20.2.0\AndroidManifest.xml:16:17-82
+136            <meta-data
+136-->[com.google.firebase:firebase-database:20.2.0] C:\Users\Raluca\.gradle\caches\transforms-3\044272472e8eea04ec17792347252681\transformed\firebase-database-20.2.0\AndroidManifest.xml:31:13-33:85
+137                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+137-->[com.google.firebase:firebase-database:20.2.0] C:\Users\Raluca\.gradle\caches\transforms-3\044272472e8eea04ec17792347252681\transformed\firebase-database-20.2.0\AndroidManifest.xml:32:17-109
+138                android:value="com.google.firebase.components.ComponentRegistrar" />
+138-->[com.google.firebase:firebase-database:20.2.0] C:\Users\Raluca\.gradle\caches\transforms-3\044272472e8eea04ec17792347252681\transformed\firebase-database-20.2.0\AndroidManifest.xml:33:17-82
+139            <meta-data
+139-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\915ffe5e2a9b177a9d309da11e541c3d\transformed\firebase-auth-21.3.0\AndroidManifest.xml:69:13-71:85
+140                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+140-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\915ffe5e2a9b177a9d309da11e541c3d\transformed\firebase-auth-21.3.0\AndroidManifest.xml:70:17-109
+141                android:value="com.google.firebase.components.ComponentRegistrar" />
+141-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\915ffe5e2a9b177a9d309da11e541c3d\transformed\firebase-auth-21.3.0\AndroidManifest.xml:71:17-82
+142            <meta-data
+142-->[com.google.firebase:firebase-storage-ktx:20.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\99e17ef5afac0e31fc6ff13a393f653e\transformed\firebase-storage-ktx-20.1.0\AndroidManifest.xml:14:13-16:85
+143                android:name="com.google.firebase.components:com.google.firebase.storage.ktx.FirebaseStorageKtxRegistrar"
+143-->[com.google.firebase:firebase-storage-ktx:20.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\99e17ef5afac0e31fc6ff13a393f653e\transformed\firebase-storage-ktx-20.1.0\AndroidManifest.xml:15:17-122
+144                android:value="com.google.firebase.components.ComponentRegistrar" />
+144-->[com.google.firebase:firebase-storage-ktx:20.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\99e17ef5afac0e31fc6ff13a393f653e\transformed\firebase-storage-ktx-20.1.0\AndroidManifest.xml:16:17-82
+145            <meta-data
+145-->[com.google.firebase:firebase-storage:20.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\48df60ed5d90bfbed5ba0526b8574bb5\transformed\firebase-storage-20.1.0\AndroidManifest.xml:32:13-34:85
+146                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+146-->[com.google.firebase:firebase-storage:20.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\48df60ed5d90bfbed5ba0526b8574bb5\transformed\firebase-storage-20.1.0\AndroidManifest.xml:33:17-107
+147                android:value="com.google.firebase.components.ComponentRegistrar" />
+147-->[com.google.firebase:firebase-storage:20.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\48df60ed5d90bfbed5ba0526b8574bb5\transformed\firebase-storage-20.1.0\AndroidManifest.xml:34:17-82
+148            <meta-data
+148-->[com.google.firebase:firebase-common-ktx:20.3.2] C:\Users\Raluca\.gradle\caches\transforms-3\4619f4cc651b735cc6a6210092f5c644\transformed\firebase-common-ktx-20.3.2\AndroidManifest.xml:14:13-16:85
+149                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
+149-->[com.google.firebase:firebase-common-ktx:20.3.2] C:\Users\Raluca\.gradle\caches\transforms-3\4619f4cc651b735cc6a6210092f5c644\transformed\firebase-common-ktx-20.3.2\AndroidManifest.xml:15:17-113
+150                android:value="com.google.firebase.components.ComponentRegistrar" />
+150-->[com.google.firebase:firebase-common-ktx:20.3.2] C:\Users\Raluca\.gradle\caches\transforms-3\4619f4cc651b735cc6a6210092f5c644\transformed\firebase-common-ktx-20.3.2\AndroidManifest.xml:16:17-82
+151        </service>
+152
+153        <activity
+153-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\915ffe5e2a9b177a9d309da11e541c3d\transformed\firebase-auth-21.3.0\AndroidManifest.xml:29:9-46:20
+154            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+154-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\915ffe5e2a9b177a9d309da11e541c3d\transformed\firebase-auth-21.3.0\AndroidManifest.xml:30:13-80
+155            android:excludeFromRecents="true"
+155-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\915ffe5e2a9b177a9d309da11e541c3d\transformed\firebase-auth-21.3.0\AndroidManifest.xml:31:13-46
+156            android:exported="true"
+156-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\915ffe5e2a9b177a9d309da11e541c3d\transformed\firebase-auth-21.3.0\AndroidManifest.xml:32:13-36
+157            android:launchMode="singleTask"
+157-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\915ffe5e2a9b177a9d309da11e541c3d\transformed\firebase-auth-21.3.0\AndroidManifest.xml:33:13-44
+158            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+158-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\915ffe5e2a9b177a9d309da11e541c3d\transformed\firebase-auth-21.3.0\AndroidManifest.xml:34:13-72
+159            <intent-filter>
+159-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\915ffe5e2a9b177a9d309da11e541c3d\transformed\firebase-auth-21.3.0\AndroidManifest.xml:35:13-45:29
+160                <action android:name="android.intent.action.VIEW" />
+160-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\915ffe5e2a9b177a9d309da11e541c3d\transformed\firebase-auth-21.3.0\AndroidManifest.xml:36:17-69
+160-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\915ffe5e2a9b177a9d309da11e541c3d\transformed\firebase-auth-21.3.0\AndroidManifest.xml:36:25-66
+161
+162                <category android:name="android.intent.category.DEFAULT" />
+162-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\915ffe5e2a9b177a9d309da11e541c3d\transformed\firebase-auth-21.3.0\AndroidManifest.xml:38:17-76
+162-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\915ffe5e2a9b177a9d309da11e541c3d\transformed\firebase-auth-21.3.0\AndroidManifest.xml:38:27-73
+163                <category android:name="android.intent.category.BROWSABLE" />
+163-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\915ffe5e2a9b177a9d309da11e541c3d\transformed\firebase-auth-21.3.0\AndroidManifest.xml:39:17-78
+163-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\915ffe5e2a9b177a9d309da11e541c3d\transformed\firebase-auth-21.3.0\AndroidManifest.xml:39:27-75
+164
+165                <data
+165-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\915ffe5e2a9b177a9d309da11e541c3d\transformed\firebase-auth-21.3.0\AndroidManifest.xml:41:17-44:51
+166                    android:host="firebase.auth"
+166-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\915ffe5e2a9b177a9d309da11e541c3d\transformed\firebase-auth-21.3.0\AndroidManifest.xml:42:21-49
+167                    android:path="/"
+167-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\915ffe5e2a9b177a9d309da11e541c3d\transformed\firebase-auth-21.3.0\AndroidManifest.xml:43:21-37
+168                    android:scheme="genericidp" />
+168-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\915ffe5e2a9b177a9d309da11e541c3d\transformed\firebase-auth-21.3.0\AndroidManifest.xml:44:21-48
+169            </intent-filter>
+170        </activity>
+171        <activity
+171-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\915ffe5e2a9b177a9d309da11e541c3d\transformed\firebase-auth-21.3.0\AndroidManifest.xml:47:9-64:20
+172            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+172-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\915ffe5e2a9b177a9d309da11e541c3d\transformed\firebase-auth-21.3.0\AndroidManifest.xml:48:13-79
+173            android:excludeFromRecents="true"
+173-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\915ffe5e2a9b177a9d309da11e541c3d\transformed\firebase-auth-21.3.0\AndroidManifest.xml:49:13-46
+174            android:exported="true"
+174-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\915ffe5e2a9b177a9d309da11e541c3d\transformed\firebase-auth-21.3.0\AndroidManifest.xml:50:13-36
+175            android:launchMode="singleTask"
+175-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\915ffe5e2a9b177a9d309da11e541c3d\transformed\firebase-auth-21.3.0\AndroidManifest.xml:51:13-44
+176            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+176-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\915ffe5e2a9b177a9d309da11e541c3d\transformed\firebase-auth-21.3.0\AndroidManifest.xml:52:13-72
+177            <intent-filter>
+177-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\915ffe5e2a9b177a9d309da11e541c3d\transformed\firebase-auth-21.3.0\AndroidManifest.xml:53:13-63:29
+178                <action android:name="android.intent.action.VIEW" />
+178-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\915ffe5e2a9b177a9d309da11e541c3d\transformed\firebase-auth-21.3.0\AndroidManifest.xml:36:17-69
+178-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\915ffe5e2a9b177a9d309da11e541c3d\transformed\firebase-auth-21.3.0\AndroidManifest.xml:36:25-66
+179
+180                <category android:name="android.intent.category.DEFAULT" />
+180-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\915ffe5e2a9b177a9d309da11e541c3d\transformed\firebase-auth-21.3.0\AndroidManifest.xml:38:17-76
+180-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\915ffe5e2a9b177a9d309da11e541c3d\transformed\firebase-auth-21.3.0\AndroidManifest.xml:38:27-73
+181                <category android:name="android.intent.category.BROWSABLE" />
+181-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\915ffe5e2a9b177a9d309da11e541c3d\transformed\firebase-auth-21.3.0\AndroidManifest.xml:39:17-78
+181-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\915ffe5e2a9b177a9d309da11e541c3d\transformed\firebase-auth-21.3.0\AndroidManifest.xml:39:27-75
+182
+183                <data
+183-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\915ffe5e2a9b177a9d309da11e541c3d\transformed\firebase-auth-21.3.0\AndroidManifest.xml:41:17-44:51
+184                    android:host="firebase.auth"
+184-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\915ffe5e2a9b177a9d309da11e541c3d\transformed\firebase-auth-21.3.0\AndroidManifest.xml:42:21-49
+185                    android:path="/"
+185-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\915ffe5e2a9b177a9d309da11e541c3d\transformed\firebase-auth-21.3.0\AndroidManifest.xml:43:21-37
+186                    android:scheme="recaptcha" />
+186-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\915ffe5e2a9b177a9d309da11e541c3d\transformed\firebase-auth-21.3.0\AndroidManifest.xml:44:21-48
+187            </intent-filter>
+188        </activity> <!-- Needs to be explicitly declared on P+ -->
+189        <uses-library
+189-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\acef2a44a7e3301fa64384949a60f84f\transformed\play-services-maps-18.1.0\AndroidManifest.xml:39:9-41:40
+190            android:name="org.apache.http.legacy"
+190-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\acef2a44a7e3301fa64384949a60f84f\transformed\play-services-maps-18.1.0\AndroidManifest.xml:40:13-50
+191            android:required="false" />
+191-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\acef2a44a7e3301fa64384949a60f84f\transformed\play-services-maps-18.1.0\AndroidManifest.xml:41:13-37
+192
+193        <activity
+193-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\462d9b6682a4f02bc6643b3a84b759d7\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
+194            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+194-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\462d9b6682a4f02bc6643b3a84b759d7\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:19-85
+195            android:exported="false"
+195-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\462d9b6682a4f02bc6643b3a84b759d7\transformed\play-services-base-18.1.0\AndroidManifest.xml:22:19-43
+196            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+196-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\462d9b6682a4f02bc6643b3a84b759d7\transformed\play-services-base-18.1.0\AndroidManifest.xml:21:19-78
+197
+198        <provider
+198-->[com.google.firebase:firebase-common:20.3.2] C:\Users\Raluca\.gradle\caches\transforms-3\4b4bd688355610aded40bdc032a95f7d\transformed\firebase-common-20.3.2\AndroidManifest.xml:25:9-30:39
+199            android:name="com.google.firebase.provider.FirebaseInitProvider"
+199-->[com.google.firebase:firebase-common:20.3.2] C:\Users\Raluca\.gradle\caches\transforms-3\4b4bd688355610aded40bdc032a95f7d\transformed\firebase-common-20.3.2\AndroidManifest.xml:26:13-77
+200            android:authorities="com.example.sportmatch.firebaseinitprovider"
+200-->[com.google.firebase:firebase-common:20.3.2] C:\Users\Raluca\.gradle\caches\transforms-3\4b4bd688355610aded40bdc032a95f7d\transformed\firebase-common-20.3.2\AndroidManifest.xml:27:13-72
+201            android:directBootAware="true"
+201-->[com.google.firebase:firebase-common:20.3.2] C:\Users\Raluca\.gradle\caches\transforms-3\4b4bd688355610aded40bdc032a95f7d\transformed\firebase-common-20.3.2\AndroidManifest.xml:28:13-43
+202            android:exported="false"
+202-->[com.google.firebase:firebase-common:20.3.2] C:\Users\Raluca\.gradle\caches\transforms-3\4b4bd688355610aded40bdc032a95f7d\transformed\firebase-common-20.3.2\AndroidManifest.xml:29:13-37
+203            android:initOrder="100" />
+203-->[com.google.firebase:firebase-common:20.3.2] C:\Users\Raluca\.gradle\caches\transforms-3\4b4bd688355610aded40bdc032a95f7d\transformed\firebase-common-20.3.2\AndroidManifest.xml:30:13-36
+204
+205        <uses-library
+205-->[androidx.window:window:1.0.0] C:\Users\Raluca\.gradle\caches\transforms-3\59d7ea35fada011ea3cca6aafe1b53c8\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+206            android:name="androidx.window.extensions"
+206-->[androidx.window:window:1.0.0] C:\Users\Raluca\.gradle\caches\transforms-3\59d7ea35fada011ea3cca6aafe1b53c8\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+207            android:required="false" />
+207-->[androidx.window:window:1.0.0] C:\Users\Raluca\.gradle\caches\transforms-3\59d7ea35fada011ea3cca6aafe1b53c8\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+208        <uses-library
+208-->[androidx.window:window:1.0.0] C:\Users\Raluca\.gradle\caches\transforms-3\59d7ea35fada011ea3cca6aafe1b53c8\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+209            android:name="androidx.window.sidecar"
+209-->[androidx.window:window:1.0.0] C:\Users\Raluca\.gradle\caches\transforms-3\59d7ea35fada011ea3cca6aafe1b53c8\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+210            android:required="false" />
+210-->[androidx.window:window:1.0.0] C:\Users\Raluca\.gradle\caches\transforms-3\59d7ea35fada011ea3cca6aafe1b53c8\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+211
+212        <meta-data
+212-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\1be5a84dfe85c9f41773bb78b68ec900\transformed\play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+213            android:name="com.google.android.gms.version"
+213-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\1be5a84dfe85c9f41773bb78b68ec900\transformed\play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+214            android:value="@integer/google_play_services_version" />
+214-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\1be5a84dfe85c9f41773bb78b68ec900\transformed\play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+215
+216        <provider
+216-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Raluca\.gradle\caches\transforms-3\2466eaf4a073dfa3aa7557bbe46f76f9\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+217            android:name="androidx.startup.InitializationProvider"
+217-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Raluca\.gradle\caches\transforms-3\2466eaf4a073dfa3aa7557bbe46f76f9\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+218            android:authorities="com.example.sportmatch.androidx-startup"
+218-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Raluca\.gradle\caches\transforms-3\2466eaf4a073dfa3aa7557bbe46f76f9\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+219            android:exported="false" >
+219-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Raluca\.gradle\caches\transforms-3\2466eaf4a073dfa3aa7557bbe46f76f9\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+220            <meta-data
+220-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Raluca\.gradle\caches\transforms-3\2466eaf4a073dfa3aa7557bbe46f76f9\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+221                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+221-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Raluca\.gradle\caches\transforms-3\2466eaf4a073dfa3aa7557bbe46f76f9\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+222                android:value="androidx.startup" />
+222-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Raluca\.gradle\caches\transforms-3\2466eaf4a073dfa3aa7557bbe46f76f9\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+223            <meta-data
+223-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Raluca\.gradle\caches\transforms-3\5127f80b85867cccab87be3d3456a639\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+224                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+224-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Raluca\.gradle\caches\transforms-3\5127f80b85867cccab87be3d3456a639\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+225                android:value="androidx.startup" />
+225-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Raluca\.gradle\caches\transforms-3\5127f80b85867cccab87be3d3456a639\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+226        </provider>
+227    </application>
+228
+229</manifest>

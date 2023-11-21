@@ -1,0 +1,727 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:2:1-102:12
+INJECTED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:2:1-102:12
+INJECTED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:2:1-102:12
+INJECTED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:2:1-102:12
+MERGED from [androidx.databinding:viewbinding:7.4.2] C:\Users\Raluca\.gradle\caches\transforms-3\9ab523b113898a0706fa388ab5ca5516\transformed\viewbinding-7.4.2\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.navigation:navigation-ui:2.5.3] C:\Users\Raluca\.gradle\caches\transforms-3\670fcbd9f10f2b5a7b424d723d6a721f\transformed\navigation-ui-2.5.3\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.material:material:1.8.0] C:\Users\Raluca\.gradle\caches\transforms-3\182faf041fdcb262ef4ea683b4175339\transformed\material-1.8.0\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\Raluca\.gradle\caches\transforms-3\d8979af8a73764c39a8cadc6fefa7acf\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\Raluca\.gradle\caches\transforms-3\5ec40b5490f4dd1ddc594532155ec3d6\transformed\appcompat-resources-1.6.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.appcompat:appcompat:1.6.1] C:\Users\Raluca\.gradle\caches\transforms-3\3429c272863fc1e5b465d2e8a2b7badb\transformed\appcompat-1.6.1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-database-ktx:20.2.0] C:\Users\Raluca\.gradle\caches\transforms-3\96f18a4cbec0f1eec01e51e4f2117d93\transformed\firebase-database-ktx-20.2.0\AndroidManifest.xml:2:1-20:12
+MERGED from [com.google.firebase:firebase-database:20.2.0] C:\Users\Raluca\.gradle\caches\transforms-3\044272472e8eea04ec17792347252681\transformed\firebase-database-20.2.0\AndroidManifest.xml:15:1-37:12
+MERGED from [com.google.firebase:firebase-auth:21.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\915ffe5e2a9b177a9d309da11e541c3d\transformed\firebase-auth-21.3.0\AndroidManifest.xml:17:1-75:12
+MERGED from [androidx.navigation:navigation-fragment:2.5.3] C:\Users\Raluca\.gradle\caches\transforms-3\3b901474d5e96741e95173483f743555\transformed\navigation-fragment-2.5.3\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.firebase:firebase-storage-ktx:20.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\99e17ef5afac0e31fc6ff13a393f653e\transformed\firebase-storage-ktx-20.1.0\AndroidManifest.xml:2:1-20:12
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Raluca\.gradle\caches\transforms-3\dc205ff094d4d6b5d1d9b2d5f95f4716\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:glide:4.14.2] C:\Users\Raluca\.gradle\caches\transforms-3\59f78d7b91602d482c514e94ce927db5\transformed\glide-4.14.2\AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\acef2a44a7e3301fa64384949a60f84f\transformed\play-services-maps-18.1.0\AndroidManifest.xml:17:1-44:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\Raluca\.gradle\caches\transforms-3\6fe1a663cc9bb217da566756f8f7f68e\transformed\viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\48df60ed5d90bfbed5ba0526b8574bb5\transformed\firebase-storage-20.1.0\AndroidManifest.xml:15:1-38:12
+MERGED from [com.google.firebase:firebase-appcheck-interop:16.1.1] C:\Users\Raluca\.gradle\caches\transforms-3\34080da382480036add0aedb7a4a59a3\transformed\firebase-appcheck-interop-16.1.1\AndroidManifest.xml:15:1-25:12
+MERGED from [com.google.firebase:firebase-database-collection:18.0.1] C:\Users\Raluca\.gradle\caches\transforms-3\2313f0bf42ab0c6a261cf2ff20267631\transformed\firebase-database-collection-18.0.1\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-auth-api-phone:17.4.0] C:\Users\Raluca\.gradle\caches\transforms-3\14d1b9af06a5765bc42092a4756b3943\transformed\play-services-auth-api-phone-17.4.0\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] C:\Users\Raluca\.gradle\caches\transforms-3\42a54b733105ee4345de2bc61b3d1281\transformed\play-services-safetynet-17.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-base:18.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\462d9b6682a4f02bc6643b3a84b759d7\transformed\play-services-base-18.1.0\AndroidManifest.xml:16:1-24:12
+MERGED from [com.google.firebase:firebase-common-ktx:20.3.2] C:\Users\Raluca\.gradle\caches\transforms-3\4619f4cc651b735cc6a6210092f5c644\transformed\firebase-common-ktx-20.3.2\AndroidManifest.xml:2:1-20:12
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\Raluca\.gradle\caches\transforms-3\e59a9d0b34d31a61b309900f26cb6c89\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.firebase:firebase-common:20.3.2] C:\Users\Raluca\.gradle\caches\transforms-3\4b4bd688355610aded40bdc032a95f7d\transformed\firebase-common-20.3.2\AndroidManifest.xml:15:1-39:12
+MERGED from [com.google.android.recaptcha:recaptcha:18.0.1] C:\Users\Raluca\.gradle\caches\transforms-3\06777e1d443c3d18df8878785fe21c67\transformed\recaptcha-18.0.1\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.play:integrity:1.0.1] C:\Users\Raluca\.gradle\caches\transforms-3\0329f1b966fb3535531b1e55cf9d74ec\transformed\integrity-1.0.1\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.fragment:fragment-ktx:1.5.4] C:\Users\Raluca\.gradle\caches\transforms-3\46909d13b78f04b4c530eb9a7056edc4\transformed\fragment-ktx-1.5.4\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-runtime:2.5.3] C:\Users\Raluca\.gradle\caches\transforms-3\f495a08056c26f4eca467d3cafdbeabb\transformed\navigation-runtime-2.5.3\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-common:2.5.3] C:\Users\Raluca\.gradle\caches\transforms-3\ab369d282b290af6a7c18b22567f6f96\transformed\navigation-common-2.5.3\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity-ktx:1.6.0] C:\Users\Raluca\.gradle\caches\transforms-3\87dae368f2d972444afb39eabff774d9\transformed\activity-ktx-1.6.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1] C:\Users\Raluca\.gradle\caches\transforms-3\e9e022588cb905aff281f0d6cb3f0918\transformed\lifecycle-viewmodel-ktx-2.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\Raluca\.gradle\caches\transforms-3\a34bc1d6ed5abbd1d6d3fd4633c39673\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Raluca\.gradle\caches\transforms-3\f3241cce5f956e55f99d41c67ffcc6b4\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Raluca\.gradle\caches\transforms-3\8450cf7a4d9dbdae520e773bee91af3c\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.1] C:\Users\Raluca\.gradle\caches\transforms-3\4be6cee1d2ee3681e026a5b1238d8566\transformed\lifecycle-viewmodel-2.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] C:\Users\Raluca\.gradle\caches\transforms-3\cef7c6580f5c07e8dfa433667e3578ff\transformed\lifecycle-viewmodel-savedstate-2.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.5.1] C:\Users\Raluca\.gradle\caches\transforms-3\d2f83e20279527b82dbd409b622d6b71\transformed\lifecycle-runtime-ktx-2.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.2.0] C:\Users\Raluca\.gradle\caches\transforms-3\e008b8a2ac8244167031b02bcf52d256\transformed\slidingpanelayout-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.window:window:1.0.0] C:\Users\Raluca\.gradle\caches\transforms-3\59d7ea35fada011ea3cca6aafe1b53c8\transformed\window-1.0.0\AndroidManifest.xml:17:1-33:12
+MERGED from [com.google.android.gms:play-services-tasks:18.0.2] C:\Users\Raluca\.gradle\caches\transforms-3\41d5c772ad08a78b9e08bf4e5eed4aea\transformed\play-services-tasks-18.0.2\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\1be5a84dfe85c9f41773bb78b68ec900\transformed\play-services-basement-18.1.0\AndroidManifest.xml:16:1-26:12
+MERGED from [androidx.fragment:fragment:1.5.4] C:\Users\Raluca\.gradle\caches\transforms-3\42e24ab264a7129d4ac0c70d9e6d096d\transformed\fragment-1.5.4\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.6.0] C:\Users\Raluca\.gradle\caches\transforms-3\76c013322081f6c111ef2c863cb21d57\transformed\activity-1.6.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\Raluca\.gradle\caches\transforms-3\77337c3ba5a749e04db3d106bd65ac83\transformed\emoji2-views-helper-1.2.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\Raluca\.gradle\caches\transforms-3\2466eaf4a073dfa3aa7557bbe46f76f9\transformed\emoji2-1.2.0\AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\Raluca\.gradle\caches\transforms-3\9ea2bb7a688a90f40227f49d1b2174b3\transformed\drawerlayout-1.1.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\68c878209997cd9be84be487faaa146e\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\36ebcbeb87de2272c2e142ddf4400240\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\48133f1ce19ef9fc9ea89e7fc4253f3c\transformed\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.browser:browser:1.4.0] C:\Users\Raluca\.gradle\caches\transforms-3\ca82ffcfaf29df054ecae31f6508b388\transformed\browser-1.4.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\cd8e1d078b26ebb0bf903d162d676e89\transformed\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Raluca\.gradle\caches\transforms-3\2535f9b31a50e54b62273115f58bae1f\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\996106b9e2ce5cdd8537c2c2c5b1a972\transformed\customview-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core-ktx:1.9.0] C:\Users\Raluca\.gradle\caches\transforms-3\cb956f28861b496f5213605b8d29442e\transformed\core-ktx-1.9.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.transition:transition:1.4.1] C:\Users\Raluca\.gradle\caches\transforms-3\b50327f11c533f31f7f1319fee88089a\transformed\transition-1.4.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.9.0] C:\Users\Raluca\.gradle\caches\transforms-3\f3d51bfea696170ddff80dae282a5b7c\transformed\core-1.9.0\AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Raluca\.gradle\caches\transforms-3\30b985abc2a533e8208acaab8019f46a\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Raluca\.gradle\caches\transforms-3\5127f80b85867cccab87be3d3456a639\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:17:1-37:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] C:\Users\Raluca\.gradle\caches\transforms-3\2a87f451db6c8f010d7c304bc5bbb176\transformed\lifecycle-runtime-2.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.0] C:\Users\Raluca\.gradle\caches\transforms-3\83952b29f771089fa0ac0386ed0b26ac\transformed\savedstate-ktx-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.2.0] C:\Users\Raluca\.gradle\caches\transforms-3\58d35d68633b0441286a42af3de79147\transformed\savedstate-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.firebase:firebase-components:17.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\d043a3c433ad52303b4fe68d8691b329\transformed\firebase-components-17.1.0\AndroidManifest.xml:15:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Raluca\.gradle\caches\transforms-3\1ecd6b89b4d0b4a75cf13052c09069de\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.14.2] C:\Users\Raluca\.gradle\caches\transforms-3\6872a5f2df491f9dc91935275b0cd9dd\transformed\gifdecoder-4.14.2\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.exifinterface:exifinterface:1.3.3] C:\Users\Raluca\.gradle\caches\transforms-3\aead3b508c271cd6af0782a78db3fd07\transformed\exifinterface-1.3.3\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Raluca\.gradle\caches\transforms-3\89fddf501e7dc7e29d7ae6eeb2a298ad\transformed\startup-runtime-1.1.1\AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\Raluca\.gradle\caches\transforms-3\4f6aa840d36ba2909446000ac19ed01a\transformed\tracing-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Raluca\.gradle\caches\transforms-3\45cff5bca79c617627193d0cfc652b8c\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.5.1] C:\Users\Raluca\.gradle\caches\transforms-3\8090a7f372fe07e193d9009d0d33c6dc\transformed\lifecycle-livedata-core-ktx-2.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Raluca\.gradle\caches\transforms-3\59d6f4939deb6a879a2c47bafccc0213\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.1] C:\Users\Raluca\.gradle\caches\transforms-3\78e62098079992e1a858e8a0b756ee01\transformed\lifecycle-livedata-core-2.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\ced3239bcbfd48ad0ef895d8f1233595\transformed\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Raluca\.gradle\caches\transforms-3\81e96571c10b712fa4c7bc1ed2b15162\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Raluca\.gradle\caches\transforms-3\705af1d4a665eccd48cef655c900d24f\transformed\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\Raluca\.gradle\caches\transforms-3\2397f23810b8035de4f82d065aff48cd\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\aadbfca95168fc936950a55ba0e054bd\transformed\annotation-experimental-1.3.0\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:2:1-102:12
+INJECTED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:2:1-102:12
+INJECTED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:2:1-102:12
+	package
+		INJECTED from C:\SportMatchpre\app\src\main\AndroidManifest.xml
+		ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:2:1-102:12
+		INJECTED from C:\SportMatchpre\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\SportMatchpre\app\src\main\AndroidManifest.xml
+		ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:2:1-102:12
+		INJECTED from C:\SportMatchpre\app\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from C:\SportMatchpre\app\src\main\AndroidManifest.xml
+		ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:2:1-102:12
+		INJECTED from C:\SportMatchpre\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:5:5-80
+	android:name
+		ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:5:22-77
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:6:5-79
+	android:name
+		ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:6:22-76
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:7:5-81
+	android:name
+		ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:7:22-78
+uses-permission#android.permission.INTERNET
+ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:8:5-67
+MERGED from [com.google.firebase:firebase-database:20.2.0] C:\Users\Raluca\.gradle\caches\transforms-3\044272472e8eea04ec17792347252681\transformed\firebase-database-20.2.0\AndroidManifest.xml:25:5-67
+MERGED from [com.google.firebase:firebase-database:20.2.0] C:\Users\Raluca\.gradle\caches\transforms-3\044272472e8eea04ec17792347252681\transformed\firebase-database-20.2.0\AndroidManifest.xml:25:5-67
+MERGED from [com.google.firebase:firebase-auth:21.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\915ffe5e2a9b177a9d309da11e541c3d\transformed\firebase-auth-21.3.0\AndroidManifest.xml:25:5-67
+MERGED from [com.google.firebase:firebase-auth:21.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\915ffe5e2a9b177a9d309da11e541c3d\transformed\firebase-auth-21.3.0\AndroidManifest.xml:25:5-67
+MERGED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\acef2a44a7e3301fa64384949a60f84f\transformed\play-services-maps-18.1.0\AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\acef2a44a7e3301fa64384949a60f84f\transformed\play-services-maps-18.1.0\AndroidManifest.xml:24:5-67
+MERGED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\48df60ed5d90bfbed5ba0526b8574bb5\transformed\firebase-storage-20.1.0\AndroidManifest.xml:26:5-67
+MERGED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\48df60ed5d90bfbed5ba0526b8574bb5\transformed\firebase-storage-20.1.0\AndroidManifest.xml:26:5-67
+	android:name
+		ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:8:22-64
+application
+ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:10:5-100:19
+MERGED from [com.google.android.material:material:1.8.0] C:\Users\Raluca\.gradle\caches\transforms-3\182faf041fdcb262ef4ea683b4175339\transformed\material-1.8.0\AndroidManifest.xml:24:5-20
+MERGED from [com.google.android.material:material:1.8.0] C:\Users\Raluca\.gradle\caches\transforms-3\182faf041fdcb262ef4ea683b4175339\transformed\material-1.8.0\AndroidManifest.xml:24:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\Raluca\.gradle\caches\transforms-3\d8979af8a73764c39a8cadc6fefa7acf\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\Raluca\.gradle\caches\transforms-3\d8979af8a73764c39a8cadc6fefa7acf\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
+MERGED from [com.google.firebase:firebase-database-ktx:20.2.0] C:\Users\Raluca\.gradle\caches\transforms-3\96f18a4cbec0f1eec01e51e4f2117d93\transformed\firebase-database-ktx-20.2.0\AndroidManifest.xml:10:5-18:19
+MERGED from [com.google.firebase:firebase-database-ktx:20.2.0] C:\Users\Raluca\.gradle\caches\transforms-3\96f18a4cbec0f1eec01e51e4f2117d93\transformed\firebase-database-ktx-20.2.0\AndroidManifest.xml:10:5-18:19
+MERGED from [com.google.firebase:firebase-database:20.2.0] C:\Users\Raluca\.gradle\caches\transforms-3\044272472e8eea04ec17792347252681\transformed\firebase-database-20.2.0\AndroidManifest.xml:27:5-35:19
+MERGED from [com.google.firebase:firebase-database:20.2.0] C:\Users\Raluca\.gradle\caches\transforms-3\044272472e8eea04ec17792347252681\transformed\firebase-database-20.2.0\AndroidManifest.xml:27:5-35:19
+MERGED from [com.google.firebase:firebase-auth:21.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\915ffe5e2a9b177a9d309da11e541c3d\transformed\firebase-auth-21.3.0\AndroidManifest.xml:28:5-73:19
+MERGED from [com.google.firebase:firebase-auth:21.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\915ffe5e2a9b177a9d309da11e541c3d\transformed\firebase-auth-21.3.0\AndroidManifest.xml:28:5-73:19
+MERGED from [com.google.firebase:firebase-storage-ktx:20.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\99e17ef5afac0e31fc6ff13a393f653e\transformed\firebase-storage-ktx-20.1.0\AndroidManifest.xml:10:5-18:19
+MERGED from [com.google.firebase:firebase-storage-ktx:20.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\99e17ef5afac0e31fc6ff13a393f653e\transformed\firebase-storage-ktx-20.1.0\AndroidManifest.xml:10:5-18:19
+MERGED from [com.github.bumptech.glide:glide:4.14.2] C:\Users\Raluca\.gradle\caches\transforms-3\59f78d7b91602d482c514e94ce927db5\transformed\glide-4.14.2\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:glide:4.14.2] C:\Users\Raluca\.gradle\caches\transforms-3\59f78d7b91602d482c514e94ce927db5\transformed\glide-4.14.2\AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\acef2a44a7e3301fa64384949a60f84f\transformed\play-services-maps-18.1.0\AndroidManifest.xml:36:5-42:19
+MERGED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\acef2a44a7e3301fa64384949a60f84f\transformed\play-services-maps-18.1.0\AndroidManifest.xml:36:5-42:19
+MERGED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\48df60ed5d90bfbed5ba0526b8574bb5\transformed\firebase-storage-20.1.0\AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\48df60ed5d90bfbed5ba0526b8574bb5\transformed\firebase-storage-20.1.0\AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.firebase:firebase-appcheck-interop:16.1.1] C:\Users\Raluca\.gradle\caches\transforms-3\34080da382480036add0aedb7a4a59a3\transformed\firebase-appcheck-interop-16.1.1\AndroidManifest.xml:23:5-20
+MERGED from [com.google.firebase:firebase-appcheck-interop:16.1.1] C:\Users\Raluca\.gradle\caches\transforms-3\34080da382480036add0aedb7a4a59a3\transformed\firebase-appcheck-interop-16.1.1\AndroidManifest.xml:23:5-20
+MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] C:\Users\Raluca\.gradle\caches\transforms-3\42a54b733105ee4345de2bc61b3d1281\transformed\play-services-safetynet-17.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] C:\Users\Raluca\.gradle\caches\transforms-3\42a54b733105ee4345de2bc61b3d1281\transformed\play-services-safetynet-17.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-base:18.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\462d9b6682a4f02bc6643b3a84b759d7\transformed\play-services-base-18.1.0\AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-base:18.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\462d9b6682a4f02bc6643b3a84b759d7\transformed\play-services-base-18.1.0\AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.firebase:firebase-common-ktx:20.3.2] C:\Users\Raluca\.gradle\caches\transforms-3\4619f4cc651b735cc6a6210092f5c644\transformed\firebase-common-ktx-20.3.2\AndroidManifest.xml:10:5-18:19
+MERGED from [com.google.firebase:firebase-common-ktx:20.3.2] C:\Users\Raluca\.gradle\caches\transforms-3\4619f4cc651b735cc6a6210092f5c644\transformed\firebase-common-ktx-20.3.2\AndroidManifest.xml:10:5-18:19
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\Raluca\.gradle\caches\transforms-3\e59a9d0b34d31a61b309900f26cb6c89\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\Raluca\.gradle\caches\transforms-3\e59a9d0b34d31a61b309900f26cb6c89\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-common:20.3.2] C:\Users\Raluca\.gradle\caches\transforms-3\4b4bd688355610aded40bdc032a95f7d\transformed\firebase-common-20.3.2\AndroidManifest.xml:24:5-37:19
+MERGED from [com.google.firebase:firebase-common:20.3.2] C:\Users\Raluca\.gradle\caches\transforms-3\4b4bd688355610aded40bdc032a95f7d\transformed\firebase-common-20.3.2\AndroidManifest.xml:24:5-37:19
+MERGED from [com.google.android.recaptcha:recaptcha:18.0.1] C:\Users\Raluca\.gradle\caches\transforms-3\06777e1d443c3d18df8878785fe21c67\transformed\recaptcha-18.0.1\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.recaptcha:recaptcha:18.0.1] C:\Users\Raluca\.gradle\caches\transforms-3\06777e1d443c3d18df8878785fe21c67\transformed\recaptcha-18.0.1\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.play:integrity:1.0.1] C:\Users\Raluca\.gradle\caches\transforms-3\0329f1b966fb3535531b1e55cf9d74ec\transformed\integrity-1.0.1\AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.play:integrity:1.0.1] C:\Users\Raluca\.gradle\caches\transforms-3\0329f1b966fb3535531b1e55cf9d74ec\transformed\integrity-1.0.1\AndroidManifest.xml:5:5-6:19
+MERGED from [androidx.window:window:1.0.0] C:\Users\Raluca\.gradle\caches\transforms-3\59d7ea35fada011ea3cca6aafe1b53c8\transformed\window-1.0.0\AndroidManifest.xml:24:5-31:19
+MERGED from [androidx.window:window:1.0.0] C:\Users\Raluca\.gradle\caches\transforms-3\59d7ea35fada011ea3cca6aafe1b53c8\transformed\window-1.0.0\AndroidManifest.xml:24:5-31:19
+MERGED from [com.google.android.gms:play-services-tasks:18.0.2] C:\Users\Raluca\.gradle\caches\transforms-3\41d5c772ad08a78b9e08bf4e5eed4aea\transformed\play-services-tasks-18.0.2\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks:18.0.2] C:\Users\Raluca\.gradle\caches\transforms-3\41d5c772ad08a78b9e08bf4e5eed4aea\transformed\play-services-tasks-18.0.2\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\1be5a84dfe85c9f41773bb78b68ec900\transformed\play-services-basement-18.1.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\1be5a84dfe85c9f41773bb78b68ec900\transformed\play-services-basement-18.1.0\AndroidManifest.xml:20:5-24:19
+MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\Raluca\.gradle\caches\transforms-3\2466eaf4a073dfa3aa7557bbe46f76f9\transformed\emoji2-1.2.0\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\Raluca\.gradle\caches\transforms-3\2466eaf4a073dfa3aa7557bbe46f76f9\transformed\emoji2-1.2.0\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.core:core:1.9.0] C:\Users\Raluca\.gradle\caches\transforms-3\f3d51bfea696170ddff80dae282a5b7c\transformed\core-1.9.0\AndroidManifest.xml:28:5-89
+MERGED from [androidx.core:core:1.9.0] C:\Users\Raluca\.gradle\caches\transforms-3\f3d51bfea696170ddff80dae282a5b7c\transformed\core-1.9.0\AndroidManifest.xml:28:5-89
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Raluca\.gradle\caches\transforms-3\5127f80b85867cccab87be3d3456a639\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Raluca\.gradle\caches\transforms-3\5127f80b85867cccab87be3d3456a639\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:25:5-35:19
+MERGED from [com.github.bumptech.glide:gifdecoder:4.14.2] C:\Users\Raluca\.gradle\caches\transforms-3\6872a5f2df491f9dc91935275b0cd9dd\transformed\gifdecoder-4.14.2\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.14.2] C:\Users\Raluca\.gradle\caches\transforms-3\6872a5f2df491f9dc91935275b0cd9dd\transformed\gifdecoder-4.14.2\AndroidManifest.xml:9:5-20
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Raluca\.gradle\caches\transforms-3\89fddf501e7dc7e29d7ae6eeb2a298ad\transformed\startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Raluca\.gradle\caches\transforms-3\89fddf501e7dc7e29d7ae6eeb2a298ad\transformed\startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Raluca\.gradle\caches\transforms-3\45cff5bca79c617627193d0cfc652b8c\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Raluca\.gradle\caches\transforms-3\45cff5bca79c617627193d0cfc652b8c\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.9.0] C:\Users\Raluca\.gradle\caches\transforms-3\f3d51bfea696170ddff80dae282a5b7c\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+	android:supportsRtl
+		ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:16:9-35
+	android:label
+		ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:15:9-41
+	android:fullBackupContent
+		ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:13:9-54
+	tools:targetApi
+		ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:18:9-29
+	android:icon
+		ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:14:9-43
+	android:allowBackup
+		ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:11:9-35
+	android:theme
+		ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:17:9-48
+	android:dataExtractionRules
+		ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:12:9-65
+meta-data#com.google.android.geo.API_KEY
+ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:20:9-22:71
+	android:value
+		ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:22:13-68
+	android:name
+		ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:21:13-58
+activity#com.example.sportmatch.MapsActivity
+ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:24:9-27:59
+	android:label
+		ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:27:13-56
+	android:exported
+		ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:26:13-37
+	android:name
+		ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:25:13-41
+activity#com.example.sportmatch.ChatActivity
+ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:28:9-30:40
+	android:exported
+		ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:30:13-37
+	android:name
+		ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:29:13-41
+activity#com.example.sportmatch.ViewProfileActivity
+ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:31:9-33:40
+	android:exported
+		ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:33:13-37
+	android:name
+		ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:32:13-48
+activity#com.example.sportmatch.OnlyParticipatesEvents
+ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:34:9-36:40
+	android:exported
+		ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:36:13-37
+	android:name
+		ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:35:13-51
+activity#com.example.sportmatch.AdminEventsActivity
+ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:37:9-39:40
+	android:exported
+		ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:39:13-37
+	android:name
+		ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:38:13-48
+activity#com.example.sportmatch.BottomNavActivity
+ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:40:9-42:40
+	android:exported
+		ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:42:13-37
+	android:name
+		ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:41:13-46
+activity#com.example.sportmatch.EditProfileActivity
+ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:43:9-45:40
+	android:exported
+		ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:45:13-37
+	android:name
+		ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:44:13-48
+activity#com.example.sportmatch.ProfileActivity
+ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:46:9-48:40
+	android:exported
+		ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:48:13-37
+	android:name
+		ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:47:13-44
+activity#com.example.sportmatch.MenuActivity
+ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:49:9-53:67
+	android:label
+		ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:52:13-56
+	android:exported
+		ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:51:13-37
+	android:theme
+		ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:53:13-64
+	android:name
+		ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:50:13-41
+activity#com.example.sportmatch.RegisterActivity
+ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:54:9-56:40
+	android:exported
+		ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:56:13-37
+	android:name
+		ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:55:13-45
+activity#com.example.sportmatch.LoginActivity
+ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:57:9-59:40
+	android:exported
+		ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:59:13-37
+	android:name
+		ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:58:13-42
+activity#com.example.sportmatch.CreateEventActivity
+ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:60:9-62:40
+	android:exported
+		ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:62:13-37
+	android:name
+		ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:61:13-48
+activity#com.example.sportmatch.EventDetailsActivity
+ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:63:9-65:40
+	android:exported
+		ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:65:13-37
+	android:name
+		ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:64:13-49
+activity#com.example.sportmatch.EventDetailsAdminActivity
+ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:66:9-68:36
+	android:exported
+		ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:68:9-33
+	android:name
+		ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:67:13-54
+activity#com.example.sportmatch.EventPreview
+ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:69:9-71:40
+	android:exported
+		ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:71:13-37
+	android:name
+		ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:70:13-41
+activity#com.example.sportmatch.OtherProfileActivity
+ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:72:9-74:40
+	android:exported
+		ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:74:13-37
+	android:name
+		ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:73:13-49
+activity#com.example.sportmatch.RequestActivity
+ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:76:9-79:40
+	android:exported
+		ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:79:13-37
+	android:theme
+		ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:78:13-55
+	android:name
+		ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:77:13-44
+activity#com.example.sportmatch.EditEventDetails
+ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:83:9-85:40
+	android:exported
+		ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:85:13-37
+	android:name
+		ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:84:13-45
+activity#com.example.sportmatch.MainActivity
+ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:87:9-95:20
+	android:exported
+		ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:89:13-36
+	android:name
+		ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:88:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:90:13-94:29
+action#android.intent.action.MAIN
+ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:91:17-69
+	android:name
+		ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:91:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:93:17-77
+	android:name
+		ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:93:27-74
+meta-data#preloaded_fonts
+ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:97:9-99:57
+	android:resource
+		ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:99:13-54
+	android:name
+		ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml:98:13-43
+uses-sdk
+INJECTED from C:\SportMatchpre\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\SportMatchpre\app\src\main\AndroidManifest.xml
+INJECTED from C:\SportMatchpre\app\src\main\AndroidManifest.xml
+MERGED from [androidx.databinding:viewbinding:7.4.2] C:\Users\Raluca\.gradle\caches\transforms-3\9ab523b113898a0706fa388ab5ca5516\transformed\viewbinding-7.4.2\AndroidManifest.xml:5:5-44
+MERGED from [androidx.databinding:viewbinding:7.4.2] C:\Users\Raluca\.gradle\caches\transforms-3\9ab523b113898a0706fa388ab5ca5516\transformed\viewbinding-7.4.2\AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-ui:2.5.3] C:\Users\Raluca\.gradle\caches\transforms-3\670fcbd9f10f2b5a7b424d723d6a721f\transformed\navigation-ui-2.5.3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-ui:2.5.3] C:\Users\Raluca\.gradle\caches\transforms-3\670fcbd9f10f2b5a7b424d723d6a721f\transformed\navigation-ui-2.5.3\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.material:material:1.8.0] C:\Users\Raluca\.gradle\caches\transforms-3\182faf041fdcb262ef4ea683b4175339\transformed\material-1.8.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.material:material:1.8.0] C:\Users\Raluca\.gradle\caches\transforms-3\182faf041fdcb262ef4ea683b4175339\transformed\material-1.8.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\Raluca\.gradle\caches\transforms-3\d8979af8a73764c39a8cadc6fefa7acf\transformed\constraintlayout-2.1.4\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\Raluca\.gradle\caches\transforms-3\d8979af8a73764c39a8cadc6fefa7acf\transformed\constraintlayout-2.1.4\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\Raluca\.gradle\caches\transforms-3\5ec40b5490f4dd1ddc594532155ec3d6\transformed\appcompat-resources-1.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\Raluca\.gradle\caches\transforms-3\5ec40b5490f4dd1ddc594532155ec3d6\transformed\appcompat-resources-1.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.6.1] C:\Users\Raluca\.gradle\caches\transforms-3\3429c272863fc1e5b465d2e8a2b7badb\transformed\appcompat-1.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.6.1] C:\Users\Raluca\.gradle\caches\transforms-3\3429c272863fc1e5b465d2e8a2b7badb\transformed\appcompat-1.6.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-database-ktx:20.2.0] C:\Users\Raluca\.gradle\caches\transforms-3\96f18a4cbec0f1eec01e51e4f2117d93\transformed\firebase-database-ktx-20.2.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-database-ktx:20.2.0] C:\Users\Raluca\.gradle\caches\transforms-3\96f18a4cbec0f1eec01e51e4f2117d93\transformed\firebase-database-ktx-20.2.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-database:20.2.0] C:\Users\Raluca\.gradle\caches\transforms-3\044272472e8eea04ec17792347252681\transformed\firebase-database-20.2.0\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.firebase:firebase-database:20.2.0] C:\Users\Raluca\.gradle\caches\transforms-3\044272472e8eea04ec17792347252681\transformed\firebase-database-20.2.0\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.firebase:firebase-auth:21.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\915ffe5e2a9b177a9d309da11e541c3d\transformed\firebase-auth-21.3.0\AndroidManifest.xml:21:5-23:64
+MERGED from [com.google.firebase:firebase-auth:21.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\915ffe5e2a9b177a9d309da11e541c3d\transformed\firebase-auth-21.3.0\AndroidManifest.xml:21:5-23:64
+MERGED from [androidx.navigation:navigation-fragment:2.5.3] C:\Users\Raluca\.gradle\caches\transforms-3\3b901474d5e96741e95173483f743555\transformed\navigation-fragment-2.5.3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-fragment:2.5.3] C:\Users\Raluca\.gradle\caches\transforms-3\3b901474d5e96741e95173483f743555\transformed\navigation-fragment-2.5.3\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-storage-ktx:20.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\99e17ef5afac0e31fc6ff13a393f653e\transformed\firebase-storage-ktx-20.1.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-storage-ktx:20.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\99e17ef5afac0e31fc6ff13a393f653e\transformed\firebase-storage-ktx-20.1.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Raluca\.gradle\caches\transforms-3\dc205ff094d4d6b5d1d9b2d5f95f4716\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Raluca\.gradle\caches\transforms-3\dc205ff094d4d6b5d1d9b2d5f95f4716\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:glide:4.14.2] C:\Users\Raluca\.gradle\caches\transforms-3\59f78d7b91602d482c514e94ce927db5\transformed\glide-4.14.2\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:glide:4.14.2] C:\Users\Raluca\.gradle\caches\transforms-3\59f78d7b91602d482c514e94ce927db5\transformed\glide-4.14.2\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\acef2a44a7e3301fa64384949a60f84f\transformed\play-services-maps-18.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\acef2a44a7e3301fa64384949a60f84f\transformed\play-services-maps-18.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\Raluca\.gradle\caches\transforms-3\6fe1a663cc9bb217da566756f8f7f68e\transformed\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\Raluca\.gradle\caches\transforms-3\6fe1a663cc9bb217da566756f8f7f68e\transformed\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\48df60ed5d90bfbed5ba0526b8574bb5\transformed\firebase-storage-20.1.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\48df60ed5d90bfbed5ba0526b8574bb5\transformed\firebase-storage-20.1.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-appcheck-interop:16.1.1] C:\Users\Raluca\.gradle\caches\transforms-3\34080da382480036add0aedb7a4a59a3\transformed\firebase-appcheck-interop-16.1.1\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.firebase:firebase-appcheck-interop:16.1.1] C:\Users\Raluca\.gradle\caches\transforms-3\34080da382480036add0aedb7a4a59a3\transformed\firebase-appcheck-interop-16.1.1\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.firebase:firebase-database-collection:18.0.1] C:\Users\Raluca\.gradle\caches\transforms-3\2313f0bf42ab0c6a261cf2ff20267631\transformed\firebase-database-collection-18.0.1\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-database-collection:18.0.1] C:\Users\Raluca\.gradle\caches\transforms-3\2313f0bf42ab0c6a261cf2ff20267631\transformed\firebase-database-collection-18.0.1\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.gms:play-services-auth-api-phone:17.4.0] C:\Users\Raluca\.gradle\caches\transforms-3\14d1b9af06a5765bc42092a4756b3943\transformed\play-services-auth-api-phone-17.4.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:17.4.0] C:\Users\Raluca\.gradle\caches\transforms-3\14d1b9af06a5765bc42092a4756b3943\transformed\play-services-auth-api-phone-17.4.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] C:\Users\Raluca\.gradle\caches\transforms-3\42a54b733105ee4345de2bc61b3d1281\transformed\play-services-safetynet-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] C:\Users\Raluca\.gradle\caches\transforms-3\42a54b733105ee4345de2bc61b3d1281\transformed\play-services-safetynet-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:18.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\462d9b6682a4f02bc6643b3a84b759d7\transformed\play-services-base-18.1.0\AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-base:18.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\462d9b6682a4f02bc6643b3a84b759d7\transformed\play-services-base-18.1.0\AndroidManifest.xml:18:5-43
+MERGED from [com.google.firebase:firebase-common-ktx:20.3.2] C:\Users\Raluca\.gradle\caches\transforms-3\4619f4cc651b735cc6a6210092f5c644\transformed\firebase-common-ktx-20.3.2\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-common-ktx:20.3.2] C:\Users\Raluca\.gradle\caches\transforms-3\4619f4cc651b735cc6a6210092f5c644\transformed\firebase-common-ktx-20.3.2\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\Raluca\.gradle\caches\transforms-3\e59a9d0b34d31a61b309900f26cb6c89\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\Raluca\.gradle\caches\transforms-3\e59a9d0b34d31a61b309900f26cb6c89\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-common:20.3.2] C:\Users\Raluca\.gradle\caches\transforms-3\4b4bd688355610aded40bdc032a95f7d\transformed\firebase-common-20.3.2\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-common:20.3.2] C:\Users\Raluca\.gradle\caches\transforms-3\4b4bd688355610aded40bdc032a95f7d\transformed\firebase-common-20.3.2\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.recaptcha:recaptcha:18.0.1] C:\Users\Raluca\.gradle\caches\transforms-3\06777e1d443c3d18df8878785fe21c67\transformed\recaptcha-18.0.1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.recaptcha:recaptcha:18.0.1] C:\Users\Raluca\.gradle\caches\transforms-3\06777e1d443c3d18df8878785fe21c67\transformed\recaptcha-18.0.1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.play:integrity:1.0.1] C:\Users\Raluca\.gradle\caches\transforms-3\0329f1b966fb3535531b1e55cf9d74ec\transformed\integrity-1.0.1\AndroidManifest.xml:4:5-44
+MERGED from [com.google.android.play:integrity:1.0.1] C:\Users\Raluca\.gradle\caches\transforms-3\0329f1b966fb3535531b1e55cf9d74ec\transformed\integrity-1.0.1\AndroidManifest.xml:4:5-44
+MERGED from [androidx.fragment:fragment-ktx:1.5.4] C:\Users\Raluca\.gradle\caches\transforms-3\46909d13b78f04b4c530eb9a7056edc4\transformed\fragment-ktx-1.5.4\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment-ktx:1.5.4] C:\Users\Raluca\.gradle\caches\transforms-3\46909d13b78f04b4c530eb9a7056edc4\transformed\fragment-ktx-1.5.4\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime:2.5.3] C:\Users\Raluca\.gradle\caches\transforms-3\f495a08056c26f4eca467d3cafdbeabb\transformed\navigation-runtime-2.5.3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime:2.5.3] C:\Users\Raluca\.gradle\caches\transforms-3\f495a08056c26f4eca467d3cafdbeabb\transformed\navigation-runtime-2.5.3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common:2.5.3] C:\Users\Raluca\.gradle\caches\transforms-3\ab369d282b290af6a7c18b22567f6f96\transformed\navigation-common-2.5.3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common:2.5.3] C:\Users\Raluca\.gradle\caches\transforms-3\ab369d282b290af6a7c18b22567f6f96\transformed\navigation-common-2.5.3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity-ktx:1.6.0] C:\Users\Raluca\.gradle\caches\transforms-3\87dae368f2d972444afb39eabff774d9\transformed\activity-ktx-1.6.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity-ktx:1.6.0] C:\Users\Raluca\.gradle\caches\transforms-3\87dae368f2d972444afb39eabff774d9\transformed\activity-ktx-1.6.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1] C:\Users\Raluca\.gradle\caches\transforms-3\e9e022588cb905aff281f0d6cb3f0918\transformed\lifecycle-viewmodel-ktx-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1] C:\Users\Raluca\.gradle\caches\transforms-3\e9e022588cb905aff281f0d6cb3f0918\transformed\lifecycle-viewmodel-ktx-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\Raluca\.gradle\caches\transforms-3\a34bc1d6ed5abbd1d6d3fd4633c39673\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\Raluca\.gradle\caches\transforms-3\a34bc1d6ed5abbd1d6d3fd4633c39673\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Raluca\.gradle\caches\transforms-3\f3241cce5f956e55f99d41c67ffcc6b4\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Raluca\.gradle\caches\transforms-3\f3241cce5f956e55f99d41c67ffcc6b4\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Raluca\.gradle\caches\transforms-3\8450cf7a4d9dbdae520e773bee91af3c\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Raluca\.gradle\caches\transforms-3\8450cf7a4d9dbdae520e773bee91af3c\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.1] C:\Users\Raluca\.gradle\caches\transforms-3\4be6cee1d2ee3681e026a5b1238d8566\transformed\lifecycle-viewmodel-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.1] C:\Users\Raluca\.gradle\caches\transforms-3\4be6cee1d2ee3681e026a5b1238d8566\transformed\lifecycle-viewmodel-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] C:\Users\Raluca\.gradle\caches\transforms-3\cef7c6580f5c07e8dfa433667e3578ff\transformed\lifecycle-viewmodel-savedstate-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] C:\Users\Raluca\.gradle\caches\transforms-3\cef7c6580f5c07e8dfa433667e3578ff\transformed\lifecycle-viewmodel-savedstate-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.5.1] C:\Users\Raluca\.gradle\caches\transforms-3\d2f83e20279527b82dbd409b622d6b71\transformed\lifecycle-runtime-ktx-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.5.1] C:\Users\Raluca\.gradle\caches\transforms-3\d2f83e20279527b82dbd409b622d6b71\transformed\lifecycle-runtime-ktx-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.2.0] C:\Users\Raluca\.gradle\caches\transforms-3\e008b8a2ac8244167031b02bcf52d256\transformed\slidingpanelayout-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.2.0] C:\Users\Raluca\.gradle\caches\transforms-3\e008b8a2ac8244167031b02bcf52d256\transformed\slidingpanelayout-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.window:window:1.0.0] C:\Users\Raluca\.gradle\caches\transforms-3\59d7ea35fada011ea3cca6aafe1b53c8\transformed\window-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.window:window:1.0.0] C:\Users\Raluca\.gradle\caches\transforms-3\59d7ea35fada011ea3cca6aafe1b53c8\transformed\window-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.gms:play-services-tasks:18.0.2] C:\Users\Raluca\.gradle\caches\transforms-3\41d5c772ad08a78b9e08bf4e5eed4aea\transformed\play-services-tasks-18.0.2\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks:18.0.2] C:\Users\Raluca\.gradle\caches\transforms-3\41d5c772ad08a78b9e08bf4e5eed4aea\transformed\play-services-tasks-18.0.2\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\1be5a84dfe85c9f41773bb78b68ec900\transformed\play-services-basement-18.1.0\AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\1be5a84dfe85c9f41773bb78b68ec900\transformed\play-services-basement-18.1.0\AndroidManifest.xml:18:5-43
+MERGED from [androidx.fragment:fragment:1.5.4] C:\Users\Raluca\.gradle\caches\transforms-3\42e24ab264a7129d4ac0c70d9e6d096d\transformed\fragment-1.5.4\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.5.4] C:\Users\Raluca\.gradle\caches\transforms-3\42e24ab264a7129d4ac0c70d9e6d096d\transformed\fragment-1.5.4\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.6.0] C:\Users\Raluca\.gradle\caches\transforms-3\76c013322081f6c111ef2c863cb21d57\transformed\activity-1.6.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.6.0] C:\Users\Raluca\.gradle\caches\transforms-3\76c013322081f6c111ef2c863cb21d57\transformed\activity-1.6.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\Raluca\.gradle\caches\transforms-3\77337c3ba5a749e04db3d106bd65ac83\transformed\emoji2-views-helper-1.2.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\Raluca\.gradle\caches\transforms-3\77337c3ba5a749e04db3d106bd65ac83\transformed\emoji2-views-helper-1.2.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\Raluca\.gradle\caches\transforms-3\2466eaf4a073dfa3aa7557bbe46f76f9\transformed\emoji2-1.2.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\Raluca\.gradle\caches\transforms-3\2466eaf4a073dfa3aa7557bbe46f76f9\transformed\emoji2-1.2.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\Raluca\.gradle\caches\transforms-3\9ea2bb7a688a90f40227f49d1b2174b3\transformed\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\Raluca\.gradle\caches\transforms-3\9ea2bb7a688a90f40227f49d1b2174b3\transformed\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\68c878209997cd9be84be487faaa146e\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\68c878209997cd9be84be487faaa146e\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\36ebcbeb87de2272c2e142ddf4400240\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\36ebcbeb87de2272c2e142ddf4400240\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\48133f1ce19ef9fc9ea89e7fc4253f3c\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\48133f1ce19ef9fc9ea89e7fc4253f3c\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.browser:browser:1.4.0] C:\Users\Raluca\.gradle\caches\transforms-3\ca82ffcfaf29df054ecae31f6508b388\transformed\browser-1.4.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.browser:browser:1.4.0] C:\Users\Raluca\.gradle\caches\transforms-3\ca82ffcfaf29df054ecae31f6508b388\transformed\browser-1.4.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\cd8e1d078b26ebb0bf903d162d676e89\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\cd8e1d078b26ebb0bf903d162d676e89\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Raluca\.gradle\caches\transforms-3\2535f9b31a50e54b62273115f58bae1f\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Raluca\.gradle\caches\transforms-3\2535f9b31a50e54b62273115f58bae1f\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\996106b9e2ce5cdd8537c2c2c5b1a972\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\996106b9e2ce5cdd8537c2c2c5b1a972\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core-ktx:1.9.0] C:\Users\Raluca\.gradle\caches\transforms-3\cb956f28861b496f5213605b8d29442e\transformed\core-ktx-1.9.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.9.0] C:\Users\Raluca\.gradle\caches\transforms-3\cb956f28861b496f5213605b8d29442e\transformed\core-ktx-1.9.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.transition:transition:1.4.1] C:\Users\Raluca\.gradle\caches\transforms-3\b50327f11c533f31f7f1319fee88089a\transformed\transition-1.4.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.4.1] C:\Users\Raluca\.gradle\caches\transforms-3\b50327f11c533f31f7f1319fee88089a\transformed\transition-1.4.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.9.0] C:\Users\Raluca\.gradle\caches\transforms-3\f3d51bfea696170ddff80dae282a5b7c\transformed\core-1.9.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.9.0] C:\Users\Raluca\.gradle\caches\transforms-3\f3d51bfea696170ddff80dae282a5b7c\transformed\core-1.9.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Raluca\.gradle\caches\transforms-3\30b985abc2a533e8208acaab8019f46a\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Raluca\.gradle\caches\transforms-3\30b985abc2a533e8208acaab8019f46a\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Raluca\.gradle\caches\transforms-3\5127f80b85867cccab87be3d3456a639\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Raluca\.gradle\caches\transforms-3\5127f80b85867cccab87be3d3456a639\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] C:\Users\Raluca\.gradle\caches\transforms-3\2a87f451db6c8f010d7c304bc5bbb176\transformed\lifecycle-runtime-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] C:\Users\Raluca\.gradle\caches\transforms-3\2a87f451db6c8f010d7c304bc5bbb176\transformed\lifecycle-runtime-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.0] C:\Users\Raluca\.gradle\caches\transforms-3\83952b29f771089fa0ac0386ed0b26ac\transformed\savedstate-ktx-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.0] C:\Users\Raluca\.gradle\caches\transforms-3\83952b29f771089fa0ac0386ed0b26ac\transformed\savedstate-ktx-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.2.0] C:\Users\Raluca\.gradle\caches\transforms-3\58d35d68633b0441286a42af3de79147\transformed\savedstate-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.2.0] C:\Users\Raluca\.gradle\caches\transforms-3\58d35d68633b0441286a42af3de79147\transformed\savedstate-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-components:17.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\d043a3c433ad52303b4fe68d8691b329\transformed\firebase-components-17.1.0\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.firebase:firebase-components:17.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\d043a3c433ad52303b4fe68d8691b329\transformed\firebase-components-17.1.0\AndroidManifest.xml:18:5-20:41
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Raluca\.gradle\caches\transforms-3\1ecd6b89b4d0b4a75cf13052c09069de\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Raluca\.gradle\caches\transforms-3\1ecd6b89b4d0b4a75cf13052c09069de\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:gifdecoder:4.14.2] C:\Users\Raluca\.gradle\caches\transforms-3\6872a5f2df491f9dc91935275b0cd9dd\transformed\gifdecoder-4.14.2\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.14.2] C:\Users\Raluca\.gradle\caches\transforms-3\6872a5f2df491f9dc91935275b0cd9dd\transformed\gifdecoder-4.14.2\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.3] C:\Users\Raluca\.gradle\caches\transforms-3\aead3b508c271cd6af0782a78db3fd07\transformed\exifinterface-1.3.3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.3] C:\Users\Raluca\.gradle\caches\transforms-3\aead3b508c271cd6af0782a78db3fd07\transformed\exifinterface-1.3.3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Raluca\.gradle\caches\transforms-3\89fddf501e7dc7e29d7ae6eeb2a298ad\transformed\startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Raluca\.gradle\caches\transforms-3\89fddf501e7dc7e29d7ae6eeb2a298ad\transformed\startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\Raluca\.gradle\caches\transforms-3\4f6aa840d36ba2909446000ac19ed01a\transformed\tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\Raluca\.gradle\caches\transforms-3\4f6aa840d36ba2909446000ac19ed01a\transformed\tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Raluca\.gradle\caches\transforms-3\45cff5bca79c617627193d0cfc652b8c\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Raluca\.gradle\caches\transforms-3\45cff5bca79c617627193d0cfc652b8c\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.5.1] C:\Users\Raluca\.gradle\caches\transforms-3\8090a7f372fe07e193d9009d0d33c6dc\transformed\lifecycle-livedata-core-ktx-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.5.1] C:\Users\Raluca\.gradle\caches\transforms-3\8090a7f372fe07e193d9009d0d33c6dc\transformed\lifecycle-livedata-core-ktx-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Raluca\.gradle\caches\transforms-3\59d6f4939deb6a879a2c47bafccc0213\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Raluca\.gradle\caches\transforms-3\59d6f4939deb6a879a2c47bafccc0213\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.1] C:\Users\Raluca\.gradle\caches\transforms-3\78e62098079992e1a858e8a0b756ee01\transformed\lifecycle-livedata-core-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.1] C:\Users\Raluca\.gradle\caches\transforms-3\78e62098079992e1a858e8a0b756ee01\transformed\lifecycle-livedata-core-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\ced3239bcbfd48ad0ef895d8f1233595\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\ced3239bcbfd48ad0ef895d8f1233595\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Raluca\.gradle\caches\transforms-3\81e96571c10b712fa4c7bc1ed2b15162\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Raluca\.gradle\caches\transforms-3\81e96571c10b712fa4c7bc1ed2b15162\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Raluca\.gradle\caches\transforms-3\705af1d4a665eccd48cef655c900d24f\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Raluca\.gradle\caches\transforms-3\705af1d4a665eccd48cef655c900d24f\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\Raluca\.gradle\caches\transforms-3\2397f23810b8035de4f82d065aff48cd\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\Raluca\.gradle\caches\transforms-3\2397f23810b8035de4f82d065aff48cd\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\aadbfca95168fc936950a55ba0e054bd\transformed\annotation-experimental-1.3.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\aadbfca95168fc936950a55ba0e054bd\transformed\annotation-experimental-1.3.0\AndroidManifest.xml:20:5-44
+INJECTED from C:\SportMatchpre\app\src\main\AndroidManifest.xml
+INJECTED from C:\SportMatchpre\app\src\main\AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.google.firebase:firebase-auth:21.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\915ffe5e2a9b177a9d309da11e541c3d\transformed\firebase-auth-21.3.0\AndroidManifest.xml:23:9-61
+	android:targetSdkVersion
+		INJECTED from C:\SportMatchpre\app\src\main\AndroidManifest.xml
+		ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml
+		INJECTED from C:\SportMatchpre\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\SportMatchpre\app\src\main\AndroidManifest.xml
+		ADDED from C:\SportMatchpre\app\src\main\AndroidManifest.xml
+		INJECTED from C:\SportMatchpre\app\src\main\AndroidManifest.xml
+service#com.google.firebase.components.ComponentDiscoveryService
+ADDED from [com.google.firebase:firebase-database-ktx:20.2.0] C:\Users\Raluca\.gradle\caches\transforms-3\96f18a4cbec0f1eec01e51e4f2117d93\transformed\firebase-database-ktx-20.2.0\AndroidManifest.xml:11:9-17:19
+MERGED from [com.google.firebase:firebase-database:20.2.0] C:\Users\Raluca\.gradle\caches\transforms-3\044272472e8eea04ec17792347252681\transformed\firebase-database-20.2.0\AndroidManifest.xml:28:9-34:19
+MERGED from [com.google.firebase:firebase-database:20.2.0] C:\Users\Raluca\.gradle\caches\transforms-3\044272472e8eea04ec17792347252681\transformed\firebase-database-20.2.0\AndroidManifest.xml:28:9-34:19
+MERGED from [com.google.firebase:firebase-auth:21.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\915ffe5e2a9b177a9d309da11e541c3d\transformed\firebase-auth-21.3.0\AndroidManifest.xml:66:9-72:19
+MERGED from [com.google.firebase:firebase-auth:21.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\915ffe5e2a9b177a9d309da11e541c3d\transformed\firebase-auth-21.3.0\AndroidManifest.xml:66:9-72:19
+MERGED from [com.google.firebase:firebase-storage-ktx:20.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\99e17ef5afac0e31fc6ff13a393f653e\transformed\firebase-storage-ktx-20.1.0\AndroidManifest.xml:11:9-17:19
+MERGED from [com.google.firebase:firebase-storage-ktx:20.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\99e17ef5afac0e31fc6ff13a393f653e\transformed\firebase-storage-ktx-20.1.0\AndroidManifest.xml:11:9-17:19
+MERGED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\48df60ed5d90bfbed5ba0526b8574bb5\transformed\firebase-storage-20.1.0\AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\48df60ed5d90bfbed5ba0526b8574bb5\transformed\firebase-storage-20.1.0\AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.firebase:firebase-common-ktx:20.3.2] C:\Users\Raluca\.gradle\caches\transforms-3\4619f4cc651b735cc6a6210092f5c644\transformed\firebase-common-ktx-20.3.2\AndroidManifest.xml:11:9-17:19
+MERGED from [com.google.firebase:firebase-common-ktx:20.3.2] C:\Users\Raluca\.gradle\caches\transforms-3\4619f4cc651b735cc6a6210092f5c644\transformed\firebase-common-ktx-20.3.2\AndroidManifest.xml:11:9-17:19
+MERGED from [com.google.firebase:firebase-common:20.3.2] C:\Users\Raluca\.gradle\caches\transforms-3\4b4bd688355610aded40bdc032a95f7d\transformed\firebase-common-20.3.2\AndroidManifest.xml:32:9-36:35
+MERGED from [com.google.firebase:firebase-common:20.3.2] C:\Users\Raluca\.gradle\caches\transforms-3\4b4bd688355610aded40bdc032a95f7d\transformed\firebase-common-20.3.2\AndroidManifest.xml:32:9-36:35
+	android:exported
+		ADDED from [com.google.firebase:firebase-database-ktx:20.2.0] C:\Users\Raluca\.gradle\caches\transforms-3\96f18a4cbec0f1eec01e51e4f2117d93\transformed\firebase-database-ktx-20.2.0\AndroidManifest.xml:13:13-37
+	tools:targetApi
+		ADDED from [com.google.firebase:firebase-common:20.3.2] C:\Users\Raluca\.gradle\caches\transforms-3\4b4bd688355610aded40bdc032a95f7d\transformed\firebase-common-20.3.2\AndroidManifest.xml:36:13-32
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-common:20.3.2] C:\Users\Raluca\.gradle\caches\transforms-3\4b4bd688355610aded40bdc032a95f7d\transformed\firebase-common-20.3.2\AndroidManifest.xml:34:13-43
+	android:name
+		ADDED from [com.google.firebase:firebase-database-ktx:20.2.0] C:\Users\Raluca\.gradle\caches\transforms-3\96f18a4cbec0f1eec01e51e4f2117d93\transformed\firebase-database-ktx-20.2.0\AndroidManifest.xml:12:13-84
+meta-data#com.google.firebase.components:com.google.firebase.database.ktx.FirebaseDatabaseKtxRegistrar
+ADDED from [com.google.firebase:firebase-database-ktx:20.2.0] C:\Users\Raluca\.gradle\caches\transforms-3\96f18a4cbec0f1eec01e51e4f2117d93\transformed\firebase-database-ktx-20.2.0\AndroidManifest.xml:14:13-16:85
+	android:value
+		ADDED from [com.google.firebase:firebase-database-ktx:20.2.0] C:\Users\Raluca\.gradle\caches\transforms-3\96f18a4cbec0f1eec01e51e4f2117d93\transformed\firebase-database-ktx-20.2.0\AndroidManifest.xml:16:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-database-ktx:20.2.0] C:\Users\Raluca\.gradle\caches\transforms-3\96f18a4cbec0f1eec01e51e4f2117d93\transformed\firebase-database-ktx-20.2.0\AndroidManifest.xml:15:17-124
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.firebase:firebase-database:20.2.0] C:\Users\Raluca\.gradle\caches\transforms-3\044272472e8eea04ec17792347252681\transformed\firebase-database-20.2.0\AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-auth:21.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\915ffe5e2a9b177a9d309da11e541c3d\transformed\firebase-auth-21.3.0\AndroidManifest.xml:26:5-79
+MERGED from [com.google.firebase:firebase-auth:21.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\915ffe5e2a9b177a9d309da11e541c3d\transformed\firebase-auth-21.3.0\AndroidManifest.xml:26:5-79
+MERGED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\acef2a44a7e3301fa64384949a60f84f\transformed\play-services-maps-18.1.0\AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\acef2a44a7e3301fa64384949a60f84f\transformed\play-services-maps-18.1.0\AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\48df60ed5d90bfbed5ba0526b8574bb5\transformed\firebase-storage-20.1.0\AndroidManifest.xml:25:5-79
+MERGED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\48df60ed5d90bfbed5ba0526b8574bb5\transformed\firebase-storage-20.1.0\AndroidManifest.xml:25:5-79
+	android:name
+		ADDED from [com.google.firebase:firebase-database:20.2.0] C:\Users\Raluca\.gradle\caches\transforms-3\044272472e8eea04ec17792347252681\transformed\firebase-database-20.2.0\AndroidManifest.xml:24:22-76
+meta-data#com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar
+ADDED from [com.google.firebase:firebase-database:20.2.0] C:\Users\Raluca\.gradle\caches\transforms-3\044272472e8eea04ec17792347252681\transformed\firebase-database-20.2.0\AndroidManifest.xml:31:13-33:85
+	android:value
+		ADDED from [com.google.firebase:firebase-database:20.2.0] C:\Users\Raluca\.gradle\caches\transforms-3\044272472e8eea04ec17792347252681\transformed\firebase-database-20.2.0\AndroidManifest.xml:33:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-database:20.2.0] C:\Users\Raluca\.gradle\caches\transforms-3\044272472e8eea04ec17792347252681\transformed\firebase-database-20.2.0\AndroidManifest.xml:32:17-109
+activity#com.google.firebase.auth.internal.GenericIdpActivity
+ADDED from [com.google.firebase:firebase-auth:21.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\915ffe5e2a9b177a9d309da11e541c3d\transformed\firebase-auth-21.3.0\AndroidManifest.xml:29:9-46:20
+	android:excludeFromRecents
+		ADDED from [com.google.firebase:firebase-auth:21.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\915ffe5e2a9b177a9d309da11e541c3d\transformed\firebase-auth-21.3.0\AndroidManifest.xml:31:13-46
+	android:launchMode
+		ADDED from [com.google.firebase:firebase-auth:21.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\915ffe5e2a9b177a9d309da11e541c3d\transformed\firebase-auth-21.3.0\AndroidManifest.xml:33:13-44
+	android:exported
+		ADDED from [com.google.firebase:firebase-auth:21.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\915ffe5e2a9b177a9d309da11e541c3d\transformed\firebase-auth-21.3.0\AndroidManifest.xml:32:13-36
+	android:theme
+		ADDED from [com.google.firebase:firebase-auth:21.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\915ffe5e2a9b177a9d309da11e541c3d\transformed\firebase-auth-21.3.0\AndroidManifest.xml:34:13-72
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:21.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\915ffe5e2a9b177a9d309da11e541c3d\transformed\firebase-auth-21.3.0\AndroidManifest.xml:30:13-80
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:firebase.auth+data:path:/+data:scheme:genericidp
+ADDED from [com.google.firebase:firebase-auth:21.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\915ffe5e2a9b177a9d309da11e541c3d\transformed\firebase-auth-21.3.0\AndroidManifest.xml:35:13-45:29
+action#android.intent.action.VIEW
+ADDED from [com.google.firebase:firebase-auth:21.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\915ffe5e2a9b177a9d309da11e541c3d\transformed\firebase-auth-21.3.0\AndroidManifest.xml:36:17-69
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:21.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\915ffe5e2a9b177a9d309da11e541c3d\transformed\firebase-auth-21.3.0\AndroidManifest.xml:36:25-66
+category#android.intent.category.DEFAULT
+ADDED from [com.google.firebase:firebase-auth:21.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\915ffe5e2a9b177a9d309da11e541c3d\transformed\firebase-auth-21.3.0\AndroidManifest.xml:38:17-76
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:21.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\915ffe5e2a9b177a9d309da11e541c3d\transformed\firebase-auth-21.3.0\AndroidManifest.xml:38:27-73
+category#android.intent.category.BROWSABLE
+ADDED from [com.google.firebase:firebase-auth:21.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\915ffe5e2a9b177a9d309da11e541c3d\transformed\firebase-auth-21.3.0\AndroidManifest.xml:39:17-78
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:21.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\915ffe5e2a9b177a9d309da11e541c3d\transformed\firebase-auth-21.3.0\AndroidManifest.xml:39:27-75
+data
+ADDED from [com.google.firebase:firebase-auth:21.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\915ffe5e2a9b177a9d309da11e541c3d\transformed\firebase-auth-21.3.0\AndroidManifest.xml:41:17-44:51
+	android:path
+		ADDED from [com.google.firebase:firebase-auth:21.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\915ffe5e2a9b177a9d309da11e541c3d\transformed\firebase-auth-21.3.0\AndroidManifest.xml:43:21-37
+	android:host
+		ADDED from [com.google.firebase:firebase-auth:21.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\915ffe5e2a9b177a9d309da11e541c3d\transformed\firebase-auth-21.3.0\AndroidManifest.xml:42:21-49
+	android:scheme
+		ADDED from [com.google.firebase:firebase-auth:21.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\915ffe5e2a9b177a9d309da11e541c3d\transformed\firebase-auth-21.3.0\AndroidManifest.xml:44:21-48
+activity#com.google.firebase.auth.internal.RecaptchaActivity
+ADDED from [com.google.firebase:firebase-auth:21.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\915ffe5e2a9b177a9d309da11e541c3d\transformed\firebase-auth-21.3.0\AndroidManifest.xml:47:9-64:20
+	android:excludeFromRecents
+		ADDED from [com.google.firebase:firebase-auth:21.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\915ffe5e2a9b177a9d309da11e541c3d\transformed\firebase-auth-21.3.0\AndroidManifest.xml:49:13-46
+	android:launchMode
+		ADDED from [com.google.firebase:firebase-auth:21.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\915ffe5e2a9b177a9d309da11e541c3d\transformed\firebase-auth-21.3.0\AndroidManifest.xml:51:13-44
+	android:exported
+		ADDED from [com.google.firebase:firebase-auth:21.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\915ffe5e2a9b177a9d309da11e541c3d\transformed\firebase-auth-21.3.0\AndroidManifest.xml:50:13-36
+	android:theme
+		ADDED from [com.google.firebase:firebase-auth:21.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\915ffe5e2a9b177a9d309da11e541c3d\transformed\firebase-auth-21.3.0\AndroidManifest.xml:52:13-72
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:21.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\915ffe5e2a9b177a9d309da11e541c3d\transformed\firebase-auth-21.3.0\AndroidManifest.xml:48:13-79
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:firebase.auth+data:path:/+data:scheme:recaptcha
+ADDED from [com.google.firebase:firebase-auth:21.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\915ffe5e2a9b177a9d309da11e541c3d\transformed\firebase-auth-21.3.0\AndroidManifest.xml:53:13-63:29
+meta-data#com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar
+ADDED from [com.google.firebase:firebase-auth:21.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\915ffe5e2a9b177a9d309da11e541c3d\transformed\firebase-auth-21.3.0\AndroidManifest.xml:69:13-71:85
+	android:value
+		ADDED from [com.google.firebase:firebase-auth:21.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\915ffe5e2a9b177a9d309da11e541c3d\transformed\firebase-auth-21.3.0\AndroidManifest.xml:71:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:21.3.0] C:\Users\Raluca\.gradle\caches\transforms-3\915ffe5e2a9b177a9d309da11e541c3d\transformed\firebase-auth-21.3.0\AndroidManifest.xml:70:17-109
+meta-data#com.google.firebase.components:com.google.firebase.storage.ktx.FirebaseStorageKtxRegistrar
+ADDED from [com.google.firebase:firebase-storage-ktx:20.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\99e17ef5afac0e31fc6ff13a393f653e\transformed\firebase-storage-ktx-20.1.0\AndroidManifest.xml:14:13-16:85
+	android:value
+		ADDED from [com.google.firebase:firebase-storage-ktx:20.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\99e17ef5afac0e31fc6ff13a393f653e\transformed\firebase-storage-ktx-20.1.0\AndroidManifest.xml:16:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-storage-ktx:20.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\99e17ef5afac0e31fc6ff13a393f653e\transformed\firebase-storage-ktx-20.1.0\AndroidManifest.xml:15:17-122
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\acef2a44a7e3301fa64384949a60f84f\transformed\play-services-maps-18.1.0\AndroidManifest.xml:26:5-28:35
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\acef2a44a7e3301fa64384949a60f84f\transformed\play-services-maps-18.1.0\AndroidManifest.xml:27:9-41
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\acef2a44a7e3301fa64384949a60f84f\transformed\play-services-maps-18.1.0\AndroidManifest.xml:28:9-32
+queries
+ADDED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\acef2a44a7e3301fa64384949a60f84f\transformed\play-services-maps-18.1.0\AndroidManifest.xml:30:5-34:15
+package#com.google.android.apps.maps
+ADDED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\acef2a44a7e3301fa64384949a60f84f\transformed\play-services-maps-18.1.0\AndroidManifest.xml:33:9-64
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\acef2a44a7e3301fa64384949a60f84f\transformed\play-services-maps-18.1.0\AndroidManifest.xml:33:18-61
+uses-library#org.apache.http.legacy
+ADDED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\acef2a44a7e3301fa64384949a60f84f\transformed\play-services-maps-18.1.0\AndroidManifest.xml:39:9-41:40
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\acef2a44a7e3301fa64384949a60f84f\transformed\play-services-maps-18.1.0\AndroidManifest.xml:41:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\acef2a44a7e3301fa64384949a60f84f\transformed\play-services-maps-18.1.0\AndroidManifest.xml:40:13-50
+meta-data#com.google.firebase.components:com.google.firebase.storage.StorageRegistrar
+ADDED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\48df60ed5d90bfbed5ba0526b8574bb5\transformed\firebase-storage-20.1.0\AndroidManifest.xml:32:13-34:85
+	android:value
+		ADDED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\48df60ed5d90bfbed5ba0526b8574bb5\transformed\firebase-storage-20.1.0\AndroidManifest.xml:34:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\48df60ed5d90bfbed5ba0526b8574bb5\transformed\firebase-storage-20.1.0\AndroidManifest.xml:33:17-107
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:18.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\462d9b6682a4f02bc6643b3a84b759d7\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:18.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\462d9b6682a4f02bc6643b3a84b759d7\transformed\play-services-base-18.1.0\AndroidManifest.xml:22:19-43
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:18.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\462d9b6682a4f02bc6643b3a84b759d7\transformed\play-services-base-18.1.0\AndroidManifest.xml:21:19-78
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:18.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\462d9b6682a4f02bc6643b3a84b759d7\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:19-85
+meta-data#com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar
+ADDED from [com.google.firebase:firebase-common-ktx:20.3.2] C:\Users\Raluca\.gradle\caches\transforms-3\4619f4cc651b735cc6a6210092f5c644\transformed\firebase-common-ktx-20.3.2\AndroidManifest.xml:14:13-16:85
+	android:value
+		ADDED from [com.google.firebase:firebase-common-ktx:20.3.2] C:\Users\Raluca\.gradle\caches\transforms-3\4619f4cc651b735cc6a6210092f5c644\transformed\firebase-common-ktx-20.3.2\AndroidManifest.xml:16:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-common-ktx:20.3.2] C:\Users\Raluca\.gradle\caches\transforms-3\4619f4cc651b735cc6a6210092f5c644\transformed\firebase-common-ktx-20.3.2\AndroidManifest.xml:15:17-113
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:20.3.2] C:\Users\Raluca\.gradle\caches\transforms-3\4b4bd688355610aded40bdc032a95f7d\transformed\firebase-common-20.3.2\AndroidManifest.xml:25:9-30:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:20.3.2] C:\Users\Raluca\.gradle\caches\transforms-3\4b4bd688355610aded40bdc032a95f7d\transformed\firebase-common-20.3.2\AndroidManifest.xml:27:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:20.3.2] C:\Users\Raluca\.gradle\caches\transforms-3\4b4bd688355610aded40bdc032a95f7d\transformed\firebase-common-20.3.2\AndroidManifest.xml:29:13-37
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-common:20.3.2] C:\Users\Raluca\.gradle\caches\transforms-3\4b4bd688355610aded40bdc032a95f7d\transformed\firebase-common-20.3.2\AndroidManifest.xml:28:13-43
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:20.3.2] C:\Users\Raluca\.gradle\caches\transforms-3\4b4bd688355610aded40bdc032a95f7d\transformed\firebase-common-20.3.2\AndroidManifest.xml:30:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:20.3.2] C:\Users\Raluca\.gradle\caches\transforms-3\4b4bd688355610aded40bdc032a95f7d\transformed\firebase-common-20.3.2\AndroidManifest.xml:26:13-77
+uses-library#androidx.window.extensions
+ADDED from [androidx.window:window:1.0.0] C:\Users\Raluca\.gradle\caches\transforms-3\59d7ea35fada011ea3cca6aafe1b53c8\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+	android:required
+		ADDED from [androidx.window:window:1.0.0] C:\Users\Raluca\.gradle\caches\transforms-3\59d7ea35fada011ea3cca6aafe1b53c8\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.window:window:1.0.0] C:\Users\Raluca\.gradle\caches\transforms-3\59d7ea35fada011ea3cca6aafe1b53c8\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+uses-library#androidx.window.sidecar
+ADDED from [androidx.window:window:1.0.0] C:\Users\Raluca\.gradle\caches\transforms-3\59d7ea35fada011ea3cca6aafe1b53c8\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+	android:required
+		ADDED from [androidx.window:window:1.0.0] C:\Users\Raluca\.gradle\caches\transforms-3\59d7ea35fada011ea3cca6aafe1b53c8\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+	android:name
+		ADDED from [androidx.window:window:1.0.0] C:\Users\Raluca\.gradle\caches\transforms-3\59d7ea35fada011ea3cca6aafe1b53c8\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\1be5a84dfe85c9f41773bb78b68ec900\transformed\play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\1be5a84dfe85c9f41773bb78b68ec900\transformed\play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\Raluca\.gradle\caches\transforms-3\1be5a84dfe85c9f41773bb78b68ec900\transformed\play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\Raluca\.gradle\caches\transforms-3\2466eaf4a073dfa3aa7557bbe46f76f9\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Raluca\.gradle\caches\transforms-3\5127f80b85867cccab87be3d3456a639\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Raluca\.gradle\caches\transforms-3\5127f80b85867cccab87be3d3456a639\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Raluca\.gradle\caches\transforms-3\89fddf501e7dc7e29d7ae6eeb2a298ad\transformed\startup-runtime-1.1.1\AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Raluca\.gradle\caches\transforms-3\89fddf501e7dc7e29d7ae6eeb2a298ad\transformed\startup-runtime-1.1.1\AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\Raluca\.gradle\caches\transforms-3\2466eaf4a073dfa3aa7557bbe46f76f9\transformed\emoji2-1.2.0\AndroidManifest.xml:28:13-31
+	android:authorities
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\Raluca\.gradle\caches\transforms-3\2466eaf4a073dfa3aa7557bbe46f76f9\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+	android:exported
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\Raluca\.gradle\caches\transforms-3\2466eaf4a073dfa3aa7557bbe46f76f9\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\Raluca\.gradle\caches\transforms-3\2466eaf4a073dfa3aa7557bbe46f76f9\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\Raluca\.gradle\caches\transforms-3\2466eaf4a073dfa3aa7557bbe46f76f9\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\Raluca\.gradle\caches\transforms-3\2466eaf4a073dfa3aa7557bbe46f76f9\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\Raluca\.gradle\caches\transforms-3\2466eaf4a073dfa3aa7557bbe46f76f9\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.9.0] C:\Users\Raluca\.gradle\caches\transforms-3\f3d51bfea696170ddff80dae282a5b7c\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.9.0] C:\Users\Raluca\.gradle\caches\transforms-3\f3d51bfea696170ddff80dae282a5b7c\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.9.0] C:\Users\Raluca\.gradle\caches\transforms-3\f3d51bfea696170ddff80dae282a5b7c\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+permission#com.example.sportmatch.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.9.0] C:\Users\Raluca\.gradle\caches\transforms-3\f3d51bfea696170ddff80dae282a5b7c\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.9.0] C:\Users\Raluca\.gradle\caches\transforms-3\f3d51bfea696170ddff80dae282a5b7c\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.9.0] C:\Users\Raluca\.gradle\caches\transforms-3\f3d51bfea696170ddff80dae282a5b7c\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.9.0] C:\Users\Raluca\.gradle\caches\transforms-3\f3d51bfea696170ddff80dae282a5b7c\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.9.0] C:\Users\Raluca\.gradle\caches\transforms-3\f3d51bfea696170ddff80dae282a5b7c\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+uses-permission#com.example.sportmatch.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.9.0] C:\Users\Raluca\.gradle\caches\transforms-3\f3d51bfea696170ddff80dae282a5b7c\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.9.0] C:\Users\Raluca\.gradle\caches\transforms-3\f3d51bfea696170ddff80dae282a5b7c\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Raluca\.gradle\caches\transforms-3\5127f80b85867cccab87be3d3456a639\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Raluca\.gradle\caches\transforms-3\5127f80b85867cccab87be3d3456a639\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Raluca\.gradle\caches\transforms-3\5127f80b85867cccab87be3d3456a639\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78

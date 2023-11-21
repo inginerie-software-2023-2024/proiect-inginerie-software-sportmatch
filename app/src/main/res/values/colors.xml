@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="verde1">#a7c957</color>
+    <color name="verde2">#8cc84b</color>
+    <color name="verde3">#6ab04c</color>
+    <color name="verde4">#4e844c</color>
+    <color name="verde5">#364d5b</color>
+    <color name="verdeFundal">#C2D596</color>
+    <color name="verdeBox">#A0CA8E</color>
+    <color name="grey">#888888</color>
+</resources>

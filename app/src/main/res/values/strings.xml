@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">SportMatch</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <!--    error messages-->
+    <string name="errorCEname">Please add a name for the event!</string>
+    <string name="errorCEsport">Please choose sport!</string>
+    <string name="errorCEsportFirst">Please choose sport first!</string>
+    <string name="errorCEloc">Please choose location!</string>
+    <string name="errorCEdate">Please choose date!</string>
+    <string name="errorCEtime">Please choose time!</string>
+    <string name="Discuss">*Date and time not mandatory! Can be discussed in chat!*</string>
+    <string name="title_activity_maps">MapsActivity</string>
+
+</resources>

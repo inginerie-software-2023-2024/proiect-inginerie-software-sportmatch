@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="40sp"
+        android:text="Welcome to Sportmatch!"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_marginTop="35dp"
+        android:textColor="@color/verde4"
+        />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:textSize="25sp"
+        android:text="Already have an account?"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/button_login"
+        app:layout_constraintStart_toStartOf="@id/button_login"
+        />
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="250dp"
+        android:layout_height="90dp"
+        android:text="LOGIN"
+        android:textSize="40sp"
+        android:fontFamily="sans-serif-condensed"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.328" />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:textSize="25sp"
+        android:text="Or join us today!"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/button_register"
+        app:layout_constraintStart_toStartOf="@id/button_register"
+        />
+
+    <Button
+        android:id="@+id/button_register"
+        android:layout_width="250dp"
+        android:layout_height="90dp"
+        android:text="REGISTER"
+        android:textSize="40sp"
+        android:fontFamily="sans-serif-condensed"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_login" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
