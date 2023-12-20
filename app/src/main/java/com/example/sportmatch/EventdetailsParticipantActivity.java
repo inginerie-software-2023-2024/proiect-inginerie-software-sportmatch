@@ -2,7 +2,6 @@ package com.example.sportmatch;
 
 import static android.content.ContentValues.TAG;
 
-import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -10,18 +9,16 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class EventdetailsParticipantActivity extends AppCompatActivity {
 
     private static final int REQUEST_DIALOG_ACTIVITY = 1;
+    public static final int REQUEST_CODE_MAPS_ACTIVITY = 1001;
     Event mEvent;
     TextView title;
     ImageView sportImage;
@@ -40,6 +37,8 @@ public class EventdetailsParticipantActivity extends AppCompatActivity {
     TextView detailsDesc;
     private FirebaseDatabase database;
     TextView detailsDescInput;
+    ImageView buttonToChatP;
+    ImageView backhomeP;
 
 
     @Override
@@ -57,24 +56,41 @@ public class EventdetailsParticipantActivity extends AppCompatActivity {
         }
 
 
-        title = findViewById(R.id.title);
-        sportImage = findViewById(R.id.sportImage);
-        detailsTitle = findViewById(R.id.detailsTitle);
-        detailsSport = findViewById(R.id.detailsSport);
-        detailsSportInput = findViewById(R.id.detailsSportInput);
-        detailsPlayers = findViewById(R.id.detailsPlayers);
-        detailsPlayersInput = findViewById(R.id.detailsPlayersInput);
-        detailsLoc = findViewById(R.id.detailsLoc);
-        detailsLocInput = findViewById(R.id.detailsLocInput);
-        detailsBtnMap = findViewById(R.id.detailsBtnMap);
-        detailsDate = findViewById(R.id.detailsDate);
-        detailsDateInput = findViewById(R.id.detailsDateInput);
-        detailsTime = findViewById(R.id.detailsTime);
-        detailsTimeInput = findViewById(R.id.detailsTimeInput);
-        detailsDesc = findViewById(R.id.detailsDesc);
-        detailsDescInput = findViewById(R.id.detailsDescInput);
+        title = findViewById(R.id.titleP);
+        sportImage = findViewById(R.id.sportImageP);
+        detailsTitle = findViewById(R.id.detailsTitleP);
+        detailsSport = findViewById(R.id.detailsSportP);
+        detailsSportInput = findViewById(R.id.detailsSportInputP);
+        detailsPlayers = findViewById(R.id.detailsPlayersP);
+        detailsPlayersInput = findViewById(R.id.detailsPlayersInputP);
+        detailsLoc = findViewById(R.id.detailsLocP);
+        detailsLocInput = findViewById(R.id.detailsLocInputP);
+        detailsBtnMap = findViewById(R.id.detailsBtnMapP);
+        detailsDate = findViewById(R.id.detailsDateP);
+        detailsDateInput = findViewById(R.id.detailsDateInputP);
+        detailsTime = findViewById(R.id.detailsTimeP);
+        detailsTimeInput = findViewById(R.id.detailsTimeInputP);
+        detailsDesc = findViewById(R.id.detailsDescP);
+        detailsDescInput = findViewById(R.id.detailsDescInputP);
+        backhomeP = findViewById(R.id.backhomeP);
 
+        Button popupButton = findViewById(R.id.detailsParticipantsButtonP);
+        /*if(mEvent.areRequestsEmpty()) {
+            popupButton.setText("No requests pending");
+            popupButton.setEnabled(false);
+            popupButton.setClickable(false);
+            popupButton.setBackgroundColor(getResources().getColor(R.color.grey));
+        }*/
+        popupButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
+                Intent intent = new Intent(EventdetailsParticipantActivity.this, ParticipantActivity.class);
+                intent.putExtra("eventul actual", mEvent);
+                startActivity(intent);
+
+            }
+        });
 
         String valueTitle = getIntent().getStringExtra("valTitle");
         String valTitle = getIntent().getStringExtra("valTitle").toUpperCase();
@@ -125,10 +141,28 @@ public class EventdetailsParticipantActivity extends AppCompatActivity {
                 break;
         }
 
+        detailsBtnMap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent2 = new Intent(EventdetailsParticipantActivity.this, MapsActivity.class);
+                intent2.putExtra("selectedLoc", valLoc);
+                intent2.putExtra("selectedSport", valSport);
+                intent2.putExtra("Activity", "EventDetailsParticipant");
+                startActivityForResult(intent2, REQUEST_CODE_MAPS_ACTIVITY);
+            }
+        });
+
+        backhomeP.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(EventdetailsParticipantActivity.this, OnlyParticipatesEvents.class));
+            }
+        });
+
         ////inceput meniu
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigationView);
-        bottomNavigationView.setSelectedItemId(R.id.bottom_admin_events);
+        bottomNavigationView.setSelectedItemId(R.id.bottom_events_participates);
 
         bottomNavigationView.setOnItemSelectedListener(item -> {
             switch (item.getItemId()) {

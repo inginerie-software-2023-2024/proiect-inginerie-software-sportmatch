@@ -19,6 +19,7 @@ public class User implements Serializable {
     private String birthDate;
     private String fullName;
     private String bio;
+    private String deviceToken;
 
     public User(){
 
@@ -35,6 +36,13 @@ public class User implements Serializable {
     // Constructor without bio parameter
     public User(String username, String password, String birthDate, String fullName) {
         this(username, password, birthDate, fullName, "Hello! I am using SportMatch!");
+    }
+    public String getDeviceToken() {
+        return deviceToken;
+    }
+
+    public void setDeviceToken(String deviceToken) {
+        this.deviceToken = deviceToken;
     }
 
     public String getUsername() {
@@ -103,9 +111,5 @@ public class User implements Serializable {
         DatabaseReference usersRef = FirebaseDatabase.getInstance().getReference("users");
         usersRef.child(userId).addListenerForSingleValueEvent(valueEventListener);
     }
-
-
-
-
 
 }

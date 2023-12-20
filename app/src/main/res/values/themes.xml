@@ -11,7 +11,7 @@
         <item name="colorSecondaryVariant">@color/verde3</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor">?attr/colorPrimary</item>
+        <item name="android:statusBarColor">@color/verde3</item>
         <!-- Customize your theme here. -->
     </style>
 
@@ -28,6 +28,24 @@
         <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
         <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>
     </style>
+
+
+
+    <style name="Theme.SportMatch1" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/verde4</item>
+        <item name="colorPrimaryVariant">@color/verde5</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorOnBackground">@color/verdeFundal</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/verde1</item>
+        <item name="colorSecondaryVariant">@color/verde3</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/verde3</item>
+        <!-- Customize your theme here. -->
+    </style>
+
 
 
 </resources>

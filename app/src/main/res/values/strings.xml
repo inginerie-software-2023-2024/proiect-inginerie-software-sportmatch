@@ -18,5 +18,6 @@
     <string name="errorCEtime">Please choose time!</string>
     <string name="Discuss">*Date and time not mandatory! Can be discussed in chat!*</string>
     <string name="title_activity_maps">MapsActivity</string>
+    <string name="register_text">Ready to embrace the thrill of friendly matches and meet fellow sports enthusiasts?                                                                Join our community today!</string>
 
 </resources>

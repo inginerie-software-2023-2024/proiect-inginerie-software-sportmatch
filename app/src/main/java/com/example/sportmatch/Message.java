@@ -1,6 +1,11 @@
 package com.example.sportmatch;
 
+import android.os.Build;
+
+import java.time.LocalTime;
+
 public class Message {
+    String CreatedAt;
     String chatId;
     String message;
     String sender;
@@ -11,7 +16,20 @@ public class Message {
         this.message = message;
         this.sender = sender;
         this.key = key;
+        //set created at to HH:MM format
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            this.CreatedAt = LocalTime.now().toString().substring(0,5);
+        }
     }
+
+
+    public String getChatId() {
+        return chatId;
+    }
+    public String getCreatedAt() {
+        return CreatedAt;
+    }
+
     public Message() {
 
     }
@@ -43,4 +61,11 @@ public class Message {
                 '}';
     }
 
+    public void setChatId(String chatId) {
+        this.chatId = chatId;
+    }
+
+    public void setCreatedAt(String createdAt) {
+        CreatedAt = createdAt;
+    }
 }

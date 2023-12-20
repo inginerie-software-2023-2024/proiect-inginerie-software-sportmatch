@@ -23,92 +23,92 @@ public final class ActivityEventDetailsParticipantBinding implements ViewBinding
   private final RelativeLayout rootView;
 
   @NonNull
+  public final ImageView backhomeP;
+
+  @NonNull
   public final BottomNavigationView bottomNavigationView;
 
   @NonNull
-  public final Button buttonToChat1;
+  public final Button detailsBtnMapP;
 
   @NonNull
-  public final Button detailsBtnMap;
+  public final TextView detailsDateInputP;
 
   @NonNull
-  public final TextView detailsDate;
+  public final TextView detailsDateP;
 
   @NonNull
-  public final TextView detailsDateInput;
+  public final TextView detailsDescInputP;
 
   @NonNull
-  public final TextView detailsDesc;
+  public final TextView detailsDescP;
 
   @NonNull
-  public final TextView detailsDescInput;
+  public final TextView detailsLocInputP;
 
   @NonNull
-  public final TextView detailsLoc;
+  public final TextView detailsLocP;
 
   @NonNull
-  public final TextView detailsLocInput;
+  public final Button detailsParticipantsButtonP;
 
   @NonNull
-  public final Button detailsParticipantsButton;
+  public final TextView detailsPlayersInputP;
 
   @NonNull
-  public final TextView detailsPlayers;
+  public final TextView detailsPlayersP;
 
   @NonNull
-  public final TextView detailsPlayersInput;
+  public final TextView detailsSportInputP;
 
   @NonNull
-  public final TextView detailsSport;
+  public final TextView detailsSportP;
 
   @NonNull
-  public final TextView detailsSportInput;
+  public final TextView detailsTimeInputP;
 
   @NonNull
-  public final TextView detailsTime;
+  public final TextView detailsTimeP;
 
   @NonNull
-  public final TextView detailsTimeInput;
+  public final TextView detailsTitleP;
 
   @NonNull
-  public final TextView detailsTitle;
+  public final ImageView sportImageP;
 
   @NonNull
-  public final ImageView sportImage;
-
-  @NonNull
-  public final TextView title;
+  public final TextView titleP;
 
   private ActivityEventDetailsParticipantBinding(@NonNull RelativeLayout rootView,
-      @NonNull BottomNavigationView bottomNavigationView, @NonNull Button buttonToChat1,
-      @NonNull Button detailsBtnMap, @NonNull TextView detailsDate,
-      @NonNull TextView detailsDateInput, @NonNull TextView detailsDesc,
-      @NonNull TextView detailsDescInput, @NonNull TextView detailsLoc,
-      @NonNull TextView detailsLocInput, @NonNull Button detailsParticipantsButton,
-      @NonNull TextView detailsPlayers, @NonNull TextView detailsPlayersInput,
-      @NonNull TextView detailsSport, @NonNull TextView detailsSportInput,
-      @NonNull TextView detailsTime, @NonNull TextView detailsTimeInput,
-      @NonNull TextView detailsTitle, @NonNull ImageView sportImage, @NonNull TextView title) {
+      @NonNull ImageView backhomeP, @NonNull BottomNavigationView bottomNavigationView,
+      @NonNull Button detailsBtnMapP, @NonNull TextView detailsDateInputP,
+      @NonNull TextView detailsDateP, @NonNull TextView detailsDescInputP,
+      @NonNull TextView detailsDescP, @NonNull TextView detailsLocInputP,
+      @NonNull TextView detailsLocP, @NonNull Button detailsParticipantsButtonP,
+      @NonNull TextView detailsPlayersInputP, @NonNull TextView detailsPlayersP,
+      @NonNull TextView detailsSportInputP, @NonNull TextView detailsSportP,
+      @NonNull TextView detailsTimeInputP, @NonNull TextView detailsTimeP,
+      @NonNull TextView detailsTitleP, @NonNull ImageView sportImageP, @NonNull TextView titleP) {
     this.rootView = rootView;
+    this.backhomeP = backhomeP;
     this.bottomNavigationView = bottomNavigationView;
-    this.buttonToChat1 = buttonToChat1;
-    this.detailsBtnMap = detailsBtnMap;
-    this.detailsDate = detailsDate;
-    this.detailsDateInput = detailsDateInput;
-    this.detailsDesc = detailsDesc;
-    this.detailsDescInput = detailsDescInput;
-    this.detailsLoc = detailsLoc;
-    this.detailsLocInput = detailsLocInput;
-    this.detailsParticipantsButton = detailsParticipantsButton;
-    this.detailsPlayers = detailsPlayers;
-    this.detailsPlayersInput = detailsPlayersInput;
-    this.detailsSport = detailsSport;
-    this.detailsSportInput = detailsSportInput;
-    this.detailsTime = detailsTime;
-    this.detailsTimeInput = detailsTimeInput;
-    this.detailsTitle = detailsTitle;
-    this.sportImage = sportImage;
-    this.title = title;
+    this.detailsBtnMapP = detailsBtnMapP;
+    this.detailsDateInputP = detailsDateInputP;
+    this.detailsDateP = detailsDateP;
+    this.detailsDescInputP = detailsDescInputP;
+    this.detailsDescP = detailsDescP;
+    this.detailsLocInputP = detailsLocInputP;
+    this.detailsLocP = detailsLocP;
+    this.detailsParticipantsButtonP = detailsParticipantsButtonP;
+    this.detailsPlayersInputP = detailsPlayersInputP;
+    this.detailsPlayersP = detailsPlayersP;
+    this.detailsSportInputP = detailsSportInputP;
+    this.detailsSportP = detailsSportP;
+    this.detailsTimeInputP = detailsTimeInputP;
+    this.detailsTimeP = detailsTimeP;
+    this.detailsTitleP = detailsTitleP;
+    this.sportImageP = sportImageP;
+    this.titleP = titleP;
   }
 
   @Override
@@ -138,125 +138,125 @@ public final class ActivityEventDetailsParticipantBinding implements ViewBinding
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.backhomeP;
+      ImageView backhomeP = ViewBindings.findChildViewById(rootView, id);
+      if (backhomeP == null) {
+        break missingId;
+      }
+
       id = R.id.bottomNavigationView;
       BottomNavigationView bottomNavigationView = ViewBindings.findChildViewById(rootView, id);
       if (bottomNavigationView == null) {
         break missingId;
       }
 
-      id = R.id.buttonToChat1;
-      Button buttonToChat1 = ViewBindings.findChildViewById(rootView, id);
-      if (buttonToChat1 == null) {
+      id = R.id.detailsBtnMapP;
+      Button detailsBtnMapP = ViewBindings.findChildViewById(rootView, id);
+      if (detailsBtnMapP == null) {
         break missingId;
       }
 
-      id = R.id.detailsBtnMap;
-      Button detailsBtnMap = ViewBindings.findChildViewById(rootView, id);
-      if (detailsBtnMap == null) {
+      id = R.id.detailsDateInputP;
+      TextView detailsDateInputP = ViewBindings.findChildViewById(rootView, id);
+      if (detailsDateInputP == null) {
         break missingId;
       }
 
-      id = R.id.detailsDate;
-      TextView detailsDate = ViewBindings.findChildViewById(rootView, id);
-      if (detailsDate == null) {
+      id = R.id.detailsDateP;
+      TextView detailsDateP = ViewBindings.findChildViewById(rootView, id);
+      if (detailsDateP == null) {
         break missingId;
       }
 
-      id = R.id.detailsDateInput;
-      TextView detailsDateInput = ViewBindings.findChildViewById(rootView, id);
-      if (detailsDateInput == null) {
+      id = R.id.detailsDescInputP;
+      TextView detailsDescInputP = ViewBindings.findChildViewById(rootView, id);
+      if (detailsDescInputP == null) {
         break missingId;
       }
 
-      id = R.id.detailsDesc;
-      TextView detailsDesc = ViewBindings.findChildViewById(rootView, id);
-      if (detailsDesc == null) {
+      id = R.id.detailsDescP;
+      TextView detailsDescP = ViewBindings.findChildViewById(rootView, id);
+      if (detailsDescP == null) {
         break missingId;
       }
 
-      id = R.id.detailsDescInput;
-      TextView detailsDescInput = ViewBindings.findChildViewById(rootView, id);
-      if (detailsDescInput == null) {
+      id = R.id.detailsLocInputP;
+      TextView detailsLocInputP = ViewBindings.findChildViewById(rootView, id);
+      if (detailsLocInputP == null) {
         break missingId;
       }
 
-      id = R.id.detailsLoc;
-      TextView detailsLoc = ViewBindings.findChildViewById(rootView, id);
-      if (detailsLoc == null) {
+      id = R.id.detailsLocP;
+      TextView detailsLocP = ViewBindings.findChildViewById(rootView, id);
+      if (detailsLocP == null) {
         break missingId;
       }
 
-      id = R.id.detailsLocInput;
-      TextView detailsLocInput = ViewBindings.findChildViewById(rootView, id);
-      if (detailsLocInput == null) {
+      id = R.id.detailsParticipantsButtonP;
+      Button detailsParticipantsButtonP = ViewBindings.findChildViewById(rootView, id);
+      if (detailsParticipantsButtonP == null) {
         break missingId;
       }
 
-      id = R.id.detailsParticipantsButton;
-      Button detailsParticipantsButton = ViewBindings.findChildViewById(rootView, id);
-      if (detailsParticipantsButton == null) {
+      id = R.id.detailsPlayersInputP;
+      TextView detailsPlayersInputP = ViewBindings.findChildViewById(rootView, id);
+      if (detailsPlayersInputP == null) {
         break missingId;
       }
 
-      id = R.id.detailsPlayers;
-      TextView detailsPlayers = ViewBindings.findChildViewById(rootView, id);
-      if (detailsPlayers == null) {
+      id = R.id.detailsPlayersP;
+      TextView detailsPlayersP = ViewBindings.findChildViewById(rootView, id);
+      if (detailsPlayersP == null) {
         break missingId;
       }
 
-      id = R.id.detailsPlayersInput;
-      TextView detailsPlayersInput = ViewBindings.findChildViewById(rootView, id);
-      if (detailsPlayersInput == null) {
+      id = R.id.detailsSportInputP;
+      TextView detailsSportInputP = ViewBindings.findChildViewById(rootView, id);
+      if (detailsSportInputP == null) {
         break missingId;
       }
 
-      id = R.id.detailsSport;
-      TextView detailsSport = ViewBindings.findChildViewById(rootView, id);
-      if (detailsSport == null) {
+      id = R.id.detailsSportP;
+      TextView detailsSportP = ViewBindings.findChildViewById(rootView, id);
+      if (detailsSportP == null) {
         break missingId;
       }
 
-      id = R.id.detailsSportInput;
-      TextView detailsSportInput = ViewBindings.findChildViewById(rootView, id);
-      if (detailsSportInput == null) {
+      id = R.id.detailsTimeInputP;
+      TextView detailsTimeInputP = ViewBindings.findChildViewById(rootView, id);
+      if (detailsTimeInputP == null) {
         break missingId;
       }
 
-      id = R.id.detailsTime;
-      TextView detailsTime = ViewBindings.findChildViewById(rootView, id);
-      if (detailsTime == null) {
+      id = R.id.detailsTimeP;
+      TextView detailsTimeP = ViewBindings.findChildViewById(rootView, id);
+      if (detailsTimeP == null) {
         break missingId;
       }
 
-      id = R.id.detailsTimeInput;
-      TextView detailsTimeInput = ViewBindings.findChildViewById(rootView, id);
-      if (detailsTimeInput == null) {
+      id = R.id.detailsTitleP;
+      TextView detailsTitleP = ViewBindings.findChildViewById(rootView, id);
+      if (detailsTitleP == null) {
         break missingId;
       }
 
-      id = R.id.detailsTitle;
-      TextView detailsTitle = ViewBindings.findChildViewById(rootView, id);
-      if (detailsTitle == null) {
+      id = R.id.sportImageP;
+      ImageView sportImageP = ViewBindings.findChildViewById(rootView, id);
+      if (sportImageP == null) {
         break missingId;
       }
 
-      id = R.id.sportImage;
-      ImageView sportImage = ViewBindings.findChildViewById(rootView, id);
-      if (sportImage == null) {
+      id = R.id.titleP;
+      TextView titleP = ViewBindings.findChildViewById(rootView, id);
+      if (titleP == null) {
         break missingId;
       }
 
-      id = R.id.title;
-      TextView title = ViewBindings.findChildViewById(rootView, id);
-      if (title == null) {
-        break missingId;
-      }
-
-      return new ActivityEventDetailsParticipantBinding((RelativeLayout) rootView,
-          bottomNavigationView, buttonToChat1, detailsBtnMap, detailsDate, detailsDateInput,
-          detailsDesc, detailsDescInput, detailsLoc, detailsLocInput, detailsParticipantsButton,
-          detailsPlayers, detailsPlayersInput, detailsSport, detailsSportInput, detailsTime,
-          detailsTimeInput, detailsTitle, sportImage, title);
+      return new ActivityEventDetailsParticipantBinding((RelativeLayout) rootView, backhomeP,
+          bottomNavigationView, detailsBtnMapP, detailsDateInputP, detailsDateP, detailsDescInputP,
+          detailsDescP, detailsLocInputP, detailsLocP, detailsParticipantsButtonP,
+          detailsPlayersInputP, detailsPlayersP, detailsSportInputP, detailsSportP,
+          detailsTimeInputP, detailsTimeP, detailsTitleP, sportImageP, titleP);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

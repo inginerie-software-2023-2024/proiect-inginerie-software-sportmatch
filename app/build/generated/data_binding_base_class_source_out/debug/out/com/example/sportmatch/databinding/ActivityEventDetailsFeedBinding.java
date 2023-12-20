@@ -23,6 +23,9 @@ public final class ActivityEventDetailsFeedBinding implements ViewBinding {
   private final RelativeLayout rootView;
 
   @NonNull
+  public final ImageView backhomeF;
+
+  @NonNull
   public final BottomNavigationView bottomNavigationView;
 
   @NonNull
@@ -77,16 +80,17 @@ public final class ActivityEventDetailsFeedBinding implements ViewBinding {
   public final TextView title;
 
   private ActivityEventDetailsFeedBinding(@NonNull RelativeLayout rootView,
-      @NonNull BottomNavigationView bottomNavigationView, @NonNull Button detailsBtnMap,
-      @NonNull Button detailsBtnParticipate, @NonNull TextView detailsDate,
-      @NonNull TextView detailsDateInput, @NonNull TextView detailsDesc,
-      @NonNull TextView detailsDescInput, @NonNull TextView detailsLoc,
-      @NonNull TextView detailsLocInput, @NonNull TextView detailsPlayers,
-      @NonNull TextView detailsPlayersInput, @NonNull TextView detailsSport,
-      @NonNull TextView detailsSportInput, @NonNull TextView detailsTime,
-      @NonNull TextView detailsTimeInput, @NonNull TextView detailsTitle,
-      @NonNull ImageView sportImage, @NonNull TextView title) {
+      @NonNull ImageView backhomeF, @NonNull BottomNavigationView bottomNavigationView,
+      @NonNull Button detailsBtnMap, @NonNull Button detailsBtnParticipate,
+      @NonNull TextView detailsDate, @NonNull TextView detailsDateInput,
+      @NonNull TextView detailsDesc, @NonNull TextView detailsDescInput,
+      @NonNull TextView detailsLoc, @NonNull TextView detailsLocInput,
+      @NonNull TextView detailsPlayers, @NonNull TextView detailsPlayersInput,
+      @NonNull TextView detailsSport, @NonNull TextView detailsSportInput,
+      @NonNull TextView detailsTime, @NonNull TextView detailsTimeInput,
+      @NonNull TextView detailsTitle, @NonNull ImageView sportImage, @NonNull TextView title) {
     this.rootView = rootView;
+    this.backhomeF = backhomeF;
     this.bottomNavigationView = bottomNavigationView;
     this.detailsBtnMap = detailsBtnMap;
     this.detailsBtnParticipate = detailsBtnParticipate;
@@ -134,6 +138,12 @@ public final class ActivityEventDetailsFeedBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.backhomeF;
+      ImageView backhomeF = ViewBindings.findChildViewById(rootView, id);
+      if (backhomeF == null) {
+        break missingId;
+      }
+
       id = R.id.bottomNavigationView;
       BottomNavigationView bottomNavigationView = ViewBindings.findChildViewById(rootView, id);
       if (bottomNavigationView == null) {
@@ -242,11 +252,11 @@ public final class ActivityEventDetailsFeedBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityEventDetailsFeedBinding((RelativeLayout) rootView, bottomNavigationView,
-          detailsBtnMap, detailsBtnParticipate, detailsDate, detailsDateInput, detailsDesc,
-          detailsDescInput, detailsLoc, detailsLocInput, detailsPlayers, detailsPlayersInput,
-          detailsSport, detailsSportInput, detailsTime, detailsTimeInput, detailsTitle, sportImage,
-          title);
+      return new ActivityEventDetailsFeedBinding((RelativeLayout) rootView, backhomeF,
+          bottomNavigationView, detailsBtnMap, detailsBtnParticipate, detailsDate, detailsDateInput,
+          detailsDesc, detailsDescInput, detailsLoc, detailsLocInput, detailsPlayers,
+          detailsPlayersInput, detailsSport, detailsSportInput, detailsTime, detailsTimeInput,
+          detailsTitle, sportImage, title);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

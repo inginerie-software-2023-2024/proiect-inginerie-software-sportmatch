@@ -57,15 +57,14 @@ public class CreateEventActivity extends AppCompatActivity {
     TextInputEditText newEventDescEdt;
     Button buttonCEvent;
     ImageView mapImage;
+    FirebaseDatabase database = FirebaseDatabase.getInstance();
     ScrollView scrollView;
-
     List<String> locations;
-
-
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_newevent);
+
 
 
         //TODO: RATING locatii
@@ -96,8 +95,9 @@ public class CreateEventActivity extends AppCompatActivity {
 
         //Referinte catre tabelele de sporturi si locatii din baza de date
 
-        FirebaseDatabase database = FirebaseDatabase.getInstance();
+
         DatabaseReference sportsRef = database.getReference("Sports");
+
         DatabaseReference locRef = database.getReference("SportLocations");
         List<Sport> allSports = new ArrayList<>();
         List<String> sports = new ArrayList<>();
@@ -148,14 +148,14 @@ public class CreateEventActivity extends AppCompatActivity {
 
 
         //Setare liste autocomplete
-
-        //TODO: Schimba input locatie, players inapoi la hint daca schimb sportul selectat
         autocomplete_sport.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
                 newEventLoc.setError(null);
                 newEventPlayers.setError(null);
+                autocomplete_loc.setText("", false);
+                autocomplete_players.setText("",false);
 
                 // Obține sportul selectat
                 String SelectedSport = (String) parent.getItemAtPosition(position);
@@ -301,6 +301,7 @@ public class CreateEventActivity extends AppCompatActivity {
         buttonCEvent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 int error = 0;
                 TextInputLayout firstErrorField = null; // Variabila pentru a stoca referința către primul câmp cu eroare(chat gpt)
 
@@ -354,33 +355,33 @@ public class CreateEventActivity extends AppCompatActivity {
 
                     Intent intent = new Intent(CreateEventActivity.this, EventPreview .class);
 
-                    intent.putExtra("valueTitle",inputTitle);
-                    intent.putExtra("valueSport",selectedSport);
-                    intent.putExtra("valuePlayers",selectedPlayers);
-                    intent.putExtra("valueLoc",selectedLoc);
-                    intent.putExtra("valueDate",selectedDate);
-                    intent.putExtra("valueTime",selectedTime);
-                    intent.putExtra("valueDesc",inputDesc);
+                    intent.putExtra("valTitle",inputTitle);
+                    intent.putExtra("valSport",selectedSport);
+                    intent.putExtra("valPlayers",selectedPlayers);
+                    intent.putExtra("valLoc",selectedLoc);
+                    intent.putExtra("valDate",selectedDate);
+                    intent.putExtra("valTime",selectedTime);
+                    intent.putExtra("valDesc",inputDesc);
 
                     if(TextUtils.isEmpty(selectedDate)){
-                        intent.putExtra("valueDate","To be discussed");
+                        intent.putExtra("valDate","To be discussed");
                     }
                     else{
-                        intent.putExtra("valueDate",selectedDate);
+                        intent.putExtra("valDate",selectedDate);
                     }
 
                     if(TextUtils.isEmpty(selectedTime)){
-                        intent.putExtra("valueTime","To be discussed");
+                        intent.putExtra("valTime","To be discussed");
                     }
                     else{
-                        intent.putExtra("valueTime",selectedTime);
+                        intent.putExtra("valTime",selectedTime);
                     }
 
                     if(TextUtils.isEmpty(inputDesc)){
-                        intent.putExtra("valueDesc","None");
+                        intent.putExtra("valDesc","None");
                     }
                     else{
-                        intent.putExtra("valueDesc",inputDesc);
+                        intent.putExtra("valDesc",inputDesc);
                     }
 
                     intent.putExtra("creatorId", userId);
