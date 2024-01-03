@@ -64,7 +64,6 @@
     <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"Копирај линк"</string>
     <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"Отвори у прегледачу"</string>
     <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"Дели линк"</string>
-    <string msgid="9521340570209730" name="gcm_fallback_notification_channel_label">"Разно"</string>
     <string name="icon_content_description">Икона дијалога</string>
     <string name="item_view_role_description">Картица</string>
     <string name="material_clock_toggle_content_description">Изаберите пре подне или по подне</string>

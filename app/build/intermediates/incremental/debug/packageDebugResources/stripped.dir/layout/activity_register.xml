@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fundalverdeinchis"
+    android:background="@color/verdeFundal"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -13,12 +13,13 @@
     <androidx.cardview.widget.CardView
 
         android:layout_width="300dp"
-        android:layout_height="800dp"
+        android:layout_height="586dp"
         android:layout_gravity="center"
         android:layout_marginLeft="50dp"
+        android:layout_marginTop="40dp"
         android:layout_marginRight="50dp"
-        android:layout_marginBottom="0dp"
-        android:background="#BCF8BA"
+        android:layout_marginBottom="100dp"
+        android:background="#ffff"
         card_view:cardCornerRadius="8dp"
         card_view:cardElevation="8dp">
 
@@ -41,11 +42,8 @@
                     android:layout_gravity="center_horizontal"
                     android:layout_marginBottom="10dp"
                     android:text="Register"
-                    android:fontFamily="@font/fontsport"
                     android:textAlignment="center"
-                    android:textColor="@color/grey"
-                    android:textSize="45sp" />
-
+                    android:textSize="36sp" />
 
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -54,7 +52,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/Register"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="30dp"
                     android:hint="Full Name">
 
                     <com.google.android.material.textfield.TextInputEditText
@@ -71,7 +69,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@id/FullName"
                     android:layout_marginTop="30dp"
-                    android:hint="Email">
+                    android:hint="Username">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/UsernameInserted"
@@ -92,8 +90,7 @@
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/PasswordInserted"
                         android:layout_width="match_parent"
-                        android:layout_height="60dp"
-                        android:inputType="textPassword"/>
+                        android:layout_height="60dp" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -109,8 +106,7 @@
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/PasswordConfirmed"
                         android:layout_width="match_parent"
-                        android:layout_height="60dp"
-                        android:inputType="textPassword"/>
+                        android:layout_height="60dp" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -120,50 +116,50 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/ConfirmPassword"
-                    android:onClick="showDatePickerDialog"
                     android:layout_marginTop="30dp"
                     android:hint="BirthDate">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/BirthDateInserted"
                         android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:onClick="showDatePickerDialog"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/Gender"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/BirthDate"
+                    android:layout_marginTop="30dp"
+                    android:hint="Gender">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/GenderInserted"
+                        android:layout_width="match_parent"
                         android:layout_height="60dp" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
-<!--                <com.google.android.material.textfield.TextInputLayout-->
-<!--                    android:id="@+id/Gender"-->
-<!--                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_below="@id/BirthDate"-->
-<!--                    android:layout_marginTop="30dp"-->
-<!--                    app:errorEnabled="true"-->
-<!--                    android:hint="Gender">-->
-
-<!--                    <AutoCompleteTextView-->
-<!--                        android:id="@+id/GenderInserted"-->
-<!--                        android:layout_width="match_parent"-->
-<!--                        android:layout_height="60dp"-->
-<!--                        android:inputType="none"/>-->
-
-
-<!--                </com.google.android.material.textfield.TextInputLayout>-->
 
                 <Button
                     android:id="@+id/signupButton"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/BirthDate"
+                    android:layout_below="@+id/Gender"
                     android:layout_marginTop="30dp"
                     android:layout_marginBottom="30dp"
-                    android:backgroundTint="@color/grey"
+                    android:backgroundTint="@color/verde5"
                     android:text="REGISTER"
                     android:textSize="22sp" />
+
 
             </RelativeLayout>
         </ScrollView>
 
     </androidx.cardview.widget.CardView>
+
 
 </RelativeLayout>

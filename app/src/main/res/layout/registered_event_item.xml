@@ -40,6 +40,7 @@
             android:layout_marginLeft="100dp"
             android:layout_marginTop="280dp"
             android:ems="10"
+            android:fontFamily="monospace"
             android:inputType="time"
             android:text="10:30"
             android:textAlignment="viewEnd"
@@ -50,6 +51,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
+            android:fontFamily="monospace"
             android:text="NUME EVENT"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
@@ -60,15 +62,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="170dp"
-            android:layout_marginTop="255dp"
+            android:layout_marginTop="250dp"
             app:srcCompat="@drawable/baseline_sports_martial_arts_24" />
 
         <TextView
             android:id="@+id/eventParticipants"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="142dp"
-            android:layout_marginTop="250dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="245dp"
+            android:fontFamily="monospace"
             android:text="8"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
@@ -94,7 +97,6 @@
             app:cardCornerRadius="40dp"
             android:textAlignment="center"
             android:textColor="#FFFFFF" />
-
 
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>

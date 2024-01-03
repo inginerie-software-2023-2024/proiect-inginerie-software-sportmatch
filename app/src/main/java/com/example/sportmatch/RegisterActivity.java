@@ -7,7 +7,6 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.Toast;
@@ -26,7 +25,6 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 public class RegisterActivity extends AppCompatActivity {
@@ -47,17 +45,12 @@ public class RegisterActivity extends AppCompatActivity {
     TextInputEditText BirthDateInserted;
 
     TextInputLayout Gender;
-    AutoCompleteTextView GenderInserted;
+    TextInputEditText GenderInserted;
 
     DatePickerDialog.OnDateSetListener setListener;
 
-    //String[] genders = {"Female", "Male"};
-    //ArrayAdapter<String> adapterGender;
-
-
 
     private FirebaseAuth mAuth;
-    private static final int PICK_IMAGE_REQUEST = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -82,11 +75,8 @@ public class RegisterActivity extends AppCompatActivity {
         PasswordConfirmed =  findViewById(R.id.PasswordConfirmed);
         BirthDate =  findViewById(R.id.BirthDate);
         BirthDateInserted =  findViewById(R.id.BirthDateInserted);
-        //Gender =  findViewById(R.id.Gender);
-        //GenderInserted =  findViewById(R.id.GenderInserted);
-
-        //ArrayAdapter<String> adapterGender = new ArrayAdapter<String>(this, R.layout.list_sport, genders);
-        //GenderInserted.setAdapter(adapterGender);
+        Gender =  findViewById(R.id.Gender);
+        GenderInserted =  findViewById(R.id.GenderInserted);
 
         Calendar calendar = Calendar.getInstance();
         final int year = calendar.get(Calendar.YEAR);
@@ -101,24 +91,20 @@ public class RegisterActivity extends AppCompatActivity {
                 datePickerDialog.show();
             }
         });
+        //deci problema e ca trb sa apas pe titlul casutei sau inca o data in casuta ca sa apara datepickerul si nuj sa rezolv
 
         setListener = new DatePickerDialog.OnDateSetListener() {
             @Override
             public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
                 month=month+1;
-                SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
-                String date = String.format("%02d/%02d/%d", dayOfMonth, month, year);
-
-
+                String date = dayOfMonth + "/" + month + "/" + year;
                 BirthDateInserted.setText(date);
             }
         };
 
+
         mAuth = FirebaseAuth.getInstance();
-
     }
-
-
         //check if the username is already in use - copiat de pe stackoverflow
         //https://stackoverflow.com/questions/61523624/android-firebase-database-check-if-username-is-already-use
 
@@ -149,7 +135,6 @@ public class RegisterActivity extends AppCompatActivity {
         String txtPassword = PasswordInserted.getText().toString().trim();
         String txtPasswordConfirmed = PasswordConfirmed.getText().toString().trim();
         String txtBirthDate = BirthDateInserted.getText().toString().trim();
-        //String txtGender = GenderInserted.getText().toString().trim();
 
 
         if(txtUserName.isEmpty() ){
@@ -168,15 +153,11 @@ public class RegisterActivity extends AppCompatActivity {
             BirthDateInserted.setError("Please enter all the fields");
             UsernameInserted.requestFocus();
         }
-//        else if(txtGender.isEmpty()){
-//            GenderInserted.setError("Please enter all the fields");
-//            UsernameInserted.requestFocus();
-//        }
         else if(txtFullName.isEmpty()) {
             FullNameInserted.setError("Please enter all the fields");
             UsernameInserted.requestFocus();
         }
-        else if(!txtPassword.equals(txtPasswordConfirmed)){
+        else if(txtPassword.equals(txtPasswordConfirmed)){
             PasswordInserted.setError("Passwords do not match");
             PasswordConfirmed.setError("Passwords do not match");
         }
@@ -202,13 +183,14 @@ public class RegisterActivity extends AppCompatActivity {
                                             public void onComplete(@NonNull Task<Void> task) {
                                                 if (task.isSuccessful()) {
                                                     Toast.makeText(RegisterActivity.this, "User has been registered successfully", Toast.LENGTH_LONG).show();
-                                                    Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
+                                                    Intent intent = new Intent(RegisterActivity.this, BottomNavActivity.class);
                                                     startActivity(intent);
                                                     finish();
                                                     //startActivity(new Intent(RegisterActivity.this, LoginActivity.class));
                                                 } else {
                                                     Toast.makeText(RegisterActivity.this, "User failed to register", Toast.LENGTH_LONG).show();
 
+                                                    //display a failure message
                                                 }
                                             }
                                         });
@@ -220,6 +202,4 @@ public class RegisterActivity extends AppCompatActivity {
                     });
         }
     }
-
-
 }

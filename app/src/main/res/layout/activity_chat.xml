@@ -1,88 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".ChatActivity">
 
-    <!-- Green background for the top portion -->
-    <View
-        android:id="@+id/greenBackground"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:background="#8BC34A"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
 
-    <!-- RecyclerView -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:background="#FFFFFF"
-        app:layout_constraintBottom_toTopOf="@id/editTextMessage"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/greenBackground" />
+        android:layout_marginTop="28dp"
+        android:background="#fff"
+        app:layout_constraintBottom_toTopOf="@id/relativeLayout"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="16dp" />
 
-    <!-- Event Title -->
-    <TextView
-        android:id="@+id/eventTitleInChat"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:fontFamily="monospace"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@id/recyclerView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <!-- Relative Layout for message input -->
     <RelativeLayout
         android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:background="#F2F4F0"
-        android:padding="0dp"
+        android:layout_alignParentBottom = "true"
+        android:layout_alignParentStart = "true"
+        android:background="@color/cardview_dark_background"
+        android:padding="8dp"
+        app:layout_constraintTop_toBottomOf="@id/recyclerView"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/greenBackground">
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
 
-        <!-- ... Rest of the layout components inside RelativeLayout ... -->
-
+        </LinearLayout>
     </RelativeLayout>
 
-    <!-- Message input EditText -->
     <EditText
         android:id="@+id/editTextMessage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:background="@drawable/rounded_edittext"
+        android:background="@color/cardview_dark_background"
         android:hint="Type a message"
-        android:maxLines="5"
-        android:inputType="textMultiLine|textCapSentences"
+        android:inputType="text"
         android:padding="8dp"
-        android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="665dp" />
 
-    <!-- Send Button -->
     <ImageButton
         android:id="@+id/sendButton"
-        android:layout_width="wrap_content"
-        android:layout_height="30dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
         android:layout_gravity="center"
-        android:layout_marginEnd="12dp"
-        android:layout_marginBottom="6dp"
-        android:background="#4E7521"
-        android:src="@drawable/baseline_send_24"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="@id/editTextMessage"
+        android:background="#c6c30c"
+        android:src="@drawable/ic_send"
+        android:contentDescription="s"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/recyclerView"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@id/recyclerView"
+        tools:layout_editor_absoluteX="359dp"
+        tools:layout_editor_absoluteY="660dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

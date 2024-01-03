@@ -64,7 +64,6 @@
     <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"Kopēt saiti"</string>
     <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"Atvērt pārlūkprogrammā"</string>
     <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"Kopīgot saiti"</string>
-    <string msgid="9521340570209730" name="gcm_fallback_notification_channel_label">"Dažādi"</string>
     <string name="icon_content_description">Dialoglodziņa ikona</string>
     <string name="item_view_role_description">Cilne</string>
     <string name="material_clock_toggle_content_description">Atlasiet “AM” (priekšpusdienā) vai “PM” (pēcpusdienā).</string>

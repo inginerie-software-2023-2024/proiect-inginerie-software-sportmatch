@@ -65,7 +65,6 @@
     <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"Kopírovať odkaz"</string>
     <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"Otvoriť v prehliadači"</string>
     <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"Zdieľať odkaz"</string>
-    <string msgid="9521340570209730" name="gcm_fallback_notification_channel_label">"Rôzne"</string>
     <string name="icon_content_description">Ikona dialógového okna</string>
     <string name="item_view_role_description">Tabulátor</string>
     <string name="material_clock_toggle_content_description">Vyberte AM alebo PM</string>

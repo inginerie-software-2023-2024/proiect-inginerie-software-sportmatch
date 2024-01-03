@@ -48,10 +48,6 @@
         "source": "com.example.sportmatch.app-main-8:/layout/fragment_first.xml"
     },
     {
-        "merged": "com.example.sportmatch.app-mergeDebugResources-5:/layout/activity_part_item.xml",
-        "source": "com.example.sportmatch.app-main-8:/layout/activity_part_item.xml"
-    },
-    {
         "merged": "com.example.sportmatch.app-mergeDebugResources-5:/layout/item_message.xml",
         "source": "com.example.sportmatch.app-main-8:/layout/item_message.xml"
     },
@@ -126,6 +122,10 @@
     {
         "merged": "com.example.sportmatch.app-mergeDebugResources-5:/layout/activity_requests.xml",
         "source": "com.example.sportmatch.app-main-8:/layout/activity_requests.xml"
+    },
+    {
+        "merged": "com.example.sportmatch.app-mergeDebugResources-5:/layout/activity_choose_avatar.xml",
+        "source": "com.example.sportmatch.app-main-8:/layout/activity_choose_avatar.xml"
     },
     {
         "merged": "com.example.sportmatch.app-mergeDebugResources-5:/layout/list_player.xml",

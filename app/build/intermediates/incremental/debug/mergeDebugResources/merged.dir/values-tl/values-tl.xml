@@ -63,7 +63,6 @@
     <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"Kopyahin ang link"</string>
     <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"Buksan sa browser"</string>
     <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"Ibahagi ang link"</string>
-    <string msgid="9521340570209730" name="gcm_fallback_notification_channel_label">"Iba Pa"</string>
     <string name="icon_content_description">Icon ng Dialog</string>
     <string name="item_view_role_description">Tab</string>
     <string name="material_clock_toggle_content_description">Piliin ang AM o PM</string>

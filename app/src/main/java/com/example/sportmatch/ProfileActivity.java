@@ -102,7 +102,7 @@ public class ProfileActivity extends AppCompatActivity {
         });
 
 
-/*        Button logoutButton = findViewById(R.id.button_logout);
+        Button logoutButton = findViewById(R.id.button_logout);
         logoutButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -112,10 +112,8 @@ public class ProfileActivity extends AppCompatActivity {
                 builder.setPositiveButton("Logout", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        Log.e("Logout", "User logged out successfully1!");
                         FirebaseAuth.getInstance().signOut();
-                        Log.e("Logout", "User logged out successfully!");
-                        startActivity(new Intent(ProfileActivity.this, RegisterActivity.class));
+                        startActivity(new Intent(ProfileActivity.this, LoginActivity.class));
                     }
                 });
                 builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
@@ -127,7 +125,7 @@ public class ProfileActivity extends AppCompatActivity {
                 AlertDialog dialog = builder.create();
                 dialog.show();
             }
-        });*/
+        });
 
         ////inceput meniu
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigationView);

@@ -6,7 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.ScrollView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -20,7 +20,7 @@ import java.lang.String;
 
 public final class ActivityEditprofileBinding implements ViewBinding {
   @NonNull
-  private final ScrollView rootView;
+  private final LinearLayout rootView;
 
   @NonNull
   public final TextInputLayout bioProfileEdit;
@@ -49,7 +49,7 @@ public final class ActivityEditprofileBinding implements ViewBinding {
   @NonNull
   public final ImageView profileImage;
 
-  private ActivityEditprofileBinding(@NonNull ScrollView rootView,
+  private ActivityEditprofileBinding(@NonNull LinearLayout rootView,
       @NonNull TextInputLayout bioProfileEdit, @NonNull Button buttonSavechanges,
       @NonNull TextInputLayout fullNameEditprofile, @NonNull TextView fullnameField,
       @NonNull TextInputLayout newpass, @NonNull TextInputLayout oldpass,
@@ -69,7 +69,7 @@ public final class ActivityEditprofileBinding implements ViewBinding {
 
   @Override
   @NonNull
-  public ScrollView getRoot() {
+  public LinearLayout getRoot() {
     return rootView;
   }
 
@@ -148,7 +148,7 @@ public final class ActivityEditprofileBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityEditprofileBinding((ScrollView) rootView, bioProfileEdit,
+      return new ActivityEditprofileBinding((LinearLayout) rootView, bioProfileEdit,
           buttonSavechanges, fullNameEditprofile, fullnameField, newpass, oldpass, paymentDesc,
           paymentLabel, profileImage);
     }

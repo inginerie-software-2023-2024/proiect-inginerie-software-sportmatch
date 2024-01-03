@@ -5,15 +5,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.sportmatch.R;
-import com.google.android.material.textfield.TextInputEditText;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -23,13 +22,10 @@ public final class ActivityLoginBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
-  public final TextView Login;
+  public final EditText activityMainPasswordEditText;
 
   @NonNull
-  public final TextInputEditText activityMainPasswordEditText;
-
-  @NonNull
-  public final TextInputEditText activityMainUsernameEditText;
+  public final EditText activityMainUsernameEditText;
 
   @NonNull
   public final Button buttonLogin;
@@ -37,12 +33,11 @@ public final class ActivityLoginBinding implements ViewBinding {
   @NonNull
   public final ImageView imageView;
 
-  private ActivityLoginBinding(@NonNull LinearLayout rootView, @NonNull TextView Login,
-      @NonNull TextInputEditText activityMainPasswordEditText,
-      @NonNull TextInputEditText activityMainUsernameEditText, @NonNull Button buttonLogin,
+  private ActivityLoginBinding(@NonNull LinearLayout rootView,
+      @NonNull EditText activityMainPasswordEditText,
+      @NonNull EditText activityMainUsernameEditText, @NonNull Button buttonLogin,
       @NonNull ImageView imageView) {
     this.rootView = rootView;
-    this.Login = Login;
     this.activityMainPasswordEditText = activityMainPasswordEditText;
     this.activityMainUsernameEditText = activityMainUsernameEditText;
     this.buttonLogin = buttonLogin;
@@ -76,20 +71,14 @@ public final class ActivityLoginBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.Login;
-      TextView Login = ViewBindings.findChildViewById(rootView, id);
-      if (Login == null) {
-        break missingId;
-      }
-
       id = R.id.activity_main_passwordEditText;
-      TextInputEditText activityMainPasswordEditText = ViewBindings.findChildViewById(rootView, id);
+      EditText activityMainPasswordEditText = ViewBindings.findChildViewById(rootView, id);
       if (activityMainPasswordEditText == null) {
         break missingId;
       }
 
       id = R.id.activity_main_usernameEditText;
-      TextInputEditText activityMainUsernameEditText = ViewBindings.findChildViewById(rootView, id);
+      EditText activityMainUsernameEditText = ViewBindings.findChildViewById(rootView, id);
       if (activityMainUsernameEditText == null) {
         break missingId;
       }
@@ -106,7 +95,7 @@ public final class ActivityLoginBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityLoginBinding((LinearLayout) rootView, Login, activityMainPasswordEditText,
+      return new ActivityLoginBinding((LinearLayout) rootView, activityMainPasswordEditText,
           activityMainUsernameEditText, buttonLogin, imageView);
     }
     String missingId = rootView.getResources().getResourceName(id);

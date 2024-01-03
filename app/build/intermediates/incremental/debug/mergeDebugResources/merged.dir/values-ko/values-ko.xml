@@ -63,7 +63,6 @@
     <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"링크 복사"</string>
     <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"브라우저에서 열기"</string>
     <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"링크 공유"</string>
-    <string msgid="9521340570209730" name="gcm_fallback_notification_channel_label">"기타"</string>
     <string name="icon_content_description">대화상자 아이콘</string>
     <string name="item_view_role_description">탭</string>
     <string name="material_clock_toggle_content_description">오전 또는 오후를 선택하세요.</string>

@@ -10,7 +10,6 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.io.Serializable;
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
 
 public class Event  implements Serializable {
@@ -55,7 +54,7 @@ public class Event  implements Serializable {
     String getChatId() {
         return chatId;
     }
-    public Event(String eventName, String sport, String nrPlayers, String location, String date, String time, String description, String creator, List<String> participants) {
+    public Event(String eventName, String sport, String nrPlayers, String location, String date, String time, String description, String creator, List<String> participants, String chatId) {
         this.key = null;
         this.eventName = eventName;
         this.sport = sport;
@@ -67,6 +66,7 @@ public class Event  implements Serializable {
         this.creator = creator;
         this.participants = participants;
         this.requests = new ArrayList<>();
+        this.chatId = chatId;
         // Add the event creator to the registered players list
     }
 
@@ -136,7 +136,6 @@ public class Event  implements Serializable {
     }
 
     public List<String> getParticipants() {
-        participants =removeDuplicates(participants);
         return participants;
     }
 
@@ -172,7 +171,6 @@ public class Event  implements Serializable {
 
 
     public void setParticipants(List<String> participants) {
-        participants=removeDuplicates(participants);
         this.participants = participants;
     }
 
@@ -195,7 +193,6 @@ public class Event  implements Serializable {
     }
 
     public List<String> getRequests() {
-        requests= removeDuplicates(requests);
         return requests;
     }
 
@@ -269,15 +266,7 @@ public class Event  implements Serializable {
 
 
     public void setRequests(List<String> requests) {
-        requests= removeDuplicates(requests);
         this.requests = requests;
-    }
-
-    public static <T> List<T> removeDuplicates(List<T> list) {
-        if (list == null) {
-            return null;
-        }
-        return new ArrayList<>(new HashSet<>(list));
     }
 
 }

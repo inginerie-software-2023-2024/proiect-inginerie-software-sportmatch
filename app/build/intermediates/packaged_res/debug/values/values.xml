@@ -17,18 +17,11 @@
     <array name="preloaded_fonts" translatable="false">
         <item>@font/akronim</item>
     </array>
-    <color name="beige">#F5F5DC</color>
     <color name="black">#FF000000</color>
-    <color name="brown_border">#A0522D</color>
-    <color name="dark_brown">#654321</color>
     <color name="grey">#888888</color>
-    <color name="light_brown">#D2B48C</color>
-    <color name="orange">#fc8803</color>
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
-    <color name="send_button_border_beige">#F5F5DC</color>
-    <color name="send_button_brown">#8B4513</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="verde1">#a7c957</color>
@@ -36,7 +29,6 @@
     <color name="verde3">#6ab04c</color>
     <color name="verde4">#4e844c</color>
     <color name="verde5">#364d5b</color>
-    <color name="verde6">#0c780c</color>
     <color name="verdeBox">#A0CA8E</color>
     <color name="verdeFundal">#C2D596</color>
     <color name="white">#FFFFFFFF</color>

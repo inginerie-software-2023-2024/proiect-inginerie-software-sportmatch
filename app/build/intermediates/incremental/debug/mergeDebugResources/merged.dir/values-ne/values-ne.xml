@@ -63,7 +63,6 @@
     <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"लिंक प्रतिलिपि गर्नुहोस्"</string>
     <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"ब्राउजरमा खोल्नुहोस्"</string>
     <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"लिंक सेयर गर्नुहोस्"</string>
-    <string msgid="9521340570209730" name="gcm_fallback_notification_channel_label">"विविध"</string>
     <string name="icon_content_description">संवादको आइकन</string>
     <string name="item_view_role_description">ट्याब</string>
     <string name="material_clock_toggle_content_description">पूर्वाह्न वा अपराह्न चयन गर्नुहोस्</string>

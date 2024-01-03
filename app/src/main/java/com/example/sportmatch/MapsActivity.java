@@ -81,7 +81,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
                         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(selectedLoc, 15));
                     }
                 }
-                else if(Objects.equals(activity, "EventPreview") || Objects.equals(activity, "EventDetailsFeed") || Objects.equals(activity, "EventDetailsAdmin") || Objects.equals(activity, "EventDetailsParticipant")){
+                else if(Objects.equals(activity, "EventPreview") || Objects.equals(activity, "EventDetailsFeed")){
                     LatLng selectedLoc = new LatLng(spLoc.getLatitude(), spLoc.getLongitude());
                     Marker marker = mMap.addMarker(new MarkerOptions().position(selectedLoc).title(spLoc.getLocationName()));
                     marker.setTag(spLoc);
@@ -136,7 +136,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
             });
         }
 
-        else if(Objects.equals(activity, "EventPreview") || Objects.equals(activity, "EventDetailsFeed") || Objects.equals(activity, "EventDetailsAdmin") || Objects.equals(activity, "EventDetailsParticipant")){
+        else if(Objects.equals(activity, "EventPreview") || Objects.equals(activity, "EventDetailsFeed")){
             StringBuilder descriptionBuilder = new StringBuilder();
             descriptionBuilder.append(location.getStreetName())
                     .append(" ").append(location.getNumber())
@@ -153,18 +153,6 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
                 }
                 else if(Objects.equals(activity, "EventDetailsFeed")){
                     Intent resultIntent = new Intent(MapsActivity.this, EventDetailsActivity.class);
-                    setResult(RESULT_OK, resultIntent);
-                    dialog.dismiss();
-                    finish();
-                }
-                else if(Objects.equals(activity, "EventDetailsAdmin")){
-                    Intent resultIntent = new Intent(MapsActivity.this, EventDetailsAdminActivity.class);
-                    setResult(RESULT_OK, resultIntent);
-                    dialog.dismiss();
-                    finish();
-                }
-                else if(Objects.equals(activity, "EventDetailsParticipant")){
-                    Intent resultIntent = new Intent(MapsActivity.this, EventdetailsParticipantActivity.class);
                     setResult(RESULT_OK, resultIntent);
                     dialog.dismiss();
                     finish();

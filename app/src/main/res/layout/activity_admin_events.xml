@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/verde3"
+    android:background="#8BC34A"
     tools:context=".AdminEventsActivity">
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -31,7 +31,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentBottom="true"
         android:layout_marginTop="60dp"
-        android:layout_marginBottom="60dp"
+        android:layout_marginBottom="4dp"
         android:background="@drawable/feed" />
 
     <TextView
@@ -44,9 +44,10 @@
         android:layout_marginStart="94dp"
         android:layout_marginEnd="93dp"
         android:layout_marginTop="15dp"
+        android:fontFamily="monospace"
         android:text="Admin Events"
         android:textAlignment="center"
-        android:textColor="@color/white"
+        android:textColor="#FFFFFF"
         android:textSize="24sp" />
 
 

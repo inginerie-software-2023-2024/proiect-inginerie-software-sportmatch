@@ -19,13 +19,8 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Date;
 import java.util.List;
-import java.util.Locale;
 
 public class OnlyParticipatesEvents extends AppCompatActivity {
 
@@ -38,7 +33,6 @@ public class OnlyParticipatesEvents extends AppCompatActivity {
     ArrayList<Event> volleyballList;
     ArrayList<Event> footballList;
     ArrayList<Event> handballList;
-    ArrayList<Event> expiredEvents;
     ArrayList<Event> tennisList;
     ArrayList<Event> badmintonList;
     ArrayList<Event> pingpongList;
@@ -71,7 +65,7 @@ public class OnlyParticipatesEvents extends AppCompatActivity {
         pingpongList =new ArrayList<>();
         bowlingList = new ArrayList<>();
         badmintonList=new ArrayList<>();
-        expiredEvents=new ArrayList<>();
+
         databaseReference= FirebaseDatabase.getInstance().getReference("Events");
         String userId = FirebaseAuth.getInstance().getCurrentUser().getUid();
         eventListener=databaseReference.addValueEventListener(new ValueEventListener() {
@@ -81,45 +75,8 @@ public class OnlyParticipatesEvents extends AppCompatActivity {
                 {
                     Event event = itemSnapshot.getValue(Event.class);
                     if (event.getParticipants() != null && event.getParticipants().contains(userId) && !userId.equals(event.getCreator()))
-                    {if (event.getDate().contains("/") && event.getTime().contains(":"))
                     {
-                        Calendar currentCalendar = Calendar.getInstance();
-                        Date currentDate = currentCalendar.getTime();
-
-                        // Convert event date string to Date object
-                        SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy", Locale.getDefault());
-                        Date eventDate;
-                        try {
-                            eventDate = dateFormat.parse(event.getDate());
-                        } catch (ParseException e) {
-                            e.printStackTrace();
-                            return;
-                        }
-
-                        // Convert event time string to Date object
-                        SimpleDateFormat timeFormat = new SimpleDateFormat("HH:mm", Locale.getDefault());
-                        Date eventTime;
-                        try {
-                            eventTime = timeFormat.parse(event.getTime());
-                        } catch (ParseException e) {
-                            e.printStackTrace();
-                            return;
-                        }
-
-                        // Combine event date and time
-                        Calendar eventCalendar = Calendar.getInstance();
-                        eventCalendar.setTime(eventDate);
-
-                        Calendar eventTimeCalendar = Calendar.getInstance();
-                        eventTimeCalendar.setTime(eventTime);
-
-                        eventCalendar.set(Calendar.HOUR_OF_DAY, eventTimeCalendar.get(Calendar.HOUR_OF_DAY));
-                        eventCalendar.set(Calendar.MINUTE, eventTimeCalendar.get(Calendar.MINUTE));
-                        eventCalendar.set(Calendar.SECOND, 0);
-
-                        if (eventCalendar.getTime().before(currentDate)) {
-                            expiredEvents.add(event);
-                        } else switch (event.getSport()) {
+                        switch(event.getSport()) {
                             case "Volleyball":
                                 volleyballList.add(event);
                                 break;
@@ -145,35 +102,6 @@ public class OnlyParticipatesEvents extends AppCompatActivity {
                                 bowlingList.add(event);
                                 break;
                         }
-                    }
-                    else{
-                        switch (event.getSport()) {
-                            case "Volleyball":
-                                volleyballList.add(event);
-                                break;
-                            case "Football":
-                                footballList.add(event);
-                                break;
-                            case "Handball":
-                                handballList.add(event);
-                                break;
-                            case "Tennis":
-                                tennisList.add(event);
-                                break;
-                            case "Badminton":
-                                badmintonList.add(event);
-                                break;
-                            case "Ping-Pong":
-                                pingpongList.add(event);
-                                break;
-                            case "Basketball":
-                                basketballList.add(event);
-                                break;
-                            case "Bowling":
-                                bowlingList.add(event);
-                                break;
-                        }
-                    }
                     }
 
 
@@ -187,7 +115,7 @@ public class OnlyParticipatesEvents extends AppCompatActivity {
                 if(!footballList.isEmpty())allCategoryList.add(new AllCategory("Football Events",footballList));
                 if(!badmintonList.isEmpty())allCategoryList.add(new AllCategory("Badminton Events",badmintonList));
                 if(!tennisList.isEmpty())allCategoryList.add(new AllCategory("Tennis Events",tennisList));
-                if(!expiredEvents.isEmpty())allCategoryList.add(new AllCategory("Finished Events",expiredEvents));
+
 
                 setParentRecycler(allCategoryList);
                 parentAdapter.notifyDataSetChanged();

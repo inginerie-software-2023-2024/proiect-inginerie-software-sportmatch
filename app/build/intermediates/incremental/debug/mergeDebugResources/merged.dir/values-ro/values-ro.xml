@@ -64,7 +64,6 @@
     <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"Copiați linkul"</string>
     <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"Deschideți în browser"</string>
     <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"Trimiteți linkul"</string>
-    <string msgid="9521340570209730" name="gcm_fallback_notification_channel_label">"Diverse"</string>
     <string name="icon_content_description">Pictogramă de dialog</string>
     <string name="item_view_role_description">Filă</string>
     <string name="material_clock_toggle_content_description">Selectați ora</string>

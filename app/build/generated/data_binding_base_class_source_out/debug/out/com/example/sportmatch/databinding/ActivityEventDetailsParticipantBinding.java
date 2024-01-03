@@ -23,10 +23,10 @@ public final class ActivityEventDetailsParticipantBinding implements ViewBinding
   private final RelativeLayout rootView;
 
   @NonNull
-  public final ImageView backhomeP;
+  public final BottomNavigationView bottomNavigationView;
 
   @NonNull
-  public final BottomNavigationView bottomNavigationView;
+  public final Button buttonToChatP;
 
   @NonNull
   public final Button detailsBtnMapP;
@@ -80,7 +80,7 @@ public final class ActivityEventDetailsParticipantBinding implements ViewBinding
   public final TextView titleP;
 
   private ActivityEventDetailsParticipantBinding(@NonNull RelativeLayout rootView,
-      @NonNull ImageView backhomeP, @NonNull BottomNavigationView bottomNavigationView,
+      @NonNull BottomNavigationView bottomNavigationView, @NonNull Button buttonToChatP,
       @NonNull Button detailsBtnMapP, @NonNull TextView detailsDateInputP,
       @NonNull TextView detailsDateP, @NonNull TextView detailsDescInputP,
       @NonNull TextView detailsDescP, @NonNull TextView detailsLocInputP,
@@ -90,8 +90,8 @@ public final class ActivityEventDetailsParticipantBinding implements ViewBinding
       @NonNull TextView detailsTimeInputP, @NonNull TextView detailsTimeP,
       @NonNull TextView detailsTitleP, @NonNull ImageView sportImageP, @NonNull TextView titleP) {
     this.rootView = rootView;
-    this.backhomeP = backhomeP;
     this.bottomNavigationView = bottomNavigationView;
+    this.buttonToChatP = buttonToChatP;
     this.detailsBtnMapP = detailsBtnMapP;
     this.detailsDateInputP = detailsDateInputP;
     this.detailsDateP = detailsDateP;
@@ -138,15 +138,15 @@ public final class ActivityEventDetailsParticipantBinding implements ViewBinding
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.backhomeP;
-      ImageView backhomeP = ViewBindings.findChildViewById(rootView, id);
-      if (backhomeP == null) {
-        break missingId;
-      }
-
       id = R.id.bottomNavigationView;
       BottomNavigationView bottomNavigationView = ViewBindings.findChildViewById(rootView, id);
       if (bottomNavigationView == null) {
+        break missingId;
+      }
+
+      id = R.id.buttonToChatP;
+      Button buttonToChatP = ViewBindings.findChildViewById(rootView, id);
+      if (buttonToChatP == null) {
         break missingId;
       }
 
@@ -252,11 +252,11 @@ public final class ActivityEventDetailsParticipantBinding implements ViewBinding
         break missingId;
       }
 
-      return new ActivityEventDetailsParticipantBinding((RelativeLayout) rootView, backhomeP,
-          bottomNavigationView, detailsBtnMapP, detailsDateInputP, detailsDateP, detailsDescInputP,
-          detailsDescP, detailsLocInputP, detailsLocP, detailsParticipantsButtonP,
-          detailsPlayersInputP, detailsPlayersP, detailsSportInputP, detailsSportP,
-          detailsTimeInputP, detailsTimeP, detailsTitleP, sportImageP, titleP);
+      return new ActivityEventDetailsParticipantBinding((RelativeLayout) rootView,
+          bottomNavigationView, buttonToChatP, detailsBtnMapP, detailsDateInputP, detailsDateP,
+          detailsDescInputP, detailsDescP, detailsLocInputP, detailsLocP,
+          detailsParticipantsButtonP, detailsPlayersInputP, detailsPlayersP, detailsSportInputP,
+          detailsSportP, detailsTimeInputP, detailsTimeP, detailsTitleP, sportImageP, titleP);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

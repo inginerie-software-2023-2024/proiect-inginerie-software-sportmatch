@@ -1408,7 +1408,6 @@ color background_floating_material_dark
 color background_floating_material_light
 color background_material_dark
 color background_material_light
-color beige
 color black
 color bright_foreground_disabled_material_dark
 color bright_foreground_disabled_material_light
@@ -1416,7 +1415,6 @@ color bright_foreground_inverse_material_dark
 color bright_foreground_inverse_material_light
 color bright_foreground_material_dark
 color bright_foreground_material_light
-color brown_border
 color browser_actions_bg_grey
 color browser_actions_divider_color
 color browser_actions_text_color
@@ -1438,7 +1436,6 @@ color common_google_signin_btn_text_light_disabled
 color common_google_signin_btn_text_light_focused
 color common_google_signin_btn_text_light_pressed
 color common_google_signin_btn_tint
-color dark_brown
 color design_bottom_navigation_shadow_color
 color design_box_stroke_color
 color design_dark_default_color_background
@@ -1488,7 +1485,6 @@ color foreground_material_light
 color grey
 color highlighted_text_material_dark
 color highlighted_text_material_light
-color light_brown
 color m3_appbar_overlay_color
 color m3_assist_chip_icon_tint_color
 color m3_assist_chip_stroke_color
@@ -2011,7 +2007,6 @@ color mtrl_textinput_focused_box_stroke_color
 color mtrl_textinput_hovered_box_stroke_color
 color notification_action_color_filter
 color notification_icon_bg_color
-color orange
 color primary_dark_material_dark
 color primary_dark_material_light
 color primary_material_dark
@@ -2029,8 +2024,6 @@ color secondary_text_default_material_dark
 color secondary_text_default_material_light
 color secondary_text_disabled_material_dark
 color secondary_text_disabled_material_light
-color send_button_border_beige
-color send_button_brown
 color switch_thumb_disabled_material_dark
 color switch_thumb_disabled_material_light
 color switch_thumb_material_dark
@@ -2046,7 +2039,6 @@ color verde2
 color verde3
 color verde4
 color verde5
-color verde6
 color verdeBox
 color verdeFundal
 color white
@@ -2840,14 +2832,6 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
-drawable avatar1
-drawable avatar2
-drawable avatar3
-drawable avatar4
-drawable avatar5
-drawable avatar6
-drawable avatar7
-drawable avatar8
 drawable avd_hide_password
 drawable avd_show_password
 drawable backg
@@ -2857,16 +2841,11 @@ drawable badminton
 drawable badminton1
 drawable badminton2
 drawable badminton3
-drawable baiat1
-drawable baiat2
-drawable baiat3
-drawable baiat4
 drawable baseline_add_24
 drawable baseline_add_photo_alternate_24
 drawable baseline_home_24
 drawable baseline_manage_accounts_24
 drawable baseline_person_outline_24
-drawable baseline_send_24
 drawable baseline_sports_kabaddi_24
 drawable baseline_sports_martial_arts_24
 drawable basket
@@ -2892,7 +2871,6 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
-drawable chaticon
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
 drawable common_google_signin_btn_icon_dark_focused
@@ -2912,7 +2890,6 @@ drawable common_google_signin_btn_text_light
 drawable common_google_signin_btn_text_light_focused
 drawable common_google_signin_btn_text_light_normal
 drawable common_google_signin_btn_text_light_normal_background
-drawable default_pfp
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
@@ -2920,11 +2897,6 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable editprofile
 drawable eventicon
-drawable fata1
-drawable fata2
-drawable fata3
-drawable fata4
-drawable fata5
 drawable feed
 drawable feed_backg
 drawable football
@@ -2932,8 +2904,6 @@ drawable football1
 drawable football2
 drawable football3
 drawable footballplayers
-drawable fundalcolorat
-drawable fundalverdeinchis
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable gradien
@@ -2944,7 +2914,6 @@ drawable handball
 drawable handball2
 drawable handball3jpeg
 drawable handballposter
-drawable home
 drawable ic_arrow_back_black_24
 drawable ic_clear_black_24
 drawable ic_clock_black_24dp
@@ -2976,7 +2945,6 @@ drawable m3_tabs_rounded_line_indicator
 drawable m3_tabs_transparent_background
 drawable map_active
 drawable map_inactive
-drawable mapfordetails
 drawable material_cursor_drawable
 drawable material_ic_calendar_black_24dp
 drawable material_ic_clear_black_24dp
@@ -3043,7 +3011,6 @@ drawable pingpong
 drawable pingpong1
 drawable pingpong2
 drawable pingpong3
-drawable rounded_edittext
 drawable roz
 drawable sports
 drawable tennis
@@ -3062,8 +3029,6 @@ drawable volleyball3
 drawable whitebackground
 drawable xicon
 font akronim
-font fontsport
-font fonturi
 id ALT
 id BOTTOM_END
 id BOTTOM_START
@@ -3075,7 +3040,8 @@ id FUNCTION
 id FirstFragment
 id FullName
 id FullNameInserted
-id Login
+id Gender
+id GenderInserted
 id META
 id NO_DEBUG
 id Or
@@ -3181,9 +3147,6 @@ id autocomplete_players
 id autocomplete_sport
 id automatic
 id backG
-id backhomeA
-id backhomeF
-id backhomeP
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -3216,6 +3179,8 @@ id buttonCEvent
 id buttonEEvent
 id buttonPanel
 id buttonToChat
+id buttonToChat1
+id buttonToChatP
 id button_editprofile
 id button_first
 id button_login
@@ -3269,6 +3234,7 @@ id decelerate
 id decelerateAndComplete
 id decor_content_parent
 id default_activity_button
+id deleteButton
 id deltaRelative
 id dependency_ordering
 id desc
@@ -3356,7 +3322,6 @@ id eventIcon
 id eventParticipants
 id eventTime
 id eventTitle
-id eventTitleInChat
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -3387,7 +3352,6 @@ id glide_custom_view_target_tag
 id gone
 id graph
 id graph_wrap
-id greenBackground
 id group_divider
 id grouping
 id groups
@@ -3434,6 +3398,7 @@ id listMode
 id list_item
 id llbio_profile
 id llemail_profile
+id llfull_name_profile
 id llpayment
 id locale
 id logoMain
@@ -3612,7 +3577,6 @@ id scroll
 id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
-id scrollViewE
 id scrollable
 id search_badge
 id search_bar
@@ -3745,9 +3709,7 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
-id tvMessage
-id tvMessageTime
-id tvUsername
+id tvTitle
 id txtUsername
 id txttite
 id unchecked
@@ -3885,6 +3847,7 @@ layout abc_tooltip
 layout activity_admin_events
 layout activity_bottom_nav
 layout activity_chat
+layout activity_choose_avatar
 layout activity_create_new_profile
 layout activity_editevent
 layout activity_editprofile
@@ -3898,7 +3861,6 @@ layout activity_maps
 layout activity_menu
 layout activity_newevent
 layout activity_only_participates_events
-layout activity_part_item
 layout activity_profile
 layout activity_register
 layout activity_request_item
@@ -4083,10 +4045,8 @@ string fab_transformation_sheet_behavior
 string fallback_menu_item_copy_link
 string fallback_menu_item_open_in_browser
 string fallback_menu_item_share_link
-string fcm_fallback_notification_channel_label
 string first_fragment_label
 string gcm_defaultSenderId
-string gcm_fallback_notification_channel_label
 string google_api_key
 string google_app_id
 string google_crash_reporting_api_key

@@ -63,7 +63,6 @@
     <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"लिंक कॉपी करा"</string>
     <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"ब्राउझरमध्ये उघडा"</string>
     <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"लिंक शेअर करा"</string>
-    <string msgid="9521340570209730" name="gcm_fallback_notification_channel_label">"मिश्र"</string>
     <string name="icon_content_description">डायलॉग आयकन</string>
     <string name="item_view_role_description">टॅब</string>
     <string name="material_clock_toggle_content_description">AM किंवा PM निवडा</string>

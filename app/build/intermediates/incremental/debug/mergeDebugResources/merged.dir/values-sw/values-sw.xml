@@ -63,7 +63,6 @@
     <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"Nakili kiungo"</string>
     <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"Fungua katika kivinjari"</string>
     <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"Shiriki kiungo"</string>
-    <string msgid="9521340570209730" name="gcm_fallback_notification_channel_label">"Zinginezo"</string>
     <string name="icon_content_description">Aikoni ya Kidirisha</string>
     <string name="item_view_role_description">Kichupo</string>
     <string name="material_clock_toggle_content_description">Chagua AM au PM</string>

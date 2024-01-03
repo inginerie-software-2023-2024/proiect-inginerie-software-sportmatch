@@ -139,7 +139,7 @@
                     android:layout_width="170dp"
                     android:layout_height="65dp"
                     android:backgroundTint="@color/verde5"
-                    android:text="Register"
+                    android:text="Sign up"
                     android:layout_marginTop="8dp"
                     android:layout_centerHorizontal="true"
                     android:layout_below="@+id/desc" />

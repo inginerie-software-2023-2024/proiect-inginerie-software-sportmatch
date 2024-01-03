@@ -5,18 +5,23 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/verde3"
+    android:background="#8BC34A"
     tools:context=".CreateEventActivity">
 
     <TextView
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="94dp"
         android:layout_marginTop="15dp"
+        android:layout_marginEnd="93dp"
+        android:fontFamily="monospace"
         android:text="Create Event"
         android:textAlignment="center"
-        android:textColor="@color/white"
+        android:textColor="#FFFFFF"
         android:textSize="24sp" />
 
     <ScrollView

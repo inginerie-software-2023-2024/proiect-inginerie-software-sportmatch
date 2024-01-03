@@ -65,7 +65,6 @@
     <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"Копіювати посилання"</string>
     <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"Відкрити у веб-переглядачі"</string>
     <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"Надіслати посилання"</string>
-    <string msgid="9521340570209730" name="gcm_fallback_notification_channel_label">"Інше"</string>
     <string name="icon_content_description">Значок вікна</string>
     <string name="item_view_role_description">Вкладка</string>
     <string name="material_clock_toggle_content_description">Виберіть ДП чи ПП</string>

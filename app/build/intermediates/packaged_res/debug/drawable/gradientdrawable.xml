@@ -7,6 +7,6 @@
         android:startColor = "@color/verde4"
         android:centerColor="@color/verde5"
         android:endColor = "@color/verde5"
-        android:angle = "270"
+        android:angle = "50"
         android:type = "linear" />
 </shape>

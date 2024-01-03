@@ -63,7 +63,6 @@
     <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"ଲିଙ୍କ୍ କପି କରନ୍ତୁ"</string>
     <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"ବ୍ରାଉଜର୍‌ରେ ଖୋଲନ୍ତୁ"</string>
     <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"ଲିଙ୍କ୍ ସେୟାର୍ କରନ୍ତୁ"</string>
-    <string msgid="9521340570209730" name="gcm_fallback_notification_channel_label">"ଅନ୍ୟାନ୍ୟ"</string>
     <string name="icon_content_description">Dialog Icon</string>
     <string name="item_view_role_description">Tab</string>
     <string name="material_clock_toggle_content_description">Select AM or PM</string>

@@ -64,7 +64,6 @@
     <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"Kopiraj vezu"</string>
     <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"Otvori u pregledniku"</string>
     <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"Podijeli vezu"</string>
-    <string msgid="9521340570209730" name="gcm_fallback_notification_channel_label">"Razno"</string>
     <string name="icon_content_description">Ikona dijaloga</string>
     <string name="item_view_role_description">Kartica</string>
     <string name="material_clock_toggle_content_description">Odaberite prijepodne ili poslijepodne</string>

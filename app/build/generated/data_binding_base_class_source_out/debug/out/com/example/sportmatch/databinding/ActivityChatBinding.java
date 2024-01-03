@@ -7,7 +7,6 @@ import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.RelativeLayout;
-import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -27,12 +26,6 @@ public final class ActivityChatBinding implements ViewBinding {
   public final EditText editTextMessage;
 
   @NonNull
-  public final TextView eventTitleInChat;
-
-  @NonNull
-  public final View greenBackground;
-
-  @NonNull
   public final RecyclerView recyclerView;
 
   @NonNull
@@ -42,13 +35,10 @@ public final class ActivityChatBinding implements ViewBinding {
   public final ImageButton sendButton;
 
   private ActivityChatBinding(@NonNull ConstraintLayout rootView, @NonNull EditText editTextMessage,
-      @NonNull TextView eventTitleInChat, @NonNull View greenBackground,
       @NonNull RecyclerView recyclerView, @NonNull RelativeLayout relativeLayout,
       @NonNull ImageButton sendButton) {
     this.rootView = rootView;
     this.editTextMessage = editTextMessage;
-    this.eventTitleInChat = eventTitleInChat;
-    this.greenBackground = greenBackground;
     this.recyclerView = recyclerView;
     this.relativeLayout = relativeLayout;
     this.sendButton = sendButton;
@@ -87,18 +77,6 @@ public final class ActivityChatBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.eventTitleInChat;
-      TextView eventTitleInChat = ViewBindings.findChildViewById(rootView, id);
-      if (eventTitleInChat == null) {
-        break missingId;
-      }
-
-      id = R.id.greenBackground;
-      View greenBackground = ViewBindings.findChildViewById(rootView, id);
-      if (greenBackground == null) {
-        break missingId;
-      }
-
       id = R.id.recyclerView;
       RecyclerView recyclerView = ViewBindings.findChildViewById(rootView, id);
       if (recyclerView == null) {
@@ -117,8 +95,8 @@ public final class ActivityChatBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityChatBinding((ConstraintLayout) rootView, editTextMessage, eventTitleInChat,
-          greenBackground, recyclerView, relativeLayout, sendButton);
+      return new ActivityChatBinding((ConstraintLayout) rootView, editTextMessage, recyclerView,
+          relativeLayout, sendButton);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

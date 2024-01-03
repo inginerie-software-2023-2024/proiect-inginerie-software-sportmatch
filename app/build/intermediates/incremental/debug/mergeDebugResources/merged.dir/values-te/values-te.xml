@@ -63,7 +63,6 @@
     <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"లింక్‌ను కాపీ చేయి"</string>
     <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"బ్రౌజర్‌లో తెరువు"</string>
     <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"లింక్‌ను షేర్ చేయి"</string>
-    <string msgid="9521340570209730" name="gcm_fallback_notification_channel_label">"ఇతరాలు"</string>
     <string name="icon_content_description">డైలాగ్ చిహ్నం</string>
     <string name="item_view_role_description">ట్యాబ్</string>
     <string name="material_clock_toggle_content_description">AM లేదా PMను ఎంచుకోండి</string>

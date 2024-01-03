@@ -43,6 +43,9 @@ public final class ActivityViewProfileBinding implements ViewBinding {
   public final TextInputLayout emailProfile;
 
   @NonNull
+  public final TextInputLayout fullNameProfile;
+
+  @NonNull
   public final TextView fullnameField;
 
   @NonNull
@@ -50,6 +53,9 @@ public final class ActivityViewProfileBinding implements ViewBinding {
 
   @NonNull
   public final LinearLayout llemailProfile;
+
+  @NonNull
+  public final LinearLayout llfullNameProfile;
 
   @NonNull
   public final LinearLayout llpayment;
@@ -73,8 +79,9 @@ public final class ActivityViewProfileBinding implements ViewBinding {
       @NonNull TextInputLayout ageProfile, @NonNull TextInputLayout bioProfile,
       @NonNull BottomNavigationView bottomNavigationView, @NonNull Button buttonEditprofile,
       @NonNull Button buttonLogout, @NonNull TextInputLayout emailProfile,
-      @NonNull TextView fullnameField, @NonNull LinearLayout llbioProfile,
-      @NonNull LinearLayout llemailProfile, @NonNull LinearLayout llpayment,
+      @NonNull TextInputLayout fullNameProfile, @NonNull TextView fullnameField,
+      @NonNull LinearLayout llbioProfile, @NonNull LinearLayout llemailProfile,
+      @NonNull LinearLayout llfullNameProfile, @NonNull LinearLayout llpayment,
       @NonNull TextView paymentDesc, @NonNull TextView paymentLabel,
       @NonNull ImageView profileImage, @NonNull RelativeLayout relativeLayout,
       @NonNull RelativeLayout relativeLayout1) {
@@ -85,9 +92,11 @@ public final class ActivityViewProfileBinding implements ViewBinding {
     this.buttonEditprofile = buttonEditprofile;
     this.buttonLogout = buttonLogout;
     this.emailProfile = emailProfile;
+    this.fullNameProfile = fullNameProfile;
     this.fullnameField = fullnameField;
     this.llbioProfile = llbioProfile;
     this.llemailProfile = llemailProfile;
+    this.llfullNameProfile = llfullNameProfile;
     this.llpayment = llpayment;
     this.paymentDesc = paymentDesc;
     this.paymentLabel = paymentLabel;
@@ -159,6 +168,12 @@ public final class ActivityViewProfileBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.full_name_profile;
+      TextInputLayout fullNameProfile = ViewBindings.findChildViewById(rootView, id);
+      if (fullNameProfile == null) {
+        break missingId;
+      }
+
       id = R.id.fullname_field;
       TextView fullnameField = ViewBindings.findChildViewById(rootView, id);
       if (fullnameField == null) {
@@ -174,6 +189,12 @@ public final class ActivityViewProfileBinding implements ViewBinding {
       id = R.id.llemail_profile;
       LinearLayout llemailProfile = ViewBindings.findChildViewById(rootView, id);
       if (llemailProfile == null) {
+        break missingId;
+      }
+
+      id = R.id.llfull_name_profile;
+      LinearLayout llfullNameProfile = ViewBindings.findChildViewById(rootView, id);
+      if (llfullNameProfile == null) {
         break missingId;
       }
 
@@ -214,9 +235,9 @@ public final class ActivityViewProfileBinding implements ViewBinding {
       }
 
       return new ActivityViewProfileBinding((RelativeLayout) rootView, ageProfile, bioProfile,
-          bottomNavigationView, buttonEditprofile, buttonLogout, emailProfile, fullnameField,
-          llbioProfile, llemailProfile, llpayment, paymentDesc, paymentLabel, profileImage,
-          relativeLayout, relativeLayout1);
+          bottomNavigationView, buttonEditprofile, buttonLogout, emailProfile, fullNameProfile,
+          fullnameField, llbioProfile, llemailProfile, llfullNameProfile, llpayment, paymentDesc,
+          paymentLabel, profileImage, relativeLayout, relativeLayout1);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

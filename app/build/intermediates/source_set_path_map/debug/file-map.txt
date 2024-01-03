@@ -1,54 +1,52 @@
-com.example.sportmatch.app-google-services-0 C:\Bianca\Facultate\an 3\sem1\MDS vechi\SportMatch\app\build\generated\res\google-services\debug
-com.example.sportmatch.app-pngs-1 C:\Bianca\Facultate\an 3\sem1\MDS vechi\SportMatch\app\build\generated\res\pngs\debug
-com.example.sportmatch.app-resValues-2 C:\Bianca\Facultate\an 3\sem1\MDS vechi\SportMatch\app\build\generated\res\resValues\debug
-com.example.sportmatch.app-rs-3 C:\Bianca\Facultate\an 3\sem1\MDS vechi\SportMatch\app\build\generated\res\rs\debug
-com.example.sportmatch.app-packageDebugResources-4 C:\Bianca\Facultate\an 3\sem1\MDS vechi\SportMatch\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
-com.example.sportmatch.app-packageDebugResources-5 C:\Bianca\Facultate\an 3\sem1\MDS vechi\SportMatch\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
-com.example.sportmatch.app-merged_res-6 C:\Bianca\Facultate\an 3\sem1\MDS vechi\SportMatch\app\build\intermediates\merged_res\debug
-com.example.sportmatch.app-debug-7 C:\Bianca\Facultate\an 3\sem1\MDS vechi\SportMatch\app\src\debug\res
-com.example.sportmatch.app-main-8 C:\Bianca\Facultate\an 3\sem1\MDS vechi\SportMatch\app\src\main\res
-com.example.sportmatch.app-material-1.8.0-9 C:\Users\alexi\.gradle\caches\transforms-3\182faf041fdcb262ef4ea683b4175339\transformed\material-1.8.0\res
-com.example.sportmatch.app-play-services-basement-18.1.0-10 C:\Users\alexi\.gradle\caches\transforms-3\1be5a84dfe85c9f41773bb78b68ec900\transformed\play-services-basement-18.1.0\res
-com.example.sportmatch.app-emoji2-1.2.0-11 C:\Users\alexi\.gradle\caches\transforms-3\2466eaf4a073dfa3aa7557bbe46f76f9\transformed\emoji2-1.2.0\res
-com.example.sportmatch.app-lifecycle-runtime-2.5.1-12 C:\Users\alexi\.gradle\caches\transforms-3\2a87f451db6c8f010d7c304bc5bbb176\transformed\lifecycle-runtime-2.5.1\res
-com.example.sportmatch.app-appcompat-1.6.1-13 C:\Users\alexi\.gradle\caches\transforms-3\3429c272863fc1e5b465d2e8a2b7badb\transformed\appcompat-1.6.1\res
-com.example.sportmatch.app-navigation-fragment-2.5.3-14 C:\Users\alexi\.gradle\caches\transforms-3\3b901474d5e96741e95173483f743555\transformed\navigation-fragment-2.5.3\res
-com.example.sportmatch.app-lottie-4.2.2-15 C:\Users\alexi\.gradle\caches\transforms-3\3e32d705925c472d2fef1628d0468021\transformed\lottie-4.2.2\res
-com.example.sportmatch.app-fragment-1.5.4-16 C:\Users\alexi\.gradle\caches\transforms-3\42e24ab264a7129d4ac0c70d9e6d096d\transformed\fragment-1.5.4\res
-com.example.sportmatch.app-play-services-gcm-17.0.0-17 C:\Users\alexi\.gradle\caches\transforms-3\44889e4a7e8e8f08025cf3eac9438fc7\transformed\play-services-gcm-17.0.0\res
-com.example.sportmatch.app-play-services-base-18.1.0-18 C:\Users\alexi\.gradle\caches\transforms-3\462d9b6682a4f02bc6643b3a84b759d7\transformed\play-services-base-18.1.0\res
-com.example.sportmatch.app-fragment-ktx-1.5.4-19 C:\Users\alexi\.gradle\caches\transforms-3\46909d13b78f04b4c530eb9a7056edc4\transformed\fragment-ktx-1.5.4\res
-com.example.sportmatch.app-firebase-common-20.3.2-20 C:\Users\alexi\.gradle\caches\transforms-3\4b4bd688355610aded40bdc032a95f7d\transformed\firebase-common-20.3.2\res
-com.example.sportmatch.app-lifecycle-viewmodel-2.5.1-21 C:\Users\alexi\.gradle\caches\transforms-3\4be6cee1d2ee3681e026a5b1238d8566\transformed\lifecycle-viewmodel-2.5.1\res
-com.example.sportmatch.app-lifecycle-process-2.4.1-22 C:\Users\alexi\.gradle\caches\transforms-3\5127f80b85867cccab87be3d3456a639\transformed\lifecycle-process-2.4.1\res
-com.example.sportmatch.app-savedstate-1.2.0-23 C:\Users\alexi\.gradle\caches\transforms-3\58d35d68633b0441286a42af3de79147\transformed\savedstate-1.2.0\res
-com.example.sportmatch.app-window-1.0.0-24 C:\Users\alexi\.gradle\caches\transforms-3\59d7ea35fada011ea3cca6aafe1b53c8\transformed\window-1.0.0\res
-com.example.sportmatch.app-glide-4.14.2-25 C:\Users\alexi\.gradle\caches\transforms-3\59f78d7b91602d482c514e94ce927db5\transformed\glide-4.14.2\res
-com.example.sportmatch.app-appcompat-resources-1.6.1-26 C:\Users\alexi\.gradle\caches\transforms-3\5ec40b5490f4dd1ddc594532155ec3d6\transformed\appcompat-resources-1.6.1\res
-com.example.sportmatch.app-navigation-ui-2.5.3-27 C:\Users\alexi\.gradle\caches\transforms-3\670fcbd9f10f2b5a7b424d723d6a721f\transformed\navigation-ui-2.5.3\res
-com.example.sportmatch.app-coordinatorlayout-1.1.0-28 C:\Users\alexi\.gradle\caches\transforms-3\68c878209997cd9be84be487faaa146e\transformed\coordinatorlayout-1.1.0\res
-com.example.sportmatch.app-viewpager2-1.0.0-29 C:\Users\alexi\.gradle\caches\transforms-3\6fe1a663cc9bb217da566756f8f7f68e\transformed\viewpager2-1.0.0\res
-com.example.sportmatch.app-activity-1.6.0-30 C:\Users\alexi\.gradle\caches\transforms-3\76c013322081f6c111ef2c863cb21d57\transformed\activity-1.6.0\res
-com.example.sportmatch.app-emoji2-views-helper-1.2.0-31 C:\Users\alexi\.gradle\caches\transforms-3\77337c3ba5a749e04db3d106bd65ac83\transformed\emoji2-views-helper-1.2.0\res
-com.example.sportmatch.app-lifecycle-livedata-core-2.5.1-32 C:\Users\alexi\.gradle\caches\transforms-3\78e62098079992e1a858e8a0b756ee01\transformed\lifecycle-livedata-core-2.5.1\res
-com.example.sportmatch.app-lifecycle-livedata-core-ktx-2.5.1-33 C:\Users\alexi\.gradle\caches\transforms-3\8090a7f372fe07e193d9009d0d33c6dc\transformed\lifecycle-livedata-core-ktx-2.5.1\res
-com.example.sportmatch.app-savedstate-ktx-1.2.0-34 C:\Users\alexi\.gradle\caches\transforms-3\83952b29f771089fa0ac0386ed0b26ac\transformed\savedstate-ktx-1.2.0\res
-com.example.sportmatch.app-activity-ktx-1.6.0-35 C:\Users\alexi\.gradle\caches\transforms-3\87dae368f2d972444afb39eabff774d9\transformed\activity-ktx-1.6.0\res
-com.example.sportmatch.app-startup-runtime-1.1.1-36 C:\Users\alexi\.gradle\caches\transforms-3\89fddf501e7dc7e29d7ae6eeb2a298ad\transformed\startup-runtime-1.1.1\res
-com.example.sportmatch.app-drawerlayout-1.1.1-37 C:\Users\alexi\.gradle\caches\transforms-3\9ea2bb7a688a90f40227f49d1b2174b3\transformed\drawerlayout-1.1.1\res
-com.example.sportmatch.app-annotation-experimental-1.3.0-38 C:\Users\alexi\.gradle\caches\transforms-3\aadbfca95168fc936950a55ba0e054bd\transformed\annotation-experimental-1.3.0\res
-com.example.sportmatch.app-navigation-common-2.5.3-39 C:\Users\alexi\.gradle\caches\transforms-3\ab369d282b290af6a7c18b22567f6f96\transformed\navigation-common-2.5.3\res
-com.example.sportmatch.app-play-services-maps-18.1.0-40 C:\Users\alexi\.gradle\caches\transforms-3\acef2a44a7e3301fa64384949a60f84f\transformed\play-services-maps-18.1.0\res
-com.example.sportmatch.app-transition-1.4.1-41 C:\Users\alexi\.gradle\caches\transforms-3\b50327f11c533f31f7f1319fee88089a\transformed\transition-1.4.1\res
-com.example.sportmatch.app-browser-1.4.0-42 C:\Users\alexi\.gradle\caches\transforms-3\ca82ffcfaf29df054ecae31f6508b388\transformed\browser-1.4.0\res
-com.example.sportmatch.app-core-ktx-1.9.0-43 C:\Users\alexi\.gradle\caches\transforms-3\cb956f28861b496f5213605b8d29442e\transformed\core-ktx-1.9.0\res
-com.example.sportmatch.app-firebase-messaging-23.1.2-44 C:\Users\alexi\.gradle\caches\transforms-3\cd5827ca52336a0d818534f8d48a6d93\transformed\firebase-messaging-23.1.2\res
-com.example.sportmatch.app-recyclerview-1.1.0-45 C:\Users\alexi\.gradle\caches\transforms-3\cd8e1d078b26ebb0bf903d162d676e89\transformed\recyclerview-1.1.0\res
-com.example.sportmatch.app-lifecycle-viewmodel-savedstate-2.5.1-46 C:\Users\alexi\.gradle\caches\transforms-3\cef7c6580f5c07e8dfa433667e3578ff\transformed\lifecycle-viewmodel-savedstate-2.5.1\res
-com.example.sportmatch.app-lifecycle-runtime-ktx-2.5.1-47 C:\Users\alexi\.gradle\caches\transforms-3\d2f83e20279527b82dbd409b622d6b71\transformed\lifecycle-runtime-ktx-2.5.1\res
-com.example.sportmatch.app-constraintlayout-2.1.4-48 C:\Users\alexi\.gradle\caches\transforms-3\d8979af8a73764c39a8cadc6fefa7acf\transformed\constraintlayout-2.1.4\res
-com.example.sportmatch.app-cardview-1.0.0-49 C:\Users\alexi\.gradle\caches\transforms-3\dc205ff094d4d6b5d1d9b2d5f95f4716\transformed\cardview-1.0.0\res
-com.example.sportmatch.app-slidingpanelayout-1.2.0-50 C:\Users\alexi\.gradle\caches\transforms-3\e008b8a2ac8244167031b02bcf52d256\transformed\slidingpanelayout-1.2.0\res
-com.example.sportmatch.app-lifecycle-viewmodel-ktx-2.5.1-51 C:\Users\alexi\.gradle\caches\transforms-3\e9e022588cb905aff281f0d6cb3f0918\transformed\lifecycle-viewmodel-ktx-2.5.1\res
-com.example.sportmatch.app-core-1.9.0-52 C:\Users\alexi\.gradle\caches\transforms-3\f3d51bfea696170ddff80dae282a5b7c\transformed\core-1.9.0\res
-com.example.sportmatch.app-navigation-runtime-2.5.3-53 C:\Users\alexi\.gradle\caches\transforms-3\f495a08056c26f4eca467d3cafdbeabb\transformed\navigation-runtime-2.5.3\res
+com.example.sportmatch.app-google-services-0 C:\SportMatchpre\app\build\generated\res\google-services\debug
+com.example.sportmatch.app-pngs-1 C:\SportMatchpre\app\build\generated\res\pngs\debug
+com.example.sportmatch.app-resValues-2 C:\SportMatchpre\app\build\generated\res\resValues\debug
+com.example.sportmatch.app-rs-3 C:\SportMatchpre\app\build\generated\res\rs\debug
+com.example.sportmatch.app-packageDebugResources-4 C:\SportMatchpre\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.example.sportmatch.app-packageDebugResources-5 C:\SportMatchpre\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.example.sportmatch.app-merged_res-6 C:\SportMatchpre\app\build\intermediates\merged_res\debug
+com.example.sportmatch.app-debug-7 C:\SportMatchpre\app\src\debug\res
+com.example.sportmatch.app-main-8 C:\SportMatchpre\app\src\main\res
+com.example.sportmatch.app-material-1.8.0-9 C:\Users\Raluca\.gradle\caches\transforms-3\182faf041fdcb262ef4ea683b4175339\transformed\material-1.8.0\res
+com.example.sportmatch.app-play-services-basement-18.1.0-10 C:\Users\Raluca\.gradle\caches\transforms-3\1be5a84dfe85c9f41773bb78b68ec900\transformed\play-services-basement-18.1.0\res
+com.example.sportmatch.app-emoji2-1.2.0-11 C:\Users\Raluca\.gradle\caches\transforms-3\2466eaf4a073dfa3aa7557bbe46f76f9\transformed\emoji2-1.2.0\res
+com.example.sportmatch.app-lifecycle-runtime-2.5.1-12 C:\Users\Raluca\.gradle\caches\transforms-3\2a87f451db6c8f010d7c304bc5bbb176\transformed\lifecycle-runtime-2.5.1\res
+com.example.sportmatch.app-appcompat-1.6.1-13 C:\Users\Raluca\.gradle\caches\transforms-3\3429c272863fc1e5b465d2e8a2b7badb\transformed\appcompat-1.6.1\res
+com.example.sportmatch.app-navigation-fragment-2.5.3-14 C:\Users\Raluca\.gradle\caches\transforms-3\3b901474d5e96741e95173483f743555\transformed\navigation-fragment-2.5.3\res
+com.example.sportmatch.app-lottie-4.2.2-15 C:\Users\Raluca\.gradle\caches\transforms-3\3e32d705925c472d2fef1628d0468021\transformed\lottie-4.2.2\res
+com.example.sportmatch.app-fragment-1.5.4-16 C:\Users\Raluca\.gradle\caches\transforms-3\42e24ab264a7129d4ac0c70d9e6d096d\transformed\fragment-1.5.4\res
+com.example.sportmatch.app-play-services-base-18.1.0-17 C:\Users\Raluca\.gradle\caches\transforms-3\462d9b6682a4f02bc6643b3a84b759d7\transformed\play-services-base-18.1.0\res
+com.example.sportmatch.app-fragment-ktx-1.5.4-18 C:\Users\Raluca\.gradle\caches\transforms-3\46909d13b78f04b4c530eb9a7056edc4\transformed\fragment-ktx-1.5.4\res
+com.example.sportmatch.app-firebase-common-20.3.2-19 C:\Users\Raluca\.gradle\caches\transforms-3\4b4bd688355610aded40bdc032a95f7d\transformed\firebase-common-20.3.2\res
+com.example.sportmatch.app-lifecycle-viewmodel-2.5.1-20 C:\Users\Raluca\.gradle\caches\transforms-3\4be6cee1d2ee3681e026a5b1238d8566\transformed\lifecycle-viewmodel-2.5.1\res
+com.example.sportmatch.app-lifecycle-process-2.4.1-21 C:\Users\Raluca\.gradle\caches\transforms-3\5127f80b85867cccab87be3d3456a639\transformed\lifecycle-process-2.4.1\res
+com.example.sportmatch.app-savedstate-1.2.0-22 C:\Users\Raluca\.gradle\caches\transforms-3\58d35d68633b0441286a42af3de79147\transformed\savedstate-1.2.0\res
+com.example.sportmatch.app-window-1.0.0-23 C:\Users\Raluca\.gradle\caches\transforms-3\59d7ea35fada011ea3cca6aafe1b53c8\transformed\window-1.0.0\res
+com.example.sportmatch.app-glide-4.14.2-24 C:\Users\Raluca\.gradle\caches\transforms-3\59f78d7b91602d482c514e94ce927db5\transformed\glide-4.14.2\res
+com.example.sportmatch.app-appcompat-resources-1.6.1-25 C:\Users\Raluca\.gradle\caches\transforms-3\5ec40b5490f4dd1ddc594532155ec3d6\transformed\appcompat-resources-1.6.1\res
+com.example.sportmatch.app-navigation-ui-2.5.3-26 C:\Users\Raluca\.gradle\caches\transforms-3\670fcbd9f10f2b5a7b424d723d6a721f\transformed\navigation-ui-2.5.3\res
+com.example.sportmatch.app-coordinatorlayout-1.1.0-27 C:\Users\Raluca\.gradle\caches\transforms-3\68c878209997cd9be84be487faaa146e\transformed\coordinatorlayout-1.1.0\res
+com.example.sportmatch.app-viewpager2-1.0.0-28 C:\Users\Raluca\.gradle\caches\transforms-3\6fe1a663cc9bb217da566756f8f7f68e\transformed\viewpager2-1.0.0\res
+com.example.sportmatch.app-activity-1.6.0-29 C:\Users\Raluca\.gradle\caches\transforms-3\76c013322081f6c111ef2c863cb21d57\transformed\activity-1.6.0\res
+com.example.sportmatch.app-emoji2-views-helper-1.2.0-30 C:\Users\Raluca\.gradle\caches\transforms-3\77337c3ba5a749e04db3d106bd65ac83\transformed\emoji2-views-helper-1.2.0\res
+com.example.sportmatch.app-lifecycle-livedata-core-2.5.1-31 C:\Users\Raluca\.gradle\caches\transforms-3\78e62098079992e1a858e8a0b756ee01\transformed\lifecycle-livedata-core-2.5.1\res
+com.example.sportmatch.app-lifecycle-livedata-core-ktx-2.5.1-32 C:\Users\Raluca\.gradle\caches\transforms-3\8090a7f372fe07e193d9009d0d33c6dc\transformed\lifecycle-livedata-core-ktx-2.5.1\res
+com.example.sportmatch.app-savedstate-ktx-1.2.0-33 C:\Users\Raluca\.gradle\caches\transforms-3\83952b29f771089fa0ac0386ed0b26ac\transformed\savedstate-ktx-1.2.0\res
+com.example.sportmatch.app-activity-ktx-1.6.0-34 C:\Users\Raluca\.gradle\caches\transforms-3\87dae368f2d972444afb39eabff774d9\transformed\activity-ktx-1.6.0\res
+com.example.sportmatch.app-startup-runtime-1.1.1-35 C:\Users\Raluca\.gradle\caches\transforms-3\89fddf501e7dc7e29d7ae6eeb2a298ad\transformed\startup-runtime-1.1.1\res
+com.example.sportmatch.app-drawerlayout-1.1.1-36 C:\Users\Raluca\.gradle\caches\transforms-3\9ea2bb7a688a90f40227f49d1b2174b3\transformed\drawerlayout-1.1.1\res
+com.example.sportmatch.app-annotation-experimental-1.3.0-37 C:\Users\Raluca\.gradle\caches\transforms-3\aadbfca95168fc936950a55ba0e054bd\transformed\annotation-experimental-1.3.0\res
+com.example.sportmatch.app-navigation-common-2.5.3-38 C:\Users\Raluca\.gradle\caches\transforms-3\ab369d282b290af6a7c18b22567f6f96\transformed\navigation-common-2.5.3\res
+com.example.sportmatch.app-play-services-maps-18.1.0-39 C:\Users\Raluca\.gradle\caches\transforms-3\acef2a44a7e3301fa64384949a60f84f\transformed\play-services-maps-18.1.0\res
+com.example.sportmatch.app-transition-1.4.1-40 C:\Users\Raluca\.gradle\caches\transforms-3\b50327f11c533f31f7f1319fee88089a\transformed\transition-1.4.1\res
+com.example.sportmatch.app-browser-1.4.0-41 C:\Users\Raluca\.gradle\caches\transforms-3\ca82ffcfaf29df054ecae31f6508b388\transformed\browser-1.4.0\res
+com.example.sportmatch.app-core-ktx-1.9.0-42 C:\Users\Raluca\.gradle\caches\transforms-3\cb956f28861b496f5213605b8d29442e\transformed\core-ktx-1.9.0\res
+com.example.sportmatch.app-recyclerview-1.1.0-43 C:\Users\Raluca\.gradle\caches\transforms-3\cd8e1d078b26ebb0bf903d162d676e89\transformed\recyclerview-1.1.0\res
+com.example.sportmatch.app-lifecycle-viewmodel-savedstate-2.5.1-44 C:\Users\Raluca\.gradle\caches\transforms-3\cef7c6580f5c07e8dfa433667e3578ff\transformed\lifecycle-viewmodel-savedstate-2.5.1\res
+com.example.sportmatch.app-lifecycle-runtime-ktx-2.5.1-45 C:\Users\Raluca\.gradle\caches\transforms-3\d2f83e20279527b82dbd409b622d6b71\transformed\lifecycle-runtime-ktx-2.5.1\res
+com.example.sportmatch.app-constraintlayout-2.1.4-46 C:\Users\Raluca\.gradle\caches\transforms-3\d8979af8a73764c39a8cadc6fefa7acf\transformed\constraintlayout-2.1.4\res
+com.example.sportmatch.app-cardview-1.0.0-47 C:\Users\Raluca\.gradle\caches\transforms-3\dc205ff094d4d6b5d1d9b2d5f95f4716\transformed\cardview-1.0.0\res
+com.example.sportmatch.app-slidingpanelayout-1.2.0-48 C:\Users\Raluca\.gradle\caches\transforms-3\e008b8a2ac8244167031b02bcf52d256\transformed\slidingpanelayout-1.2.0\res
+com.example.sportmatch.app-lifecycle-viewmodel-ktx-2.5.1-49 C:\Users\Raluca\.gradle\caches\transforms-3\e9e022588cb905aff281f0d6cb3f0918\transformed\lifecycle-viewmodel-ktx-2.5.1\res
+com.example.sportmatch.app-core-1.9.0-50 C:\Users\Raluca\.gradle\caches\transforms-3\f3d51bfea696170ddff80dae282a5b7c\transformed\core-1.9.0\res
+com.example.sportmatch.app-navigation-runtime-2.5.3-51 C:\Users\Raluca\.gradle\caches\transforms-3\f495a08056c26f4eca467d3cafdbeabb\transformed\navigation-runtime-2.5.3\res
