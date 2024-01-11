@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">927342689684-19qh54r3pmvmq51tgcg8p09c8hnm51m0.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">927342689684</string>
+    <string name="google_api_key" translatable="false">AIzaSyAFn_eV_ruMBJpQ7jK6S1Q7LX9Z5LhRQDc</string>
+    <string name="google_app_id" translatable="false">1:927342689684:android:6b3a7cb297563437662381</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAFn_eV_ruMBJpQ7jK6S1Q7LX9Z5LhRQDc</string>
+    <string name="google_storage_bucket" translatable="false">sportsmatch-97ff3.appspot.com</string>
+    <string name="project_id" translatable="false">sportsmatch-97ff3</string>
+</resources>

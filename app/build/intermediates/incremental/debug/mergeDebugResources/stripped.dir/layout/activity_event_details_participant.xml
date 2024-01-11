@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@android:style/Theme.Holo.Dialog"
+    android:background="#8BC34A"
+    tools:context=".EventdetailsParticipantActivity">
+
+    <TextView
+        android:id="@+id/titleP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="94dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="93dp"
+        android:fontFamily="monospace"
+        android:text="Event Details"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/greensoccer">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="680dp"
+            android:layout_marginBottom="4dp"
+
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp">
+
+            <Button
+                android:id="@+id/detailsParticipantsButtonP"
+                android:layout_width="110dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/detailsDescP"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="220dp"
+                android:layout_marginTop="40dp"
+                android:backgroundTint="@color/verde5"
+                android:text="Players" />
+
+            <Button
+                android:id="@+id/buttonToChatP"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/verde5"
+                android:text="Chat"
+                android:layout_below="@+id/detailsDescP"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="120dp"
+                android:layout_marginTop="40dp"
+                android:textAlignment="center"
+                android:textSize="15sp"
+                app:cardCornerRadius="40dp" />
+
+            <ImageView
+                android:id="@+id/sportImageP"
+                android:layout_width="88dp"
+                android:layout_height="79dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/volleyball" />
+
+            <TextView
+                android:id="@+id/detailsTitleP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sportImageP"
+                android:layout_centerHorizontal="true"
+                android:text="TITLE"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/detailsSportP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/detailsTitleP"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="40dp"
+                android:text="SPORT:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/detailsSportInputP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/detailsTitleP"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_toEndOf="@+id/detailsSportP"
+                android:text="Volleyball"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/detailsPlayersP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="234dp"
+                android:layout_marginLeft="40dp"
+                android:text="NUMBER PLAYERS:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/detailsPlayersInputP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/detailsSportP"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_toEndOf="@+id/detailsPlayersP"
+                android:text="6 Players"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/detailsLocP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/detailsPlayersP"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="40dp"
+                android:text="LOCATION:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/detailsLocInputP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/detailsPlayersP"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:textColor="#000000"
+                android:layout_toEndOf="@+id/detailsLocP"
+                android:text="Sportfield 1"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/detailsBtnMapP"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_below="@+id/detailsDescP"
+                android:backgroundTint="@color/verde5"
+                android:text="MAP" />
+
+            <TextView
+                android:id="@+id/detailsDateP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/detailsLocInputP"
+                android:layout_marginTop="18dp"
+                android:text="DATE:"
+                android:layout_marginLeft="40dp"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/detailsDateInputP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/detailsLocInputP"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="18dp"
+                android:layout_toEndOf="@+id/detailsDateP"
+                android:text="dd/mm/yyyy"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/detailsTimeP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/detailsDateP"
+                android:layout_marginTop="30dp"
+                android:text="TIME:"
+                android:layout_marginLeft="40dp"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/detailsTimeInputP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/detailsDateInputP"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_toEndOf="@+id/detailsTimeP"
+                android:text="hh:mm"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/detailsDescP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/detailsTimeP"
+                android:layout_marginTop="30dp"
+                android:text="DESCRIPTION:"
+                android:layout_marginLeft="40dp"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/detailsDescInputP"
+                android:layout_width="wrap_content"
+                android:textColor="#000000"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/detailsTimeP"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_toEndOf="@+id/detailsDescP"
+                android:text="description"
+                android:textSize="18sp" />
+
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottomNavigationView"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_background"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:elevation="2dp"
+        app:menu="@menu/bottom_menu"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@drawable/item_selector"
+        app:itemRippleColor="@android:color/transparent"
+        app:labelVisibilityMode="unlabeled"
+        />
+
+
+</RelativeLayout>

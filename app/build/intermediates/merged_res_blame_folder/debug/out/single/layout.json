@@ -1,0 +1,150 @@
+[
+    {
+        "merged": "com.example.sportmatch.app-mergeDebugResources-5:/layout/activity_create_new_profile.xml",
+        "source": "com.example.sportmatch.app-main-8:/layout/activity_create_new_profile.xml"
+    },
+    {
+        "merged": "com.example.sportmatch.app-mergeDebugResources-5:/layout/content_menu.xml",
+        "source": "com.example.sportmatch.app-main-8:/layout/content_menu.xml"
+    },
+    {
+        "merged": "com.example.sportmatch.app-mergeDebugResources-5:/layout/activity_event_details_feed.xml",
+        "source": "com.example.sportmatch.app-main-8:/layout/activity_event_details_feed.xml"
+    },
+    {
+        "merged": "com.example.sportmatch.app-mergeDebugResources-5:/layout/registered_event_item.xml",
+        "source": "com.example.sportmatch.app-main-8:/layout/registered_event_item.xml"
+    },
+    {
+        "merged": "com.example.sportmatch.app-mergeDebugResources-5:/layout/fragment_second.xml",
+        "source": "com.example.sportmatch.app-main-8:/layout/fragment_second.xml"
+    },
+    {
+        "merged": "com.example.sportmatch.app-mergeDebugResources-5:/layout/activity_admin_events.xml",
+        "source": "com.example.sportmatch.app-main-8:/layout/activity_admin_events.xml"
+    },
+    {
+        "merged": "com.example.sportmatch.app-mergeDebugResources-5:/layout/activity_editprofile.xml",
+        "source": "com.example.sportmatch.app-main-8:/layout/activity_editprofile.xml"
+    },
+    {
+        "merged": "com.example.sportmatch.app-mergeDebugResources-5:/layout/activity_start.xml",
+        "source": "com.example.sportmatch.app-main-8:/layout/activity_start.xml"
+    },
+    {
+        "merged": "com.example.sportmatch.app-mergeDebugResources-5:/layout/list_sportfields.xml",
+        "source": "com.example.sportmatch.app-main-8:/layout/list_sportfields.xml"
+    },
+    {
+        "merged": "com.example.sportmatch.app-mergeDebugResources-5:/layout/activity_menu.xml",
+        "source": "com.example.sportmatch.app-main-8:/layout/activity_menu.xml"
+    },
+    {
+        "merged": "com.example.sportmatch.app-mergeDebugResources-5:/layout/activity_only_participates_events.xml",
+        "source": "com.example.sportmatch.app-main-8:/layout/activity_only_participates_events.xml"
+    },
+    {
+        "merged": "com.example.sportmatch.app-mergeDebugResources-5:/layout/fragment_first.xml",
+        "source": "com.example.sportmatch.app-main-8:/layout/fragment_first.xml"
+    },
+    {
+        "merged": "com.example.sportmatch.app-mergeDebugResources-5:/layout/item_message.xml",
+        "source": "com.example.sportmatch.app-main-8:/layout/item_message.xml"
+    },
+    {
+        "merged": "com.example.sportmatch.app-mergeDebugResources-5:/layout/activity_editevent.xml",
+        "source": "com.example.sportmatch.app-main-8:/layout/activity_editevent.xml"
+    },
+    {
+        "merged": "com.example.sportmatch.app-mergeDebugResources-5:/layout/activity_maps.xml",
+        "source": "com.example.sportmatch.app-main-8:/layout/activity_maps.xml"
+    },
+    {
+        "merged": "com.example.sportmatch.app-mergeDebugResources-5:/layout/list_item.xml",
+        "source": "com.example.sportmatch.app-main-8:/layout/list_item.xml"
+    },
+    {
+        "merged": "com.example.sportmatch.app-mergeDebugResources-5:/layout/activity_newevent.xml",
+        "source": "com.example.sportmatch.app-main-8:/layout/activity_newevent.xml"
+    },
+    {
+        "merged": "com.example.sportmatch.app-mergeDebugResources-5:/layout/activity_login.xml",
+        "source": "com.example.sportmatch.app-main-8:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.example.sportmatch.app-mergeDebugResources-5:/layout/activity_eventpreview.xml",
+        "source": "com.example.sportmatch.app-main-8:/layout/activity_eventpreview.xml"
+    },
+    {
+        "merged": "com.example.sportmatch.app-mergeDebugResources-5:/layout/category_row_items.xml",
+        "source": "com.example.sportmatch.app-main-8:/layout/category_row_items.xml"
+    },
+    {
+        "merged": "com.example.sportmatch.app-mergeDebugResources-5:/layout/activity_chat.xml",
+        "source": "com.example.sportmatch.app-main-8:/layout/activity_chat.xml"
+    },
+    {
+        "merged": "com.example.sportmatch.app-mergeDebugResources-5:/layout/activity_register.xml",
+        "source": "com.example.sportmatch.app-main-8:/layout/activity_register.xml"
+    },
+    {
+        "merged": "com.example.sportmatch.app-mergeDebugResources-5:/layout/activity_profile.xml",
+        "source": "com.example.sportmatch.app-main-8:/layout/activity_profile.xml"
+    },
+    {
+        "merged": "com.example.sportmatch.app-mergeDebugResources-5:/layout/activity_main.xml",
+        "source": "com.example.sportmatch.app-main-8:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.sportmatch.app-mergeDebugResources-5:/layout/main_recycler_row_item.xml",
+        "source": "com.example.sportmatch.app-main-8:/layout/main_recycler_row_item.xml"
+    },
+    {
+        "merged": "com.example.sportmatch.app-mergeDebugResources-5:/layout/activity_request_item.xml",
+        "source": "com.example.sportmatch.app-main-8:/layout/activity_request_item.xml"
+    },
+    {
+        "merged": "com.example.sportmatch.app-mergeDebugResources-5:/layout/list_sport.xml",
+        "source": "com.example.sportmatch.app-main-8:/layout/list_sport.xml"
+    },
+    {
+        "merged": "com.example.sportmatch.app-mergeDebugResources-5:/layout/activity_view_profile.xml",
+        "source": "com.example.sportmatch.app-main-8:/layout/activity_view_profile.xml"
+    },
+    {
+        "merged": "com.example.sportmatch.app-mergeDebugResources-5:/layout/content_choose_avatar.xml",
+        "source": "com.example.sportmatch.app-main-8:/layout/content_choose_avatar.xml"
+    },
+    {
+        "merged": "com.example.sportmatch.app-mergeDebugResources-5:/layout/activity_event_details_participant.xml",
+        "source": "com.example.sportmatch.app-main-8:/layout/activity_event_details_participant.xml"
+    },
+    {
+        "merged": "com.example.sportmatch.app-mergeDebugResources-5:/layout/activity_requests.xml",
+        "source": "com.example.sportmatch.app-main-8:/layout/activity_requests.xml"
+    },
+    {
+        "merged": "com.example.sportmatch.app-mergeDebugResources-5:/layout/activity_choose_avatar.xml",
+        "source": "com.example.sportmatch.app-main-8:/layout/activity_choose_avatar.xml"
+    },
+    {
+        "merged": "com.example.sportmatch.app-mergeDebugResources-5:/layout/list_player.xml",
+        "source": "com.example.sportmatch.app-main-8:/layout/list_player.xml"
+    },
+    {
+        "merged": "com.example.sportmatch.app-mergeDebugResources-5:/layout/activity_bottom_nav.xml",
+        "source": "com.example.sportmatch.app-main-8:/layout/activity_bottom_nav.xml"
+    },
+    {
+        "merged": "com.example.sportmatch.app-mergeDebugResources-5:/layout/list_time.xml",
+        "source": "com.example.sportmatch.app-main-8:/layout/list_time.xml"
+    },
+    {
+        "merged": "com.example.sportmatch.app-mergeDebugResources-5:/layout/date_item.xml",
+        "source": "com.example.sportmatch.app-main-8:/layout/date_item.xml"
+    },
+    {
+        "merged": "com.example.sportmatch.app-mergeDebugResources-5:/layout/activity_event_details_admin.xml",
+        "source": "com.example.sportmatch.app-main-8:/layout/activity_event_details_admin.xml"
+    }
+]
