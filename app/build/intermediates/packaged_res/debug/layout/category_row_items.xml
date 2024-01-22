@@ -39,7 +39,6 @@
             android:layout_marginLeft="140dp"
             android:layout_marginTop="280dp"
             android:ems="10"
-            android:fontFamily="monospace"
             android:inputType="time"
             android:text="10:30"
             android:textColor="#FFFFFF" />
@@ -49,8 +48,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
-            android:fontFamily="monospace"
-
             android:text="NUME EVENT"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
@@ -69,10 +66,8 @@
             android:id="@+id/eventParticipants"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="150dp"
+            android:layout_marginLeft="142dp"
             android:layout_marginTop="245dp"
-            android:fontFamily="monospace"
-
             android:text="8"
             android:textAlignment="center"
             android:textColor="#FFFFFF"

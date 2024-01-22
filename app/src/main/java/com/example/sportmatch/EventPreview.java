@@ -71,25 +71,25 @@ public class EventPreview extends AppCompatActivity {
         previewBtnAddEv = findViewById(R.id.previewBtnAddEv);
 
 
-        String valTitle = getIntent().getStringExtra("valueTitle");
+        String valTitle = getIntent().getStringExtra("valTitle");
         previewTitle.setText(valTitle);
 
-        String valueSport = getIntent().getStringExtra("valueSport");
+        String valueSport = getIntent().getStringExtra("valSport");
         previewSportInput.setText(valueSport);
 
-        String valuePlayers = getIntent().getStringExtra("valuePlayers");
+        String valuePlayers = getIntent().getStringExtra("valPlayers");
         previewPlayersInput.setText(valuePlayers);
 
-        String valueLoc = getIntent().getStringExtra("valueLoc");
+        String valueLoc = getIntent().getStringExtra("valLoc");
         previewLocInput.setText(valueLoc);
 
-        String valueDate = getIntent().getStringExtra("valueDate");
+        String valueDate = getIntent().getStringExtra("valDate");
         previewDateInput.setText(valueDate);
 
-        String valueTime = getIntent().getStringExtra("valueTime");
+        String valueTime = getIntent().getStringExtra("valTime");
         previewTimeInput.setText(valueTime);
 
-        String valueDesc = getIntent().getStringExtra("valueDesc");
+        String valueDesc = getIntent().getStringExtra("valDesc");
         previewDescInput.setText(valueDesc);
 
 
@@ -127,13 +127,14 @@ public class EventPreview extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(EventPreview.this, EditEventDetails.class);
 
-                intent.putExtra("valueName",valTitle);
-                intent.putExtra("valueSport",valueSport);
-                intent.putExtra("valuePlayers",valuePlayers);
-                intent.putExtra("valueLoc",valueLoc);
-                intent.putExtra("valueDate",valueDate);
-                intent.putExtra("valueTime",valueTime);
-                intent.putExtra("valueDesc",valueDesc);
+                intent.putExtra("valName",valTitle);
+                intent.putExtra("valSport",valueSport);
+                intent.putExtra("valPlayers",valuePlayers);
+                intent.putExtra("valLoc",valueLoc);
+                intent.putExtra("valDate",valueDate);
+                intent.putExtra("valTime",valueTime);
+                intent.putExtra("valDesc",valueDesc);
+                intent.putExtra("activity","EventPreview");
 
                 startActivity(intent);
             }
@@ -153,7 +154,7 @@ public class EventPreview extends AppCompatActivity {
                 registeredPlayers.add(FirebaseAuth.getInstance().getCurrentUser().getUid());
 
 
-                Event event = new Event(valTitle, valueSport, valuePlayers, valueLoc, valueDate, valueTime, valueDate,FirebaseAuth.getInstance().getCurrentUser().getUid(), registeredPlayers, chatId);
+                Event event = new Event(valTitle, valueSport, valuePlayers, valueLoc, valueDate, valueTime, valueDate,FirebaseAuth.getInstance().getCurrentUser().getUid(), registeredPlayers);
                 event.setUid(eventId);
 
                 // Adaugă evenimentul la tabelul "events" folosind cheia unică generată

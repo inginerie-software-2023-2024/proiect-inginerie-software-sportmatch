@@ -38,17 +38,10 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.MessageV
     @Override
     public void onBindViewHolder(MessageViewHolder holder, int position) {
         Message message = messages.get(position);
-        if (message.getSender().equals(AllMethods.getUsername())) {
-            holder.tvTitle.setText("You: " + message.getMessage());
-            holder.tvTitle.setGravity(Gravity.START);
-            holder.l1.setBackgroundColor(Color.parseColor("#EF9E73"));
-            holder.btnDelete.setVisibility(View.VISIBLE);
-        } else {
-            holder.tvTitle.setText(message.getSender() + ": " + message.getMessage());
-            holder.tvTitle.setGravity(Gravity.END);
-            holder.l1.setBackgroundColor(Color.parseColor("#F5F5F5"));
-            holder.btnDelete.setVisibility(View.GONE);
-        }
+        holder.tvTitle.setText(message.getMessage());
+        holder.tvMessageTime.setText(message.getCreatedAt()); // Set the time value
+        holder.tvUsername.setText(message.getSender());
+        holder.tvTitle.setGravity(Gravity.START);
     }
 
     @Override
@@ -60,21 +53,25 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.MessageV
         TextView tvTitle;
         ImageButton btnDelete;
         LinearLayout l1;
+        TextView tvUsername;
+        TextView tvMessageTime;
 
         public MessageViewHolder(View itemView) {
             super(itemView);
-            tvTitle = (TextView) itemView.findViewById(R.id.tvTitle);
-            btnDelete = (ImageButton) itemView.findViewById(R.id.deleteButton);
+            tvTitle = (TextView) itemView.findViewById(R.id.tvMessage);
             l1 = (LinearLayout) itemView.findViewById(R.id.l1Message);
+            tvUsername = (TextView) itemView.findViewById(R.id.tvUsername);
+            tvMessageTime = (TextView) itemView.findViewById(R.id.tvMessageTime);
 
-            btnDelete.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    int position = getAdapterPosition();
-                    Message message = messages.get(position);
-                    messagedb.child(message.getKey()).removeValue();
-                }
-            });
+
+//            btnDelete.setOnClickListener(new View.OnClickListener() {
+//                @Override
+//                public void onClick(View view) {
+//                    int position = getAdapterPosition();
+//                    Message message = messages.get(position);
+//                    messagedb.child(message.getKey()).removeValue();
+//                }
+//            });
         }
     }
 }

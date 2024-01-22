@@ -4,7 +4,6 @@ package com.example.sportmatch.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -22,20 +21,24 @@ public final class ItemMessageBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final ImageButton deleteButton;
-
-  @NonNull
   public final LinearLayout l1Message;
 
   @NonNull
-  public final TextView tvTitle;
+  public final TextView tvMessage;
 
-  private ItemMessageBinding(@NonNull ConstraintLayout rootView, @NonNull ImageButton deleteButton,
-      @NonNull LinearLayout l1Message, @NonNull TextView tvTitle) {
+  @NonNull
+  public final TextView tvMessageTime;
+
+  @NonNull
+  public final TextView tvUsername;
+
+  private ItemMessageBinding(@NonNull ConstraintLayout rootView, @NonNull LinearLayout l1Message,
+      @NonNull TextView tvMessage, @NonNull TextView tvMessageTime, @NonNull TextView tvUsername) {
     this.rootView = rootView;
-    this.deleteButton = deleteButton;
     this.l1Message = l1Message;
-    this.tvTitle = tvTitle;
+    this.tvMessage = tvMessage;
+    this.tvMessageTime = tvMessageTime;
+    this.tvUsername = tvUsername;
   }
 
   @Override
@@ -65,25 +68,32 @@ public final class ItemMessageBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.deleteButton;
-      ImageButton deleteButton = ViewBindings.findChildViewById(rootView, id);
-      if (deleteButton == null) {
-        break missingId;
-      }
-
       id = R.id.l1Message;
       LinearLayout l1Message = ViewBindings.findChildViewById(rootView, id);
       if (l1Message == null) {
         break missingId;
       }
 
-      id = R.id.tvTitle;
-      TextView tvTitle = ViewBindings.findChildViewById(rootView, id);
-      if (tvTitle == null) {
+      id = R.id.tvMessage;
+      TextView tvMessage = ViewBindings.findChildViewById(rootView, id);
+      if (tvMessage == null) {
         break missingId;
       }
 
-      return new ItemMessageBinding((ConstraintLayout) rootView, deleteButton, l1Message, tvTitle);
+      id = R.id.tvMessageTime;
+      TextView tvMessageTime = ViewBindings.findChildViewById(rootView, id);
+      if (tvMessageTime == null) {
+        break missingId;
+      }
+
+      id = R.id.tvUsername;
+      TextView tvUsername = ViewBindings.findChildViewById(rootView, id);
+      if (tvUsername == null) {
+        break missingId;
+      }
+
+      return new ItemMessageBinding((ConstraintLayout) rootView, l1Message, tvMessage,
+          tvMessageTime, tvUsername);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

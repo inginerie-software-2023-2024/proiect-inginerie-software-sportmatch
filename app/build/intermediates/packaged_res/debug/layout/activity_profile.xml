@@ -49,18 +49,19 @@
 
         <Button
             android:id="@+id/button_logout"
-            android:layout_width="94dp"
+            android:layout_width="110dp"
             android:layout_height="36dp"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
-            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
             android:background="@drawable/gradientdrawable"
             android:text="logout" />
 
         <Button
             android:id="@+id/button_editprofile"
-            android:layout_width="94dp"
+            android:layout_width="110dp"
             android:layout_height="36dp"
             android:layout_alignParentTop="true"
             android:layout_alignParentStart="true"
@@ -176,27 +177,27 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_height="wrap_content"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="20dp">
+
         <com.google.android.material.textfield.TextInputLayout
-            android:hint="Email"
             android:id="@+id/email_profile"
-            android:layout_height="wrap_content"
             android:layout_width="match_parent"
-             >
+            android:layout_height="wrap_content"
+            android:hint="Email">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:layout_height="wrap_content"
                 android:layout_width="match_parent"
-                android:text="petrica69@gmail.com"
+                android:layout_height="wrap_content"
                 android:editable="false"
-                />
+                android:text="petrica69@gmail.com" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
     </LinearLayout>
+
     <LinearLayout
         android:layout_height="wrap_content"
         android:layout_width="match_parent"

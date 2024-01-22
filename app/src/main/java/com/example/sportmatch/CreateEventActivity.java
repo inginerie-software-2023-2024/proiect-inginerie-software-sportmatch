@@ -1,9 +1,7 @@
 package com.example.sportmatch;
 
 
-import android.app.Activity;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -14,12 +12,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ScrollView;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import androidx.activity.result.ActivityResult;
-import androidx.activity.result.ActivityResultCallback;
-import androidx.activity.result.ActivityResultLauncher;
-import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -37,8 +30,6 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import com.google.firebase.storage.FirebaseStorage;
-import com.google.firebase.storage.StorageReference;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -157,14 +148,14 @@ public class CreateEventActivity extends AppCompatActivity {
 
 
         //Setare liste autocomplete
-
-        //TODO: Schimba input locatie, players inapoi la hint daca schimb sportul selectat
         autocomplete_sport.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
                 newEventLoc.setError(null);
                 newEventPlayers.setError(null);
+                autocomplete_loc.setText("", false);
+                autocomplete_players.setText("",false);
 
                 // Obține sportul selectat
                 String SelectedSport = (String) parent.getItemAtPosition(position);
@@ -364,33 +355,33 @@ public class CreateEventActivity extends AppCompatActivity {
 
                     Intent intent = new Intent(CreateEventActivity.this, EventPreview .class);
 
-                    intent.putExtra("valueTitle",inputTitle);
-                    intent.putExtra("valueSport",selectedSport);
-                    intent.putExtra("valuePlayers",selectedPlayers);
-                    intent.putExtra("valueLoc",selectedLoc);
-                    intent.putExtra("valueDate",selectedDate);
-                    intent.putExtra("valueTime",selectedTime);
-                    intent.putExtra("valueDesc",inputDesc);
+                    intent.putExtra("valTitle",inputTitle);
+                    intent.putExtra("valSport",selectedSport);
+                    intent.putExtra("valPlayers",selectedPlayers);
+                    intent.putExtra("valLoc",selectedLoc);
+                    intent.putExtra("valDate",selectedDate);
+                    intent.putExtra("valTime",selectedTime);
+                    intent.putExtra("valDesc",inputDesc);
 
                     if(TextUtils.isEmpty(selectedDate)){
-                        intent.putExtra("valueDate","To be discussed");
+                        intent.putExtra("valDate","To be discussed");
                     }
                     else{
-                        intent.putExtra("valueDate",selectedDate);
+                        intent.putExtra("valDate",selectedDate);
                     }
 
                     if(TextUtils.isEmpty(selectedTime)){
-                        intent.putExtra("valueTime","To be discussed");
+                        intent.putExtra("valTime","To be discussed");
                     }
                     else{
-                        intent.putExtra("valueTime",selectedTime);
+                        intent.putExtra("valTime",selectedTime);
                     }
 
                     if(TextUtils.isEmpty(inputDesc)){
-                        intent.putExtra("valueDesc","None");
+                        intent.putExtra("valDesc","None");
                     }
                     else{
-                        intent.putExtra("valueDesc",inputDesc);
+                        intent.putExtra("valDesc",inputDesc);
                     }
 
                     intent.putExtra("creatorId", userId);

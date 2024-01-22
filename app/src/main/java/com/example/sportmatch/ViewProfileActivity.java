@@ -2,19 +2,19 @@ package com.example.sportmatch;
 
 import static android.content.ContentValues.TAG;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.textfield.TextInputEditText;
@@ -29,12 +29,15 @@ import com.google.firebase.database.ValueEventListener;
 import java.time.LocalDate;
 import java.time.Period;
 import java.time.format.DateTimeFormatter;
-import java.util.List;
-import java.util.concurrent.atomic.AtomicBoolean;
-import java.util.concurrent.atomic.AtomicInteger;
 
 
 public class ViewProfileActivity extends AppCompatActivity {
+
+    SharedPreferences sharedPreferences;
+
+    private static final String SHARED_PREF = "pref";
+    private static final String Username = "username";
+    private static final String Password = "password";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,9 +55,9 @@ public class ViewProfileActivity extends AppCompatActivity {
                 String name = dataSnapshot.child("fullName").getValue(String.class);
                 TextView nameTextView = findViewById(R.id.fullname_field);
                 nameTextView.setText(name);
-                TextInputLayout nameTextInputLayout = findViewById(R.id.full_name_profile);
+                /*TextInputLayout nameTextInputLayout = findViewById(R.id.full_name_profile);
                 TextInputEditText nameEditText = (TextInputEditText) nameTextInputLayout.getEditText();
-                nameEditText.setText(name);
+                nameEditText.setText(name);*/
 
 
                 String email = dataSnapshot.child("username").getValue(String.class);
@@ -98,8 +101,7 @@ public class ViewProfileActivity extends AppCompatActivity {
             public void onEventsCounted(int eventCount) {
                 TextView view = findViewById(R.id.payment_label);
                 view.setText(String.valueOf(eventCount));
-                String message = "Number of events: " + eventCount;
-                Toast.makeText(getApplicationContext(), message, Toast.LENGTH_SHORT).show();
+                //String message = "Number of events: " + eventCount;
             }
         });
 
@@ -127,8 +129,17 @@ public class ViewProfileActivity extends AppCompatActivity {
                 builder.setPositiveButton("Logout", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
+                        Log.e("Logout", "Logout");
                         FirebaseAuth.getInstance().signOut();
-                        startActivity(new Intent(ViewProfileActivity.this, LoginActivity.class));
+                        Log.e("Logout", "Logout");
+
+                        sharedPreferences = getSharedPreferences(SHARED_PREF, MODE_PRIVATE);
+                        SharedPreferences.Editor editor = sharedPreferences.edit();
+                        editor.clear();
+                        editor.commit();
+                        finish();
+
+                        startActivity(new Intent(ViewProfileActivity.this, MainActivity.class));
                     }
                 });
                 builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
@@ -207,9 +218,6 @@ public class ViewProfileActivity extends AppCompatActivity {
             }
         });
     }
-
-
-
 
 
 }

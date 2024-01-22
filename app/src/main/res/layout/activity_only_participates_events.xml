@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#8BC34A"
+    android:background="@color/verde3"
     android:elevation="@dimen/cardview_default_radius"
     tools:context=".OnlyParticipatesEvents">
 
@@ -33,24 +33,19 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentBottom="true"
         android:layout_marginTop="60dp"
-        android:layout_marginBottom="0dp"
+        android:layout_marginBottom="60dp"
         android:background="@drawable/feed" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="94dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="93dp"
-        android:fontFamily="monospace"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
         android:text="Participant Events"
         android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        android:textStyle="bold" />
+        android:textColor="@color/white"
+        android:textSize="24sp"/>
 
 
 </RelativeLayout>

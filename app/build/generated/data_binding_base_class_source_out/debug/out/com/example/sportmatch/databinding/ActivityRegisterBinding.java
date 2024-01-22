@@ -38,12 +38,6 @@ public final class ActivityRegisterBinding implements ViewBinding {
   public final TextInputEditText FullNameInserted;
 
   @NonNull
-  public final TextInputLayout Gender;
-
-  @NonNull
-  public final TextInputEditText GenderInserted;
-
-  @NonNull
   public final TextInputLayout Password;
 
   @NonNull
@@ -67,8 +61,7 @@ public final class ActivityRegisterBinding implements ViewBinding {
   private ActivityRegisterBinding(@NonNull RelativeLayout rootView,
       @NonNull TextInputLayout BirthDate, @NonNull TextInputEditText BirthDateInserted,
       @NonNull TextInputLayout ConfirmPassword, @NonNull TextInputLayout FullName,
-      @NonNull TextInputEditText FullNameInserted, @NonNull TextInputLayout Gender,
-      @NonNull TextInputEditText GenderInserted, @NonNull TextInputLayout Password,
+      @NonNull TextInputEditText FullNameInserted, @NonNull TextInputLayout Password,
       @NonNull TextInputEditText PasswordConfirmed, @NonNull TextInputEditText PasswordInserted,
       @NonNull TextView Register, @NonNull TextInputLayout Username,
       @NonNull TextInputEditText UsernameInserted, @NonNull Button signupButton) {
@@ -78,8 +71,6 @@ public final class ActivityRegisterBinding implements ViewBinding {
     this.ConfirmPassword = ConfirmPassword;
     this.FullName = FullName;
     this.FullNameInserted = FullNameInserted;
-    this.Gender = Gender;
-    this.GenderInserted = GenderInserted;
     this.Password = Password;
     this.PasswordConfirmed = PasswordConfirmed;
     this.PasswordInserted = PasswordInserted;
@@ -146,18 +137,6 @@ public final class ActivityRegisterBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.Gender;
-      TextInputLayout Gender = ViewBindings.findChildViewById(rootView, id);
-      if (Gender == null) {
-        break missingId;
-      }
-
-      id = R.id.GenderInserted;
-      TextInputEditText GenderInserted = ViewBindings.findChildViewById(rootView, id);
-      if (GenderInserted == null) {
-        break missingId;
-      }
-
       id = R.id.Password;
       TextInputLayout Password = ViewBindings.findChildViewById(rootView, id);
       if (Password == null) {
@@ -201,8 +180,8 @@ public final class ActivityRegisterBinding implements ViewBinding {
       }
 
       return new ActivityRegisterBinding((RelativeLayout) rootView, BirthDate, BirthDateInserted,
-          ConfirmPassword, FullName, FullNameInserted, Gender, GenderInserted, Password,
-          PasswordConfirmed, PasswordInserted, Register, Username, UsernameInserted, signupButton);
+          ConfirmPassword, FullName, FullNameInserted, Password, PasswordConfirmed,
+          PasswordInserted, Register, Username, UsernameInserted, signupButton);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

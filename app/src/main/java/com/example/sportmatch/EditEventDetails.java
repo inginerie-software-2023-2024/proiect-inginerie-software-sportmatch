@@ -1,15 +1,19 @@
 package com.example.sportmatch;
 
 
+import static android.content.ContentValues.TAG;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -55,11 +59,18 @@ public class EditEventDetails extends AppCompatActivity {
     Button buttonEEvent;
     ImageView mapImage;
     List<String> locations;
+    ScrollView scrollViewE;
+    Event mEvent;
+    DatabaseReference reference;
+
+    String valTitle, valueSport, valuePlayers, valueLoc, valueDate, valueTime, valueDesc;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_editevent);
+
+        reference = FirebaseDatabase.getInstance().getReference("Events");
 
         title = findViewById(R.id.editTitle);
         editEventName = findViewById(R.id.editEventName);
@@ -78,6 +89,7 @@ public class EditEventDetails extends AppCompatActivity {
         editEventDescEdt = findViewById(R.id.editEventDescEdt);
         buttonEEvent = findViewById(R.id.buttonEEvent);
         mapImage = findViewById(R.id.mapImageEdt);
+        scrollViewE = findViewById(R.id.scrollViewE);
 
 
         FirebaseDatabase database = FirebaseDatabase.getInstance();
@@ -90,32 +102,43 @@ public class EditEventDetails extends AppCompatActivity {
         List<Integer> players = new ArrayList<>();
 
 
-        String valTitle = getIntent().getStringExtra("valueName");
+        valTitle = getIntent().getStringExtra("valName");
         editEventNameEdt.setText(valTitle);
 
-        String valueSport = getIntent().getStringExtra("valueSport");
-        autocomplete_sport.setText(valueSport);
+        valueSport = getIntent().getStringExtra("valSport");
+        autocomplete_sport.setText(valueSport, false);
         ArrayAdapter<String> adapterSports = new ArrayAdapter<String>(this, R.layout.list_sport, sports);
         autocomplete_sport.setAdapter(adapterSports);
 
-        String valuePlayers = getIntent().getStringExtra("valuePlayers");
-        autocomplete_players.setText(valuePlayers);
+        valuePlayers = getIntent().getStringExtra("valPlayers");
+        autocomplete_players.setText(valuePlayers, false);
         ArrayAdapter<Integer> adapterPlayers = new ArrayAdapter<Integer>(this, R.layout.list_player, players);
         autocomplete_players.setAdapter(adapterPlayers);
 
-        String valueLoc = getIntent().getStringExtra("valueLoc");
-        autocomplete_loc.setText(valueLoc);
+        valueLoc = getIntent().getStringExtra("valLoc");
+        autocomplete_loc.setText(valueLoc, false);
         ArrayAdapter<String> adapterLoc = new ArrayAdapter<String>(this, R.layout.list_sportfields, locations);
         autocomplete_loc.setAdapter(adapterLoc);
 
-        String valueDate = getIntent().getStringExtra("valueDate");
+        valueDate = getIntent().getStringExtra("valDate");
         editEventDateEdt.setText(valueDate);
 
-        String valueTime = getIntent().getStringExtra("valueTime");
+        valueTime = getIntent().getStringExtra("valTime");
         editEventTimeEdt.setText(valueTime);
 
-        String valueDesc = getIntent().getStringExtra("valueDesc");
+        valueDesc = getIntent().getStringExtra("valDesc");
         editEventDescEdt.setText(valueDesc);
+
+        String activity = getIntent().getStringExtra("activity");
+
+        if(activity.equals("EventDetailsAdminActivity")){
+            mEvent = (Event) getIntent().getSerializableExtra("eventul");
+            if(mEvent == null) {
+                Log.d(TAG, "onCreate la details: event is null");
+            } else {
+                Log.d(TAG, "onCreate la details: event is not null");
+            }
+        }
 
         sportsRef.addValueEventListener(new ValueEventListener() {
             @Override
@@ -140,6 +163,43 @@ public class EditEventDetails extends AppCompatActivity {
                 for (DataSnapshot locSnapshot : snapshot.getChildren()) {
                     SportLocation sportLocation = locSnapshot.getValue(SportLocation.class);
                     allLocations.add(sportLocation);
+
+                    if(valueSport!=null){
+                        //adaug lista locatii
+                        for(SportLocation sploc: allLocations){
+                            if(sploc.getSport().getSportName().equals(valueSport)){
+                                locations.add(sploc.getLocationName());
+                            }
+                        }
+                        adapterLoc.notifyDataSetChanged();
+
+                        //adaug lista jucatori
+                        Sport sp = null;
+                        for(Sport sport: allSports){
+                            if(Objects.equals(sport.getSportName(), valueSport)){
+                                sp = sport;
+                                break;
+                            }
+                        }
+
+                        if(sp!=null){
+                            int mxP = sp.getMaxParticipants();
+                            int index = sp.getMinParticipants();
+                            if(Objects.equals(valueSport, "Bowling")){
+                                while(index<=mxP){
+                                    players.add(index);
+                                    index += 1;
+                                }
+                            }
+                            else{
+                                while(index<=mxP){
+                                    players.add(index);
+                                    index += 2;
+                                }
+                            }
+                            adapterPlayers.notifyDataSetChanged();
+                        }
+                    }
                 }
             }
             @Override
@@ -150,12 +210,16 @@ public class EditEventDetails extends AppCompatActivity {
 
 
 
+
+
         autocomplete_sport.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
                 editEventLoc.setError(null);
                 editEventPlayers.setError(null);
+                autocomplete_loc.setText("", false);
+                autocomplete_players.setText("",false);
 
                 // Obține sportul selectat
                 String SelectedSport = (String) parent.getItemAtPosition(position);
@@ -300,39 +364,143 @@ public class EditEventDetails extends AppCompatActivity {
                 String selectedTime = editEventTimeEdt.getText().toString().trim();
                 String inputDesc = editEventDescEdt.getText().toString().trim();
 
-                Intent intent = new Intent(EditEventDetails.this, EventPreview .class);
+                int error = 0;
+                TextInputLayout firstErrorField = null;
 
-                intent.putExtra("valueTitle",inputTitle);
-                intent.putExtra("valueSport",selectedSport);
-                intent.putExtra("valuePlayers",selectedPlayers);
-                intent.putExtra("valueLoc",selectedLoc);
-                intent.putExtra("valueDate",selectedDate);
-                intent.putExtra("valueTime",selectedTime);
-                intent.putExtra("valueDesc",inputDesc);
-
-                if(TextUtils.isEmpty(selectedDate)){
-                    intent.putExtra("valueDate","TBA");
-                }
-                else{
-                    intent.putExtra("valueDate",selectedDate);
-                }
-
-                if(TextUtils.isEmpty(selectedTime)){
-                    intent.putExtra("valueTime","TBA");
-                }
-                else{
-                    intent.putExtra("valueTime",selectedTime);
-                }
-
-                if(TextUtils.isEmpty(inputDesc)){
-                    intent.putExtra("valueDesc","None");
-                }
-                else{
-                    intent.putExtra("valueDesc",inputDesc);
+                if (TextUtils.isEmpty(selectedSport)) {
+                    editEventSport.setError(getString(R.string.errorCEsport));
+                    error = 1;
+                    firstErrorField = editEventSport;
+                } else {
+                    editEventSport.setError(null);
                 }
 
 
-                startActivity(intent);
+                if (TextUtils.isEmpty(selectedPlayers)) {
+                    editEventPlayers.setError(getString(R.string.errorCEsport));
+                    error = 1;
+                    if (firstErrorField == null) {
+                        firstErrorField = editEventPlayers; // Actualizează referința către primul câmp cu eroare
+                    }
+                } else {
+                    editEventPlayers.setError(null);
+                }
+
+
+                if (TextUtils.isEmpty(selectedLoc)) {
+                    editEventLoc.setError(getString(R.string.errorCEloc));
+                    error = 1;
+                    if (firstErrorField == null) {
+                        firstErrorField = editEventLoc; // Actualizează referința către primul câmp cu eroare
+                    }
+                } else {
+                    editEventLoc.setError(null);
+                }
+
+                if(error == 0){
+
+
+
+                    if(Objects.equals(activity, "EventPreview")){
+                        Intent intent = new Intent(EditEventDetails.this, EventPreview.class);
+                        intent.putExtra("valTitle",inputTitle);
+                        intent.putExtra("valSport",selectedSport);
+                        intent.putExtra("valPlayers",selectedPlayers);
+                        intent.putExtra("valLoc",selectedLoc);
+                        intent.putExtra("valDate",selectedDate);
+                        intent.putExtra("valTime",selectedTime);
+                        intent.putExtra("valDesc",inputDesc);
+
+                        if(TextUtils.isEmpty(selectedDate)){
+                            intent.putExtra("valDate","To be discussed");
+                        }
+                        else{
+                            intent.putExtra("valDate",selectedDate);
+                        }
+
+                        if(TextUtils.isEmpty(selectedTime)){
+                            intent.putExtra("valTime","To be discussed");
+                        }
+                        else{
+                            intent.putExtra("valTime",selectedTime);
+                        }
+
+                        if(TextUtils.isEmpty(inputDesc)){
+                            intent.putExtra("valDesc","None");
+                        }
+                        else{
+                            intent.putExtra("valDesc",inputDesc);
+                        }
+
+
+                        startActivity(intent);
+                    }
+                    else if(Objects.equals(activity, "EventDetailsAdminActivity")){
+
+                        updateTitle(inputTitle);
+                        updateSport(selectedSport);
+                        updatePlayers(selectedPlayers);
+                        updateLoc(selectedLoc);
+                        updateDate(selectedDate);
+                        updateTime(selectedTime);
+                        updateDesc(inputDesc);
+
+
+                        Intent intent = new Intent(EditEventDetails.this, EventDetailsAdminActivity.class);
+                        intent.putExtra("valTitle",inputTitle);
+                        intent.putExtra("valSport",selectedSport);
+                        intent.putExtra("valPlayers",selectedPlayers);
+                        intent.putExtra("valLoc",selectedLoc);
+                        intent.putExtra("valDate",selectedDate);
+                        intent.putExtra("valTime",selectedTime);
+                        intent.putExtra("valDesc",inputDesc);
+                        intent.putExtra("eventul", mEvent);
+
+
+
+                        if(TextUtils.isEmpty(selectedDate)){
+                            intent.putExtra("valDate","To be discussed");
+                        }
+                        else{
+                            intent.putExtra("valDate",selectedDate);
+                        }
+
+                        if(TextUtils.isEmpty(selectedTime)){
+                            intent.putExtra("valTime","To be discussed");
+                        }
+                        else{
+                            intent.putExtra("valTime",selectedTime);
+                        }
+
+                        if(TextUtils.isEmpty(inputDesc)){
+                            intent.putExtra("valDesc","None");
+                        }
+                        else{
+                            intent.putExtra("valDesc",inputDesc);
+                        }
+
+
+                        startActivity(intent);
+                    }
+
+                }
+                else if(firstErrorField != null){
+                    // Redirecționează utilizatorul la primul câmp cu eroare
+                    firstErrorField.requestFocus();
+
+                    final View finalFirstErrorField = firstErrorField;
+                    scrollViewE.post(new Runnable() {
+                        @Override
+                        public void run() {
+                            int scrollToY = finalFirstErrorField.getTop() - 100; // Ajustează valoarea 100 pentru a obține poziția dorită
+                            scrollViewE.scrollTo(0, scrollToY);
+                        }
+                    });
+
+                }
+
+
+
             }
         });
 
@@ -410,4 +578,52 @@ public class EditEventDetails extends AppCompatActivity {
         }
 
     }
+
+    private void updateTitle(String inputTitle){
+        if(!valTitle.equals(inputTitle))
+        {
+            reference.child(mEvent.getKey()).child("eventName").setValue(inputTitle);
+
+        }
+        }
+    private void updateSport(String selectedSport){
+        if(!valueSport.equals(selectedSport))
+        {
+            reference.child(mEvent.getKey()).child("sport").setValue(selectedSport);
+
+        }
+        }
+
+    private void updatePlayers(String selectedPlayers){
+        if(!valuePlayers.equals(selectedPlayers))
+        {
+            reference.child(mEvent.getKey()).child("nrPlayers").setValue(selectedPlayers);
+        }
+    }
+
+    private void updateLoc(String selectedLoc){
+        if(!valueLoc.equals(selectedLoc))
+        {
+            reference.child(mEvent.getKey()).child("location").setValue(selectedLoc);
+        }
+        }
+
+    private void updateDate(String selectedDate){
+        if(!valueDate.equals(selectedDate) && !selectedDate.isEmpty())
+        {
+            reference.child(mEvent.getKey()).child("date").setValue(selectedDate);
+        }}
+
+    private void updateTime(String selectedTime){
+        if(!valueTime.equals(selectedTime) && !selectedTime.isEmpty())
+        {
+            reference.child(mEvent.getKey()).child("time").setValue(selectedTime);
+        }}
+
+    private void updateDesc(String inputDesc){
+        if(!valueDesc.equals(inputDesc) && !inputDesc.isEmpty())
+        {
+            reference.child(mEvent.getKey()).child("description").setValue(inputDesc);
+        }}
+
 }
