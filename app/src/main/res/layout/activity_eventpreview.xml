@@ -13,6 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
+        android:fontFamily="sans-serif-medium"
         android:text="Event Preview"
         android:textAlignment="center"
         android:textColor="@color/white"
@@ -28,7 +29,7 @@
             android:layout_width="match_parent"
             android:layout_height="800dp"
             android:layout_marginBottom="0dp"
-            android:background="#FFFFFF"
+            android:background="@drawable/simple"
             android:paddingLeft="30dp"
             android:paddingRight="30dp">
 
@@ -41,6 +42,7 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="40dp"
                 android:backgroundTint="#8BC34A"
+                android:fontFamily="sans-serif-medium"
                 android:textSize="15sp"
                 android:text="EDIT"  />
 
@@ -52,6 +54,7 @@
                 android:layout_marginStart="4dp"
                 android:layout_marginTop="40dp"
                 android:backgroundTint="#8BC34A"
+                android:fontFamily="sans-serif-medium"
                 android:textSize="15sp"
                 android:text="MAP" />
 
@@ -71,6 +74,7 @@
                     android:layout_below="@id/sportImage"
                     android:layout_centerHorizontal="true"
                     android:text="TITLE"
+                    android:fontFamily="sans-serif-medium"
                     android:textColor="@color/verde4"
                     android:textSize="30sp"
                     android:textStyle="bold" />
@@ -215,17 +219,18 @@
                     android:text="description"
                     android:textSize="18sp" />
 
-                <Button
-                    android:id="@+id/previewBtnAddEv"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/previewDescInput"
-                    android:layout_centerInParent="true"
-                    android:layout_marginTop="30dp"
-                    android:layout_marginBottom="70dp"
-                    android:backgroundTint="@color/verde5"
-                    android:text="ADD MATCH"
-                    android:textSize="22sp" />
+            <Button
+                android:id="@+id/previewBtnAddEv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/previewDescInput"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="70dp"
+                android:backgroundTint="@color/verde5"
+                android:fontFamily="sans-serif-medium"
+                android:text="ADD MATCH"
+                android:textSize="22sp" />
 
             </RelativeLayout>
 

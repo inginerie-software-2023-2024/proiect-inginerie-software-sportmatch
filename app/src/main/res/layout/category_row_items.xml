@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
+
     android:layout_height="wrap_content"
     android:layout_marginStart="16dp">
 
@@ -11,7 +12,7 @@
         android:layout_width="199dp"
         android:layout_height="321dp"
         android:onClick="OnCardClick"
-        app:cardBackgroundColor="#A7C957"
+        app:cardBackgroundColor="#A7C959"
         app:cardCornerRadius="30dp"
         app:cardElevation="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -28,6 +29,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginTop="280dp"
             android:ems="10"
+            android:fontFamily="sans-serif-medium"
             android:inputType="date"
             android:text="12/30/2003"
             android:textColor="#FBFDFD" />
@@ -40,6 +42,7 @@
             android:layout_marginTop="280dp"
             android:ems="10"
             android:inputType="time"
+            android:fontFamily="sans-serif-medium"
             android:text="10:30"
             android:textColor="#FFFFFF" />
 
@@ -49,6 +52,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:text="NUME EVENT"
+            android:fontFamily="sans-serif-medium"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
             android:textSize="18sp" />

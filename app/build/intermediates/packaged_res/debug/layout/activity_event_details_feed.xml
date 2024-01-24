@@ -14,6 +14,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
         android:text="Event Details"
+        android:fontFamily="sans-serif-medium"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="24sp" />
@@ -58,6 +59,7 @@
                 android:layout_centerHorizontal="true"
                 android:text="TITLE"
                 android:textColor="#000000"
+                android:fontFamily="sans-serif-medium"
                 android:textSize="30sp"
                 android:textStyle="bold" />
 
@@ -141,6 +143,7 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="40dp"
                 android:backgroundTint="#8BC34A"
+                android:fontFamily="sans-serif-medium"
                 android:textSize="15sp"
                 android:text="MAP" />
 
@@ -215,6 +218,7 @@
                 android:layout_toEndOf="@+id/detailsDesc"
                 android:text="description"
                 android:textSize="18sp" />
+
             <Button
                 android:id="@+id/detailsBtnParticipate"
                 android:layout_width="wrap_content"
@@ -222,6 +226,7 @@
                 android:layout_below="@+id/detailsDescInput"
                 android:layout_centerInParent="true"
                 android:layout_marginTop="50dp"
+                android:fontFamily="sans-serif-medium"
                 android:layout_marginBottom="70dp"
                 android:backgroundTint="@color/verde5"
                 android:text="Participate"

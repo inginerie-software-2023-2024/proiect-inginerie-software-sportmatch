@@ -3,6 +3,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@color/verdeFundal"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ViewProfileActivity">
@@ -28,6 +29,7 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:layout_marginLeft="10dp"
+            android:fontFamily="sans-serif-medium"
             android:layout_toRightOf="@+id/profile_image"
             android:includeFontPadding="false"
             android:text="Petrica Cristi"
@@ -42,6 +44,7 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-medium"
             android:layout_marginEnd="10dp"
             android:background="@drawable/gradientdrawable"
             android:text="logout" />
@@ -50,6 +53,7 @@
             android:id="@+id/button_editprofile"
             android:layout_width="110dp"
             android:layout_height="36dp"
+            android:fontFamily="sans-serif-medium"
             android:layout_alignParentTop="true"
             android:layout_alignParentStart="true"
             android:layout_marginTop="10dp"
@@ -115,6 +119,7 @@
                     android:layout_centerHorizontal="true"
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
+                    android:fontFamily="sans-serif-medium"
                     android:text="events created"
                     android:textColor="#fff"
                     android:textSize="20sp" />
@@ -169,6 +174,7 @@
                     android:layout_height="wrap_content"
                     android:layout_width="match_parent"
                     android:focusable="false"
+                    android:fontFamily="sans-serif-medium"
                     android:editable="false"
                     />
 
@@ -188,12 +194,14 @@
                 android:id="@+id/email_profile"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
+                android:fontFamily="sans-serif-medium"
                 >
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_height="wrap_content"
                     android:layout_width="match_parent"
                     android:text="petrica69@gmail.com"
+                    android:fontFamily="sans-serif-medium"
                     android:editable="false"
                     />
 
@@ -211,12 +219,14 @@
                 android:id="@+id/age_profile"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
+                android:fontFamily="sans-serif-medium"
                 >
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_height="wrap_content"
                     android:layout_width="match_parent"
                     android:text="20"
+                    android:fontFamily="sans-serif-medium"
                     android:editable="false"
 
                     />

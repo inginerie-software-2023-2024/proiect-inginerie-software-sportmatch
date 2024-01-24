@@ -72,12 +72,17 @@ drawable bk1
 drawable bk2
 drawable bk3
 drawable black_white_background
+drawable blurry
+drawable blurry_green
+drawable blurry_margins
+drawable blurrywhite
 drawable bottom_background
 drawable bowling
 drawable bowling2
 drawable bowling3
 drawable bowlingposter
 drawable chaticon
+drawable creepy
 drawable default_pfp
 drawable editprofile
 drawable eventicon
@@ -97,6 +102,7 @@ drawable fundalcolorat
 drawable fundalverdeinchis
 drawable gradien
 drawable gradientdrawable
+drawable greenpink
 drawable greensoccer
 drawable hanball1
 drawable handball
@@ -108,6 +114,7 @@ drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_send
 drawable item_selector
+drawable landscape
 drawable logo
 drawable logo_reverse
 drawable map_active
@@ -121,6 +128,7 @@ drawable pingpong2
 drawable pingpong3
 drawable rounded_edittext
 drawable roz
+drawable simple
 drawable sports
 drawable tennis
 drawable tennis1

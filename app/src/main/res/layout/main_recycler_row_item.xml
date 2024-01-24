@@ -13,6 +13,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"
         android:text="Titlu categorie"
+        android:fontFamily="sans-serif-medium"
         android:textAllCaps="true"
         android:textColor="@color/verde6"
         app:cardCornerRadius="5dp"

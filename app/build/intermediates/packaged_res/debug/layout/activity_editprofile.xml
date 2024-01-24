@@ -6,9 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".EditProfileActivity"
     android:background="@color/verdeFundal">
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".EditProfileActivity"
@@ -39,6 +37,7 @@
             android:includeFontPadding="false"
             android:text="Petrica Cristi"
             android:textColor="#ffff"
+            android:fontFamily="sans-serif-medium"
             android:textSize="40sp" />
         <!-- <TextView
             android:id="@+id/username_field"
@@ -91,6 +90,7 @@
                 <TextView
                     android:id="@+id/payment_desc"
                     android:includeFontPadding="false"
+                    android:fontFamily="sans-serif-medium"
                     android:layout_below="@id/payment_label"
                     android:layout_centerHorizontal="true"
                     android:layout_height="wrap_content"
@@ -112,9 +112,11 @@
             android:hint="Full Name"
             android:id="@+id/full_name_editprofile"
             android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
             android:layout_width="match_parent">
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
                 android:layout_width="match_parent"
                 android:text="Petrica Cristi"
                 />
@@ -135,6 +137,7 @@
             android:layout_width="match_parent" >
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
                 android:layout_width="match_parent"
                 />
         </com.google.android.material.textfield.TextInputLayout>
@@ -155,6 +158,7 @@
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:inputType="textPassword"
+                android:fontFamily="sans-serif-medium"
                 />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -174,6 +178,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
+                android:fontFamily="sans-serif-medium"
                 android:inputType="textPassword"                />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -186,7 +191,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
-        android:background="#fece2f"
+        android:background="@color/verde5"
         android:text="SAVE CHANGES"
         android:layout_marginBottom="30dp"/>
 </LinearLayout>

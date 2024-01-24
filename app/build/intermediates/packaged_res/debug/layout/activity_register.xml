@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fundalverdeinchis"
+    android:background="@drawable/greenpink"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -55,11 +55,13 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@id/Register"
                     android:layout_marginTop="20dp"
+                    android:fontFamily="sans-serif-medium"
                     android:hint="Full Name">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/FullNameInserted"
                         android:layout_width="match_parent"
+                        android:fontFamily="sans-serif-medium"
                         android:layout_height="60dp" />
 
                 </com.google.android.material.textfield.TextInputLayout>
@@ -86,6 +88,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/Username"
+                    android:fontFamily="sans-serif-medium"
                     android:layout_marginTop="30dp"
                     android:hint="Password">
 
@@ -93,6 +96,7 @@
                         android:id="@+id/PasswordInserted"
                         android:layout_width="match_parent"
                         android:layout_height="60dp"
+                        android:fontFamily="sans-serif-medium"
                         android:inputType="textPassword"/>
 
                 </com.google.android.material.textfield.TextInputLayout>
@@ -103,6 +107,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/Password"
+                    android:fontFamily="sans-serif-medium"
                     android:layout_marginTop="30dp"
                     android:hint="Confirm Password">
 
@@ -110,6 +115,7 @@
                         android:id="@+id/PasswordConfirmed"
                         android:layout_width="match_parent"
                         android:layout_height="60dp"
+                        android:fontFamily="sans-serif-medium"
                         android:inputType="textPassword"/>
 
                 </com.google.android.material.textfield.TextInputLayout>
@@ -121,12 +127,14 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@id/ConfirmPassword"
                     android:onClick="showDatePickerDialog"
+                    android:fontFamily="sans-serif-medium"
                     android:layout_marginTop="30dp"
                     android:hint="BirthDate">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/BirthDateInserted"
                         android:layout_width="match_parent"
+                        android:fontFamily="sans-serif-medium"
                         android:layout_height="60dp" />
 
                 </com.google.android.material.textfield.TextInputLayout>
@@ -159,6 +167,7 @@
                     android:layout_marginBottom="30dp"
                     android:backgroundTint="@color/grey"
                     android:text="REGISTER"
+                    android:fontFamily="sans-serif-medium"
                     android:textSize="22sp" />
 
             </RelativeLayout>

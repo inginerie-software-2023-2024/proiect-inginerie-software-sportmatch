@@ -2879,6 +2879,10 @@ drawable bk1
 drawable bk2
 drawable bk3
 drawable black_white_background
+drawable blurry
+drawable blurry_green
+drawable blurry_margins
+drawable blurrywhite
 drawable bottom_background
 drawable bowling
 drawable bowling2
@@ -2912,6 +2916,7 @@ drawable common_google_signin_btn_text_light
 drawable common_google_signin_btn_text_light_focused
 drawable common_google_signin_btn_text_light_normal
 drawable common_google_signin_btn_text_light_normal_background
+drawable creepy
 drawable default_pfp
 drawable design_fab_background
 drawable design_ic_visibility
@@ -2938,6 +2943,7 @@ drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable gradien
 drawable gradientdrawable
+drawable greenpink
 drawable greensoccer
 drawable hanball1
 drawable handball
@@ -2961,6 +2967,7 @@ drawable ic_mtrl_chip_close_circle
 drawable ic_search_black_24
 drawable ic_send
 drawable item_selector
+drawable landscape
 drawable logo
 drawable logo_reverse
 drawable m3_appbar_background
@@ -3045,6 +3052,7 @@ drawable pingpong2
 drawable pingpong3
 drawable rounded_edittext
 drawable roz
+drawable simple
 drawable sports
 drawable tennis
 drawable tennis1

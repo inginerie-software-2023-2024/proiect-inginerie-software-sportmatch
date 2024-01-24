@@ -2878,6 +2878,10 @@ int drawable bk1 0x7f08009b
 int drawable bk2 0x7f08009c
 int drawable bk3 0x7f08009d
 int drawable black_white_background 0x7f08009e
+int drawable blurry 0x7f080155
+int drawable blurry_green 0x7f080158
+int drawable blurry_margins 0x7f08015a
+int drawable blurrywhite 0x7f080159
 int drawable bottom_background 0x7f08009f
 int drawable bowling 0x7f0800a0
 int drawable bowling2 0x7f0800a1
@@ -2911,6 +2915,7 @@ int drawable common_google_signin_btn_text_light 0x7f0800bc
 int drawable common_google_signin_btn_text_light_focused 0x7f0800bd
 int drawable common_google_signin_btn_text_light_normal 0x7f0800be
 int drawable common_google_signin_btn_text_light_normal_background 0x7f0800bf
+int drawable creepy 0x7f08015b
 int drawable default_pfp 0x7f0800c0
 int drawable design_fab_background 0x7f0800c1
 int drawable design_ic_visibility 0x7f0800c2
@@ -2937,6 +2942,7 @@ int drawable googleg_disabled_color_18 0x7f0800d6
 int drawable googleg_standard_color_18 0x7f0800d7
 int drawable gradien 0x7f0800d8
 int drawable gradientdrawable 0x7f0800d9
+int drawable greenpink 0x7f080156
 int drawable greensoccer 0x7f0800da
 int drawable hanball1 0x7f0800db
 int drawable handball 0x7f0800dc
@@ -2960,6 +2966,7 @@ int drawable ic_mtrl_chip_close_circle 0x7f0800ed
 int drawable ic_search_black_24 0x7f0800ee
 int drawable ic_send 0x7f0800ef
 int drawable item_selector 0x7f0800f0
+int drawable landscape 0x7f080157
 int drawable logo 0x7f0800f1
 int drawable logo_reverse 0x7f0800f2
 int drawable m3_appbar_background 0x7f0800f3
@@ -3044,6 +3051,7 @@ int drawable pingpong2 0x7f080141
 int drawable pingpong3 0x7f080142
 int drawable rounded_edittext 0x7f080143
 int drawable roz 0x7f080144
+int drawable simple 0x7f08015c
 int drawable sports 0x7f080145
 int drawable tennis 0x7f080146
 int drawable tennis1 0x7f080147
