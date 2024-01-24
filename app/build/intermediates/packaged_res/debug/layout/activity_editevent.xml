@@ -4,10 +4,11 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/verde3"
+    android:background="@drawable/simple"
     tools:context=".EditEventDetails">
 
     <TextView
+        android:fontFamily="sans-serif-medium"
         android:id="@+id/editTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -15,7 +16,7 @@
         android:layout_marginTop="15dp"
         android:text="Edit Details"
         android:textAlignment="center"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="24sp" />
 
     <ScrollView
@@ -28,12 +29,13 @@
             android:layout_width="match_parent"
             android:layout_height="680dp"
             android:layout_marginBottom="4dp"
-            android:background="#FFFFFF"
+            android:background="@drawable/simple"
             android:paddingLeft="40dp"
             android:paddingRight="40dp">
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/editEventName"
+                android:fontFamily="sans-serif-medium"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -45,6 +47,7 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/editEventNameEdt"
                     android:layout_width="match_parent"
+                    android:fontFamily="sans-serif-medium"
                     android:layout_height="60dp" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -65,6 +68,7 @@
                     android:id="@+id/autocomplete_sport"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
+                    android:fontFamily="sans-serif-medium"
                     android:inputType="none" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -85,6 +89,7 @@
                     android:id="@+id/autocomplete_players"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
+                    android:fontFamily="sans-serif-medium"
                     android:inputType="none" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -105,6 +110,7 @@
                     android:id="@+id/autocomplete_loc"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
+                    android:fontFamily="sans-serif-medium"
                     android:inputType="none" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -146,6 +152,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:inputType="date"
+                    android:fontFamily="sans-serif-medium"
                     android:focusableInTouchMode="true"
                     android:focusable="false"/>
 
@@ -169,6 +176,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:inputType="time"
+                    android:fontFamily="sans-serif-medium"
                     android:focusableInTouchMode="true"
                     android:focusable="false"/>
 
@@ -191,6 +199,7 @@
                     android:id="@+id/editEventDescEdt"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
+                    android:fontFamily="sans-serif-medium"
                     android:inputType="textMultiLine" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -202,6 +211,7 @@
                 android:layout_below="@id/editEventDesc"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-medium"
                 android:layout_marginBottom="100dp"
                 android:backgroundTint="@color/verde5"
                 android:text="SAVE CHANGES"

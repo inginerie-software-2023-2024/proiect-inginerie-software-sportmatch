@@ -15,6 +15,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
         android:text="Create Event"
+        android:fontFamily="sans-serif-medium"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="24sp" />
@@ -29,7 +30,7 @@
         android:layout_width="match_parent"
         android:layout_height="680dp"
         android:layout_marginBottom="4dp"
-        android:background="#FFFFFF"
+        android:background="@drawable/simple"
         android:paddingLeft="40dp"
         android:paddingRight="40dp">
 
@@ -47,6 +48,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/newEventNameEdt"
                 android:layout_width="match_parent"
+                android:fontFamily="sans-serif-medium"
                 android:layout_height="60dp" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -67,6 +69,7 @@
                 android:id="@+id/autocomplete_sport"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
+                android:fontFamily="sans-serif-medium"
                 android:inputType="none" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -87,6 +90,7 @@
                 android:id="@+id/autocomplete_players"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
+                android:fontFamily="sans-serif-medium"
                 android:inputType="none" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -95,6 +99,7 @@
             android:id="@+id/newEventLoc"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
             android:layout_width="230dp"
+            android:fontFamily="sans-serif-medium"
             android:layout_height="wrap_content"
             android:layout_below="@id/newEventPlayers"
             android:layout_marginTop="10dp"
@@ -107,6 +112,7 @@
                 android:id="@+id/autocomplete_loc"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
+                android:fontFamily="sans-serif-medium"
                 android:inputType="none" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -129,6 +135,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/newEventLoc"
             android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif-medium"
             android:layout_marginTop="20dp"
             android:text="@string/Discuss" />
 
@@ -137,6 +144,7 @@
             android:id="@+id/newEventDate"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="160dp"
+            android:fontFamily="sans-serif-medium"
             android:layout_height="wrap_content"
             android:layout_below="@id/textDateTime"
             android:layout_marginTop="5dp"
@@ -149,6 +157,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:inputType="date"
+                android:fontFamily="sans-serif-medium"
                 android:focusableInTouchMode="true"
                 android:focusable="false"/>
 
@@ -172,6 +181,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:inputType="time"
+                android:fontFamily="sans-serif-medium"
                 android:focusableInTouchMode="true"
                 android:focusable="false"/>
 
@@ -187,6 +197,7 @@
             android:layout_below="@id/newEventDate"
             android:layout_marginTop="10dp"
             android:hint="Description"
+            android:fontFamily="sans-serif-medium"
             app:helperText="Not mandatory"
             app:helperTextEnabled="true">
 
@@ -194,6 +205,7 @@
                 android:id="@+id/newEventDescEdt"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
+                android:fontFamily="sans-serif-medium"
                 android:inputType="textMultiLine" />
 
         </com.google.android.material.textfield.TextInputLayout>

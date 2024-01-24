@@ -36,6 +36,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:paddingLeft="7dp"
+                    android:fontFamily="sans-serif-medium"
                     android:paddingRight="10dp"
                     android:text="Username"
                     android:textColor="#DDDDDD"
@@ -48,6 +49,7 @@
 
                 <TextView
                     android:id="@+id/tvMessageTime"
+                    android:fontFamily="sans-serif-medium"
                     android:layout_width="wrap_content"
                     android:layout_height="16dp"
                     android:layout_marginRight="1dp"
@@ -63,6 +65,7 @@
                 android:layout_height="wrap_content"
                 android:ellipsize="end"
                 android:maxLines="10"
+                android:fontFamily="sans-serif-medium"
                 android:paddingLeft="2dp"
                 android:paddingTop="2dp"
                 android:paddingBottom="0dp"

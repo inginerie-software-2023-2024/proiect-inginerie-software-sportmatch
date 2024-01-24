@@ -44,6 +44,7 @@
             android:includeFontPadding="false"
             android:text="Petrica Cristi"
             android:textColor="#ffff"
+            android:fontFamily="sans-serif-medium"
             android:textSize="40sp" />
 
 
@@ -51,24 +52,27 @@
             android:id="@+id/button_logout"
             android:layout_width="110dp"
             android:layout_height="36dp"
+            android:fontFamily="sans-serif-medium"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            android:background="@drawable/gradientdrawable"
+            android:background="@color/verde5"
             android:text="logout" />
 
         <Button
             android:id="@+id/button_editprofile"
             android:layout_width="110dp"
             android:layout_height="36dp"
-            android:layout_alignParentTop="true"
             android:layout_alignParentStart="true"
-            android:layout_marginTop="10dp"
+            android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
-            android:background="@drawable/gradientdrawable"
-            android:text="edit" />
+            android:layout_marginTop="10dp"
+            android:background="@color/verde5"
+            android:fontFamily="sans-serif-medium"
+            android:text="edit"
+            android:textAlignment="center" />
 
         <!-- <TextView
             android:id="@+id/username_field"
@@ -97,11 +101,12 @@
             android:layout_margin="10dp"
             android:layout_weight="1"
             android:layout_width="0dp"
-            app:cardBackgroundColor="@color/verde5"
+            app:cardBackgroundColor="@color/verde4"
             app:cardElevation="10dp">
             <RelativeLayout
                 android:layout_height="match_parent"
                 android:layout_width="match_parent"
+                android:background="@color/verde5"
                 android:padding="5dp">
 
                 <ImageView
@@ -126,6 +131,7 @@
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
                     android:text="Events"
+                    android:fontFamily="sans-serif-medium"
                     android:textColor="#fff"
                     android:textSize="20sp" />
             </RelativeLayout>
@@ -142,11 +148,13 @@
             android:hint="Full Name"
             android:id="@+id/full_name_profile"
             android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
             android:layout_width="match_parent">
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:text="Petrica Cristi"
+                android:fontFamily="sans-serif-medium"
                 android:focusable="false"
                 android:editable="false"
                 />
@@ -168,6 +176,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
+                android:fontFamily="sans-serif-medium"
                 android:focusable="false"
                 android:editable="false"
                 />
@@ -192,6 +201,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:editable="false"
+                android:fontFamily="sans-serif-medium"
                 android:text="petrica69@gmail.com" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -214,6 +224,7 @@
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:text="69"
+                android:fontFamily="sans-serif-medium"
                 android:editable="false"
 
                 />

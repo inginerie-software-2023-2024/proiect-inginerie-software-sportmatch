@@ -36,6 +36,7 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="30dp"
                 android:layout_marginBottom="15dp"
+                android:fontFamily="sans-serif-medium"
                 android:text="&#xD; List of requests &#xD;"
                 android:textSize="20sp"
                 android:textColor="@color/verde4"

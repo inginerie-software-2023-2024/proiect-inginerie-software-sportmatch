@@ -16,6 +16,7 @@
         android:layout_marginTop="10dp"
         android:text="Event Details"
         android:textAlignment="center"
+        android:fontFamily="sans-serif-medium"
         android:textColor="@color/white"
         android:textSize="34sp" />
 
@@ -48,6 +49,7 @@
                 android:layout_width="140dp"
                 android:layout_height="wrap_content"
                 android:textSize="15sp"
+                android:fontFamily="sans-serif-medium"
                 android:layout_alignParentEnd="true"
                 android:layout_marginEnd="10dp"
                 android:layout_marginTop="40dp"
@@ -65,6 +67,7 @@
                 android:layout_marginTop="60dp"
                 android:layout_toLeftOf="@+id/sportImage"
                 android:backgroundTint="#8BC34A"
+                android:fontFamily="sans-serif-medium"
                 android:textSize="15sp"
                 android:text="EDIT" />
 
@@ -76,6 +79,7 @@
                 android:layout_marginLeft="235dp"
                 android:backgroundTint="#8BC34A"
                 android:text="Map"
+                android:fontFamily="sans-serif-medium"
                 android:textSize="15sp" />
 
             <ImageView
@@ -95,6 +99,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"
                 android:text="TITLE"
+                android:fontFamily="sans-serif-medium"
                 android:textColor="#000000"
                 android:textSize="30sp"
                 android:textStyle="bold" />
@@ -252,6 +257,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/detailsDesc"
                 android:layout_marginLeft="10dp"
+                android:fontFamily="sans-serif-medium"
                 android:layout_marginTop="40dp"
                 android:backgroundTint="@color/verde5"
                 android:text="Requests"

@@ -28,13 +28,13 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/main_recycler"
         android:layout_width="match_parent"
-        android:layout_height="650dp"
+        android:layout_height="539dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginTop="105dp"
+        android:layout_marginTop="132dp"
         android:layout_marginBottom="60dp"
-        android:background="@drawable/feed"
-        />
+        android:background="@drawable/simple" />
+<!--        android:background="@drawable/feed"-->
 
     <TextView
         android:id="@+id/textView"
@@ -43,18 +43,24 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="12dp"
         android:layout_marginEnd="100dp"
+        android:fontFamily="sans-serif-medium"
         android:text="All Events"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="24sp" />
-
+<androidx.cardview.widget.CardView
+    android:layout_width="170dp"
+    android:layout_alignParentTop="true"
+    android:layout_marginStart="20dp"
+    android:layout_marginTop="60dp"
+    app:cardCornerRadius="20dp"
+    android:layout_height="60dp">
     <com.google.android.material.textfield.TextInputLayout
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
         android:layout_width="170dp"
         android:layout_height="60dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="40dp"
-        android:background="@color/verde3"
+
+        android:background="@color/white"
         android:hint="By Date">
 
         <AutoCompleteTextView
@@ -62,17 +68,23 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/white"
+            android:backgroundTint="@color/white"
+            android:fontFamily="sans-serif-medium"
             android:inputType="none" />
     </com.google.android.material.textfield.TextInputLayout>
-    
 
+</androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="170dp"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="60dp"
+        app:cardCornerRadius="20dp"
+        android:layout_height="60dp">
     <com.google.android.material.textfield.TextInputLayout
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
         android:layout_width="170dp"
         android:layout_height="60dp"
-        android:layout_marginStart="220dp"
-        android:layout_marginTop="40dp"
-        android:background="@color/verde3"
+        android:background="@color/white"
         android:hint="By Players">
 
         <AutoCompleteTextView
@@ -80,8 +92,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/white"
+            android:backgroundTint="@color/white"
+            android:fontFamily="sans-serif-medium"
             android:inputType="none" />
 
     </com.google.android.material.textfield.TextInputLayout>
-
+    </androidx.cardview.widget.CardView>
 </RelativeLayout>

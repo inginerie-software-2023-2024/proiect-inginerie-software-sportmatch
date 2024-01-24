@@ -34,7 +34,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginTop="60dp"
         android:layout_marginBottom="60dp"
-        android:background="@drawable/feed" />
+        android:background="@drawable/simple" />
 
     <TextView
         android:id="@+id/textView2"
@@ -43,6 +43,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
         android:text="Participant Events"
+        android:fontFamily="sans-serif-medium"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="24sp"/>
