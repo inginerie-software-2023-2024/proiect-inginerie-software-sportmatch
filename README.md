@@ -8,6 +8,7 @@ Proiect realizat pentru Metode de Dezvoltare Software
 * [Ionescu Raluca](https://github.com/RalucaIonescu12)
 * [Isache Catalina](https://github.com/catalina-isache)
 * [Radulescu Bianca](https://github.com/biancaradulescu28)
+* [Adam Emanuel](https://github.com/adamemi02)
 
 Cerintele din barem sunt detaliate in [Wiki](https://github.com/elenaaad/SportMatch/wiki)
 
