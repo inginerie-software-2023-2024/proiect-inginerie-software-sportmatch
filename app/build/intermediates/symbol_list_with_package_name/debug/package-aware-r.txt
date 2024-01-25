@@ -3287,6 +3287,10 @@ id design_menu_item_action_area
 id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
+id detailsAdminF
+id detailsAdminInput
+id detailsAdminInputP
+id detailsAdminP
 id detailsBtnEdit
 id detailsBtnMap
 id detailsBtnMapP

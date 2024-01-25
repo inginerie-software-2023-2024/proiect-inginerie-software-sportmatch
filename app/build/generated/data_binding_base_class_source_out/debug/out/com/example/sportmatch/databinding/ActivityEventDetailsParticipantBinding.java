@@ -29,6 +29,12 @@ public final class ActivityEventDetailsParticipantBinding implements ViewBinding
   public final BottomNavigationView bottomNavigationView;
 
   @NonNull
+  public final TextView detailsAdminInputP;
+
+  @NonNull
+  public final TextView detailsAdminP;
+
+  @NonNull
   public final Button detailsBtnMapP;
 
   @NonNull
@@ -81,6 +87,7 @@ public final class ActivityEventDetailsParticipantBinding implements ViewBinding
 
   private ActivityEventDetailsParticipantBinding(@NonNull RelativeLayout rootView,
       @NonNull ImageView backhomeP, @NonNull BottomNavigationView bottomNavigationView,
+      @NonNull TextView detailsAdminInputP, @NonNull TextView detailsAdminP,
       @NonNull Button detailsBtnMapP, @NonNull TextView detailsDateInputP,
       @NonNull TextView detailsDateP, @NonNull TextView detailsDescInputP,
       @NonNull TextView detailsDescP, @NonNull TextView detailsLocInputP,
@@ -92,6 +99,8 @@ public final class ActivityEventDetailsParticipantBinding implements ViewBinding
     this.rootView = rootView;
     this.backhomeP = backhomeP;
     this.bottomNavigationView = bottomNavigationView;
+    this.detailsAdminInputP = detailsAdminInputP;
+    this.detailsAdminP = detailsAdminP;
     this.detailsBtnMapP = detailsBtnMapP;
     this.detailsDateInputP = detailsDateInputP;
     this.detailsDateP = detailsDateP;
@@ -147,6 +156,18 @@ public final class ActivityEventDetailsParticipantBinding implements ViewBinding
       id = R.id.bottomNavigationView;
       BottomNavigationView bottomNavigationView = ViewBindings.findChildViewById(rootView, id);
       if (bottomNavigationView == null) {
+        break missingId;
+      }
+
+      id = R.id.detailsAdminInputP;
+      TextView detailsAdminInputP = ViewBindings.findChildViewById(rootView, id);
+      if (detailsAdminInputP == null) {
+        break missingId;
+      }
+
+      id = R.id.detailsAdminP;
+      TextView detailsAdminP = ViewBindings.findChildViewById(rootView, id);
+      if (detailsAdminP == null) {
         break missingId;
       }
 
@@ -253,10 +274,11 @@ public final class ActivityEventDetailsParticipantBinding implements ViewBinding
       }
 
       return new ActivityEventDetailsParticipantBinding((RelativeLayout) rootView, backhomeP,
-          bottomNavigationView, detailsBtnMapP, detailsDateInputP, detailsDateP, detailsDescInputP,
-          detailsDescP, detailsLocInputP, detailsLocP, detailsParticipantsButtonP,
-          detailsPlayersInputP, detailsPlayersP, detailsSportInputP, detailsSportP,
-          detailsTimeInputP, detailsTimeP, detailsTitleP, sportImageP, titleP);
+          bottomNavigationView, detailsAdminInputP, detailsAdminP, detailsBtnMapP,
+          detailsDateInputP, detailsDateP, detailsDescInputP, detailsDescP, detailsLocInputP,
+          detailsLocP, detailsParticipantsButtonP, detailsPlayersInputP, detailsPlayersP,
+          detailsSportInputP, detailsSportP, detailsTimeInputP, detailsTimeP, detailsTitleP,
+          sportImageP, titleP);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
