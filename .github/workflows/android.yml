@@ -37,6 +37,3 @@ jobs:
           adb devices
           # Run tests
           ./gradlew connectedAndroidTest
-
-    - name: Run Espresso tests
-      run: ./gradlew connectedAndroidTest
