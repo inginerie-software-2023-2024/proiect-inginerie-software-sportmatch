@@ -1,16 +1,16 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.sportmatch.app-mergeDebugResources-4:/values-w1240dp-v13/values-w1240dp-v13.xml",
+            "outputFile": "com.example.sportmatch.app-mergeDebugResources-49:/values-w1240dp-v13/values-w1240dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\FACULTATE\\Anul III\\proiect-inginerie-software-sportmatch\\app\\src\\main\\res\\values-w1240dp\\dimens.xml",
+                    "source": "C:\\Users\\Asus\\Desktop\\proiect-inginerie-software-sportmatch\\app\\src\\main\\res\\values-w1240dp\\dimens.xml",
                     "from": {
                         "startLines": "1",
                         "startColumns": "4",
-                        "startOffsets": "16",
+                        "startOffsets": "17",
                         "endColumns": "42",
-                        "endOffsets": "54"
+                        "endOffsets": "55"
                     },
                     "to": {
                         "startLines": "2",

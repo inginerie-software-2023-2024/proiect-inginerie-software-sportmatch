@@ -130,6 +130,8 @@ drawable rounded_edittext
 drawable roz
 drawable simple
 drawable sports
+drawable stare
+drawable starf
 drawable tennis
 drawable tennis1
 drawable tennis2
@@ -291,6 +293,8 @@ id newpass
 id oldpass
 id payment_desc
 id payment_label
+id popupMessage
+id popupTitle
 id previewBtnAddEv
 id previewBtnEdit
 id previewBtnMap
@@ -321,6 +325,11 @@ id splash_view
 id splashtext
 id sportImage
 id sportImageP
+id star1
+id star2
+id star3
+id star4
+id star5
 id textDateTime
 id textView
 id textView1
@@ -372,6 +381,7 @@ layout list_sport
 layout list_sportfields
 layout list_time
 layout main_recycler_row_item
+layout mappopup
 layout registered_event_item
 menu bottom_menu
 mipmap ic_launcher

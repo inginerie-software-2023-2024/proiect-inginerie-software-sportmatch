@@ -164,7 +164,11 @@ public class CreateEventActivity extends AppCompatActivity {
                 locations.clear();
                 for(SportLocation sploc: allLocations){
                     if(sploc.getSport().getSportName().equals(SelectedSport)){
-                        locations.add(sploc.getLocationName());
+
+                        if (sploc.getReview() == 0)
+                            locations.add(sploc.getLocationName() + " (-/5)");
+                        else
+                            locations.add(sploc.getLocationName() + " (" + sploc.getReview() + "/5)");
                     }
                 }
                 adapterLoc.notifyDataSetChanged();

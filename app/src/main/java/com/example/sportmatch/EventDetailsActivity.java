@@ -4,6 +4,7 @@ import static android.content.ContentValues.TAG;
 
 import static com.example.sportmatch.FCMSend.pushNotification;
 
+import android.annotation.SuppressLint;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.content.Intent;
@@ -28,6 +29,7 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
@@ -147,7 +149,8 @@ public class EventDetailsActivity extends AppCompatActivity {
         detailsPlayersInput.setText(valPlayers);
 
         String valLoc = getIntent().getStringExtra("valLoc");
-        detailsLocInput.setText(valLoc);
+        getLocationByNameFromDatabase(valLoc, valSport);
+        //detailsLocInput.setText(valLoc);
 
         String valDate = getIntent().getStringExtra("valDate");
         detailsDateInput.setText(valDate);
@@ -366,6 +369,41 @@ public class EventDetailsActivity extends AppCompatActivity {
 
 
 
+    }
+
+    private void getLocationByNameFromDatabase(String locationName, String sportName) {
+        DatabaseReference locationsRef = FirebaseDatabase.getInstance().getReference().child("SportLocations");
+
+        Query query = locationsRef.orderByChild("locationName").equalTo(locationName);
+
+        query.addValueEventListener(new ValueEventListener() {
+            @SuppressLint("SetTextI18n")
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                if (dataSnapshot.exists()) {
+                    for (DataSnapshot locationSnapshot : dataSnapshot.getChildren()) {
+                        SportLocation location = locationSnapshot.getValue(SportLocation.class);
+                        if (location != null && location.getSport().getSportName().equals(sportName)) {
+                            // Handle the retrieved SportLocation object
+                            detailsLocInput.setText(location.getLocationName() + " (" + location.getReview() + "/5)");
+                            System.out.println("Location Name: " + location.getLocationName());
+                        } else {
+                            // Handle the case when the SportLocation object is null
+                            System.out.println("Location not found");
+                        }
+                    }
+                } else {
+                    // Handle the case when the dataSnapshot is empty
+                    System.out.println("Location not found");
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+                // Handle the error case
+                System.out.println("Database error: " + databaseError.getMessage());
+            }
+        });
     }
 
 }

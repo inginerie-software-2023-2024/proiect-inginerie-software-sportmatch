@@ -3054,6 +3054,8 @@ drawable rounded_edittext
 drawable roz
 drawable simple
 drawable sports
+drawable stare
+drawable starf
 drawable tennis
 drawable tennis1
 drawable tennis2
@@ -3571,6 +3573,8 @@ id payment_label
 id peekHeight
 id percent
 id pin
+id popupMessage
+id popupTitle
 id position
 id postLayout
 id pressed
@@ -3686,6 +3690,11 @@ id src_atop
 id src_in
 id src_over
 id standard
+id star1
+id star2
+id star3
+id star4
+id star5
 id start
 id startHorizontal
 id startToEnd
@@ -3949,6 +3958,7 @@ layout m3_alert_dialog_title
 layout m3_auto_complete_simple_item
 layout m3_side_sheet_dialog
 layout main_recycler_row_item
+layout mappopup
 layout material_chip_input_combo
 layout material_clock_display
 layout material_clock_display_divider
