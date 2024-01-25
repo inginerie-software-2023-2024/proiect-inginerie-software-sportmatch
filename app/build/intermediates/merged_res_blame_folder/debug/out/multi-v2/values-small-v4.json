@@ -4,7 +4,7 @@
             "outputFile": "com.example.sportmatch.app-mergeDebugResources-49:/values-small-v4/values-small-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Asus\\.gradle\\caches\\transforms-3\\182faf041fdcb262ef4ea683b4175339\\transformed\\material-1.8.0\\res\\values-small-v4\\values-small-v4.xml",
+                    "source": "C:\\Users\\elena\\.gradle\\caches\\transforms-3\\182faf041fdcb262ef4ea683b4175339\\transformed\\material-1.8.0\\res\\values-small-v4\\values-small-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

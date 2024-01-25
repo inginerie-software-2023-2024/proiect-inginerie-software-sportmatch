@@ -4,7 +4,6 @@ import static android.content.ContentValues.TAG;
 
 import static com.example.sportmatch.FCMSend.pushNotification;
 
-import android.annotation.SuppressLint;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.content.Intent;
@@ -29,7 +28,6 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
@@ -44,6 +42,8 @@ public class EventDetailsActivity extends AppCompatActivity {
     private static final String CHANNEL_DESC = "Event Request Channel";
 
     TextView title;
+    TextView admin;
+    TextView adminInput;
     ImageView sportImage;
     TextView detailsTitle;
     TextView detailsSport;
@@ -119,8 +119,9 @@ public class EventDetailsActivity extends AppCompatActivity {
         database = FirebaseDatabase.getInstance();
 
 
-
         title = findViewById(R.id.title);
+        admin = findViewById(R.id.detailsAdminF);
+        adminInput = findViewById(R.id.detailsAdminInput);
         sportImage = findViewById(R.id.sportImage);
         detailsTitle = findViewById(R.id.detailsTitle);
         detailsSport = findViewById(R.id.detailsSport);
@@ -142,6 +143,9 @@ public class EventDetailsActivity extends AppCompatActivity {
         String valTitle = getIntent().getStringExtra("valTitle");
         detailsTitle.setText(valTitle);
 
+        String valAdmin = getIntent().getStringExtra("valAdmin");
+        adminInput.setText(valAdmin);
+
         String valSport = getIntent().getStringExtra("valSport");
         detailsSportInput.setText(valSport);
 
@@ -149,8 +153,7 @@ public class EventDetailsActivity extends AppCompatActivity {
         detailsPlayersInput.setText(valPlayers);
 
         String valLoc = getIntent().getStringExtra("valLoc");
-        getLocationByNameFromDatabase(valLoc, valSport);
-        //detailsLocInput.setText(valLoc);
+        detailsLocInput.setText(valLoc);
 
         String valDate = getIntent().getStringExtra("valDate");
         detailsDateInput.setText(valDate);
@@ -160,6 +163,7 @@ public class EventDetailsActivity extends AppCompatActivity {
 
         String valDesc = getIntent().getStringExtra("valDesc");
         detailsDescInput.setText(valDesc);
+
 
         switch (valSport) {
             case "Volleyball":
@@ -194,6 +198,29 @@ public class EventDetailsActivity extends AppCompatActivity {
         } else {
             Log.d(TAG, "onCreate la details: event is not null");
         }
+
+        String adminId = mEvent.getCreator();
+        DatabaseReference adminRef = database.getReference("Users").child(adminId).child("username");
+        adminRef.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                if (dataSnapshot.exists()) {
+                    String adminUsername = dataSnapshot.getValue(String.class);
+                    if (adminUsername != null) {
+                        adminInput.setText(adminUsername);
+                    }
+                } else {
+                    Log.d(TAG, "Admin's username not found in the database");
+                }
+            }
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+                // Handle the error
+                Log.d(TAG, "Error retrieving admin's username from the database: " + databaseError.getMessage());
+            }
+        });
+
+
         FirebaseAuth auth = FirebaseAuth.getInstance();
         FirebaseUser currentUser = auth.getCurrentUser();
 
@@ -219,14 +246,6 @@ public class EventDetailsActivity extends AppCompatActivity {
             isParticipant = false;
         }
 
-// Show or hide the "Participate" button based on the conditions
-//        if (isRequestSent || isParticipant) {
-////            detailsBtnParticipate.setVisibility(View.GONE); // Hide the button
-//        } else {
-//            detailsBtnParticipate.setVisibility(View.VISIBLE); // Show the button
-//        }
-
-
         detailsBtnParticipate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -242,6 +261,7 @@ public class EventDetailsActivity extends AppCompatActivity {
                 DatabaseReference eventsRef = database.getReference("Events");
                 DatabaseReference eventRef = eventsRef.child(mEvent.getKey());
                 DatabaseReference requestsReff = eventRef.child("requests");
+
 
                 requestsReff.addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
@@ -276,7 +296,6 @@ public class EventDetailsActivity extends AppCompatActivity {
                         Log.d("Error", "Error while updating requests field");
                     }
                 });
-
 
 
                 if(requestId == null) {
@@ -371,39 +390,5 @@ public class EventDetailsActivity extends AppCompatActivity {
 
     }
 
-    private void getLocationByNameFromDatabase(String locationName, String sportName) {
-        DatabaseReference locationsRef = FirebaseDatabase.getInstance().getReference().child("SportLocations");
-
-        Query query = locationsRef.orderByChild("locationName").equalTo(locationName);
-
-        query.addValueEventListener(new ValueEventListener() {
-            @SuppressLint("SetTextI18n")
-            @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                if (dataSnapshot.exists()) {
-                    for (DataSnapshot locationSnapshot : dataSnapshot.getChildren()) {
-                        SportLocation location = locationSnapshot.getValue(SportLocation.class);
-                        if (location != null && location.getSport().getSportName().equals(sportName)) {
-                            // Handle the retrieved SportLocation object
-                            detailsLocInput.setText(location.getLocationName() + " (" + location.getReview() + "/5)");
-                            System.out.println("Location Name: " + location.getLocationName());
-                        } else {
-                            // Handle the case when the SportLocation object is null
-                            System.out.println("Location not found");
-                        }
-                    }
-                } else {
-                    // Handle the case when the dataSnapshot is empty
-                    System.out.println("Location not found");
-                }
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
-                // Handle the error case
-                System.out.println("Database error: " + databaseError.getMessage());
-            }
-        });
-    }
-
 }
+
