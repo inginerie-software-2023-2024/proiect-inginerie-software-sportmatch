@@ -3,30 +3,54 @@ package com.example.sportmatch;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.android.gms.auth.api.signin.GoogleSignIn;
+import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
+import com.google.android.gms.auth.api.signin.GoogleSignInClient;
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
+import com.google.android.gms.common.api.ApiException;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthCredential;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.auth.GoogleAuthProvider;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import java.util.Calendar;
+import java.util.HashMap;
 
 public class MainActivity extends AppCompatActivity {
 
-    ImageView backg;
+    ImageView backg, googlelogo;
     LinearLayout splashtext, hometext, bottons;
     Animation frombottom;
 
+    FirebaseAuth auth;
 
-    //TODO: DUPA SIGN IN SAU SIGN UP DE LEGAT CU FEEDUL
-//
-//    TODO: Elena: prima pag cu 2 butoane log in si sign up
-//    TODO: Elena: pagina de register(frontendul la ce a facut Cata)
-//    TODO: Debora: terminat profile details + edit
-//    TODO: Debora: log out
-//    TODO: Raluca: Admin
-//    TODO: Cata: Ia previewEvent si adauga chat si view member list
+    FirebaseDatabase database;
+
+    Calendar calendar;
+
+    GoogleSignInClient mGoogleSignInClient;
+    int RC_SIGN_IN = 20;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,6 +89,31 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, RegisterActivity.class));
             }
         });
+
+
+        googlelogo = findViewById(R.id.googlelogo);
+        auth = FirebaseAuth.getInstance();
+        database = FirebaseDatabase.getInstance();
+        calendar = Calendar.getInstance();
+
+        GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+                .requestIdToken(getString(R.string.default_web_client_id))
+                .requestEmail().build();
+
+        mGoogleSignInClient = GoogleSignIn.getClient(this,gso);
+
+        googlelogo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                googleSignIn();
+            }
+        });
+
+        if(auth.getCurrentUser() != null){
+            Intent intent = new Intent(MainActivity.this, BottomNavActivity.class);
+            startActivity(intent);
+            finish();
+        }
 
 
 
@@ -188,4 +237,84 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    private void googleSignIn() {
+
+        Intent intent = mGoogleSignInClient.getSignInIntent();
+        startActivityForResult(intent, RC_SIGN_IN);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if(requestCode == RC_SIGN_IN){
+
+            Task<GoogleSignInAccount> task = GoogleSignIn.getSignedInAccountFromIntent(data);
+
+            try{
+                GoogleSignInAccount account = task.getResult(ApiException.class);
+                firebaseAuth(account.getIdToken());
+            }
+            catch (Exception e){
+
+                Toast.makeText(this, e.getMessage(), Toast.LENGTH_SHORT).show();
+                
+            }
+        }
+    }
+
+    private void firebaseAuth(String idToken) {
+
+        AuthCredential credential = GoogleAuthProvider.getCredential(idToken, null);
+        auth.signInWithCredential(credential)
+                .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+
+                        if (task.isSuccessful()){
+
+                            FirebaseUser user = auth.getCurrentUser();
+                            String username = user.getEmail();
+
+                            int year = calendar.get(Calendar.YEAR);
+                            int month = calendar.get(Calendar.MONTH)+1;
+                            int day = calendar.get(Calendar.DAY_OF_MONTH);
+                            String birthDate = String.format("%02d/%02d/%d", day, month, year);
+
+                            FirebaseDatabase.getInstance().getReference().child("Users").orderByChild("username").equalTo(username).addValueEventListener(new ValueEventListener() {
+                                @Override
+                                public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                                    if (dataSnapshot.exists()) {
+                                        Intent intent = new Intent(MainActivity.this, BottomNavActivity.class);
+                                        startActivity(intent);
+                                    }
+                                    else {
+
+                                    }
+                                }
+                                @Override
+                                public void onCancelled(@NonNull DatabaseError databaseError) {
+                                    throw databaseError.toException(); // never ignore errors
+                                }
+                            });
+
+//                            HashMap<String, Object> map = new HashMap<>();
+//                            map.put("birthDate", null);
+//                            map.put("fullName", user.getDisplayName());
+//                            map.put("password", null);
+//                            map.put("username", user.getEmail());
+
+                            User newUser = new User(user.getEmail(), "", birthDate, user.getDisplayName());
+
+                            database.getReference().child("Users").child(user.getUid()).setValue(newUser);
+
+                            Intent intent = new Intent(MainActivity.this, BottomNavActivity.class);
+                            startActivity(intent);
+                        }
+                        else{
+                            Toast.makeText(MainActivity.this, "something went wrong", Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                });
+    }
 }

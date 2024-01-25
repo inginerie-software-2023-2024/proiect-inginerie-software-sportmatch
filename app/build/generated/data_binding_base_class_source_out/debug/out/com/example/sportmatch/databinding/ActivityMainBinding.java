@@ -27,6 +27,9 @@ public final class ActivityMainBinding implements ViewBinding {
   public final TextView Or;
 
   @NonNull
+  public final TextView Or2;
+
+  @NonNull
   public final ImageView backG;
 
   @NonNull
@@ -40,6 +43,9 @@ public final class ActivityMainBinding implements ViewBinding {
 
   @NonNull
   public final TextView desc;
+
+  @NonNull
+  public final ShapeableImageView googlelogo;
 
   @NonNull
   public final LinearLayout hometext;
@@ -57,17 +63,20 @@ public final class ActivityMainBinding implements ViewBinding {
   public final TextView textlogin;
 
   private ActivityMainBinding(@NonNull ConstraintLayout rootView, @NonNull TextView Or,
-      @NonNull ImageView backG, @NonNull LinearLayout bottons, @NonNull Button buttonLogin,
-      @NonNull Button buttonRegister, @NonNull TextView desc, @NonNull LinearLayout hometext,
+      @NonNull TextView Or2, @NonNull ImageView backG, @NonNull LinearLayout bottons,
+      @NonNull Button buttonLogin, @NonNull Button buttonRegister, @NonNull TextView desc,
+      @NonNull ShapeableImageView googlelogo, @NonNull LinearLayout hometext,
       @NonNull ShapeableImageView logoMain, @NonNull TextView newhere,
       @NonNull LinearLayout splashtext, @NonNull TextView textlogin) {
     this.rootView = rootView;
     this.Or = Or;
+    this.Or2 = Or2;
     this.backG = backG;
     this.bottons = bottons;
     this.buttonLogin = buttonLogin;
     this.buttonRegister = buttonRegister;
     this.desc = desc;
+    this.googlelogo = googlelogo;
     this.hometext = hometext;
     this.logoMain = logoMain;
     this.newhere = newhere;
@@ -108,6 +117,12 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.Or2;
+      TextView Or2 = ViewBindings.findChildViewById(rootView, id);
+      if (Or2 == null) {
+        break missingId;
+      }
+
       id = R.id.backG;
       ImageView backG = ViewBindings.findChildViewById(rootView, id);
       if (backG == null) {
@@ -135,6 +150,12 @@ public final class ActivityMainBinding implements ViewBinding {
       id = R.id.desc;
       TextView desc = ViewBindings.findChildViewById(rootView, id);
       if (desc == null) {
+        break missingId;
+      }
+
+      id = R.id.googlelogo;
+      ShapeableImageView googlelogo = ViewBindings.findChildViewById(rootView, id);
+      if (googlelogo == null) {
         break missingId;
       }
 
@@ -168,8 +189,9 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityMainBinding((ConstraintLayout) rootView, Or, backG, bottons, buttonLogin,
-          buttonRegister, desc, hometext, logoMain, newhere, splashtext, textlogin);
+      return new ActivityMainBinding((ConstraintLayout) rootView, Or, Or2, backG, bottons,
+          buttonLogin, buttonRegister, desc, googlelogo, hometext, logoMain, newhere, splashtext,
+          textlogin);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

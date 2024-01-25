@@ -2936,6 +2936,7 @@ drawable fundalcolorat
 drawable fundalverdeinchis
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
+drawable googlelogo
 drawable gradien
 drawable gradientdrawable
 drawable greensoccer
@@ -3079,6 +3080,7 @@ id Login
 id META
 id NO_DEBUG
 id Or
+id Or2
 id Password
 id PasswordConfirmed
 id PasswordInserted
@@ -3385,6 +3387,7 @@ id ghost_view
 id ghost_view_holder
 id glide_custom_view_target_tag
 id gone
+id googlelogo
 id graph
 id graph_wrap
 id greenBackground
@@ -5488,4 +5491,5 @@ styleable ViewTransition android_id SharedValue SharedValueId clearsTag duration
 styleable include constraintSet
 xml backup_rules
 xml data_extraction_rules
+xml ga_ad_services_config
 xml image_share_filepaths

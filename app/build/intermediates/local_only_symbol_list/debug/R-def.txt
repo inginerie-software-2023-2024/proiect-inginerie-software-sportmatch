@@ -95,6 +95,7 @@ drawable football3
 drawable footballplayers
 drawable fundalcolorat
 drawable fundalverdeinchis
+drawable googlelogo
 drawable gradien
 drawable gradientdrawable
 drawable greensoccer
@@ -145,6 +146,7 @@ id FullName
 id FullNameInserted
 id Login
 id Or
+id Or2
 id Password
 id PasswordConfirmed
 id PasswordInserted
@@ -247,6 +249,7 @@ id fab
 id full_name_editprofile
 id full_name_profile
 id fullname_field
+id googlelogo
 id greenBackground
 id hometext
 id imageView

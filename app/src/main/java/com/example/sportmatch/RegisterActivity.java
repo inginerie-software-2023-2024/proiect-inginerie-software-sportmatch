@@ -124,7 +124,7 @@ public class RegisterActivity extends AppCompatActivity {
 
     public void isValidUsername(UserExistsCallback callback) {
         String Username = UsernameInserted.getText().toString();
-        FirebaseDatabase.getInstance().getReference().child("users").orderByChild("username").equalTo(Username).addValueEventListener(new ValueEventListener() {
+        FirebaseDatabase.getInstance().getReference().child("Users").orderByChild("username").equalTo(Username).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 if (dataSnapshot.exists()) {
@@ -185,7 +185,7 @@ public class RegisterActivity extends AppCompatActivity {
             isValidUsername(new UserExistsCallback() {
                 @Override
                 public void onCallback(boolean exists) {
-                    System.out.println("User exists: "+exists);
+                    //System.out.println("User exists: "+exists);
                 }
             });
             //create the user in the database - generated with copilot
