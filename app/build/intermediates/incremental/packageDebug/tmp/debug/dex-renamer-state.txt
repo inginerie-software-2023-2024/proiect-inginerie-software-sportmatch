@@ -1,14 +1,14 @@
-#Thu Jan 25 13:55:35 EET 2024
+#Thu Jan 25 18:00:05 EET 2024
 path.4=classes2.dex
 path.3=8/classes.dex
 path.2=3/classes.dex
 path.1=0/classes.dex
 path.0=classes.dex
-base.4=C\:\\Users\\Asus\\Desktop\\proiect-inginerie-software-sportmatch\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
-base.3=C\:\\Users\\Asus\\Desktop\\proiect-inginerie-software-sportmatch\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\8\\classes.dex
-base.2=C\:\\Users\\Asus\\Desktop\\proiect-inginerie-software-sportmatch\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\3\\classes.dex
-base.1=C\:\\Users\\Asus\\Desktop\\proiect-inginerie-software-sportmatch\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
-base.0=C\:\\Users\\Asus\\Desktop\\proiect-inginerie-software-sportmatch\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.4=C\:\\Users\\elena\\OneDrive\\Desktop\\AN III SEM I\\IS\\proiect-inginerie-software-sportmatch\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
+base.3=C\:\\Users\\elena\\OneDrive\\Desktop\\AN III SEM I\\IS\\proiect-inginerie-software-sportmatch\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\8\\classes.dex
+base.2=C\:\\Users\\elena\\OneDrive\\Desktop\\AN III SEM I\\IS\\proiect-inginerie-software-sportmatch\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\3\\classes.dex
+base.1=C\:\\Users\\elena\\OneDrive\\Desktop\\AN III SEM I\\IS\\proiect-inginerie-software-sportmatch\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.0=C\:\\Users\\elena\\OneDrive\\Desktop\\AN III SEM I\\IS\\proiect-inginerie-software-sportmatch\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 renamed.3=classes4.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
