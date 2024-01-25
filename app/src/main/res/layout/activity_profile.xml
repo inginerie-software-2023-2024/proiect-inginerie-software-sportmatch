@@ -214,7 +214,7 @@
         android:orientation="vertical"
         android:padding="20dp">
         <com.google.android.material.textfield.TextInputLayout
-            android:hint="Age"
+            android:hint="Birth Date"
             android:id="@+id/age_profile"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
@@ -223,7 +223,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
-                android:text="69"
+                android:text="70"
                 android:fontFamily="sans-serif-medium"
                 android:editable="false"
 

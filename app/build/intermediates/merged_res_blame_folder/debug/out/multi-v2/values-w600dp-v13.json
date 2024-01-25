@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.sportmatch.app-mergeDebugResources-49:/values-w600dp-v13/values-w600dp-v13.xml",
+            "outputFile": "com.example.sportmatch.app-mergeDebugResources-4:/values-w600dp-v13/values-w600dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\elena\\OneDrive\\Desktop\\AN III SEM I\\IS\\proiect-inginerie-software-sportmatch\\app\\src\\main\\res\\values-w600dp\\dimens.xml",
+                    "source": "C:\\Bianca\\Facultate\\an 3\\sem1\\IS\\proiect-inginerie-software-sportmatch\\app\\src\\main\\res\\values-w600dp\\dimens.xml",
                     "from": {
                         "startLines": "1",
                         "startColumns": "4",

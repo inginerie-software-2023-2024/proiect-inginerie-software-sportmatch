@@ -76,7 +76,8 @@ public class ProfileActivity extends AppCompatActivity {
                 }
                 TextInputLayout birthdateTextInputLayout = findViewById(R.id.age_profile);
                 TextInputEditText birthdateEditText = (TextInputEditText) birthdateTextInputLayout.getEditText();
-                birthdateEditText.setText(String.valueOf(varsta));
+//                birthdateEditText.setText(String.valueOf(varsta));
+                birthdateEditText.setText(String.valueOf(birthdateObj));
 
             }
 

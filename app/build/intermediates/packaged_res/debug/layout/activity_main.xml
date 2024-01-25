@@ -64,7 +64,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
-        android:layout_marginTop="250dp">
+        android:layout_marginTop="210dp">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -92,7 +92,7 @@
                     android:text="Login to Your Account!"
                     android:fontFamily="sans-serif-medium"
                     android:textSize="23sp"
-                    android:layout_marginTop="30dp"
+                    android:layout_marginTop="10dp"
                     android:layout_centerHorizontal="true"
                     android:layout_below="@id/logoMain" />
 
@@ -125,7 +125,7 @@
                     android:text="New Here?"
                     android:fontFamily="sans-serif-medium"
                     android:layout_centerHorizontal="true"
-                    android:layout_marginTop="25dp"
+                    android:layout_marginTop="20dp"
                     android:textSize="23sp"/>
 
                 <TextView
@@ -150,6 +150,27 @@
                     android:layout_marginTop="8dp"
                     android:layout_centerHorizontal="true"
                     android:layout_below="@+id/desc" />
+
+                <TextView
+                    android:id="@+id/Or2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/button_register"
+                    android:text="-----------------------OR CONTINUE WITH-----------------------"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:textSize="11sp"/>
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/googleLogo"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/googlelogo"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/Or2"
+                    app:shapeAppearanceOverlay="@style/roundImageView"
+                    android:layout_centerHorizontal="true"/>
 
             </RelativeLayout>
 
