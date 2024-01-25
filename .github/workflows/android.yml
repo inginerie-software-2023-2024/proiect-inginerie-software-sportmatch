@@ -24,6 +24,19 @@ jobs:
       run: chmod +x gradlew
     - name: Build with Gradle
       run: ./gradlew assembleDebug
-      
+     
+    
+    - name: Start emulator
+      uses: reactivecircus/android-emulator-runner@v2
+      with:
+        api-level: 28
+        script: |
+          # Wait for emulator to start
+          adb wait-for-device
+          # Show devices
+          adb devices
+          # Run tests
+          ./gradlew connectedAndroidTest
+
     - name: Run Espresso tests
       run: ./gradlew connectedAndroidTest
