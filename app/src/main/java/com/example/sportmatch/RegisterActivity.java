@@ -26,6 +26,9 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import java.nio.charset.StandardCharsets;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
@@ -124,7 +127,7 @@ public class RegisterActivity extends AppCompatActivity {
 
     public void isValidUsername(UserExistsCallback callback) {
         String Username = UsernameInserted.getText().toString();
-        FirebaseDatabase.getInstance().getReference().child("users").orderByChild("username").equalTo(Username).addValueEventListener(new ValueEventListener() {
+        FirebaseDatabase.getInstance().getReference().child("Users").orderByChild("username").equalTo(Username).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 if (dataSnapshot.exists()) {
@@ -194,7 +197,8 @@ public class RegisterActivity extends AppCompatActivity {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if(task.isSuccessful()) {
-                                User user = new User(txtUserName, txtPassword, txtBirthDate, txtFullName);
+                                String hashedPassword = hashPassword(txtPassword);
+                                User user = new User(txtUserName, hashedPassword, txtBirthDate, txtFullName);
                                 FirebaseDatabase.getInstance().getReference("Users")
                                         .child(FirebaseAuth.getInstance().getCurrentUser().getUid())
                                         .setValue(user).addOnCompleteListener(new OnCompleteListener<Void>() {
@@ -218,6 +222,33 @@ public class RegisterActivity extends AppCompatActivity {
                             }
                         }
                     });
+        }
+    }
+
+    private String hashPassword(String password) {
+        try {
+
+            MessageDigest md = MessageDigest.getInstance("SHA-256");
+
+            byte[] passwordBytes = password.getBytes(StandardCharsets.UTF_8);
+
+            byte[] hashedBytes = md.digest(passwordBytes);
+
+            StringBuilder hexStringBuilder = new StringBuilder();
+            for(byte b : hashedBytes){
+                String hex = Integer.toHexString(0xff & b);
+                if(hex.length() == 1){
+                    hexStringBuilder.append('0');
+                }
+                hexStringBuilder.append(hex);
+            }
+
+            return hexStringBuilder.toString();
+
+        }
+        catch (NoSuchAlgorithmException e){
+            e.printStackTrace();
+            return null;
         }
     }
 

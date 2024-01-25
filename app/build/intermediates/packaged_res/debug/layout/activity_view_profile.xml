@@ -215,7 +215,7 @@
             android:orientation="vertical"
             android:padding="20dp">
             <com.google.android.material.textfield.TextInputLayout
-                android:hint="Age"
+                android:hint="Birth date"
                 android:id="@+id/age_profile"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
@@ -225,7 +225,7 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_height="wrap_content"
                     android:layout_width="match_parent"
-                    android:text="20"
+                    android:text="02/02/2002"
                     android:fontFamily="sans-serif-medium"
                     android:editable="false"
 

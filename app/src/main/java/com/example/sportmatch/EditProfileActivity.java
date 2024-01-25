@@ -1,12 +1,16 @@
 package com.example.sportmatch;
 import static android.content.ContentValues.TAG;
 
+import android.app.DatePickerDialog;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.DatePicker;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -22,9 +26,11 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.Period;
 import java.time.format.DateTimeFormatter;
+import java.util.Calendar;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -39,12 +45,44 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class EditProfileActivity extends AppCompatActivity {
-    String _oldname, _oldpasss, _newpasss, userId, newName, _passdb, _bio, newbio;
+    String _oldname, _oldpasss, _newpasss, userId, newName, _passdb, _bio, newbio, _oldBirth, newbirth, _birth;
     DatabaseReference reference;
+    DatePickerDialog.OnDateSetListener setListener;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_editprofile);
+
+        Calendar calendar = Calendar.getInstance();
+        final int year = calendar.get(Calendar.YEAR);
+        final int month = calendar.get(Calendar.MONTH);
+        final int day = calendar.get(Calendar.DAY_OF_MONTH);
+
+        TextInputLayout textInputLayout_newbirth = (TextInputLayout) findViewById(R.id.birth_profile_edit);
+        TextInputEditText editText_newbirth = (TextInputEditText) textInputLayout_newbirth.getEditText();
+        editText_newbirth.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                DatePickerDialog datePickerDialog = new DatePickerDialog(EditProfileActivity.this,android.R.style.Theme_Holo_Light_Dialog_MinWidth,
+                        setListener,year,month,day);
+                datePickerDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+                datePickerDialog.show();
+            }
+        });
+
+        setListener = new DatePickerDialog.OnDateSetListener() {
+            @Override
+            public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
+                month=month+1;
+                SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
+                String date = String.format("%02d/%02d/%d", dayOfMonth, month, year);
+
+
+                editText_newbirth.setText(date);
+            }
+        };
+
 
 
         reference = FirebaseDatabase.getInstance().getReference("Users");
@@ -56,6 +94,7 @@ public class EditProfileActivity extends AppCompatActivity {
             Log.e(TAG, "User is null");
             return;
         }
+
 
         countEventsForUser(userId, new ViewProfileActivity.OnEventsCountedListener() {
             @Override
@@ -100,6 +139,22 @@ public class EditProfileActivity extends AppCompatActivity {
             }
         });
 
+        reference.child(userId).child("birthDate").addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                String birthDate = dataSnapshot.getValue(String.class);
+                TextInputLayout textInputLayout_newName3 = (TextInputLayout) findViewById(R.id.birth_profile_edit);
+                TextInputEditText birth = (TextInputEditText) textInputLayout_newName3.getEditText();
+                birth.setText(birthDate);
+                _birth = birth.getText().toString().trim();
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+                Log.e(TAG, "Probleme cu schimbarea zilei de nastere");
+            }
+        });
+
         Button button_savechanges = (Button)findViewById(R.id.button_savechanges);
         button_savechanges.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -111,6 +166,9 @@ public class EditProfileActivity extends AppCompatActivity {
                 TextInputLayout textInputLayout_newbio = (TextInputLayout) findViewById(R.id.bio_profile_edit);
                 TextInputEditText editText_newbio = (TextInputEditText) textInputLayout_newbio.getEditText();
                 newbio = editText_newbio.getText().toString();
+
+
+                newbirth = editText_newbirth.getText().toString();
 
                 Log.d("EditProfileActivity", "newName: " + newName);
 
@@ -140,9 +198,11 @@ public class EditProfileActivity extends AppCompatActivity {
                         Log.e(TAG, "vbpassdb: " + _passdb);
 
                         //ca sa putem da update la toate in acelasi timp daca vrem
-                        Boolean unu = updateNume();
-                        Boolean doi = updateParola();
-                        Boolean trei = updateBio();
+                        boolean unu = updateNume();
+                        boolean doi = updateParola();
+                        boolean trei = updateBio();
+                        boolean patru = updateBirthdate();
+
                         if(unu || doi || trei) {
                             Toast.makeText(EditProfileActivity.this, "Data has been updated", Toast.LENGTH_LONG).show();}
                         else Toast.makeText(EditProfileActivity.this, "Data cannot be updated", Toast.LENGTH_LONG).show();
@@ -159,6 +219,21 @@ public class EditProfileActivity extends AppCompatActivity {
 
             }
         });
+    }
+
+    private boolean updateBirthdate() {
+        if( !_birth.isEmpty())
+        {
+            reference.child(userId).child("birthDate").setValue(newbirth);
+            Log.e(TAG, "buni" + newbirth   );
+            return true;
+
+
+        }
+        else {
+            Log.e(TAG, "Probleme cu schimbarea bioului");
+            return false;
+        }
     }
 
     private boolean updateNume(){

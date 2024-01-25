@@ -100,6 +100,7 @@ drawable football3
 drawable footballplayers
 drawable fundalcolorat
 drawable fundalverdeinchis
+drawable googlelogo
 drawable gradien
 drawable gradientdrawable
 drawable greenpink
@@ -155,6 +156,7 @@ id FullName
 id FullNameInserted
 id Login
 id Or
+id Or2
 id Password
 id PasswordConfirmed
 id PasswordInserted
@@ -178,6 +180,7 @@ id backhomeF
 id backhomeP
 id bio_profile
 id bio_profile_edit
+id birth_profile_edit
 id bottomNavigationView
 id bottom_admin_events
 id bottom_create_event
@@ -257,6 +260,7 @@ id fab
 id full_name_editprofile
 id full_name_profile
 id fullname_field
+id googleLogo
 id greenBackground
 id hometext
 id imageView

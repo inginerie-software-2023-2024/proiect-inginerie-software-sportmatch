@@ -3,20 +3,53 @@ package com.example.sportmatch;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.android.gms.auth.api.signin.GoogleSignIn;
+import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
+import com.google.android.gms.auth.api.signin.GoogleSignInClient;
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
+import com.google.android.gms.common.api.ApiException;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthCredential;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.auth.GoogleAuthProvider;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import java.util.Calendar;
 
 public class MainActivity extends AppCompatActivity {
 
-    ImageView backg;
+    ImageView backg, googleLogo;
     LinearLayout splashtext, hometext, bottons;
     Animation frombottom;
+
+    FirebaseAuth auth;
+    FirebaseDatabase database;
+    GoogleSignInClient mGoogleSignInClient;
+    int RC_SIGN_IN = 20;
+
+    Calendar calendar = Calendar.getInstance();
+    int year = calendar.get(Calendar.YEAR);
+    int month = calendar.get(Calendar.MONTH) + 1;
+    int day = calendar.get(Calendar.DAY_OF_MONTH);
 
 
     //TODO: DUPA SIGN IN SAU SIGN UP DE LEGAT CU FEEDUL
@@ -41,11 +74,16 @@ public class MainActivity extends AppCompatActivity {
         splashtext = findViewById(R.id.splashtext);
         hometext = findViewById(R.id.hometext);
         bottons = findViewById(R.id.bottons);
+        googleLogo = findViewById(R.id.googleLogo);
 
         backg.animate().translationY(-2000).setDuration(600).setStartDelay(0);
         splashtext.animate().translationY(140).alpha(0).setDuration(300).setStartDelay(0);
         hometext.startAnimation(frombottom);
         bottons.startAnimation(frombottom);
+
+
+        auth = FirebaseAuth.getInstance();
+        database = FirebaseDatabase.getInstance();
 
         Button buttonLogin = (Button)findViewById(R.id.button_login);
 
@@ -65,6 +103,25 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, RegisterActivity.class));
             }
         });
+
+        GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+                .requestIdToken(getString(R.string.default_web_client_id))
+                        .requestEmail().build();
+
+        mGoogleSignInClient = GoogleSignIn.getClient(this,gso);
+        googleLogo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                
+                googleSignIn();
+            }
+        });
+
+//        if(auth.getCurrentUser() != null){
+//            Intent intent = new Intent(MainActivity.this, BottomNavActivity.class);
+//            startActivity(intent);
+//            finish();
+//        }
 
 
 
@@ -188,4 +245,80 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    private void googleSignIn() {
+
+        Intent intent = mGoogleSignInClient.getSignInIntent();
+        startActivityForResult(intent, RC_SIGN_IN);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if(requestCode==RC_SIGN_IN){
+
+            Task<GoogleSignInAccount> task = GoogleSignIn.getSignedInAccountFromIntent(data);
+
+            try {
+                
+                GoogleSignInAccount account = task.getResult(ApiException.class);
+                firebaseAuth(account.getIdToken()); 
+
+            }
+            catch (Exception e){
+
+                Toast.makeText(this, e.getMessage(), Toast.LENGTH_SHORT).show();
+
+            }
+        }
+    }
+
+    private void firebaseAuth(String idToken) {
+
+        AuthCredential credential = GoogleAuthProvider.getCredential(idToken, null);
+        auth.signInWithCredential(credential)
+                .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+
+                        if(task.isSuccessful()){
+                            FirebaseUser user = auth.getCurrentUser();
+                            String username = user.getEmail();
+                            String fullName = user.getDisplayName();
+                            String birthDate = String.format("%02d/%02d/%d", day, month, year);
+
+                            FirebaseDatabase.getInstance().getReference().child("Users").orderByChild("username").equalTo(username).addValueEventListener(new ValueEventListener() {
+                                @Override
+                                public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                                    if (dataSnapshot.exists()) {
+
+                                        Intent intent = new Intent(MainActivity.this, BottomNavActivity.class);
+                                        startActivity(intent);
+
+                                    } else {
+                                        User newUser = new User(username, "", birthDate, fullName);
+
+
+                                        database.getReference().child("Users").child(user.getUid()).setValue(newUser);
+
+                                        Intent intent = new Intent(MainActivity.this, BottomNavActivity.class);
+                                        startActivity(intent);
+                                    }
+                                }
+
+                                @Override
+                                public void onCancelled(@NonNull DatabaseError databaseError) {
+                                    throw databaseError.toException();
+                                }
+                            });
+
+                        }
+                        else{
+
+                            Toast.makeText(MainActivity.this, "something went wrong", Toast.LENGTH_SHORT).show();
+
+                        }
+                    }
+                });
+    }
 }

@@ -150,6 +150,25 @@
         android:orientation="vertical"
         android:padding="20dp">
         <com.google.android.material.textfield.TextInputLayout
+            android:hint="Birth Date"
+            android:id="@+id/birth_profile_edit"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:layout_width="match_parent"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+        <com.google.android.material.textfield.TextInputLayout
             android:hint="Old Password"
             android:id="@+id/oldpass"
             android:layout_height="wrap_content"
