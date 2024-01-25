@@ -204,6 +204,10 @@ id button_second
 id cardEvent
 id category_title
 id desc
+id detailsAdminF
+id detailsAdminInput
+id detailsAdminInputP
+id detailsAdminP
 id detailsBtnEdit
 id detailsBtnMap
 id detailsBtnMapP

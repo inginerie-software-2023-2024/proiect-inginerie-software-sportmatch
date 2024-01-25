@@ -29,6 +29,12 @@ public final class ActivityEventDetailsFeedBinding implements ViewBinding {
   public final BottomNavigationView bottomNavigationView;
 
   @NonNull
+  public final TextView detailsAdminF;
+
+  @NonNull
+  public final TextView detailsAdminInput;
+
+  @NonNull
   public final Button detailsBtnMap;
 
   @NonNull
@@ -81,6 +87,7 @@ public final class ActivityEventDetailsFeedBinding implements ViewBinding {
 
   private ActivityEventDetailsFeedBinding(@NonNull RelativeLayout rootView,
       @NonNull ImageView backhomeF, @NonNull BottomNavigationView bottomNavigationView,
+      @NonNull TextView detailsAdminF, @NonNull TextView detailsAdminInput,
       @NonNull Button detailsBtnMap, @NonNull Button detailsBtnParticipate,
       @NonNull TextView detailsDate, @NonNull TextView detailsDateInput,
       @NonNull TextView detailsDesc, @NonNull TextView detailsDescInput,
@@ -92,6 +99,8 @@ public final class ActivityEventDetailsFeedBinding implements ViewBinding {
     this.rootView = rootView;
     this.backhomeF = backhomeF;
     this.bottomNavigationView = bottomNavigationView;
+    this.detailsAdminF = detailsAdminF;
+    this.detailsAdminInput = detailsAdminInput;
     this.detailsBtnMap = detailsBtnMap;
     this.detailsBtnParticipate = detailsBtnParticipate;
     this.detailsDate = detailsDate;
@@ -147,6 +156,18 @@ public final class ActivityEventDetailsFeedBinding implements ViewBinding {
       id = R.id.bottomNavigationView;
       BottomNavigationView bottomNavigationView = ViewBindings.findChildViewById(rootView, id);
       if (bottomNavigationView == null) {
+        break missingId;
+      }
+
+      id = R.id.detailsAdminF;
+      TextView detailsAdminF = ViewBindings.findChildViewById(rootView, id);
+      if (detailsAdminF == null) {
+        break missingId;
+      }
+
+      id = R.id.detailsAdminInput;
+      TextView detailsAdminInput = ViewBindings.findChildViewById(rootView, id);
+      if (detailsAdminInput == null) {
         break missingId;
       }
 
@@ -253,10 +274,10 @@ public final class ActivityEventDetailsFeedBinding implements ViewBinding {
       }
 
       return new ActivityEventDetailsFeedBinding((RelativeLayout) rootView, backhomeF,
-          bottomNavigationView, detailsBtnMap, detailsBtnParticipate, detailsDate, detailsDateInput,
-          detailsDesc, detailsDescInput, detailsLoc, detailsLocInput, detailsPlayers,
-          detailsPlayersInput, detailsSport, detailsSportInput, detailsTime, detailsTimeInput,
-          detailsTitle, sportImage, title);
+          bottomNavigationView, detailsAdminF, detailsAdminInput, detailsBtnMap,
+          detailsBtnParticipate, detailsDate, detailsDateInput, detailsDesc, detailsDescInput,
+          detailsLoc, detailsLocInput, detailsPlayers, detailsPlayersInput, detailsSport,
+          detailsSportInput, detailsTime, detailsTimeInput, detailsTitle, sportImage, title);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
