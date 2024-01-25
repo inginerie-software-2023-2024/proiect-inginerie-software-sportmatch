@@ -26,6 +26,9 @@ public final class ActivityEditprofileBinding implements ViewBinding {
   public final TextInputLayout bioProfileEdit;
 
   @NonNull
+  public final TextInputLayout birthProfileEdit;
+
+  @NonNull
   public final Button buttonSavechanges;
 
   @NonNull
@@ -50,13 +53,14 @@ public final class ActivityEditprofileBinding implements ViewBinding {
   public final ImageView profileImage;
 
   private ActivityEditprofileBinding(@NonNull ScrollView rootView,
-      @NonNull TextInputLayout bioProfileEdit, @NonNull Button buttonSavechanges,
-      @NonNull TextInputLayout fullNameEditprofile, @NonNull TextView fullnameField,
-      @NonNull TextInputLayout newpass, @NonNull TextInputLayout oldpass,
-      @NonNull TextView paymentDesc, @NonNull TextView paymentLabel,
-      @NonNull ImageView profileImage) {
+      @NonNull TextInputLayout bioProfileEdit, @NonNull TextInputLayout birthProfileEdit,
+      @NonNull Button buttonSavechanges, @NonNull TextInputLayout fullNameEditprofile,
+      @NonNull TextView fullnameField, @NonNull TextInputLayout newpass,
+      @NonNull TextInputLayout oldpass, @NonNull TextView paymentDesc,
+      @NonNull TextView paymentLabel, @NonNull ImageView profileImage) {
     this.rootView = rootView;
     this.bioProfileEdit = bioProfileEdit;
+    this.birthProfileEdit = birthProfileEdit;
     this.buttonSavechanges = buttonSavechanges;
     this.fullNameEditprofile = fullNameEditprofile;
     this.fullnameField = fullnameField;
@@ -97,6 +101,12 @@ public final class ActivityEditprofileBinding implements ViewBinding {
       id = R.id.bio_profile_edit;
       TextInputLayout bioProfileEdit = ViewBindings.findChildViewById(rootView, id);
       if (bioProfileEdit == null) {
+        break missingId;
+      }
+
+      id = R.id.birth_profile_edit;
+      TextInputLayout birthProfileEdit = ViewBindings.findChildViewById(rootView, id);
+      if (birthProfileEdit == null) {
         break missingId;
       }
 
@@ -148,7 +158,7 @@ public final class ActivityEditprofileBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityEditprofileBinding((ScrollView) rootView, bioProfileEdit,
+      return new ActivityEditprofileBinding((ScrollView) rootView, bioProfileEdit, birthProfileEdit,
           buttonSavechanges, fullNameEditprofile, fullnameField, newpass, oldpass, paymentDesc,
           paymentLabel, profileImage);
     }
