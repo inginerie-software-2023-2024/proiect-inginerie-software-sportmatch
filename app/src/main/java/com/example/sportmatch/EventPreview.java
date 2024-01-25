@@ -44,6 +44,7 @@ public class EventPreview extends AppCompatActivity {
 
     private FirebaseDatabase database;
 
+    private FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -232,6 +233,13 @@ public class EventPreview extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
+    }
+
+    public void setAuth(FirebaseAuth auth) {
+        this.mAuth = auth;
+    }
+    public void setDatabase(FirebaseDatabase database) {
+        this.database = database;
     }
 
 }
