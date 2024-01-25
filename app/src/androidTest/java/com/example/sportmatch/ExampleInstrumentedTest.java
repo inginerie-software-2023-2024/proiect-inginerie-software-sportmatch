@@ -63,105 +63,92 @@ public class ExampleInstrumentedTest {
     @Test
     public void testCreateEventActivity() {
 
-        FirebaseAuth mockAuth = Mockito.mock(FirebaseAuth.class);
-        FirebaseUser mockUser = Mockito.mock(FirebaseUser.class);
-        when(mockUser.getUid()).thenReturn("mockedUserId");
-        when(mockAuth.getCurrentUser()).thenReturn(mockUser);
 
-        FirebaseDatabase mockDatabase = Mockito.mock(FirebaseDatabase.class);
 
-        Intent intent = new Intent();
-        intent.putExtra("valTitle", "MockedTitle");
-        try (ActivityScenario<EventPreview> scenario = ActivityScenario.launch(EventPreview.class)) {
-            scenario.onActivity(activity -> {
-                // set the mocked dependencies in the activity
-                activity.setAuth(mockAuth);
-                activity.setDatabase(mockDatabase);
 // waits for the activity to be ready
-                try {
-                    Thread.sleep(2000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
+            try {
+                Thread.sleep(2000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
 
 
-                onView(withId(R.id.newEventNameEdt)).perform(ViewActions.typeText("Test Event"));
-                onData(anything())
-                        .inAdapterView(withId(R.id.autocomplete_sport))
-                        .atPosition(0)
-                        .perform(click());
-                onData(anything())
-                        .inAdapterView(withId(R.id.autocomplete_loc))
-                        .atPosition(0)
-                        .perform(click());
-                onData(anything())
-                        .inAdapterView(withId(R.id.autocomplete_players))
-                        .atPosition(0)
-                        .perform(click());
-                onView(withId(R.id.newEventDescEdt)).perform(ViewActions.typeText("test description"));
+            onView(withId(R.id.newEventNameEdt)).perform(ViewActions.typeText("Test Event"));
+            onData(anything())
+                    .inAdapterView(withId(R.id.autocomplete_sport))
+                    .atPosition(0)
+                    .perform(click());
+            onData(anything())
+                    .inAdapterView(withId(R.id.autocomplete_loc))
+                    .atPosition(0)
+                    .perform(click());
+            onData(anything())
+                    .inAdapterView(withId(R.id.autocomplete_players))
+                    .atPosition(0)
+                    .perform(click());
+            onView(withId(R.id.newEventDescEdt)).perform(ViewActions.typeText("test description"));
 
-                //picks date
-                onView(withId(R.id.newEventDateEdt)).perform(click());
-                Calendar calendar = Calendar.getInstance();
-                calendar.set(2024, Calendar.JANUARY, 1);
+            //picks date
+            onView(withId(R.id.newEventDateEdt)).perform(click());
+            Calendar calendar = Calendar.getInstance();
+            calendar.set(2024, Calendar.JANUARY, 1);
 
-                // performs the date selection
-                onView(ViewMatchers.withClassName(Matchers.equalTo(android.widget.DatePicker.class.getName())))
-                        .perform(PickerActions.setDate(
-                                calendar.get(Calendar.YEAR),
-                                calendar.get(Calendar.MONTH) + 1, // Months are zero-based in Calendar
-                                calendar.get(Calendar.DAY_OF_MONTH)
-                        ));
+            // performs the date selection
+            onView(ViewMatchers.withClassName(Matchers.equalTo(android.widget.DatePicker.class.getName())))
+                    .perform(PickerActions.setDate(
+                            calendar.get(Calendar.YEAR),
+                            calendar.get(Calendar.MONTH) + 1, // Months are zero-based in Calendar
+                            calendar.get(Calendar.DAY_OF_MONTH)
+                    ));
 
-                // confirms the date selection
-                onView(withId(android.R.id.button1)).perform(click());
+            // confirms the date selection
+            onView(withId(android.R.id.button1)).perform(click());
 
-                // verifies that the selected date is displayed in the EditText
-                SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
-                String expectedDate = formatter.format(calendar.getTime());
-                onView(withId(R.id.newEventDateEdt)).check(matches(withText(expectedDate)));
+            // verifies that the selected date is displayed in the EditText
+            SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
+            String expectedDate = formatter.format(calendar.getTime());
+            onView(withId(R.id.newEventDateEdt)).check(matches(withText(expectedDate)));
 
-                //pick the time
-                onView(withId(R.id.newEventTimeEdt)).perform(click());
+            //pick the time
+            onView(withId(R.id.newEventTimeEdt)).perform(click());
 
-                //selects a time
-                calendar = Calendar.getInstance();
-                calendar.set(Calendar.HOUR_OF_DAY, 15);
-                calendar.set(Calendar.MINUTE, 30);
+            //selects a time
+            calendar = Calendar.getInstance();
+            calendar.set(Calendar.HOUR_OF_DAY, 15);
+            calendar.set(Calendar.MINUTE, 30);
 
-                //performs the time selection
-                onView(ViewMatchers.withClassName(Matchers.equalTo(android.widget.TimePicker.class.getName())))
-                        .perform(PickerActions.setTime(
-                                calendar.get(Calendar.HOUR_OF_DAY),
-                                calendar.get(Calendar.MINUTE)
-                        ));
+            //performs the time selection
+            onView(ViewMatchers.withClassName(Matchers.equalTo(android.widget.TimePicker.class.getName())))
+                    .perform(PickerActions.setTime(
+                            calendar.get(Calendar.HOUR_OF_DAY),
+                            calendar.get(Calendar.MINUTE)
+                    ));
 
-                //confirms the time selection
-                onView(withId(android.R.id.button1)).perform(click());
+            //confirms the time selection
+            onView(withId(android.R.id.button1)).perform(click());
 
-                //verify that the selected time is displayed in the EditText
-                SimpleDateFormat formatterTime = new SimpleDateFormat("hh:mm a");
-                String expectedTime = formatterTime.format(calendar.getTime());
-                onView(withId(R.id.newEventTimeEdt)).check(matches(withText(expectedTime)));
-
-
-                onView(withId(R.id.buttonCEvent)).perform(click());
-
-                //wait for the actions to finish
-                try {
-                    Thread.sleep(2000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-                onView(withId(R.id.previewBtnAddEv)).perform(click());
-
-                onView(withText("Event added successfully"))
-                        .inRoot(withDecorView(not(activityRule.getActivity().getWindow().getDecorView())))
-                        .check(matches(isDisplayed()));
+            //verify that the selected time is displayed in the EditText
+            SimpleDateFormat formatterTime = new SimpleDateFormat("hh:mm a");
+            String expectedTime = formatterTime.format(calendar.getTime());
+            onView(withId(R.id.newEventTimeEdt)).check(matches(withText(expectedTime)));
 
 
-            });
-        }
+            onView(withId(R.id.buttonCEvent)).perform(click());
+
+            //wait for the actions to finish
+            try {
+                Thread.sleep(2000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            onView(withId(R.id.previewBtnAddEv)).perform(click());
+
+            onView(withText("Event added successfully"))
+                    .inRoot(withDecorView(not(activityRule.getActivity().getWindow().getDecorView())))
+                    .check(matches(isDisplayed()));
+
+
 
     }
+
 }
