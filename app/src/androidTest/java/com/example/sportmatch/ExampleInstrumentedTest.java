@@ -3,17 +3,22 @@ package com.example.sportmatch;
 import static androidx.test.espresso.Espresso.onData;
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.action.ViewActions.click;
+import static androidx.test.espresso.action.ViewActions.closeSoftKeyboard;
 import static androidx.test.espresso.action.ViewActions.typeText;
 import static androidx.test.espresso.assertion.ViewAssertions.matches;
 import static androidx.test.espresso.matcher.RootMatchers.withDecorView;
 import static androidx.test.espresso.matcher.ViewMatchers.isDisplayed;
+import static androidx.test.espresso.matcher.ViewMatchers.isRoot;
 import static androidx.test.espresso.matcher.ViewMatchers.withId;
 import static androidx.test.espresso.matcher.ViewMatchers.withText;
 import android.content.Context;
 import android.content.Intent;
+import android.view.View;
 
 import androidx.test.core.app.ActivityScenario;
 import androidx.test.espresso.Espresso;
+import androidx.test.espresso.UiController;
+import androidx.test.espresso.ViewAction;
 import androidx.test.espresso.action.ViewActions;
 import androidx.test.espresso.assertion.ViewAssertions;
 import androidx.test.espresso.contrib.PickerActions;
@@ -22,6 +27,7 @@ import androidx.test.ext.junit.rules.ActivityScenarioRule;
 import androidx.test.platform.app.InstrumentationRegistry;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 
+import org.hamcrest.Matcher;
 import org.hamcrest.Matchers;
 import org.junit.Before;
 import org.junit.Rule;
@@ -67,18 +73,40 @@ public class ExampleInstrumentedTest {
     public void loginTest() {
         // Type the email address
         Espresso.onView(withId(R.id.activity_main_usernameEditText))
-                .perform(typeText("buna@yahoo.com"), ViewActions.closeSoftKeyboard());
+                .perform(typeText("buna@yahoo.com"), closeSoftKeyboard());
 
         // Type the password
         Espresso.onView(withId(R.id.activity_main_passwordEditText))
-                .perform(typeText("123456"), ViewActions.closeSoftKeyboard());
+                .perform(typeText("123456"), closeSoftKeyboard());
 
         // Click on the login button
-        Espresso.onView(withId(R.id.button_login)).perform(ViewActions.click());
+        Espresso.onView(withId(R.id.button_login)).perform(click());
 
-        Espresso.onView(withText("Login successful!")).check(ViewAssertions.matches(ViewMatchers.isDisplayed()));
+        // Add a delay to allow the view hierarchy to settle
+        waitFor(2000);
+
+        // Verify the toast message
+        Espresso.onView(withText("Login successful!"))
+                .check(ViewAssertions.matches(ViewMatchers.isDisplayed()));
     }
+    private void waitFor(final long millis) {
+        Espresso.onView(isRoot()).perform(new ViewAction() {
+            @Override
+            public Matcher<View> getConstraints() {
+                return isRoot();
+            }
 
+            @Override
+            public String getDescription() {
+                return "Wait for " + millis + " milliseconds.";
+            }
+
+            @Override
+            public void perform(UiController uiController, View view) {
+                uiController.loopMainThreadForAtLeast(millis);
+            }
+        });
+    }
 //    @Rule
 //    public ActivityTestRule<CreateEventActivity> activityRule = new ActivityTestRule<>(CreateEventActivity.class);
 
