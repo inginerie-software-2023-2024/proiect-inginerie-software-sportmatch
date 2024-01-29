@@ -22,20 +22,23 @@ public class LoginTest {
     public IntentsTestRule<LoginActivity> loginActivityRule = new IntentsTestRule<>(LoginActivity.class);
 
     @Test
-    public void testLoginComponents() {
-
+    public void testLoginComponentsDisplayed() {
+        // Check if login components are displayed
         Espresso.onView(withId(R.id.activity_main_usernameEditText)).check(matches(isDisplayed()));
         Espresso.onView(withId(R.id.activity_main_passwordEditText)).check(matches(isDisplayed()));
         Espresso.onView(withId(R.id.button_login)).check(matches(isDisplayed()));
     }
 
     @Test
-    public void testLoginWithValidCredentials() {
+    public void testLoginWithValidCredentialsNavigatesToBottomNavActivity() {
+        // Enter valid credentials
         Espresso.onView(withId(R.id.activity_main_usernameEditText)).perform(ViewActions.typeText("buna@yahoo.com"));
         Espresso.onView(withId(R.id.activity_main_passwordEditText)).perform(ViewActions.typeText("123456"));
 
+        // Click the login button
         Espresso.onView(withId(R.id.button_login)).perform(ViewActions.click());
+
+        // Check if the BottomNavActivity is launched
         intended(hasComponent(BottomNavActivity.class.getName()));
     }
-
 }
