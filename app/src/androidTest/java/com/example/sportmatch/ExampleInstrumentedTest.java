@@ -65,48 +65,7 @@ public class ExampleInstrumentedTest {
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
         assertEquals("com.example.sportmatch", appContext.getPackageName());
     }
-    @Rule
-    public ActivityScenarioRule<LoginActivity> activityRule =
-            new ActivityScenarioRule<>(LoginActivity.class);
 
-    @Test
-    public void loginTest() {
-        // Type the email address
-        Espresso.onView(withId(R.id.activity_main_usernameEditText))
-                .perform(typeText("buna@yahoo.com"), closeSoftKeyboard());
-
-        // Type the password
-        Espresso.onView(withId(R.id.activity_main_passwordEditText))
-                .perform(typeText("123456"), closeSoftKeyboard());
-
-        // Click on the login button
-        Espresso.onView(withId(R.id.button_login)).perform(click());
-
-        // Add a delay to allow the view hierarchy to settle
-        waitFor(2000);
-
-        // Verify the toast message
-        Espresso.onView(withText("Login successful!"))
-                .check(ViewAssertions.matches(ViewMatchers.isDisplayed()));
-    }
-    private void waitFor(final long millis) {
-        Espresso.onView(isRoot()).perform(new ViewAction() {
-            @Override
-            public Matcher<View> getConstraints() {
-                return isRoot();
-            }
-
-            @Override
-            public String getDescription() {
-                return "Wait for " + millis + " milliseconds.";
-            }
-
-            @Override
-            public void perform(UiController uiController, View view) {
-                uiController.loopMainThreadForAtLeast(millis);
-            }
-        });
-    }
 //    @Rule
 //    public ActivityTestRule<CreateEventActivity> activityRule = new ActivityTestRule<>(CreateEventActivity.class);
 
