@@ -2,8 +2,8 @@ package com.example.sportmatch;
 
 import androidx.test.espresso.Espresso;
 import androidx.test.espresso.action.ViewActions;
-import androidx.test.espresso.intent.Intents;
 import androidx.test.espresso.intent.rule.IntentsTestRule;
+import androidx.test.ext.junit.rules.ActivityScenarioRule;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 
 import org.junit.Rule;
@@ -20,7 +20,7 @@ import static androidx.test.espresso.matcher.ViewMatchers.withId;
 public class LoginTest {
 
     @Rule
-    public IntentsTestRule<LoginActivity> loginActivityRule = new IntentsTestRule<>(LoginActivity.class);
+    public ActivityScenarioRule<LoginActivity> loginActivityRule = new ActivityScenarioRule<>(LoginActivity.class);
 
     @Test
     public void testLoginComponentsDisplayed() {
@@ -39,6 +39,11 @@ public class LoginTest {
         // Click the login button
         Espresso.onView(withId(R.id.button_login)).perform(ViewActions.click());
 
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         // Check if the BottomNavActivity is launched
         intended(hasComponent(BottomNavActivity.class.getName()));
     }
