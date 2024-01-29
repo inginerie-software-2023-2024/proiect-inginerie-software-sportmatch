@@ -146,7 +146,9 @@ public class  LoginActivity extends AppCompatActivity {
                                                     });
                                         }
                                     }  else {
+                                        Log.d("Eroare",task.getException().getMessage());
                                         Toast.makeText(LoginActivity.this, "Login failed!", Toast.LENGTH_SHORT).show();
+
                                     }
                                 }
                             });

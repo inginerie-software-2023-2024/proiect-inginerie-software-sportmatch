@@ -1,0 +1,125 @@
+# 2024-01-29T22:16:19.347Z:
+test_suite_meta_data {
+  scheduled_test_case_count: 2
+}
+test_status: FAILED
+test_result {
+  test_case {
+    test_class: "LoginTest"
+    test_package: "com.example.sportmatch"
+    test_method: "testLoginComponentsDisplayed"
+    start_time {
+      seconds: 1706566572
+      nanos: 299000000
+    }
+    end_time {
+      seconds: 1706566573
+      nanos: 437000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\FACULTATE\\Anul III\\proiect-inginerie-software-sportmatch\\app\\build\\outputs\\androidTest-results\\connected\\SM-A536B - 13\\logcat-com.example.sportmatch.LoginTest-testLoginComponentsDisplayed.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\FACULTATE\\Anul III\\proiect-inginerie-software-sportmatch\\app\\build\\outputs\\androidTest-results\\connected\\SM-A536B - 13\\device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\FACULTATE\\Anul III\\proiect-inginerie-software-sportmatch\\app\\build\\outputs\\androidTest-results\\connected\\SM-A536B - 13\\meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\FACULTATE\\Anul III\\proiect-inginerie-software-sportmatch\\app\\build\\outputs\\androidTest-results\\connected\\SM-A536B - 13\\cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "LoginTest"
+    test_package: "com.example.sportmatch"
+    test_method: "testLoginWithValidCredentialsNavigatesToBottomNavActivity"
+    start_time {
+      seconds: 1706566573
+      nanos: 764000000
+    }
+    end_time {
+      seconds: 1706566577
+      nanos: 568000000
+    }
+  }
+  test_status: FAILED
+  error {
+    error_message: "androidx.test.espresso.base.AssertionErrorHandler$AssertionFailedWithCauseError: Wanted to match 1 intents. Actually matched 0 intents.\n\nIntentMatcher: has component: has component with: class name: is \"com.example.sportmatch.BottomNavActivity\" package name: an instance of java.lang.String short class name: an instance of java.lang.String\n\nMatched intents:[]\n\nRecorded intents:[]\nat dalvik.system.VMStack.getThreadStackTrace(Native Method)\nat java.lang.Thread.getStackTrace(Thread.java:1841)\nat androidx.test.espresso.base.AssertionErrorHandler.handleSafely(AssertionErrorHandler.java:3)\nat androidx.test.espresso.base.AssertionErrorHandler.handleSafely(AssertionErrorHandler.java:1)\nat androidx.test.espresso.base.DefaultFailureHandler$TypedFailureHandler.handle(DefaultFailureHandler.java:4)\nat androidx.test.espresso.base.DefaultFailureHandler.handle(DefaultFailureHandler.java:5)\nat androidx.test.espresso.ViewInteraction.waitForAndHandleInteractionResults(ViewInteraction.java:5)\nat androidx.test.espresso.ViewInteraction.check(ViewInteraction.java:12)\nat androidx.test.espresso.intent.Intents.intended(Intents.java:185)\nat androidx.test.espresso.intent.Intents.intended(Intents.java:164)\nat com.example.sportmatch.LoginTest.testLoginWithValidCredentialsNavigatesToBottomNavActivity(LoginTest.java:67)\n... 35 trimmed\nCaused by: junit.framework.AssertionFailedError: Wanted to match 1 intents. Actually matched 0 intents.\n\nIntentMatcher: has component: has component with: class name: is \"com.example.sportmatch.BottomNavActivity\" package name: an instance of java.lang.String short class name: an instance of java.lang.String\n\nMatched intents:[]\n\nRecorded intents:[]\nat junit.framework.Assert.fail(Assert.java:50)\nat androidx.test.espresso.intent.VerificationModes$Times.verify(VerificationModes.java:80)\nat androidx.test.espresso.intent.Intents.internalIntended(Intents.java:340)\nat androidx.test.espresso.intent.Intents$2.check(Intents.java:189)\nat androidx.test.espresso.ViewInteraction$SingleExecutionViewAssertion.check(ViewInteraction.java:2)\nat androidx.test.espresso.ViewInteraction$2.call(ViewInteraction.java:14)\nat androidx.test.espresso.ViewInteraction$2.call(ViewInteraction.java:1)\nat java.util.concurrent.FutureTask.run(FutureTask.java:264)\nat android.os.Handler.handleCallback(Handler.java:942)\nat android.os.Handler.dispatchMessage(Handler.java:99)\nat android.os.Looper.loopOnce(Looper.java:226)\nat android.os.Looper.loop(Looper.java:313)\nat android.app.ActivityThread.main(ActivityThread.java:8762)\nat java.lang.reflect.Method.invoke(Native Method)\nat com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:604)\nat com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1067)"
+    error_type: "junit.framework.AssertionFailedError"
+    stack_trace: "androidx.test.espresso.base.AssertionErrorHandler$AssertionFailedWithCauseError: Wanted to match 1 intents. Actually matched 0 intents.\n\nIntentMatcher: has component: has component with: class name: is \"com.example.sportmatch.BottomNavActivity\" package name: an instance of java.lang.String short class name: an instance of java.lang.String\n\nMatched intents:[]\n\nRecorded intents:[]\nat dalvik.system.VMStack.getThreadStackTrace(Native Method)\nat java.lang.Thread.getStackTrace(Thread.java:1841)\nat androidx.test.espresso.base.AssertionErrorHandler.handleSafely(AssertionErrorHandler.java:3)\nat androidx.test.espresso.base.AssertionErrorHandler.handleSafely(AssertionErrorHandler.java:1)\nat androidx.test.espresso.base.DefaultFailureHandler$TypedFailureHandler.handle(DefaultFailureHandler.java:4)\nat androidx.test.espresso.base.DefaultFailureHandler.handle(DefaultFailureHandler.java:5)\nat androidx.test.espresso.ViewInteraction.waitForAndHandleInteractionResults(ViewInteraction.java:5)\nat androidx.test.espresso.ViewInteraction.check(ViewInteraction.java:12)\nat androidx.test.espresso.intent.Intents.intended(Intents.java:185)\nat androidx.test.espresso.intent.Intents.intended(Intents.java:164)\nat com.example.sportmatch.LoginTest.testLoginWithValidCredentialsNavigatesToBottomNavActivity(LoginTest.java:67)\n... 35 trimmed\nCaused by: junit.framework.AssertionFailedError: Wanted to match 1 intents. Actually matched 0 intents.\n\nIntentMatcher: has component: has component with: class name: is \"com.example.sportmatch.BottomNavActivity\" package name: an instance of java.lang.String short class name: an instance of java.lang.String\n\nMatched intents:[]\n\nRecorded intents:[]\nat junit.framework.Assert.fail(Assert.java:50)\nat androidx.test.espresso.intent.VerificationModes$Times.verify(VerificationModes.java:80)\nat androidx.test.espresso.intent.Intents.internalIntended(Intents.java:340)\nat androidx.test.espresso.intent.Intents$2.check(Intents.java:189)\nat androidx.test.espresso.ViewInteraction$SingleExecutionViewAssertion.check(ViewInteraction.java:2)\nat androidx.test.espresso.ViewInteraction$2.call(ViewInteraction.java:14)\nat androidx.test.espresso.ViewInteraction$2.call(ViewInteraction.java:1)\nat java.util.concurrent.FutureTask.run(FutureTask.java:264)\nat android.os.Handler.handleCallback(Handler.java:942)\nat android.os.Handler.dispatchMessage(Handler.java:99)\nat android.os.Looper.loopOnce(Looper.java:226)\nat android.os.Looper.loop(Looper.java:313)\nat android.app.ActivityThread.main(ActivityThread.java:8762)\nat java.lang.reflect.Method.invoke(Native Method)\nat com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:604)\nat com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1067)"
+  }
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\FACULTATE\\Anul III\\proiect-inginerie-software-sportmatch\\app\\build\\outputs\\androidTest-results\\connected\\SM-A536B - 13\\logcat-com.example.sportmatch.LoginTest-testLoginWithValidCredentialsNavigatesToBottomNavActivity.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\FACULTATE\\Anul III\\proiect-inginerie-software-sportmatch\\app\\build\\outputs\\androidTest-results\\connected\\SM-A536B - 13\\device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\FACULTATE\\Anul III\\proiect-inginerie-software-sportmatch\\app\\build\\outputs\\androidTest-results\\connected\\SM-A536B - 13\\meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\FACULTATE\\Anul III\\proiect-inginerie-software-sportmatch\\app\\build\\outputs\\androidTest-results\\connected\\SM-A536B - 13\\cpuinfo"
+    }
+  }
+}
+output_artifact {
+  label {
+    label: "test-results.log"
+    namespace: "com.google.testing.platform.runtime.android.driver.AndroidInstrumentationDriver"
+  }
+  source_path {
+    path: "C:\\FACULTATE\\Anul III\\proiect-inginerie-software-sportmatch\\app\\build\\outputs\\androidTest-results\\connected\\SM-A536B - 13\\testlog\\test-results.log"
+  }
+  type: TEST_DATA
+  mime_type: "text/plain"
+}

@@ -1,0 +1,863 @@
+01-30 00:16:12.721 26157 26196 I TestRunner: started: testLoginComponentsDisplayed(com.example.sportmatch.LoginTest)
+01-30 00:16:12.741 26157 26196 W Settings: Setting always_finish_activities has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+01-30 00:16:12.748  1426  1484 I ChimeraSystemEventListener: appLaunchIntent package name is: com.example.sportmatch
+01-30 00:16:12.755  1426  3156 I SemDvfsHyPerManager: acquire hyper - AMS_APP_SWITCH/1426@24, type = -999
+01-30 00:16:12.755  1037  1116 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 1051999  [1426 / 24]    HINT : AMS_APP_SWITCH    list :
+01-30 00:16:12.756  1100  1152 I SurfaceFlinger: id=113835 createSurf flag=24004, Task=17221#113835
+01-30 00:16:12.758  5704  5704 I SemDvfsHyPerManager: acquire hyper - APP_START_SHORT/5704@16, type = -999
+01-30 00:16:12.759  1037  1116 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 16362076  [5704 / 16]    HINT : APP_START    list : [TIMEOUT / 1500]
+01-30 00:16:12.763  1100  1152 I SurfaceFlinger: id=113836 createSurf flag=80004, ActivityRecord{19210b3 u0 com.example.sportmatch/.LoginActivity} t17221}#113836
+01-30 00:16:12.764 26157 26198 V FA      : App measurement collection enabled
+01-30 00:16:12.764 26157 26198 V FA      : App measurement enabled for app package, google app id: com.example.sportmatch, 1:927342689684:android:6b3a7cb297563437662381
+01-30 00:16:12.765 26157 26198 I FA      : App measurement initialized, version: 82001
+01-30 00:16:12.765 26157 26198 I FA      : To enable debug logging run: adb shell setprop log.tag.FA VERBOSE
+01-30 00:16:12.765 26157 26198 I FA      : To enable faster debug mode event logging run:
+01-30 00:16:12.765 26157 26198 I FA      :   adb shell setprop debug.firebase.analytics.app com.example.sportmatch
+01-30 00:16:12.766 26157 26198 D FA      : Debug-level message logging enabled
+01-30 00:16:12.771  1426  4479 W WindowManager: lockNow pending, ignore updating lockscreen timeout
+01-30 00:16:12.772  1426  4479 I SemDvfsHyPerManager: acquire hyper - AMS_APP_LAUNCH/1426@18, type = -999
+01-30 00:16:12.772  3326  3326 E pageboostd: Received HALT command code 2
+01-30 00:16:12.772  1037  1116 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 1043308  [1426 / 18]    HINT : AMS_APP_LAUNCH    list :
+01-30 00:16:12.775 25557 25557 I BaseActivity: removeActivityFlags, flags : 16
+01-30 00:16:12.775 25557 25557 I BaseActivity: removeActivityFlags, flags : 6
+01-30 00:16:12.775 25557 25557 I DragController: endDrag
+01-30 00:16:12.775 25557 25557 W LauncherAppWidgetHost: setShouldListenFlag, mFlags:15 flag:resume on:false isFront:false
+01-30 00:16:12.776 25557 25557 I SPayUpdater: updateSpayHandler launcher activity is paused false
+01-30 00:16:12.780  1426  4481 D InputDispatcher: Focused application(0): ActivityRecord{19210b3 u0 com.example.sportmatch/.LoginActivity} t17221}
+01-30 00:16:12.783  1426  4481 W WindowManager: lockNow pending, ignore updating lockscreen timeout
+01-30 00:16:12.785 25557 25557 I TopTaskTracker: onTaskMovedToFront : taskId = 17221
+01-30 00:16:12.794  2448  2536 D NativeCustomFrequencyManager: [NativeCFMS] BpCustomFrequencyManager::BpCustomFrequencyManager()
+01-30 00:16:12.796  1426  2341 D AS.MultiSoundManager: mForegroundUid = 10438
+01-30 00:16:12.796  1217  7792 I CameraService: onUidStateChanged: uid=10043, procState is changed. (0 -> 1)
+01-30 00:16:12.798  1426  2391 D TrafficStats: tagSocket(983) with statsTag=0xffffffff, statsUid=-1
+01-30 00:16:12.798  5704  5704 I SemDvfsHyPerManager: acquire hyper - APP_START/5704@18, type = -999
+01-30 00:16:12.798  1100  1100 I SurfaceFlinger: [f508e83 com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity#68427] FrameRatePriority: -1
+01-30 00:16:12.798  1037  1116 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 16373521  [5704 / 18]    HINT : APP_START    list :
+01-30 00:16:12.798  1100  1100 D SurfaceFlinger: [input] inputWindowCommands.focusRequests size is 1
+01-30 00:16:12.800  1100  1210 D SurfaceFlinger: [input] setFocusedWindow: <null>
+01-30 00:16:12.800  1426  4481 D InputDispatcher: Focus request (0): <null> but waiting because NOT_FOCUSABLE
+01-30 00:16:12.800  1426  4481 D InputDispatcher: Focus left window (0): f508e83 com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity
+01-30 00:16:12.801 25557 25557 I ViewRootImpl@7304e6b[LauncherActivity]: MSG_WINDOW_FOCUS_CHANGED 0 1
+01-30 00:16:12.802 25557 25557 I BaseActivity: removeActivityFlags, flags : 8
+01-30 00:16:12.802  1426  4481 D InputTransport: Input channel constructed: '995d359', fd=1014
+01-30 00:16:12.802  1426  4481 D InputTransport: Input channel constructed: '995d359', fd=1031
+01-30 00:16:12.802  1426  4481 D InputTransport: Input channel constructed: '995d359', fd=1140
+01-30 00:16:12.802  1100  1331 I SurfaceFlinger: id=113837 createSurf flag=80004, 995d359 Splash Screen com.example.sportmatch#113837
+01-30 00:16:12.803  1100  1198 I VSyncReactor: Current= 60, TransitioningTo= 0, hwcPeriod= 60, Distance= 0
+01-30 00:16:12.803  1426  2416 D NetdEventListenerService: DNS Requested by : 151, 1000
+01-30 00:16:12.806  1426  4481 D InputTransport: Input channel destroyed: '995d359', fd=1140
+01-30 00:16:12.806  2448  2522 D InsetsController: onStateChanged: InsetsState: {mDisplayFrame=Rect(0, 0 - 1080, 2400), mDisplayCutout=DisplayCutout{insets=Rect(0, 88 - 0, 0) waterfall=Insets{left=0, top=0, right=0, bottom=0} boundingRect={Bounds=[Rect(0, 0 - 0, 0), Rect(512, 0 - 568, 88), Rect(0, 0 - 0, 0), Rect(0, 0 - 0, 0)]} cutoutPathParserInfo={CutoutPathParserInfo{displayWidth=1080 displayHeight=2400 physicalDisplayWidth=1080 physicalDisplayHeight=2400 density={2.8125} cutoutSpec={M 0,0 M 0,11.43427858034597 a 9.899054752987353,9.899054752987353 0 1,0 0,19.79810950597471 a 9.899054752987353,9.899054752987353 0 1,0 0,-19.79810950597471 Z @dp} rotation={0} scale={1.0} physicalPixelDisplaySizeRatio={1.0}}}}, mRoundedCorners=RoundedCorners{[RoundedCorner{position=TopLeft, radius=90, center=Point(90, 90)}, RoundedCorner{position=TopRight, radius=90, center=Point(990, 90)}, RoundedCorner{position=BottomRight, radius=90, center=Point(990, 2310)}, RoundedCorner{position=BottomLeft, radius=90, center=Point(90, 2310)}]}  mRoundedCornerFrame=Rect(0, 0 - 1080, 2400), mPrivacyIndicatorBounds=PrivacyIndicatorBounds {static bounds=Rect(956, 0 - 1080, 88) rotation=0}, mSources= { InsetsSource: {mType=ITYPE_STATUS_BAR, mFrame=[0,0][1080,88], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_NAVIGATION_BAR, mFrame=[0,2265][1080,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_LEFT_GESTURES, mFrame=[0,0][0,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_RIGHT_GESTURES, mFrame=[1080,0][1080,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_TOP_MANDATORY_GESTURES, mFrame=[0,0][1080,122], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_BOTTOM_MANDATORY_GESTURES, mFrame=[0,2265][1080,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_LEFT_DISPLAY_CUTOUT, mFrame=[0,0][-100000,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_TOP_DISPLAY_CUTOUT, mFrame=[0,0][1080,88], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_RIGHT_DISPLAY_CUTOUT, mFrame=[100000,0][1080,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_BOTTOM_DISPLAY_CUTOUT, mFrame=[0,100000][1080,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_TOP_TAPPABLE_ELEMENT, mFrame=[0,0][1080,88], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_BOTTOM_TAPPABLE_ELEMENT, mFrame=[0,2265][1080,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_IME, mFrame=[0,0][0,0], mVisibleFrame=[0,1392][1080,2400], mVisible=false, mInsetsRoundedCornerFrame=false} } host=Splash Screen com.example.sportmatch from=android.view.ViewRootImpl.setView:1732
+01-30 00:16:12.808  2448  2522 I ViewRootImpl@8abb2d5[sportmatch]: setView = android.widget.FrameLayout@e81a751 TM=true
+01-30 00:16:12.813 26157 26204 D OpenGLRenderer: RenderThread::requireGlContext()
+01-30 00:16:12.817  2448  2522 I ViewRootImpl@8abb2d5[sportmatch]: performTraversals params={(0,0)(fillxfill) sim={adjust=pan} ty=APPLICATION_STARTING fmt=TRANSLUCENT wanim=0x1030309
+01-30 00:16:12.817  2448  2522 I ViewRootImpl@8abb2d5[sportmatch]:   fl=81030118
+01-30 00:16:12.817  2448  2522 I ViewRootImpl@8abb2d5[sportmatch]:   pfl=16000010
+01-30 00:16:12.817  2448  2522 I ViewRootImpl@8abb2d5[sportmatch]:   apr=LIGHT_STATUS_BARS LIGHT_NAVIGATION_BARS
+01-30 00:16:12.817  2448  2522 I ViewRootImpl@8abb2d5[sportmatch]:   bhv=DEFAULT
+01-30 00:16:12.817  2448  2522 I ViewRootImpl@8abb2d5[sportmatch]:   fitSides= naviIconColor=0}
+01-30 00:16:12.819  2448  2522 I ViewRootImpl@8abb2d5[sportmatch]: performTraversals mFirst=true windowShouldResize=true viewVisibilityChanged=false mForceNextWindowRelayout=false params={(0,0)(fillxfill) sim={adjust=pan} ty=APPLICATION_STARTING fmt=TRANSLUCENT wanim=0x1030309
+01-30 00:16:12.819  2448  2522 I ViewRootImpl@8abb2d5[sportmatch]:   fl=81030118
+01-30 00:16:12.819  2448  2522 I ViewRootImpl@8abb2d5[sportmatch]:   pfl=16000010
+01-30 00:16:12.819  2448  2522 I ViewRootImpl@8abb2d5[sportmatch]:   apr=LIGHT_STATUS_BARS LIGHT_NAVIGATION_BARS
+01-30 00:16:12.819  2448  2522 I ViewRootImpl@8abb2d5[sportmatch]:   bhv=DEFAULT
+01-30 00:16:12.819  2448  2522 I ViewRootImpl@8abb2d5[sportmatch]:   fitSides= naviIconColor=0}
+01-30 00:16:12.819 25557 25557 I BadgeRenderer: Invalid count : 0
+01-30 00:16:12.821 25557 25557 I BadgeRenderer: Invalid count : 0
+01-30 00:16:12.821  1426  3460 I MediaSessionMonitor: Media session stopped : controllerList empty
+01-30 00:16:12.829 26157 26204 D OpenGLRenderer: RenderThread::setGrContext()
+01-30 00:16:12.829  1426  4479 V WindowManager: Relayout Window{995d359 u0 Splash Screen com.example.sportmatch}: viewVisibility=0 req=1080x2400 d0
+01-30 00:16:12.830  1100  1336 I SurfaceFlinger: id=113838 createSurf flag=40004, Splash Screen com.example.sportmatch$_2448#113838
+01-30 00:16:12.831  1426  4479 W WindowManager: lockNow pending, ignore updating lockscreen timeout
+01-30 00:16:12.832  1426  4479 V WindowManager: Relayout hash=995d359, pid=2448, syncId=-1: mAttrs={(0,0)(fillxfill) sim={adjust=pan} ty=APPLICATION_STARTING fmt=TRANSLUCENT wanim=0x1030309
+01-30 00:16:12.832  1426  4479 V WindowManager:   fl=81030118
+01-30 00:16:12.832  1426  4479 V WindowManager:   pfl=16000010
+01-30 00:16:12.832  1426  4479 V WindowManager:   apr=LIGHT_STATUS_BARS LIGHT_NAVIGATION_BARS
+01-30 00:16:12.832  1426  4479 V WindowManager:   bhv=DEFAULT
+01-30 00:16:12.832  1426  4479 V WindowManager:   fitSides= naviIconColor=0}
+01-30 00:16:12.833  5767  5767 I ActivityUtils: HomePackage : com.sec.android.app.launcher, resumePackageName : com.example.sportmatch
+01-30 00:16:12.833  2448  2522 I ViewRootImpl@8abb2d5[sportmatch]: updateBlastSurfaceIfNeeded mBlastBufferQueue=null isSameSurfaceControl=false
+01-30 00:16:12.834  2448  2522 I BLASTBufferQueue: new BLASTBufferQueue, mName= ViewRootImpl@8abb2d5[sportmatch] mNativeObject= 0xb40000722b73dbf0 sc.mNativeObject= 0xb4000071bb862f80 caller= android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:2909 android.view.ViewRootImpl.relayoutWindow:9847 android.view.ViewRootImpl.performTraversals:3884 android.view.ViewRootImpl.doTraversal:3116 android.view.ViewRootImpl$TraversalRunnable.run:10885 android.view.Choreographer$CallbackRecord.run:1301 android.view.Choreographer$CallbackRecord.run:1309 android.view.Choreographer.doCallbacks:923 android.view.Choreographer.doFrame:852 android.view.Choreographer$FrameDisplayEventReceiver.run:1283
+01-30 00:16:12.834  2448  2522 I BLASTBufferQueue: update, w= 1080 h= 2400 mName = ViewRootImpl@8abb2d5[sportmatch] mNativeObject= 0xb40000722b73dbf0 sc.mNativeObject= 0xb4000071bb862f80 format= -3 caller= android.graphics.BLASTBufferQueue.<init>:84 android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:2909 android.view.ViewRootImpl.relayoutWindow:9847 android.view.ViewRootImpl.performTraversals:3884 android.view.ViewRootImpl.doTraversal:3116 android.view.ViewRootImpl$TraversalRunnable.run:10885
+01-30 00:16:12.834  2448  2522 I ViewRootImpl@8abb2d5[sportmatch]: Relayout returned: old=(0,0,1080,2400) new=(0,0,1080,2400) req=(1080,2400)0 dur=14 res=0x3 s={true 0xb4000072bb91b300} ch=true seqId=0
+01-30 00:16:12.835  2448  2522 I ViewRootImpl@8abb2d5[sportmatch]: mThreadedRenderer.initialize() mSurface={isValid=true 0xb4000072bb91b300} hwInitialized=true
+01-30 00:16:12.835  2448  2536 D OpenGLRenderer: eglCreateWindowSurface
+01-30 00:16:12.839  2448  2522 I ViewRootImpl@8abb2d5[sportmatch]: reportNextDraw android.view.ViewRootImpl.performTraversals:4438 android.view.ViewRootImpl.doTraversal:3116 android.view.ViewRootImpl$TraversalRunnable.run:10885 android.view.Choreographer$CallbackRecord.run:1301 android.view.Choreographer$CallbackRecord.run:1309
+01-30 00:16:12.839  2448  2522 I ViewRootImpl@8abb2d5[sportmatch]: Setup new sync id=0
+01-30 00:16:12.839  2448  2522 I ViewRootImpl@8abb2d5[sportmatch]: Setting syncFrameCallback
+01-30 00:16:12.839  2448  2522 I ViewRootImpl@8abb2d5[sportmatch]: registerCallbacksForSync syncBuffer=false
+01-30 00:16:12.840  9987 10245 I Rubin   : [817] t9.a.c(SourceFile:1) : Notify com.samsung.android.rubin.inferenceengine.contextanalytics.engine.loggers.d's database is updated.
+01-30 00:16:12.841  2448  2555 I ViewRootImpl@8abb2d5[sportmatch]: Received frameDrawingCallback syncResult=0 frameNum=1.
+01-30 00:16:12.841  2448  2555 I ViewRootImpl@8abb2d5[sportmatch]: Setting up sync and frameCommitCallback
+01-30 00:16:12.844  2448  2536 I BLASTBufferQueue: [ViewRootImpl@8abb2d5[sportmatch]#3623](f:0,a:0) onFrameAvailable the first frame is available
+01-30 00:16:12.844  2448  2536 I ViewRootImpl@8abb2d5[sportmatch]: Received frameCommittedCallback lastAttemptedDrawFrameNum=1 didProduceBuffer=true
+01-30 00:16:12.854  2448  2536 D OpenGLRenderer: CFMS:: SetUp Pid : 2448    Tid : 2536
+01-30 00:16:12.855  2448  2536 W Parcel  : Expecting binder but got null!
+01-30 00:16:12.855  2448  2522 I ViewRootImpl@8abb2d5[sportmatch]: onSyncComplete
+01-30 00:16:12.856  2448  2522 I ViewRootImpl@8abb2d5[sportmatch]: setupSync seqId=0 mSyncId=0 fn=1 caller=android.view.ViewRootImpl$$ExternalSyntheticLambda11.accept:6 android.window.SurfaceSyncer.lambda$setupSync$1$android-window-SurfaceSyncer:128 android.window.SurfaceSyncer$$ExternalSyntheticLambda1.accept:8 android.window.SurfaceSyncer$SyncSet.checkIfSyncIsComplete:382 android.window.SurfaceSyncer$SyncSet.markSyncReady:359 android.window.SurfaceSyncer.markSyncReady:151 android.view.ViewRootImpl.performTraversals:4503
+01-30 00:16:12.856  2448  2522 I ViewRootImpl@8abb2d5[sportmatch]: reportDrawFinished seqId=0 mSyncId=-1 fn=1 mSurfaceChangedTransaction=0xb4000071eb93cf70
+01-30 00:16:12.860  1426  1485 W WindowManager: lockNow pending, ignore updating lockscreen timeout
+01-30 00:16:12.861 26157 26157 D AppCompatDelegate: Checking for metadata for AppLocalesMetadataHolderService : Service not found
+01-30 00:16:12.862  1100  1152 I SurfaceFlinger: id=113839 createSurf flag=24000, Surface(name=Task=1)/@0x238c0c - animation-leash of app_transition#113839
+01-30 00:16:12.863 26157 26198 D FA      : Resetting session stitching token to not null
+01-30 00:16:12.864  1100  1152 I SurfaceFlinger: id=113840 createSurf flag=24004, Surface(name=Task=17221)/@0x4c544c9 - animation-leash of app_transition#113840
+01-30 00:16:12.866  1426  1485 W WindowManager: lockNow pending, ignore updating lockscreen timeout
+01-30 00:16:12.867  1100  1331 I SurfaceFlinger: id=113841 createSurf flag=80000, bc78e22 ActivityRecordInputSink com.example.sportmatch/.LoginActivity#113841
+01-30 00:16:12.869  2448  2516 D Bubbles : onLocusVisibilityChanged: LocusId[16_chars] visible=false
+01-30 00:16:12.873 26157 26157 D LifecycleMonitor: Lifecycle status change: com.example.sportmatch.LoginActivity@97f042 in: PRE_ON_CREATE
+01-30 00:16:12.874 26157 26157 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was PRE_ON_CREATE
+01-30 00:16:12.874  9987 10245 I Rubin   : [817] ha.e.m(SourceFile:6) : isSatisfiedByCmh is false
+01-30 00:16:12.876  1426  2377 D SemNscXgbMsL1: Probability - Cloud gaming: [0.024042133]
+01-30 00:16:12.876  1426  2377 D SemNscXgbMsL1: Probability - Real time: [0.12826374]
+01-30 00:16:12.876  1426  2377 D SemNscXgbMsL1: Probability - Non real time: [0.8342134]
+01-30 00:16:12.876  1426  2377 D SemNscXgbMsL1: 1 sample inference time: 0.598154 msecs
+01-30 00:16:12.878  1426  2377 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 0.975423 msecs
+01-30 00:16:12.879  1426  2377 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 1.207192 msecs
+01-30 00:16:12.882  1100  1100 I Layer   : Layer [Splash Screen com.example.sportmatch$_2448#113838] hidden!! flag(0)
+01-30 00:16:12.884 25557 25726 I RecentModel: onTaskStackChangedBackground
+01-30 00:16:12.890 26157 26190 V FA      : onActivityCreated
+01-30 00:16:12.894 25557 25579 I RecentTasksList: loadTasksInBackground : groupTask = GroupTask{task1=[id=17183 windowingMode=1 user=0 lastActiveTime=504315447] null, task2=null, task3=null, mStagedSplitBounds=null}
+01-30 00:16:12.894 25557 25579 I RecentTasksList: loadTasksInBackground : groupTask = GroupTask{task1=[id=17101 windowingMode=1 user=0 lastActiveTime=505964561] null, task2=null, task3=null, mStagedSplitBounds=null}
+01-30 00:16:12.894 25557 25579 I RecentTasksList: loadTasksInBackground : groupTask = GroupTask{task1=[id=17221 windowingMode=1 user=0 lastActiveTime=506160846] null, task2=null, task3=null, mStagedSplitBounds=null}
+01-30 00:16:12.901 26157 26198 V FA      : Connecting to remote service
+01-30 00:16:12.902 26157 26157 I DecorView: [INFO] isPopOver=false config=true
+01-30 00:16:12.902 26157 26157 I DecorView: updateCaptionType: isFloating=false isApplication=true hasWindowDecorCaption=false this=DecorView@2a12554[]
+01-30 00:16:12.902 26157 26157 D DecorView: setCaptionType = 0, this = DecorView@2a12554[]
+01-30 00:16:12.907  1100  1100 D SurfaceFlinger: Display 4633128672291735932 HWC layers:
+01-30 00:16:12.907  1100  1100 D SurfaceFlinger:      DEVICE | 0xb400007704b4c2d0 | 0100 | RGBx_8888    |   19.0    0.0 1099.0 2400.0 |    0    0 1080 2400 | Wallpaper BBQ wrapper#73754
+01-30 00:16:12.907  1100  1100 D SurfaceFlinger:      DEVICE | 0xb400007704b47090 | 0100 | RGBA_8888    |    0.0    0.0 1080.0 2400.0 |    0    0 1080 2400 | com.sec.android.app.launcher/com.sec[...]ities.LauncherActivity$_25557#113829
+01-30 00:16:12.907  1100  1100 D SurfaceFlinger:      DEVICE | 0xb400007704b63cd0 | 0100 | RGBA_8888    |    0.0    0.0 1080.0 2400.0 |   76  168 1004 2232 | Splash Screen com.example.sportmatch$_2448#113838
+01-30 00:16:12.907  1100  1100 D SurfaceFlinger:      DEVICE | 0xb400007704b5ff90 | 0100 | RGBA_8888    |    0.0    0.0 1080.0   88.0 |    0    0 1080   88 | StatusBar$_2448#94
+01-30 00:16:12.907  1100  1100 D SurfaceFlinger:      DEVICE | 0xb400007704b6bad0 | 0100 | RGBA_8888    |    0.0    0.0   67.0  342.0 |    0 1504   67 1846 | com.samsung.android.app.cocktailbars[...]vice.CocktailBarService$_5767#113823
+01-30 00:16:12.907  1100  1100 D SurfaceFlinger:      DEVICE | 0xb400007704b65fd0 | 0100 | RGBA_8888    |    0.0    0.0 1080.0  135.0 |    0 2265 1080 2400 | NavigationBar0$_2448#88
+01-30 00:16:12.907  1100  1100 D SurfaceFlinger:
+01-30 00:16:12.911 15268 15268 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.measurement.START pkg=com.google.android.gms }
+01-30 00:16:12.911 15268 15268 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.measurement.START pkg=com.google.android.gms }
+01-30 00:16:12.913 26157 26157 I DecorView: getCurrentDensityDpi: from real metrics. densityDpi=450 msg=resources_loaded
+01-30 00:16:12.914 26157 26157 I DecorView: setWindowBackground: isPopOver=false color=ffffffff d=android.graphics.drawable.ColorDrawable@151599f
+01-30 00:16:12.918 26157 26198 V FA      : Connection attempt already in progress
+01-30 00:16:12.924 26157 26157 W mple.sportmatch: Accessing hidden method Landroid/view/View;->computeFitSystemWindows(Landroid/graphics/Rect;Landroid/graphics/Rect;)Z (unsupported, reflection, allowed)
+01-30 00:16:12.925 26157 26157 W mple.sportmatch: Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (unsupported, reflection, allowed)
+01-30 00:16:12.929 26157 26198 V FA      : Connection attempt already in progress
+01-30 00:16:12.940 25557 25557 I TaskThumbnailCache: handleResult: taskId = 17183, taskThumbnail = android.graphics.Bitmap@94780ed
+01-30 00:16:12.940 26157 26157 D CompatibilityChangeReporter: Compat change id reported: 210923482; UID 10438; state: ENABLED
+01-30 00:16:12.941 25557 25557 I TaskThumbnailCache: handleResult: taskId = 17101, taskThumbnail = android.graphics.Bitmap@1084b22
+01-30 00:16:12.995  1426  2391 W SemWifiTransportLayerUtils: getApplicationCategory - IOException com.example.sportmatch
+01-30 00:16:12.995  1426  2391 W System.err: java.io.FileNotFoundException: https://play.google.com/store/apps/details?id=com.example.sportmatch&hl=en
+01-30 00:16:12.995  1426  2391 W System.err: 	at com.android.okhttp.internal.huc.HttpURLConnectionImpl.getInputStream(HttpURLConnectionImpl.java:255)
+01-30 00:16:12.995  1426  2391 W System.err: 	at com.android.okhttp.internal.huc.DelegatingHttpsURLConnection.getInputStream(DelegatingHttpsURLConnection.java:211)
+01-30 00:16:12.995  1426  2391 W System.err: 	at com.android.okhttp.internal.huc.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:30)
+01-30 00:16:12.995  1426  2391 W System.err: 	at com.samsung.android.server.wifi.tcp.SemWifiTransportLayerUtils.getApplicationCategory(SemWifiTransportLayerUtils.java:104)
+01-30 00:16:12.995  1426  2391 W System.err: 	at com.samsung.android.server.wifi.tcp.SemWifiTransportLayerMonitor$TcpMonitorHandler.handleMessage(SemWifiTransportLayerMonitor.java:244)
+01-30 00:16:12.995  1426  2391 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+01-30 00:16:12.995  1426  2391 W System.err: 	at android.os.Looper.loopOnce(Looper.java:226)
+01-30 00:16:12.995  1426  2391 W System.err: 	at android.os.Looper.loop(Looper.java:313)
+01-30 00:16:12.995  1426  2391 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+01-30 00:16:12.996  1426  2391 D SemWifiTransportLayerMonitor.TcpMonitorHandler: MSG_SAVE_PACKAGE_INFO
+01-30 00:16:12.996  1426  2391 D SemWifiTransportLayerFileManager: saveWifiPackageInfoToFile
+01-30 00:16:12.996  1426  2391 D SemWifiTransportLayerFileManager: writeWifiPackageInfoList
+01-30 00:16:13.071   534   534 I lmkd    : 0(delay), 50(swap), 1(freelimit), 0(reentrymode) memory pressure events were skipped after a kill!
+01-30 00:16:13.107 26157 26157 D LifecycleMonitor: Lifecycle status change: com.example.sportmatch.LoginActivity@97f042 in: CREATED
+01-30 00:16:13.107 26157 26157 V ActivityScenario: Update currentActivityStage to CREATED, currentActivity=com.example.sportmatch.LoginActivity@97f042
+01-30 00:16:13.112 26157 26157 D LifecycleMonitor: Lifecycle status change: com.example.sportmatch.LoginActivity@97f042 in: STARTED
+01-30 00:16:13.112 26157 26157 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=com.example.sportmatch.LoginActivity@97f042
+01-30 00:16:13.115 26157 26157 D LifecycleMonitor: Lifecycle status change: com.example.sportmatch.LoginActivity@97f042 in: RESUMED
+01-30 00:16:13.115 26157 26157 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=com.example.sportmatch.LoginActivity@97f042
+01-30 00:16:13.116 26157 26198 V FA      : Activity resumed, time: 506161076
+01-30 00:16:13.117 26157 26157 I MSHandlerLifeCycle: check: return. pkg=com.example.sportmatch parent=null callers=com.android.internal.policy.DecorView.setVisibility:4412 android.app.ActivityThread.handleResumeActivity:5476 android.app.servertransaction.ResumeActivityItem.execute:54 android.app.servertransaction.ActivityTransactionItem.execute:45 android.app.servertransaction.TransactionExecutor.executeLifecycleState:176
+01-30 00:16:13.117 26157 26157 I MSHandlerLifeCycle: removeMultiSplitHandler: no exist. decor=DecorView@2a12554[]
+01-30 00:16:13.119 26157 26198 I FA      : Tag Manager is not found and thus will not be used
+01-30 00:16:13.124 26157 26204 D NativeCustomFrequencyManager: [NativeCFMS] BpCustomFrequencyManager::BpCustomFrequencyManager()
+01-30 00:16:13.129  1426  2959 D InputTransport: Input channel constructed: '5a12873', fd=1149
+01-30 00:16:13.129  1426  2959 D InputTransport: Input channel constructed: '5a12873', fd=1151
+01-30 00:16:13.129  1426  2959 D InputTransport: Input channel constructed: '5a12873', fd=1152
+01-30 00:16:13.130  1100  1152 I SurfaceFlinger: id=113842 createSurf flag=80004, 5a12873 com.example.sportmatch/com.example.sportmatch.LoginActivity#113842
+01-30 00:16:13.131  1426  2959 D InputTransport: Input channel destroyed: '5a12873', fd=1152
+01-30 00:16:13.133 26157 26157 D InsetsController: onStateChanged: InsetsState: {mDisplayFrame=Rect(0, 0 - 1080, 2400), mDisplayCutout=DisplayCutout{insets=Rect(0, 88 - 0, 0) waterfall=Insets{left=0, top=0, right=0, bottom=0} boundingRect={Bounds=[Rect(0, 0 - 0, 0), Rect(512, 0 - 568, 88), Rect(0, 0 - 0, 0), Rect(0, 0 - 0, 0)]} cutoutPathParserInfo={CutoutPathParserInfo{displayWidth=1080 displayHeight=2400 physicalDisplayWidth=1080 physicalDisplayHeight=2400 density={2.8125} cutoutSpec={M 0,0 M 0,11.43427858034597 a 9.899054752987353,9.899054752987353 0 1,0 0,19.79810950597471 a 9.899054752987353,9.899054752987353 0 1,0 0,-19.79810950597471 Z @dp} rotation={0} scale={1.0} physicalPixelDisplaySizeRatio={1.0}}}}, mRoundedCorners=RoundedCorners{[RoundedCorner{position=TopLeft, radius=90, center=Point(90, 90)}, RoundedCorner{position=TopRight, radius=90, center=Point(990, 90)}, RoundedCorner{position=BottomRight, radius=90, center=Point(990, 2310)}, RoundedCorner{position=BottomLeft, radius=90, center=Point(90, 2310)}]}  mRoundedCornerFrame=Rect(0, 0 - 1080, 2400), mPrivacyIndicatorBounds=PrivacyIndicatorBounds {static bounds=Rect(956, 0 - 1080, 88) rotation=0}, mSources= { InsetsSource: {mType=ITYPE_STATUS_BAR, mFrame=[0,0][1080,88], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_NAVIGATION_BAR, mFrame=[0,2265][1080,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_LEFT_GESTURES, mFrame=[0,0][0,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_RIGHT_GESTURES, mFrame=[1080,0][1080,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_TOP_MANDATORY_GESTURES, mFrame=[0,0][1080,122], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_BOTTOM_MANDATORY_GESTURES, mFrame=[0,2265][1080,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_LEFT_DISPLAY_CUTOUT, mFrame=[0,0][-100000,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_TOP_DISPLAY_CUTOUT, mFrame=[0,0][1080,88], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_RIGHT_DISPLAY_CUTOUT, mFrame=[100000,0][1080,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_BOTTOM_DISPLAY_CUTOUT, mFrame=[0,100000][1080,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_TOP_TAPPABLE_ELEMENT, mFrame=[0,0][1080,88], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_BOTTOM_TAPPABLE_ELEMENT, mFrame=[0,2265][1080,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_IME, mFrame=[0,0][0,0], mVisibleFrame=[0,1392][1080,2400], mVisible=false, mInsetsRoundedCornerFrame=false} } host=com.example.sportmatch/com.example.sportmatch.LoginActivity from=android.view.ViewRootImpl.setView:1732
+01-30 00:16:13.134  5767  5767 I Utils   : isCurrentUser current = 0, ownerId = 0
+01-30 00:16:13.134  5767  5767 I TrayVisibilityController: getComputedTrayVisible : keyguardState = 1
+01-30 00:16:13.134  5767  5767 I TrayVisibilityController: updateTrayVisible: State=1 visible=1 mCurrentVisible=1 specificMode=0
+01-30 00:16:13.134  5767  5767 I TrayStateController: onNotifyUpdateTray: state=0
+01-30 00:16:13.136 26157 26157 I ViewRootImpl@97f4791[LoginActivity]: setView = com.android.internal.policy.DecorView@2a12554 TM=true
+01-30 00:16:13.138 26157 26157 I MSHandlerLifeCycle: removeMultiSplitHandler: no exist. decor=DecorView@2a12554[LoginActivity]
+01-30 00:16:13.143 26157 26198 V FA      : Connection attempt already in progress
+01-30 00:16:13.144 26157 26198 V FA      : Connection attempt already in progress
+01-30 00:16:13.167 26157 26157 I ViewRootImpl@97f4791[LoginActivity]: performTraversals params={(0,0)(fillxfill) sim={adjust=pan forwardNavigation} ty=BASE_APPLICATION wanim=0x1030309
+01-30 00:16:13.167 26157 26157 I ViewRootImpl@97f4791[LoginActivity]:   fl=81810100
+01-30 00:16:13.167 26157 26157 I ViewRootImpl@97f4791[LoginActivity]:   pfl=12020040
+01-30 00:16:13.167 26157 26157 I ViewRootImpl@97f4791[LoginActivity]:   bhv=DEFAULT
+01-30 00:16:13.167 26157 26157 I ViewRootImpl@97f4791[LoginActivity]:   fitSides= naviIconColor=0}
+01-30 00:16:13.169 26157 26157 I ViewRootImpl@97f4791[LoginActivity]: performTraversals mFirst=true windowShouldResize=true viewVisibilityChanged=false mForceNextWindowRelayout=false params={(0,0)(fillxfill) sim={adjust=pan forwardNavigation} ty=BASE_APPLICATION wanim=0x1030309
+01-30 00:16:13.169 26157 26157 I ViewRootImpl@97f4791[LoginActivity]:   fl=81810100
+01-30 00:16:13.169 26157 26157 I ViewRootImpl@97f4791[LoginActivity]:   pfl=12020040
+01-30 00:16:13.169 26157 26157 I ViewRootImpl@97f4791[LoginActivity]:   bhv=DEFAULT
+01-30 00:16:13.169 26157 26157 I ViewRootImpl@97f4791[LoginActivity]:   fitSides= naviIconColor=0}
+01-30 00:16:13.170  1426  4482 V WindowManager: Relayout Window{5a12873 u0 com.example.sportmatch/com.example.sportmatch.LoginActivity}: viewVisibility=0 req=1080x2400 d0
+01-30 00:16:13.170  1100  1331 I SurfaceFlinger: id=113843 createSurf flag=40004, com.example.sportmatch/com.example.sportmatch.LoginActivity$_26157#113843
+01-30 00:16:13.171  1426  4482 W WindowManager: lockNow pending, ignore updating lockscreen timeout
+01-30 00:16:13.172 10769 10912 I SCS@AiSearch user 0: (AppsDataWorker) [androidx.work-1] entering in doWork():
+01-30 00:16:13.172 10769 10912 I SCS@AiSearch user 0: (AppsDataObserver) [androidx.work-1] entering in execute():
+01-30 00:16:13.172 10769 10912 I SCS@AiSearch user 0: (AppsDataObserver-CMD_UPDATE_LIST) changed package count: 1
+01-30 00:16:13.173  1100  1152 I SurfaceFlinger: id=113844 createSurf flag=24000, Surface(name=c2abcc7 StatusBar)/@0x2f665b7 - animation-leash of insets_animation#113844
+01-30 00:16:13.174  1100  1152 I SurfaceFlinger: id=113845 createSurf flag=24000, Surface(name=719c3fd NavigationBar0)/@0xe9d3c89 - animation-leash of insets_animation#113845
+01-30 00:16:13.176  2448  2448 D SamsungLightBarControlHelper: onStatusBarAppearanceChanged() -  sbModeChanged:false, statusBarMode:MODE_TRANSPARENT, barState:SHADE, isKeyguardShowing:false, navbarColorManagedByIme:false, stackAppearancesChanged:true, (AppearanceRegion{LIGHT_STATUS_BARS bounds=[0,0][1080,2400]}, ), packageName:com.example.sportmatch
+01-30 00:16:13.176  1426  4482 V WindowManager: Relayout hash=5a12873, pid=26157, syncId=-1: mAttrs={(0,0)(fillxfill) sim={adjust=pan forwardNavigation} ty=BASE_APPLICATION wanim=0x1030309
+01-30 00:16:13.176  1426  4482 V WindowManager:   fl=81810100
+01-30 00:16:13.176  1426  4482 V WindowManager:   pfl=12020040
+01-30 00:16:13.176  1426  4482 V WindowManager:   bhv=DEFAULT
+01-30 00:16:13.176  1426  4482 V WindowManager:   fitSides= naviIconColor=0}
+01-30 00:16:13.176  2448  2448 D NavigationBar: onSystemBarAttributesChanged() -  displayId:0, appearance:16, packageName: com.example.sportmatch (APPEARANCE_LIGHT_NAVIGATION_BARS ), navbarColorManagedByIme:false
+01-30 00:16:13.177 10769 10912 I SCS@AiSearch user 0: (AppsDataObserver) [androidx.work-1] leaving from execute():  result is true
+01-30 00:16:13.177  2448  2448 D SamsungLightBarControlHelper: updateNavigation(Black button) isLightBar:false, hasLightBarNavigationBarFlag:true, packageName:com.example.sportmatch, DirectReplying:false, NavBarColorManagerdByIme:false, ForceDarkForScrim:false, QsCustomizing:false, PanelHasWhiteBg:false
+01-30 00:16:13.177 10769 10912 I SCS@AiSearch user 0: (AppsDataWorker) [androidx.work-1] leaving from doWork():
+01-30 00:16:13.177 25557 25569 I TouchInteractionService: onSystemUiStateChanged, stateFlags : 131072 |allow_gesture|
+01-30 00:16:13.177 25557 25557 I RecentsAnimationDeviceState: setSystemUiFlags, stateFlags : 131072
+01-30 00:16:13.177 25557 25557 I TouchInteractionService: onSystemUiFlagsChanged, lastSysUIFlags : 0
+01-30 00:16:13.178 10769 10832 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=eb074e22-190c-4399-9df6-56fb67a76090, tags={ com.samsung.android.scs.ai.search.scheduling.workers.AppsDataWorker, CMD_UPDATE_LIST } ]
+01-30 00:16:13.178 26157 26157 I ViewRootImpl@97f4791[LoginActivity]: updateBlastSurfaceIfNeeded mBlastBufferQueue=null isSameSurfaceControl=false
+01-30 00:16:13.178  2448  2448 D SamsungLightBarControlHelper: updateStatus(BLACK icon) NumStacks:1, StatusBarMode:MODE_TRANSPARENT, lightBarBounds:[Rect(0, 0 - 1080, 2400)], StatusBarState:SHADE, packageName:com.example.sportmatch, isWhiteKeyguardStatusBarBySettings:false
+01-30 00:16:13.179 26157 26157 I BLASTBufferQueue: new BLASTBufferQueue, mName= ViewRootImpl@97f4791[LoginActivity] mNativeObject= 0xb40000722b66a9d0 sc.mNativeObject= 0xb4000071bb68b9a0 caller= android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:2909 android.view.ViewRootImpl.relayoutWindow:9847 android.view.ViewRootImpl.performTraversals:3884 android.view.ViewRootImpl.doTraversal:3116 android.view.ViewRootImpl$TraversalRunnable.run:10885 android.view.Choreographer$CallbackRecord.run:1301 android.view.Choreographer$CallbackRecord.run:1309 android.view.Choreographer.doCallbacks:923 android.view.Choreographer.doFrame:852 android.view.Choreographer$FrameDisplayEventReceiver.run:1283
+01-30 00:16:13.179 26157 26157 I BLASTBufferQueue: update, w= 1080 h= 2400 mName = ViewRootImpl@97f4791[LoginActivity] mNativeObject= 0xb40000722b66a9d0 sc.mNativeObject= 0xb4000071bb68b9a0 format= -1 caller= android.graphics.BLASTBufferQueue.<init>:84 android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:2909 android.view.ViewRootImpl.relayoutWindow:9847 android.view.ViewRootImpl.performTraversals:3884 android.view.ViewRootImpl.doTraversal:3116 android.view.ViewRootImpl$TraversalRunnable.run:10885
+01-30 00:16:13.180 26157 26157 I ViewRootImpl@97f4791[LoginActivity]: Relayout returned: old=(0,0,1080,2400) new=(0,0,1080,2400) req=(1080,2400)0 dur=9 res=0x3 s={true 0xb4000072bb65ec70} ch=true seqId=0
+01-30 00:16:13.181 26157 26157 I ViewRootImpl@97f4791[LoginActivity]: mThreadedRenderer.initialize() mSurface={isValid=true 0xb4000072bb65ec70} hwInitialized=true
+01-30 00:16:13.182  1027  1027 I display : [PrimaryDisplay] getColorModes:: Supported color modes [7, 7] (SRGB)
+01-30 00:16:13.182  1027  1027 I display : [PrimaryDisplay] getColorModes:: Supported color modes [9, 9] (DISPLAY_P3)
+01-30 00:16:13.182  1027  1027 I display : [PrimaryDisplay] getColorModes:: Supported color modes [0, 0] (NATIVE)
+01-30 00:16:13.184 26157 26204 D OpenGLRenderer: eglCreateWindowSurface
+01-30 00:16:13.192  2448  2448 I ViewRootImpl@ca191f7[NotificationShade]: performTraversals mFirst=false windowShouldResize=false viewVisibilityChanged=false mForceNextWindowRelayout=false params={(0,0)(fillxfill) gr=TOP CENTER_VERTICAL sim={adjust=resize} layoutInDisplayCutoutMode=always ty=NOTIFICATION_SHADE fmt=TRANSLUCENT
+01-30 00:16:13.192  2448  2448 I ViewRootImpl@ca191f7[NotificationShade]:   fl=81840048
+01-30 00:16:13.192  2448  2448 I ViewRootImpl@ca191f7[NotificationShade]:   pfl=1b000000
+01-30 00:16:13.192  2448  2448 I ViewRootImpl@ca191f7[NotificationShade]:   vsysui=2000
+01-30 00:16:13.192  2448  2448 I ViewRootImpl@ca191f7[NotificationShade]:   apr=LIGHT_STATUS_BARS
+01-30 00:16:13.192  2448  2448 I ViewRootImpl@ca191f7[NotificationShade]:   bhv=SHOW_TRANSIENT_BARS_BY_SWIPE naviIconColor=0
+01-30 00:16:13.192  2448  2448 I ViewRootImpl@ca191f7[NotificationShade]:   sfl=60000}
+01-30 00:16:13.193  1426  4481 V WindowManager: Relayout Window{2390bad u0 NotificationShade}: viewVisibility=4 req=1080x2400 d0
+01-30 00:16:13.193  1426  4481 W WindowManager: lockNow pending, ignore updating lockscreen timeout
+01-30 00:16:13.194   535   547 I servicemanager: Could not find android.hardware.graphics.allocator.IAllocator/default in the VINTF manifest.
+01-30 00:16:13.194  1426  4481 V WindowManager: Relayout hash=2390bad, pid=2448, syncId=-1: mAttrs={(0,0)(fillxfill) gr=TOP CENTER_VERTICAL sim={adjust=resize} layoutInDisplayCutoutMode=always ty=NOTIFICATION_SHADE fmt=TRANSLUCENT
+01-30 00:16:13.194  1426  4481 V WindowManager:   fl=81840048
+01-30 00:16:13.194  1426  4481 V WindowManager:   pfl=1b000000
+01-30 00:16:13.194  1426  4481 V WindowManager:   vsysui=2000
+01-30 00:16:13.194  1426  4481 V WindowManager:   apr=LIGHT_STATUS_BARS
+01-30 00:16:13.194  1426  4481 V WindowManager:   bhv=SHOW_TRANSIENT_BARS_BY_SWIPE naviIconColor=0
+01-30 00:16:13.194  1426  4481 V WindowManager:   sfl=60000}
+01-30 00:16:13.196  2448  2448 I ViewRootImpl@ca191f7[NotificationShade]: Relayout returned: old=(0,0,1080,2400) new=(0,0,1080,2400) req=(1080,2400)4 dur=3 res=0x0 s={false 0x0} ch=false seqId=32
+01-30 00:16:13.199 26157 26157 I ViewRootImpl@97f4791[LoginActivity]: reportNextDraw android.view.ViewRootImpl.performTraversals:4438 android.view.ViewRootImpl.doTraversal:3116 android.view.ViewRootImpl$TraversalRunnable.run:10885 android.view.Choreographer$CallbackRecord.run:1301 android.view.Choreographer$CallbackRecord.run:1309
+01-30 00:16:13.199  1100  1100 I Layer   : id=113832 removeFromCurrentState Surface(name=c2abcc7 StatusBar)/@0x2f665b7 - animation-leash of insets_animation#113832 (237)
+01-30 00:16:13.199  1100  1100 I Layer   : id=113833 removeFromCurrentState Surface(name=719c3fd NavigationBar0)/@0xe9d3c89 - animation-leash of insets_animation#113833 (237)
+01-30 00:16:13.199  1100  1100 I SurfaceFlinger: [5a12873 com.example.sportmatch/com.example.sportmatch.LoginActivity#113842] FrameRatePriority: 1
+01-30 00:16:13.200  1100  1100 D SurfaceFlinger: [input] inputWindowCommands.focusRequests size is 1
+01-30 00:16:13.200  1100  1100 I SurfaceFlinger: id=113832 Removed Surface(name=c2abcc7 StatusBar)/@0x2f665b7 - animation-leash of insets_animation#113832 (237)
+01-30 00:16:13.200  1100  1100 I SurfaceFlinger: id=113833 Removed Surface(name=719c3fd NavigationBar0)/@0xe9d3c89 - animation-leash of insets_animation#113833 (237)
+01-30 00:16:13.200 26157 26157 I ViewRootImpl@97f4791[LoginActivity]: Setup new sync id=0
+01-30 00:16:13.200 26157 26157 I ViewRootImpl@97f4791[LoginActivity]: Setting syncFrameCallback
+01-30 00:16:13.200 26157 26157 I ViewRootImpl@97f4791[LoginActivity]: registerCallbacksForSync syncBuffer=false
+01-30 00:16:13.201  1100  1100 I Layer   : id=113832 Destroyed Surface(name=c2abcc7 StatusBar)/@0x2f665b7 - animation-leash of insets_animation#113832
+01-30 00:16:13.201  1100  1100 I Layer   : id=113833 Destroyed Surface(name=719c3fd NavigationBar0)/@0xe9d3c89 - animation-leash of insets_animation#113833
+01-30 00:16:13.205  2448  2448 I FaceWidgetPositionAlgorithm: getClockContainerHeight() supplier = 291, bottom margin = 0, real height = 359
+01-30 00:16:13.205  2448  2448 I FaceWidgetPositionAlgorithm: getClockContainerHeight() supplier = 291, bottom margin = 68, real height = 359
+01-30 00:16:13.205  1100  1210 D SurfaceFlinger: [input] setFocusedWindow: 5a12873 com.example.sportmatch/com.example.sportmatch.LoginActivity
+01-30 00:16:13.205  2448  2448 I FaceWidgetPositionAlgorithm: getMediaContainerHeight() height = 489 container Visibility = 8, isValid = false, mIsDozing = false, fraction = 1.0, source = 0, target = 0
+01-30 00:16:13.205  2448  2448 I FaceWidgetPositionAlgorithm: getMediaContainerHeight() supplier = 0
+01-30 00:16:13.206  1426  2959 D InputDispatcher: Focus request (0): 5a12873 com.example.sportmatch/com.example.sportmatch.LoginActivity but waiting because NO_WINDOW
+01-30 00:16:13.211 26157 26233 D TrafficStats: tagSocket(108) with statsTag=0xffffffff, statsUid=-1
+01-30 00:16:13.212  1426  2416 D NetdEventListenerService: DNS Requested by : 151, 10438
+01-30 00:16:13.214  1426  2959 W WindowManager: lockNow pending, ignore updating lockscreen timeout
+01-30 00:16:13.220  1426  1485 W WindowManager: lockNow pending, ignore updating lockscreen timeout
+01-30 00:16:13.220 26157 26241 I ViewRootImpl@97f4791[LoginActivity]: Received frameDrawingCallback syncResult=0 frameNum=1.
+01-30 00:16:13.220 26157 26241 I ViewRootImpl@97f4791[LoginActivity]: Setting up sync and frameCommitCallback
+01-30 00:16:13.221 28615 28615 I ViewRootImpl@ec52b01[LauncherActivity]: handleAppVisibility mAppVisible = true visible = false
+01-30 00:16:13.221 25557 25557 I ViewRootImpl@7304e6b[LauncherActivity]: handleAppVisibility mAppVisible = true visible = false
+01-30 00:16:13.222  1426  1485 W WindowManager: lockNow pending, ignore updating lockscreen timeout
+01-30 00:16:13.221  2448  2487 D WallpaperService: dispatchAppVisibility onVisibilityChanged(): false
+01-30 00:16:13.230  2448  2448 D WallpaperService: reportVisibility onVisibilityChanged visible: false
+01-30 00:16:13.231  2448  2570 I ImageWallpaper[GLEngine]:  onVisibilityChanged false , 0
+01-30 00:16:13.233  1100  1100 I Layer   : id=113839 removeFromCurrentState Surface(name=Task=1)/@0x238c0c - animation-leash of app_transition#113839 (235)
+01-30 00:16:13.233  1100  1100 I Layer   : id=113840 removeFromCurrentState Surface(name=Task=17221)/@0x4c544c9 - animation-leash of app_transition#113840 (235)
+01-30 00:16:13.233  1100  1100 I Layer   : Layer [com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity$_25557#113829] hidden!! flag(1)
+01-30 00:16:13.233  1100  1100 I Layer   : Layer [com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity$_28615#113828] hidden!! flag(1)
+01-30 00:16:13.234  1100  1100 I SurfaceFlinger: id=113840 Removed Surface(name=Task=17221)/@0x4c544c9 - animation-leash of app_transition#113840 (235)
+01-30 00:16:13.234  1100  1100 I SurfaceFlinger: id=113839 Removed Surface(name=Task=1)/@0x238c0c - animation-leash of app_transition#113839 (235)
+01-30 00:16:13.234 28615 10269 D OpenGLRenderer: setSurface called with nullptr
+01-30 00:16:13.234 28615 10269 D OpenGLRenderer: setSurface() destroyed EGLSurface
+01-30 00:16:13.234 28615 10269 D OpenGLRenderer: destroyEglSurface
+01-30 00:16:13.235  1100  1100 I Layer   : id=113839 Destroyed Surface(name=Task=1)/@0x238c0c - animation-leash of app_transition#113839
+01-30 00:16:13.235  1100  1100 I Layer   : id=113840 Destroyed Surface(name=Task=17221)/@0x4c544c9 - animation-leash of app_transition#113840
+01-30 00:16:13.235  1426  1485 W WindowManager: lockNow pending, ignore updating lockscreen timeout
+01-30 00:16:13.236 28615 28615 I ViewRootImpl@ec52b01[LauncherActivity]: performTraversals mFirst=false windowShouldResize=false viewVisibilityChanged=true mForceNextWindowRelayout=false params=null
+01-30 00:16:13.238  1426  2959 V WindowManager: Relayout Window{aa8570e u0 com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity}: viewVisibility=8 req=1080x2400 d0
+01-30 00:16:13.239  1426  2959 W WindowManager: lockNow pending, ignore updating lockscreen timeout
+01-30 00:16:13.241  1426  2959 V WindowManager: Relayout hash=aa8570e, pid=28615, syncId=-1: mAttrs={(0,0)(fillxfill) gr=LEFT CENTER_HORIZONTAL sim={adjust=resize} layoutInDisplayCutoutMode=shortEdges ty=DRAWN_APPLICATION fmt=TRANSPARENT wanim=0x10302f4 alpha=0.0
+01-30 00:16:13.241  1426  2959 V WindowManager:   fl=81850118
+01-30 00:16:13.241  1426  2959 V WindowManager:   pfl=16020040
+01-30 00:16:13.241  1426  2959 V WindowManager:   bhv=DEFAULT
+01-30 00:16:13.241  1426  2959 V WindowManager:   fitSides=
+01-30 00:16:13.241  1426  2959 V WindowManager:  dimAmount=0.0 screenDimDuration=200000 naviIconColor=0}
+01-30 00:16:13.244 28615 28615 D InsetsController: onStateChanged: InsetsState: {mDisplayFrame=Rect(0, 0 - 1080, 2400), mDisplayCutout=DisplayCutout{insets=Rect(0, 88 - 0, 0) waterfall=Insets{left=0, top=0, right=0, bottom=0} boundingRect={Bounds=[Rect(0, 0 - 0, 0), Rect(512, 0 - 568, 88), Rect(0, 0 - 0, 0), Rect(0, 0 - 0, 0)]} cutoutPathParserInfo={CutoutPathParserInfo{displayWidth=1080 displayHeight=2400 physicalDisplayWidth=1080 physicalDisplayHeight=2400 density={2.8125} cutoutSpec={M 0,0 M 0,11.43427858034597 a 9.899054752987353,9.899054752987353 0 1,0 0,19.79810950597471 a 9.899054752987353,9.899054752987353 0 1,0 0,-19.79810950597471 Z @dp} rotation={0} scale={1.0} physicalPixelDisplaySizeRatio={1.0}}}}, mRoundedCorners=RoundedCorners{[RoundedCorner{position=TopLeft, radius=90, center=Point(90, 90)}, RoundedCorner{position=TopRight, radius=90, center=Point(990, 90)}, RoundedCorner{position=BottomRight, radius=90, center=Point(990, 2310)}, RoundedCorner{position=BottomLeft, radius=90, center=Point(90, 2310)}]}  mRoundedCornerFrame=Rect(0, 0 - 1080, 2400), mPrivacyIndicatorBounds=PrivacyIndicatorBounds {static bounds=Rect(956, 0 - 1080, 88) rotation=0}, mSources= { InsetsSource: {mType=ITYPE_STATUS_BAR, mFrame=[0,0][1080,88], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_NAVIGATION_BAR, mFrame=[0,2265][1080,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_LEFT_GESTURES, mFrame=[0,0][0,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_RIGHT_GESTURES, mFrame=[1080,0][1080,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_TOP_MANDATORY_GESTURES, mFrame=[0,0][1080,122], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_BOTTOM_MANDATORY_GESTURES, mFrame=[0,2265][1080,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_LEFT_DISPLAY_CUTOUT, mFrame=[0,0][-100000,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_TOP_DISPLAY_CUTOUT, mFrame=[0,0][1080,88], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_RIGHT_DISPLAY_CUTOUT, mFrame=[100000,0][1080,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_BOTTOM_DISPLAY_CUTOUT, mFrame=[0,100000][1080,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_TOP_TAPPABLE_ELEMENT, mFrame=[0,0][1080,88], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_BOTTOM_TAPPABLE_ELEMENT, mFrame=[0,2265][1080,2400], mVisible=true, mInsetsRoundedCornerFrame=false} } host=com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity from=android.view.ViewRootImpl.relayoutWindow:9802
+01-30 00:16:13.246  1100  1100 D SurfaceFlinger: Display 4633128672291735932 HWC layers:
+01-30 00:16:13.246  1100  1100 D SurfaceFlinger:      DEVICE | 0xb400007704b63cd0 | 0100 | RGBA_8888    |    0.0    0.0 1080.0 2400.0 |    0    0 1080 2400 | Splash Screen com.example.sportmatch$_2448#113838
+01-30 00:16:13.246  1100  1100 D SurfaceFlinger:      DEVICE | 0xb400007704b52bd0 | 0100 | RGBA_8888    |    0.0    0.0 1080.0   88.0 |    0    0 1080   88 | StatusBar$_2448#94
+01-30 00:16:13.246  1100  1100 D SurfaceFlinger:      DEVICE | 0xb400007704b6bad0 | 0100 | RGBA_8888    |    0.0    0.0   67.0  342.0 |    0 1504   67 1846 | com.samsung.android.app.cocktailbars[...]vice.CocktailBarService$_5767#113823
+01-30 00:16:13.246  1100  1100 D SurfaceFlinger:      DEVICE | 0xb400007704b64750 | 0100 | RGBA_8888    |    0.0    0.0 1080.0  135.0 |    0 2265 1080 2400 | NavigationBar0$_2448#88
+01-30 00:16:13.246  1100  1100 D SurfaceFlinger:
+01-30 00:16:13.251 28615 28615 I ViewRootImpl@ec52b01[LauncherActivity]: Relayout returned: old=(0,0,1080,2400) new=(0,0,1080,2400) req=(1080,2400)8 dur=12 res=0x2 s={false 0x0} ch=true seqId=0
+01-30 00:16:13.252 25557 25557 I ViewRootImpl@7304e6b[LauncherActivity]: performTraversals mFirst=false windowShouldResize=false viewVisibilityChanged=true mForceNextWindowRelayout=false params=null
+01-30 00:16:13.254  1426  2959 V WindowManager: Relayout Window{f508e83 u0 com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity}: viewVisibility=8 req=1080x2400 d0
+01-30 00:16:13.255  1426  2959 W WindowManager: lockNow pending, ignore updating lockscreen timeout
+01-30 00:16:13.255 28615 28615 I dnfz    : (REDACTED) onApplyWindowInsets: systemWindowInsets=%s
+01-30 00:16:13.256 28615 28615 I dnfz    : (REDACTED) onApplyWindowInsets: systemWindowInsets=%s
+01-30 00:16:13.257  1426  2959 V WindowManager: Relayout hash=f508e83, pid=25557, syncId=-1: mAttrs={(0,0)(fillxfill) sim={adjust=nothing forwardNavigation} layoutInDisplayCutoutMode=shortEdges ty=BASE_APPLICATION fmt=TRANSPARENT wanim=0x10302f4
+01-30 00:16:13.257  1426  2959 V WindowManager:   fl=81910100
+01-30 00:16:13.257  1426  2959 V WindowManager:   pfl=1e020040
+01-30 00:16:13.257  1426  2959 V WindowManager:   vsysui=1700
+01-30 00:16:13.257  1426  2959 V WindowManager:   bhv=SHOW_TRANSIENT_BARS_BY_SWIPE
+01-30 00:16:13.257  1426  2959 V WindowManager:   fitSides= screenDimDuration=200000 naviIconColor=0}
+01-30 00:16:13.260 25557 25557 I ViewRootImpl@7304e6b[LauncherActivity]: Relayout returned: old=(0,0,1080,2400) new=(0,0,1080,2400) req=(1080,2400)8 dur=6 res=0x2 s={false 0x0} ch=true seqId=0
+01-30 00:16:13.270  1426  1485 W WindowManager: lockNow pending, ignore updating lockscreen timeout
+01-30 00:16:13.277 28615 28615 I dnoa    : onPause
+01-30 00:16:13.380  1426  2377 D SemNscXgbMsL1: Probability - Cloud gaming: [0.0070403423]
+01-30 00:16:13.380  1426  2377 D SemNscXgbMsL1: Probability - Real time: [0.255108]
+01-30 00:16:13.381  1426  2377 D SemNscXgbMsL1: Probability - Non real time: [0.7512674]
+01-30 00:16:13.381  1426  2377 D SemNscXgbMsL1: 1 sample inference time: 1.009423 msecs
+01-30 00:16:13.382  1426  2377 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 1.064308 msecs
+01-30 00:16:13.383 26157 26204 I BLASTBufferQueue: [ViewRootImpl@97f4791[LoginActivity]#0](f:0,a:0) onFrameAvailable the first frame is available
+01-30 00:16:13.383  1426  2377 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 0.943807 msecs
+01-30 00:16:13.384 26157 26204 I ViewRootImpl@97f4791[LoginActivity]: Received frameCommittedCallback lastAttemptedDrawFrameNum=1 didProduceBuffer=true
+01-30 00:16:13.384 26157 26204 D OpenGLRenderer: CFMS:: SetUp Pid : 26157    Tid : 26204
+01-30 00:16:13.386 26157 26204 W Parcel  : Expecting binder but got null!
+01-30 00:16:13.386 26157 26157 I ViewRootImpl@97f4791[LoginActivity]: onSyncComplete
+01-30 00:16:13.387 26157 26157 I ViewRootImpl@97f4791[LoginActivity]: setupSync seqId=0 mSyncId=0 fn=1 caller=android.view.ViewRootImpl$$ExternalSyntheticLambda11.accept:6 android.window.SurfaceSyncer.lambda$setupSync$1$android-window-SurfaceSyncer:128 android.window.SurfaceSyncer$$ExternalSyntheticLambda1.accept:8 android.window.SurfaceSyncer$SyncSet.checkIfSyncIsComplete:382 android.window.SurfaceSyncer$SyncSet.markSyncReady:359 android.window.SurfaceSyncer.markSyncReady:151 android.view.ViewRootImpl.performTraversals:4503
+01-30 00:16:13.387 26157 26157 I ViewRootImpl@97f4791[LoginActivity]: reportDrawFinished seqId=0 mSyncId=-1 fn=1 mSurfaceChangedTransaction=0xb4000071eb66ba10
+01-30 00:16:13.389  1426  1485 W WindowManager: lockNow pending, ignore updating lockscreen timeout
+01-30 00:16:13.392  1426  1485 W WindowManager: lockNow pending, ignore updating lockscreen timeout
+01-30 00:16:13.394  1426  1485 I SemDvfsHyPerManager: acquire hyper - AMS_RESUME_TAIL/1426@22, type = -999
+01-30 00:16:13.395  1426  1485 I SemDvfsHyPerManager: acquire hyper - AMS_ACT_LAZY/1426@23, type = -999
+01-30 00:16:13.395  1037  1116 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 1049098  [1426 / 22]    HINT : AMS_RESUME_TAIL    list :
+01-30 00:16:13.395  1426  1479 W ziparchive: Unable to open '/data/app/~~uFbyIUzIETsXjONSkF7xBg==/com.example.sportmatch-6XxNltIaqtpi_GjGsdHYfQ==/base.dm': No such file or directory
+01-30 00:16:13.397  1426  1479 I PkgPredictorService-SecIpmManagerServiceImpl: reportToNAP uid:10438 com.example.sportmatch/com.example.sportmatch.LoginActivity thisTime:646
+01-30 00:16:13.399  1100  1336 I SurfaceFlinger: id=113846 createSurf flag=24000, Surface(name=5a12873 com.example.sportmatch/com.example.sportmatch.LoginActivity)/@0xc7b0119 - animation-leash of starting_reveal#113846
+01-30 00:16:13.401  1037  1116 I HYPER-HAL: [RequestManager.cpp]releaseLocked(): Released ID : 1051999
+01-30 00:16:13.402 26157 26157 D CompatibilityChangeReporter: Compat change id reported: 163400105; UID 10438; state: ENABLED
+01-30 00:16:13.403   981   981 E audit   : type=1400 audit(1706566573.397:798756): avc:  denied  { search } for  pid=1096 comm="perfmond" name="host0" dev="sysfs" ino=73001 scontext=u:r:perfmond:s0 tcontext=u:object_r:sysfs_ski_ufs_writable:s0 tclass=dir permissive=0 SEPF_SM-A536B_12_0001 audit_filtered
+01-30 00:16:13.405  1426  2959 D InputDispatcher: Focus entered window (0): 5a12873 com.example.sportmatch/com.example.sportmatch.LoginActivity
+01-30 00:16:13.408  1426  1485 W WindowManager: lockNow pending, ignore updating lockscreen timeout
+01-30 00:16:13.408  1100  1100 D SurfaceFlinger: Display 4633128672291735932 HWC layers:
+01-30 00:16:13.408  1100  1100 D SurfaceFlinger:      DEVICE | 0xb400007704b47950 | 0102 | RGBA_8888    |    0.0    0.0 1080.0 2400.0 |    0    0 1080 2400 | com.example.sportmatch/com.example.sportmatch.LoginActivity$_26157#113843
+01-30 00:16:13.408  1100  1100 D SurfaceFlinger:      DEVICE | 0xb400007704b63cd0 | 0100 | RGBA_8888    |    0.0    0.0 1080.0 2400.0 |    0    0 1080 2400 | Splash Screen com.example.sportmatch$_2448#113838
+01-30 00:16:13.408  1100  1100 D SurfaceFlinger:      DEVICE | 0xb400007704b5ff90 | 0100 | RGBA_8888    |    0.0    0.0 1080.0   88.0 |    0    0 1080   88 | StatusBar$_2448#94
+01-30 00:16:13.408  1100  1100 D SurfaceFlinger:      DEVICE | 0xb400007704b6bad0 | 0100 | RGBA_8888    |    0.0    0.0   67.0  342.0 |    0 1504   67 1846 | com.samsung.android.app.cocktailbars[...]vice.CocktailBarService$_5767#113823
+01-30 00:16:13.408  1100  1100 D SurfaceFlinger:      DEVICE | 0xb400007704b65fd0 | 0100 | RGBA_8888    |    0.0    0.0 1080.0  135.0 |    0 2265 1080 2400 | NavigationBar0$_2448#88
+01-30 00:16:13.408  1100  1100 D SurfaceFlinger:
+01-30 00:16:13.409  1426  1479 I ActivityTaskManager: Displayed com.example.sportmatch/.LoginActivity: +646ms
+01-30 00:16:13.409  3326  3326 E pageboostd: Received HALT command code 2
+01-30 00:16:13.412 25557 25557 I ViewRootImpl@7304e6b[LauncherActivity]: stopped(true) old = false
+01-30 00:16:13.412 25557 25557 I ViewRootImpl@7304e6b[LauncherActivity]: WindowStopped on com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity set to true
+01-30 00:16:13.412 26157 26157 I AssistStructure: Flattened final assist data: 1812 bytes, containing 1 windows, 13 views
+01-30 00:16:13.413 25557 25557 I Launcher: !@Boot_DEBUG: Launcher.onStop()
+01-30 00:16:13.413 25557 25557 I Launcher: !@Boot_EBS_D: Launcher.onStop()
+01-30 00:16:13.413 25557 25557 I BaseActivity: removeActivityFlags, flags : 17
+01-30 00:16:13.413 25557 25557 I StateManager: goToState isInState Normal
+01-30 00:16:13.414 25557 25579 I IMM_LC  : hsifw() - flag : 0
+01-30 00:16:13.414 25557 25579 I IMM_LC  : hsifw() - mService.hideSoftInput
+01-30 00:16:13.414 22084 22084 I Choreographer: Skipped 31 frames!  The application may be doing too much work on its main thread.
+01-30 00:16:13.415 26157 26157 I ViewRootImpl@97f4791[LoginActivity]: MSG_WINDOW_FOCUS_CHANGED 1 0
+01-30 00:16:13.415  5582  5582 I SS:ContentCaptureService: onActivitySnapshot()
+01-30 00:16:13.415 26157 26157 I ViewRootImpl@97f4791[LoginActivity]: mThreadedRenderer.initializeIfNeeded()#2 mSurface={isValid=true 0xb4000072bb65ec70}
+01-30 00:16:13.416 26157 26198 D FA      : Connected to remote service
+01-30 00:16:13.416 25557 25557 W LauncherAppWidgetHost: setShouldListenFlag, mFlags:7 flag:start on:false isFront:false
+01-30 00:16:13.416  1426  2959 I AppWidgetServiceImpl: stopListening callbacks : null
+01-30 00:16:13.416 26157 26198 V FA      : Processing queued up service tasks: 5
+01-30 00:16:13.418 25557 25557 W LauncherAppWidgetHost: stopListening, mFlags:2 isFront:false
+01-30 00:16:13.418 25557 25557 W Launcher.NotificationListener: removeNotificationsChangedListener
+01-30 00:16:13.418 25557 25557 I Launcher.NotificationListener: unregisterObserver, this is not notificationService!!
+01-30 00:16:13.418 25557 25557 I BadgeCountUpdaterImpl: onNotificationsChangedDisConnected
+01-30 00:16:13.420 25557 25557 I DecorView: notifyKeepScreenOnChanged: keepScreenOn=false
+01-30 00:16:13.420  2448  2522 I ViewRootImpl@8abb2d5[sportmatch]: performTraversals params={(0,0)(fillxfill) sim={adjust=pan} ty=APPLICATION_STARTING fmt=TRANSLUCENT wanim=0x1030309
+01-30 00:16:13.420  2448  2522 I ViewRootImpl@8abb2d5[sportmatch]:   fl=81030118
+01-30 00:16:13.420  2448  2522 I ViewRootImpl@8abb2d5[sportmatch]:   pfl=16000010
+01-30 00:16:13.420  2448  2522 I ViewRootImpl@8abb2d5[sportmatch]:   bhv=DEFAULT
+01-30 00:16:13.420  2448  2522 I ViewRootImpl@8abb2d5[sportmatch]:   fitSides= naviIconColor=0}
+01-30 00:16:13.421  2448  2522 I ViewRootImpl@8abb2d5[sportmatch]: performTraversals mFirst=false windowShouldResize=false viewVisibilityChanged=false mForceNextWindowRelayout=false params={(0,0)(fillxfill) sim={adjust=pan} ty=APPLICATION_STARTING fmt=TRANSLUCENT wanim=0x1030309
+01-30 00:16:13.421  2448  2522 I ViewRootImpl@8abb2d5[sportmatch]:   fl=81030118
+01-30 00:16:13.421  2448  2522 I ViewRootImpl@8abb2d5[sportmatch]:   pfl=16000010
+01-30 00:16:13.421  2448  2522 I ViewRootImpl@8abb2d5[sportmatch]:   bhv=DEFAULT
+01-30 00:16:13.421  2448  2522 I ViewRootImpl@8abb2d5[sportmatch]:   fitSides= naviIconColor=0}
+01-30 00:16:13.423  1426  4482 V WindowManager: Relayout Window{995d359 u0 Splash Screen com.example.sportmatch}: viewVisibility=0 req=1080x2400 d0
+01-30 00:16:13.423 25557 25581 I LiveIconUpdateEventHandler: cancelMinuteChangeAlarm
+01-30 00:16:13.424 25557 25557 I MSHandlerLifeCycle: removeMultiSplitHandler: no exist. decor=DecorView@672abee[LauncherActivity]
+01-30 00:16:13.425  1426  4482 W WindowManager: lockNow pending, ignore updating lockscreen timeout
+01-30 00:16:13.425  2448  2448 D SamsungLightBarControlHelper: onStatusBarAppearanceChanged() -  sbModeChanged:false, statusBarMode:MODE_TRANSPARENT, barState:SHADE, isKeyguardShowing:false, navbarColorManagedByIme:false, stackAppearancesChanged:true, (AppearanceRegion{ bounds=[0,0][1080,2400]}, ), packageName:com.example.sportmatch
+01-30 00:16:13.426  2448  2448 D NavigationBar: onSystemBarAttributesChanged() -  displayId:0, appearance:0, packageName: com.example.sportmatch, navbarColorManagedByIme:false
+01-30 00:16:13.427  2448  2448 D SamsungLightBarControlHelper: updateNavigation(White button) isLightBar:false, hasLightBarNavigationBarFlag:false, packageName:com.example.sportmatch, DirectReplying:false, NavBarColorManagerdByIme:false, ForceDarkForScrim:false, QsCustomizing:false, PanelHasWhiteBg:false
+01-30 00:16:13.428  1426  4482 V WindowManager: Relayout hash=995d359, pid=2448, syncId=-1: mAttrs={(0,0)(fillxfill) sim={adjust=pan} ty=APPLICATION_STARTING fmt=TRANSLUCENT wanim=0x1030309
+01-30 00:16:13.428  1426  4482 V WindowManager:   fl=81030118
+01-30 00:16:13.428  1426  4482 V WindowManager:   pfl=16000010
+01-30 00:16:13.428  1426  4482 V WindowManager:   bhv=DEFAULT
+01-30 00:16:13.428  1426  4482 V WindowManager:   fitSides= naviIconColor=0}
+01-30 00:16:13.428  2448  2448 D SamsungLightBarControlHelper: updateStatus(WHITE icon) NumStacks:1, StatusBarMode:MODE_TRANSPARENT, lightBarBounds:[], StatusBarState:SHADE, packageName:com.example.sportmatch, isWhiteKeyguardStatusBarBySettings:false
+01-30 00:16:13.429  2448  2522 I ViewRootImpl@8abb2d5[sportmatch]: updateBlastSurfaceIfNeeded mBlastBufferQueue=0xb40000722b73dbf0 isSameSurfaceControl=true
+01-30 00:16:13.430  2448  2522 I BLASTBufferQueue: update, w= 1080 h= 2400 mName = ViewRootImpl@8abb2d5[sportmatch] mNativeObject= 0xb40000722b73dbf0 sc.mNativeObject= 0xb4000071bb733ff0 format= -3 caller= android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:2898 android.view.ViewRootImpl.relayoutWindow:9847 android.view.ViewRootImpl.performTraversals:3884 android.view.ViewRootImpl.doTraversal:3116 android.view.ViewRootImpl$TraversalRunnable.run:10885 android.view.Choreographer$CallbackRecord.run:1301
+01-30 00:16:13.430  2448  2522 I ViewRootImpl@8abb2d5[sportmatch]: Relayout returned: old=(0,0,1080,2400) new=(0,0,1080,2400) req=(1080,2400)0 dur=8 res=0x0 s={true 0xb4000072bb91b300} ch=false seqId=0
+01-30 00:16:13.431  2448  2556 I ViewRootImpl@8abb2d5[sportmatch]: mWNT: t=0xb4000071eb71c2f0 mBlastBufferQueue=0xb40000722b73dbf0 fn= 2 caller= android.view.SyncRtSurfaceTransactionApplier.applyTransaction:96 android.view.SyncRtSurfaceTransactionApplier.lambda$scheduleApply$0$android-view-SyncRtSurfaceTransactionApplier:69 android.view.SyncRtSurfaceTransactionApplier$$ExternalSyntheticLambda0.onFrameDraw:4
+01-30 00:16:13.432  2448  2556 I ViewRootImpl@8abb2d5[sportmatch]: mWNT: t=0xb4000071eb9676f0 mBlastBufferQueue=0xb40000722b73dbf0 fn= 2 caller= android.view.SyncRtSurfaceTransactionApplier.applyTransaction:96 android.view.SyncRtSurfaceTransactionApplier.lambda$scheduleApply$0$android-view-SyncRtSurfaceTransactionApplier:69 android.view.SyncRtSurfaceTransactionApplier$$ExternalSyntheticLambda0.onFrameDraw:4
+01-30 00:16:13.435 25557 25557 I ViewRootImpl@7304e6b[LauncherActivity]: performTraversals params={(0,0)(fillxfill) sim={adjust=nothing} layoutInDisplayCutoutMode=shortEdges ty=BASE_APPLICATION fmt=TRANSPARENT wanim=0x10302f4
+01-30 00:16:13.435 25557 25557 I ViewRootImpl@7304e6b[LauncherActivity]:   fl=81910100
+01-30 00:16:13.435 25557 25557 I ViewRootImpl@7304e6b[LauncherActivity]:   pfl=1e020040
+01-30 00:16:13.435 25557 25557 I ViewRootImpl@7304e6b[LauncherActivity]:   vsysui=1700
+01-30 00:16:13.435 25557 25557 I ViewRootImpl@7304e6b[LauncherActivity]:   bhv=SHOW_TRANSIENT_BARS_BY_SWIPE
+01-30 00:16:13.435 25557 25557 I ViewRootImpl@7304e6b[LauncherActivity]:   fitSides= naviIconColor=0}
+01-30 00:16:13.435  2448  2555 I ViewRootImpl@8abb2d5[sportmatch]: mWNT: t=0xb4000071eb8612b0 mBlastBufferQueue=0xb40000722b73dbf0 fn= 3 caller= android.view.SyncRtSurfaceTransactionApplier.applyTransaction:96 android.view.SyncRtSurfaceTransactionApplier.lambda$scheduleApply$0$android-view-SyncRtSurfaceTransactionApplier:69 android.view.SyncRtSurfaceTransactionApplier$$ExternalSyntheticLambda0.onFrameDraw:4
+01-30 00:16:13.439 25557 25557 I ViewRootImpl@7304e6b[LauncherActivity]: performTraversals mFirst=false windowShouldResize=false viewVisibilityChanged=false mForceNextWindowRelayout=false params={(0,0)(fillxfill) sim={adjust=nothing} layoutInDisplayCutoutMode=shortEdges ty=BASE_APPLICATION fmt=TRANSPARENT wanim=0x10302f4
+01-30 00:16:13.439 25557 25557 I ViewRootImpl@7304e6b[LauncherActivity]:   fl=81910100
+01-30 00:16:13.439 25557 25557 I ViewRootImpl@7304e6b[LauncherActivity]:   pfl=1e020040
+01-30 00:16:13.439 25557 25557 I ViewRootImpl@7304e6b[LauncherActivity]:   vsysui=1700
+01-30 00:16:13.439 25557 25557 I ViewRootImpl@7304e6b[LauncherActivity]:   bhv=SHOW_TRANSIENT_BARS_BY_SWIPE
+01-30 00:16:13.439 25557 25557 I ViewRootImpl@7304e6b[LauncherActivity]:   fitSides= naviIconColor=0}
+01-30 00:16:13.440  1426  4479 V WindowManager: Relayout Window{f508e83 u0 com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity}: viewVisibility=8 req=1080x2400 d0
+01-30 00:16:13.441  1426  4479 W WindowManager: lockNow pending, ignore updating lockscreen timeout
+01-30 00:16:13.443 26157 26157 D InputMethodManager: startInputInner - Id : 0
+01-30 00:16:13.444 26157 26157 I InputMethodManager: startInputInner - mService.startInputOrWindowGainedFocus
+01-30 00:16:13.445 25557 25581 I LiveIconUpdateEventHandler: cancelDateChangeAlarm
+01-30 00:16:13.445  1426  4479 V WindowManager: Relayout hash=f508e83, pid=25557, syncId=-1: mAttrs={(0,0)(fillxfill) sim={adjust=nothing} layoutInDisplayCutoutMode=shortEdges ty=BASE_APPLICATION fmt=TRANSPARENT wanim=0x10302f4
+01-30 00:16:13.445  1426  4479 V WindowManager:   fl=81910100
+01-30 00:16:13.445  1426  4479 V WindowManager:   pfl=1e020040
+01-30 00:16:13.445  1426  4479 V WindowManager:   vsysui=1700
+01-30 00:16:13.445  1426  4479 V WindowManager:   bhv=SHOW_TRANSIENT_BARS_BY_SWIPE
+01-30 00:16:13.445  1426  4479 V WindowManager:   fitSides= naviIconColor=0}
+01-30 00:16:13.445  2448  2448 I ViewRootImpl@ca191f7[NotificationShade]: performTraversals mFirst=false windowShouldResize=false viewVisibilityChanged=false mForceNextWindowRelayout=false params={(0,0)(fillxfill) gr=TOP CENTER_VERTICAL sim={adjust=resize} layoutInDisplayCutoutMode=always ty=NOTIFICATION_SHADE fmt=TRANSLUCENT
+01-30 00:16:13.445  2448  2448 I ViewRootImpl@ca191f7[NotificationShade]:   fl=81840048
+01-30 00:16:13.445  2448  2448 I ViewRootImpl@ca191f7[NotificationShade]:   pfl=1b000000
+01-30 00:16:13.445  2448  2448 I ViewRootImpl@ca191f7[NotificationShade]:   bhv=SHOW_TRANSIENT_BARS_BY_SWIPE naviIconColor=0
+01-30 00:16:13.445  2448  2448 I ViewRootImpl@ca191f7[NotificationShade]:   sfl=60000}
+01-30 00:16:13.446  1426  4482 D InputMethodManagerService: mDesktopModeManager null!
+01-30 00:16:13.446  1426  4482 V InputMethodManagerService: getDisplayIdOfInputMethodWindowToBeAdded: displayId=0
+01-30 00:16:13.446  1426  4482 D InputTransport: Input channel constructed: 'ClientS', fd=1150
+01-30 00:16:13.446  1426  4482 D InputTransport: Input channel constructed: 'ClientS', fd=1152
+01-30 00:16:13.447  1426  4482 D InputTransport: Input channel destroyed: 'ClientS', fd=1152
+01-30 00:16:13.448  1426  2959 V WindowManager: Relayout Window{2390bad u0 NotificationShade}: viewVisibility=4 req=1080x2400 d0
+01-30 00:16:13.449  1426  2959 W WindowManager: lockNow pending, ignore updating lockscreen timeout
+01-30 00:16:13.450  2448  2556 I ViewRootImpl@8abb2d5[sportmatch]: mWNT: t=0xb4000071eb790450 mBlastBufferQueue=0xb40000722b73dbf0 fn= 4 caller= android.view.SyncRtSurfaceTransactionApplier.applyTransaction:96 android.view.SyncRtSurfaceTransactionApplier.lambda$scheduleApply$0$android-view-SyncRtSurfaceTransactionApplier:69 android.view.SyncRtSurfaceTransactionApplier$$ExternalSyntheticLambda0.onFrameDraw:4
+01-30 00:16:13.451 25557 25557 I ViewRootImpl@7304e6b[LauncherActivity]: Relayout returned: old=(0,0,1080,2400) new=(0,0,1080,2400) req=(1080,2400)8 dur=10 res=0x2 s={false 0x0} ch=false seqId=0
+01-30 00:16:13.455  1426  2959 V WindowManager: Relayout hash=2390bad, pid=2448, syncId=-1: mAttrs={(0,0)(fillxfill) gr=TOP CENTER_VERTICAL sim={adjust=resize} layoutInDisplayCutoutMode=always ty=NOTIFICATION_SHADE fmt=TRANSLUCENT
+01-30 00:16:13.455  1426  2959 V WindowManager:   fl=81840048
+01-30 00:16:13.455  1426  2959 V WindowManager:   pfl=1b000000
+01-30 00:16:13.455  1426  2959 V WindowManager:   bhv=SHOW_TRANSIENT_BARS_BY_SWIPE naviIconColor=0
+01-30 00:16:13.455  1426  2959 V WindowManager:   sfl=60000}
+01-30 00:16:13.456  2448  2448 I ViewRootImpl@ca191f7[NotificationShade]: Relayout returned: old=(0,0,1080,2400) new=(0,0,1080,2400) req=(1080,2400)4 dur=11 res=0x0 s={false 0x0} ch=false seqId=32
+01-30 00:16:13.458  2448  2448 I FaceWidgetPositionAlgorithm: getClockContainerHeight() supplier = 291, bottom margin = 0, real height = 359
+01-30 00:16:13.458  2448  2448 I FaceWidgetPositionAlgorithm: getClockContainerHeight() supplier = 291, bottom margin = 68, real height = 359
+01-30 00:16:13.458  2448  2448 I FaceWidgetPositionAlgorithm: getMediaContainerHeight() height = 489 container Visibility = 8, isValid = false, mIsDozing = false, fraction = 1.0, source = 0, target = 0
+01-30 00:16:13.458  2448  2448 I FaceWidgetPositionAlgorithm: getMediaContainerHeight() supplier = 0
+01-30 00:16:13.466  1100  1100 I Layer   : id=113828 removeFromCurrentState com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity$_28615#113828 (234)
+01-30 00:16:13.467  1100  1100 I Layer   : id=113829 removeFromCurrentState com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity$_25557#113829 (234)
+01-30 00:16:13.467  1426  3022 W WindowManager: lockNow pending, ignore updating lockscreen timeout
+01-30 00:16:13.467  1100  1100 I SurfaceFlinger: id=113828 Removed com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity$_28615#113828 (234)
+01-30 00:16:13.468  1100  1100 I Layer   : id=113828 Destroyed com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity$_28615#113828
+01-30 00:16:13.468  1426  4481 D InputMethodManagerService: isImeSwitcherDisabledPackage : false
+01-30 00:16:13.470  1426  4481 D InputMethodManagerService: checkDisplayOfStartInputAndUpdateKeyboard: displayId=0, mFocusedDisplayId=0
+01-30 00:16:13.470  1426  4481 D InputTransport: Input channel constructed: 'ClientS', fd=1152
+01-30 00:16:13.470  1426  4481 D InputTransport: Input channel destroyed: 'ClientS', fd=1152
+01-30 00:16:13.471  1100  1336 I SurfaceFlinger: id=113829 Removed com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity$_25557#113829 (233)
+01-30 00:16:13.471 26157 26157 D InputMethodManager: startInputInner - Id : 0
+01-30 00:16:13.476  6115  6115 I HBD     : HoneyBoardService onFinishInput
+01-30 00:16:13.476  6115  6115 I HBD     : a IC have been unbinding,  RemoteInputConnection{idHash=#5187bb9}
+01-30 00:16:13.476  6115  6115 I HBD     : HoneyBoardService [PF_CL][onFinishInput]  0 ms
+01-30 00:16:13.479  6115  6115 I HBD     : HoneyBoardService onInlineSuggestionsResponse
+01-30 00:16:13.481  6115  6115 I HBD     : HoneyBoardService onCreateInlineSuggestionsRequest
+01-30 00:16:13.481  2448  2536 D OpenGLRenderer: setSurface called with nullptr
+01-30 00:16:13.481  1100  1331 I SurfaceFlinger: id=113847 createSurf flag=24004, Surface(name=1e49913 InputMethod)/@0x940201a - animation-leash of insets_animation#113847
+01-30 00:16:13.481  2448  2536 D OpenGLRenderer: setSurface() destroyed EGLSurface
+01-30 00:16:13.481  2448  2536 D OpenGLRenderer: destroyEglSurface
+01-30 00:16:13.481  6115  6115 I ResourceType: [SWT] Success lookup value directly, data = 0x01060430
+01-30 00:16:13.481  6115  6115 I ResourceType: [SWT] Success lookup value directly, data = 0x01060439
+01-30 00:16:13.481  6115  6115 I ResourceType: [SWT] Success lookup value directly, data = 0x01060430
+01-30 00:16:13.485  2448  2522 I ViewRootImpl@8abb2d5[sportmatch]: performTraversals params={(0,0)(fillxfill) sim={adjust=pan} ty=APPLICATION_STARTING fmt=TRANSLUCENT wanim=0x1030309 alpha=0.0
+01-30 00:16:13.485  2448  2522 I ViewRootImpl@8abb2d5[sportmatch]:   fl=81030118
+01-30 00:16:13.485  2448  2522 I ViewRootImpl@8abb2d5[sportmatch]:   pfl=16000010
+01-30 00:16:13.485  2448  2522 I ViewRootImpl@8abb2d5[sportmatch]:   bhv=DEFAULT
+01-30 00:16:13.485  2448  2522 I ViewRootImpl@8abb2d5[sportmatch]:   fitSides= naviIconColor=0}
+01-30 00:16:13.485  1100  1100 I Layer   : id=113829 Destroyed com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity$_25557#113829
+01-30 00:16:13.486  2448  2522 I ViewRootImpl@8abb2d5[sportmatch]: performTraversals mFirst=false windowShouldResize=false viewVisibilityChanged=true mForceNextWindowRelayout=false params={(0,0)(fillxfill) sim={adjust=pan} ty=APPLICATION_STARTING fmt=TRANSLUCENT wanim=0x1030309 alpha=0.0
+01-30 00:16:13.486  2448  2522 I ViewRootImpl@8abb2d5[sportmatch]:   fl=81030118
+01-30 00:16:13.486  2448  2522 I ViewRootImpl@8abb2d5[sportmatch]:   pfl=16000010
+01-30 00:16:13.486  2448  2522 I ViewRootImpl@8abb2d5[sportmatch]:   bhv=DEFAULT
+01-30 00:16:13.486  2448  2522 I ViewRootImpl@8abb2d5[sportmatch]:   fitSides= naviIconColor=0}
+01-30 00:16:13.488  6115  6115 I HBD     : HoneyBoardService [IMI] onStartInput - caller pid : 26157 , caller uid : 10438
+01-30 00:16:13.488  6115  6115 I HBD     : j updateConfigs
+01-30 00:16:13.488  6115  6115 I HBD     : j isEnabledNightMode : true
+01-30 00:16:13.488  6115  6115 I HBD     : a IC have been binding, RemoteInputConnection{idHash=#b353bfe}
+01-30 00:16:13.489  6115  6115 I HBD     : h [EditorInputType]setPrivateImeOptionsToTable privateImeOptions ( null )
+01-30 00:16:13.489  1217  2654 I CameraService: onUidStateChanged: uid=10043, procState is changed. (1 -> 0)
+01-30 00:16:13.489  6115  6115 I HBD     : b incognitoMode : false
+01-30 00:16:13.489  6115  6115 I HBD     : b needOff = true , isForceOff = false, isNullInputClass : true
+01-30 00:16:13.491  6115  6115 I HBD     : h getDefaultInputRange : UNKNOWN
+01-30 00:16:13.491  1426  1485 W WindowManager: lockNow pending, ignore updating lockscreen timeout
+01-30 00:16:13.491  6115  6115 I HBD     : h getDefaultInputRange : UNKNOWN
+01-30 00:16:13.491  6115  6115 I HBD     : h getDefaultInputRange : UNKNOWN
+01-30 00:16:13.495  1426  4481 V WindowManager: Relayout Window{995d359 u0 Splash Screen com.example.sportmatch}: viewVisibility=8 req=1080x2400 d0
+01-30 00:16:13.495  1426  4481 W WindowManager: lockNow pending, ignore updating lockscreen timeout
+01-30 00:16:13.497  6115  6115 I HBD     : b needOff = true , isForceOff = false, isNullInputClass : true
+01-30 00:16:13.497  6115  6115 I HBD     : b update cached prediction status : false
+01-30 00:16:13.497  6115  6115 I HBD     : h getDefaultInputRange : UNKNOWN
+01-30 00:16:13.497  6115  6115 I HBD     : a currentState : 0
+01-30 00:16:13.497  6115  6115 I HBD     : a [UpdatePolicy] [post] a: 0 cl: 65538 kit: [0/0] vt: 0 ir: 1
+01-30 00:16:13.498  6115  6115 I HBD     : a [NRIC] resetNoResponseState
+01-30 00:16:13.498  6115  6115 I HBD     : b needOff = true , isForceOff = false, isNullInputClass : true
+01-30 00:16:13.498  6115  6115 I HBD     : b update cached prediction status : false
+01-30 00:16:13.500  6115  6115 I HBD     : HoneyBoardService [PF_OP][onStartInput]  13 ms
+01-30 00:16:13.500  1100  1100 I Layer   : id=113834 removeFromCurrentState Surface(name=1e49913 InputMethod)/@0x940201a - animation-leash of insets_animation#113834 (233)
+01-30 00:16:13.500  1100  1100 I Layer   : Layer [Splash Screen com.example.sportmatch$_2448#113838] hidden!! flag(1)
+01-30 00:16:13.500  1100  1100 I SurfaceFlinger: id=113834 Removed Surface(name=1e49913 InputMethod)/@0x940201a - animation-leash of insets_animation#113834 (233)
+01-30 00:16:13.501  1100  1100 I Layer   : id=113834 Destroyed Surface(name=1e49913 InputMethod)/@0x940201a - animation-leash of insets_animation#113834
+01-30 00:16:13.504 26157 26196 W FileTestStorage: Output properties is not supported.
+01-30 00:16:13.505  1426  4481 V WindowManager: Relayout hash=995d359, pid=2448, syncId=-1: mAttrs={(0,0)(fillxfill) sim={adjust=pan} ty=APPLICATION_STARTING fmt=TRANSLUCENT wanim=0x1030309 alpha=0.0
+01-30 00:16:13.505  1426  4481 V WindowManager:   fl=81030118
+01-30 00:16:13.505  1426  4481 V WindowManager:   pfl=16000010
+01-30 00:16:13.505  1426  4481 V WindowManager:   bhv=DEFAULT
+01-30 00:16:13.505  1426  4481 V WindowManager:   fitSides= naviIconColor=0}
+01-30 00:16:13.509  1100  1100 D SurfaceFlinger: Display 4633128672291735932 HWC layers:
+01-30 00:16:13.509  1100  1100 D SurfaceFlinger:      DEVICE | 0xb400007704b67310 | 0102 | RGBA_8888    |    0.0    0.0 1080.0 2400.0 |    0    0 1080 2400 | com.example.sportmatch/com.example.sportmatch.LoginActivity$_26157#113843
+01-30 00:16:13.509  1100  1100 D SurfaceFlinger:      DEVICE | 0xb400007704b58890 | 0100 | RGBA_8888    |    0.0    0.0 1080.0   88.0 |    0    0 1080   88 | StatusBar$_2448#94
+01-30 00:16:13.509  1100  1100 D SurfaceFlinger:      DEVICE | 0xb400007704b6bad0 | 0100 | RGBA_8888    |    0.0    0.0   67.0  342.0 |    0 1504   67 1846 | com.samsung.android.app.cocktailbars[...]vice.CocktailBarService$_5767#113823
+01-30 00:16:13.509  1100  1100 D SurfaceFlinger:      DEVICE | 0xb400007704b55cd0 | 0100 | RGBA_8888    |    0.0    0.0 1080.0  135.0 |    0 2265 1080 2400 | NavigationBar0$_2448#88
+01-30 00:16:13.509  1100  1100 D SurfaceFlinger:
+01-30 00:16:13.510 26157 26196 I Tracing : Tracer added: class androidx.test.platform.tracing.AndroidXTracer
+01-30 00:16:13.509  2448  2522 I ViewRootImpl@8abb2d5[sportmatch]: Relayout returned: old=(0,0,1080,2400) new=(0,0,1080,2400) req=(1080,2400)8 dur=22 res=0x2 s={false 0x0} ch=true seqId=0
+01-30 00:16:13.510  2448  2522 I ViewRootImpl@8abb2d5[sportmatch]: dispatchDetachedFromWindow
+01-30 00:16:13.515  1007  1007 D Zygote  : Forked child process 26250
+01-30 00:16:13.517  1426  4482 D InputTransport: Input channel destroyed: '995d359', fd=1014
+01-30 00:16:13.517  1426  4482 W InputManager-JNI: Input channel object '995d359 Splash Screen com.example.sportmatch (client)' was disposed without first being removed with the input manager!
+01-30 00:16:13.517  1426  4482 D InputTransport: Input channel destroyed: '995d359', fd=1031
+01-30 00:16:13.529  1426  4482 W WindowManager: lockNow pending, ignore updating lockscreen timeout
+01-30 00:16:13.533 15268 26247 V FA-SVC  : Logging event: origin=auto,name=screen_view(_vs),params=Bundle[{ga_event_origin(_o)=auto, ga_screen_class(_sc)=LoginActivity, ga_screen_id(_si)=8787742430023688842}]
+01-30 00:16:13.533  1100  1100 I Layer   : id=113837 removeFromCurrentState 995d359 Splash Screen com.example.sportmatch#113837 (232)
+01-30 00:16:13.533  1100  1100 I Layer   : id=113838 removeFromCurrentState Splash Screen com.example.sportmatch$_2448#113838 (232)
+01-30 00:16:13.533  1100  1100 I Layer   : id=113846 removeFromCurrentState Surface(name=5a12873 com.example.sportmatch/com.example.sportmatch.LoginActivity)/@0xc7b0119 - animation-leash of starting_reveal#113846 (232)
+01-30 00:16:13.533  1100  1100 I Layer   : id=113838 removeFromCurrentState Splash Screen com.example.sportmatch$_2448#113838 (232)
+01-30 00:16:13.536  1100  1336 I SurfaceFlinger: id=113837 Removed 995d359 Splash Screen com.example.sportmatch#113837 (232)
+01-30 00:16:13.536  2448  2522 D InputTransport: Input channel destroyed: '995d359', fd=280
+01-30 00:16:13.536  1100  1336 I SurfaceFlinger: id=113838 Removed Splash Screen com.example.sportmatch$_2448#113838 (232)
+01-30 00:16:13.540 26157 26196 D EventInjectionStrategy: Creating injection strategy with input manager.
+01-30 00:16:13.541 26157 26196 W mple.sportmatch: Accessing hidden method Landroid/hardware/input/InputManager;->getInstance()Landroid/hardware/input/InputManager; (unsupported, reflection, allowed)
+01-30 00:16:13.541  1426  4477 D InputMethodManagerService: isImeSwitcherDisabledPackage : false
+01-30 00:16:13.541 26157 26196 W mple.sportmatch: Accessing hidden method Landroid/hardware/input/InputManager;->injectInputEvent(Landroid/view/InputEvent;I)Z (unsupported, reflection, allowed)
+01-30 00:16:13.541 26157 26196 W mple.sportmatch: Accessing hidden field Landroid/hardware/input/InputManager;->INJECT_INPUT_EVENT_MODE_WAIT_FOR_FINISH:I (unsupported, reflection, allowed)
+01-30 00:16:13.545  6115  6115 I InputMethodService: removeImeSurface
+01-30 00:16:13.545  6115  6115 I MSHandlerLifeCycle: check: return. pkg=com.samsung.android.honeyboard isActivity=false callers=com.android.internal.policy.DecorView.setVisibility:4412 android.app.Dialog.hide:767 android.inputmethodservice.InputMethodService.removeImeSurface:1290 android.inputmethodservice.InputMethodService.scheduleImeSurfaceRemoval:1279 android.inputmethodservice.InputMethodService.-$$Nest$mscheduleImeSurfaceRemoval:0
+01-30 00:16:13.545  6115  6115 I MSHandlerLifeCycle: removeMultiSplitHandler: no exist. decor=DecorView@f7681bd[InputMethod]
+01-30 00:16:13.550  1100  1100 I Layer   : id=113838 Destroyed Splash Screen com.example.sportmatch$_2448#113838
+01-30 00:16:13.551  1100  1100 I Layer   : id=113837 Destroyed 995d359 Splash Screen com.example.sportmatch#113837
+01-30 00:16:13.561  1426  1485 W WindowManager: lockNow pending, ignore updating lockscreen timeout
+01-30 00:16:13.567 26157 26157 W mple.sportmatch: Accessing hidden method Landroid/os/MessageQueue;->next()Landroid/os/Message; (unsupported, reflection, allowed)
+01-30 00:16:13.567 26157 26157 W mple.sportmatch: Accessing hidden field Landroid/os/MessageQueue;->mMessages:Landroid/os/Message; (unsupported, reflection, allowed)
+01-30 00:16:13.567 26157 26157 W mple.sportmatch: Accessing hidden method Landroid/os/Message;->recycleUnchecked()V (unsupported, reflection, allowed)
+01-30 00:16:13.568 26250 26250 I ungpassautofill: Using CollectorTypeCC GC.
+01-30 00:16:13.570 26157 26157 W mple.sportmatch: Accessing hidden method Landroid/view/WindowManagerGlobal;->getInstance()Landroid/view/WindowManagerGlobal; (unsupported, reflection, allowed)
+01-30 00:16:13.570 26157 26157 W mple.sportmatch: Accessing hidden field Landroid/view/WindowManagerGlobal;->mViews:Ljava/util/ArrayList; (unsupported, reflection, allowed)
+01-30 00:16:13.571 26157 26157 W mple.sportmatch: Accessing hidden field Landroid/view/WindowManagerGlobal;->mParams:Ljava/util/ArrayList; (unsupported, reflection, allowed)
+01-30 00:16:13.572 15268 26247 V FA-SVC  : Upload scheduled in approximately ms: 1592254
+01-30 00:16:13.572 15268 26247 V FA-SVC  : Unscheduling upload
+01-30 00:16:13.575 26157 26157 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle)}' assertion on view view.getId() is <2131361881/com.example.sportmatch:id/activity_main_usernameEditText>
+01-30 00:16:13.578 15268 26247 V FA-SVC  : Scheduling upload, millis: 1592254
+01-30 00:16:13.580 26250 26250 E ungpassautofill: Not starting debugger since process cannot load the jdwp agent.
+01-30 00:16:13.580 15268 26247 V FA-SVC  : Background event processing time, ms: 49
+01-30 00:16:13.581 26157 26157 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle)}' assertion on view view.getId() is <2131361880/com.example.sportmatch:id/activity_main_passwordEditText>
+01-30 00:16:13.586 26157 26157 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle)}' assertion on view view.getId() is <2131361949/com.example.sportmatch:id/button_login>
+01-30 00:16:13.591 15268 26247 V FA-SVC  : Saving default event parameters, appId, data size: com.example.sportmatch, 2
+01-30 00:16:13.591  1426  1484 I ChimeraSystemEventListener: appLaunchIntent package name is: com.example.sportmatch
+01-30 00:16:13.593  1426  4481 I SemDvfsHyPerManager: acquire hyper - AMS_ACT_START/1426@21, type = -999
+01-30 00:16:13.593  1037  1116 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 1047649  [1426 / 21]    HINT : AMS_ACT_START    list :
+01-30 00:16:13.594  1100  1152 I SurfaceFlinger: id=113848 createSurf flag=80004, ActivityRecord{e02a325 u0 com.example.sportmatch/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity} t17221}#113848
+01-30 00:16:13.595 26250 26250 D ActivityThread: setConscryptValidator
+01-30 00:16:13.596 26250 26250 D ActivityThread: setConscryptValidator - put
+01-30 00:16:13.603  8039 25641 W NetworkScheduler: Error inserting flex_time=1592000 job_id=-1 period=3185000 source=16 requires_charging=0 preferred_network_type=1 target_class=com.google.android.gms.measurement.PackageMeasurementTaskService user_id=0 target_package=com.google.android.gms tag=Measurement.PackageMeasurementTaskService.UPLOAD_TASK_TAG task_type=0 required_idleness_state=0 service_kind=0 source_version=240213000 persistence_level=1 preferred_charging_state=1 required_network_type=0 runtime=1706566573596 retry_strategy={"maximum_backoff_seconds":{"3600":0},"initial_backoff_seconds":{"30":0},"retry_policy":{"0":0}} last_runtime=0 [CONTEXT service_id=218 ]
+01-30 00:16:13.603  8039 25641 W NetworkScheduler: android.database.sqlite.SQLiteConstraintException: UNIQUE constraint failed: pending_ops.tag, pending_ops.target_class, pending_ops.target_package, pending_ops.user_id (code 2067 SQLITE_CONSTRAINT_UNIQUE[2067])
+01-30 00:16:13.603  8039 25641 W NetworkScheduler: 	at android.database.sqlite.SQLiteConnection.nativeExecuteForLastInsertedRowId(Native Method)
+01-30 00:16:13.603  8039 25641 W NetworkScheduler: 	at android.database.sqlite.SQLiteConnection.executeForLastInsertedRowId(SQLiteConnection.java:1275)
+01-30 00:16:13.603  8039 25641 W NetworkScheduler: 	at android.database.sqlite.SQLiteSession.executeForLastInsertedRowId(SQLiteSession.java:790)
+01-30 00:16:13.603  8039 25641 W NetworkScheduler: 	at android.database.sqlite.SQLiteStatement.executeInsert(SQLiteStatement.java:89)
+01-30 00:16:13.603  8039 25641 W NetworkScheduler: 	at android.database.sqlite.SQLiteDatabase.insertWithOnConflict(SQLiteDatabase.java:2410)
+01-30 00:16:13.603  8039 25641 W NetworkScheduler: 	at android.database.sqlite.SQLiteDatabase.insertOrThrow(SQLiteDatabase.java:2305)
+01-30 00:16:13.603  8039 25641 W NetworkScheduler: 	at crnw.d(:com.google.android.gms@240213038@24.02.13 (190400-599553831):743)
+01-30 00:16:13.603  8039 25641 W NetworkScheduler: 	at crmd.n(:com.google.android.gms@240213038@24.02.13 (190400-599553831):29)
+01-30 00:16:13.603  8039 25641 W NetworkScheduler: 	at crmd.u(:com.google.android.gms@240213038@24.02.13 (190400-599553831):362)
+01-30 00:16:13.603  8039 25641 W NetworkScheduler: 	at crmd.h(:com.google.android.gms@240213038@24.02.13 (190400-599553831):51)
+01-30 00:16:13.603  8039 25641 W NetworkScheduler: 	at crhi.run(:com.google.android.gms@240213038@24.02.13 (190400-599553831):72)
+01-30 00:16:13.603  8039 25641 W NetworkScheduler: 	at akki.c(:com.google.android.gms@240213038@24.02.13 (190400-599553831):50)
+01-30 00:16:13.603  8039 25641 W NetworkScheduler: 	at akki.run(:com.google.android.gms@240213038@24.02.13 (190400-599553831):76)
+01-30 00:16:13.603  8039 25641 W NetworkScheduler: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+01-30 00:16:13.603  8039 25641 W NetworkScheduler: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+01-30 00:16:13.603  8039 25641 W NetworkScheduler: 	at akpt.run(:com.google.android.gms@240213038@24.02.13 (190400-599553831):8)
+01-30 00:16:13.603  8039 25641 W NetworkScheduler: 	at java.lang.Thread.run(Thread.java:1012)
+01-30 00:16:13.603  1426  4481 W WindowManager: lockNow pending, ignore updating lockscreen timeout
+01-30 00:16:13.606  3326  3326 E pageboostd: Received HALT command code 2
+01-30 00:16:13.609 26157 26157 D LifecycleMonitor: Lifecycle status change: com.example.sportmatch.LoginActivity@97f042 in: PAUSED
+01-30 00:16:13.609 26157 26157 V ActivityScenario: Update currentActivityStage to PAUSED, currentActivity=com.example.sportmatch.LoginActivity@97f042
+01-30 00:16:13.615  1426  4482 D InputDispatcher: Focused application(0): ActivityRecord{e02a325 u0 com.example.sportmatch/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity} t17221}
+01-30 00:16:13.620 26157 26198 V FA      : Screen exposed for less than 1000 ms. Event not sent. time: 494
+01-30 00:16:13.620  1426  4482 W WindowManager: lockNow pending, ignore updating lockscreen timeout
+01-30 00:16:13.622 26157 26198 V FA      : Activity paused, time: 506161570
+01-30 00:16:13.628 26157 26157 D LifecycleMonitor: Lifecycle status change: androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@36d19a8 in: PRE_ON_CREATE
+01-30 00:16:13.628 26157 26157 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.example.sportmatch/.LoginActivity }, activity.getIntent()=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.example.sportmatch/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity }, activity=androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@36d19a8
+01-30 00:16:13.629 26157 26190 V FA      : onActivityCreated
+01-30 00:16:13.632  1100  1100 I SurfaceFlinger: [5a12873 com.example.sportmatch/com.example.sportmatch.LoginActivity#113842] FrameRatePriority: -1
+01-30 00:16:13.635  8039 11590 I FontLog : (REDACTED) Received query %s, URI %s
+01-30 00:16:13.635  8039 11590 I FontLog : (REDACTED) Query [%s] resolved to %s
+01-30 00:16:13.638  8039 11590 I FontLog : (REDACTED) Fetch %s end status %s
+01-30 00:16:13.641  1426  3460 I MediaSessionMonitor: Media session stopped : controllerList empty
+01-30 00:16:13.641 26250 26250 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10192; state: ENABLED
+01-30 00:16:13.643  8039  8693 I FontLog : (REDACTED) Pulling font file for id = %d, cache size = %d
+01-30 00:16:13.645 26157 26157 I DecorView: [INFO] isPopOver=false config=true
+01-30 00:16:13.645 26157 26157 I DecorView: updateCaptionType: isFloating=false isApplication=true hasWindowDecorCaption=false this=DecorView@58f75c0[]
+01-30 00:16:13.645 26157 26157 D DecorView: setCaptionType = 0, this = DecorView@58f75c0[]
+01-30 00:16:13.647 26157 26157 I DecorView: getCurrentDensityDpi: from real metrics. densityDpi=450 msg=resources_loaded
+01-30 00:16:13.647 26157 26157 I DecorView: setWindowBackground: isPopOver=false color=ffffffff d=android.graphics.drawable.ColorDrawable@c08e23e
+01-30 00:16:13.649 26157 26157 D LifecycleMonitor: Lifecycle status change: androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@36d19a8 in: CREATED
+01-30 00:16:13.649  5767  5767 I ActivityUtils: HomePackage : com.sec.android.app.launcher, resumePackageName : com.example.sportmatch
+01-30 00:16:13.649  1100  1100 D SurfaceFlinger: [input] inputWindowCommands.focusRequests size is 1
+01-30 00:16:13.650  1100  1210 D SurfaceFlinger: [input] setFocusedWindow: <null>
+01-30 00:16:13.651  1426  4477 D InputDispatcher: Focus request (0): <null> but waiting because NOT_FOCUSABLE
+01-30 00:16:13.651  1426  4477 D InputDispatcher: Focus left window (0): 5a12873 com.example.sportmatch/com.example.sportmatch.LoginActivity
+01-30 00:16:13.651  8039 22369 I FontLog : (REDACTED) Pulling font file for id = %d, cache size = %d
+01-30 00:16:13.652 26157 26157 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.example.sportmatch/.LoginActivity }, activity.getIntent()=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.example.sportmatch/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity }, activity=androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@36d19a8
+01-30 00:16:13.654 26157 26157 D LifecycleMonitor: Lifecycle status change: androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@36d19a8 in: STARTED
+01-30 00:16:13.655 26157 26157 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.example.sportmatch/.LoginActivity }, activity.getIntent()=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.example.sportmatch/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity }, activity=androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@36d19a8
+01-30 00:16:13.657 26157 26157 D LifecycleMonitor: Lifecycle status change: androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@36d19a8 in: RESUMED
+01-30 00:16:13.658 26157 26198 V FA      : Activity resumed, time: 506161618
+01-30 00:16:13.658 26157 26157 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.example.sportmatch/.LoginActivity }, activity.getIntent()=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.example.sportmatch/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity }, activity=androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@36d19a8
+01-30 00:16:13.658 26157 26157 I MSHandlerLifeCycle: check: return. pkg=com.example.sportmatch parent=null callers=com.android.internal.policy.DecorView.setVisibility:4412 android.app.ActivityThread.handleResumeActivity:5476 android.app.servertransaction.ResumeActivityItem.execute:54 android.app.servertransaction.ActivityTransactionItem.execute:45 android.app.servertransaction.TransactionExecutor.executeLifecycleState:176
+01-30 00:16:13.658 26157 26157 I MSHandlerLifeCycle: removeMultiSplitHandler: no exist. decor=DecorView@58f75c0[]
+01-30 00:16:13.662 26157 26204 D NativeCustomFrequencyManager: [NativeCFMS] BpCustomFrequencyManager::BpCustomFrequencyManager()
+01-30 00:16:13.664  1426  3022 D InputTransport: Input channel constructed: 'f23eed9', fd=1014
+01-30 00:16:13.664  1426  3022 D InputTransport: Input channel constructed: 'f23eed9', fd=1031
+01-30 00:16:13.664  1426  3022 D InputTransport: Input channel constructed: 'f23eed9', fd=1152
+01-30 00:16:13.668  1100  1152 I SurfaceFlinger: id=113849 createSurf flag=80004, f23eed9 com.example.sportmatch/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity#113849
+01-30 00:16:13.669  1426  3022 D InputTransport: Input channel destroyed: 'f23eed9', fd=1152
+01-30 00:16:13.672 26157 26157 D InsetsController: onStateChanged: InsetsState: {mDisplayFrame=Rect(0, 0 - 1080, 2400), mDisplayCutout=DisplayCutout{insets=Rect(0, 88 - 0, 0) waterfall=Insets{left=0, top=0, right=0, bottom=0} boundingRect={Bounds=[Rect(0, 0 - 0, 0), Rect(512, 0 - 568, 88), Rect(0, 0 - 0, 0), Rect(0, 0 - 0, 0)]} cutoutPathParserInfo={CutoutPathParserInfo{displayWidth=1080 displayHeight=2400 physicalDisplayWidth=1080 physicalDisplayHeight=2400 density={2.8125} cutoutSpec={M 0,0 M 0,11.43427858034597 a 9.899054752987353,9.899054752987353 0 1,0 0,19.79810950597471 a 9.899054752987353,9.899054752987353 0 1,0 0,-19.79810950597471 Z @dp} rotation={0} scale={1.0} physicalPixelDisplaySizeRatio={1.0}}}}, mRoundedCorners=RoundedCorners{[RoundedCorner{position=TopLeft, radius=90, center=Point(90, 90)}, RoundedCorner{position=TopRight, radius=90, center=Point(990, 90)}, RoundedCorner{position=BottomRight, radius=90, center=Point(990, 2310)}, RoundedCorner{position=BottomLeft, radius=90, center=Point(90, 2310)}]}  mRoundedCornerFrame=Rect(0, 0 - 1080, 2400), mPrivacyIndicatorBounds=PrivacyIndicatorBounds {static bounds=Rect(956, 0 - 1080, 88) rotation=0}, mSources= { InsetsSource: {mType=ITYPE_STATUS_BAR, mFrame=[0,0][1080,88], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_NAVIGATION_BAR, mFrame=[0,2265][1080,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_LEFT_GESTURES, mFrame=[0,0][0,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_RIGHT_GESTURES, mFrame=[1080,0][1080,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_TOP_MANDATORY_GESTURES, mFrame=[0,0][1080,122], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_BOTTOM_MANDATORY_GESTURES, mFrame=[0,2265][1080,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_LEFT_DISPLAY_CUTOUT, mFrame=[0,0][-100000,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_TOP_DISPLAY_CUTOUT, mFrame=[0,0][1080,88], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_RIGHT_DISPLAY_CUTOUT, mFrame=[100000,0][1080,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_BOTTOM_DISPLAY_CUTOUT, mFrame=[0,100000][1080,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_TOP_TAPPABLE_ELEMENT, mFrame=[0,0][1080,88], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_BOTTOM_TAPPABLE_ELEMENT, mFrame=[0,2265][1080,2400], mVisible=true, mInsetsRoundedCornerFrame=false} } host=com.example.sportmatch/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity from=android.view.ViewRootImpl.setView:1732
+01-30 00:16:13.675 26157 26157 I ViewRootImpl@cace44a[InstrumentationActivityInvoker$EmptyActivity]: setView = com.android.internal.policy.DecorView@58f75c0 TM=true
+01-30 00:16:13.676 26157 26157 I MSHandlerLifeCycle: removeMultiSplitHandler: no exist. decor=DecorView@58f75c0[InstrumentationActivityInvoker$EmptyActivity]
+01-30 00:16:13.683 26157 26157 I ViewRootImpl@cace44a[InstrumentationActivityInvoker$EmptyActivity]: performTraversals params={(0,0)(fillxfill) sim={adjust=pan forwardNavigation} ty=BASE_APPLICATION
+01-30 00:16:13.683 26157 26157 I ViewRootImpl@cace44a[InstrumentationActivityInvoker$EmptyActivity]:   fl=81810100
+01-30 00:16:13.683 26157 26157 I ViewRootImpl@cace44a[InstrumentationActivityInvoker$EmptyActivity]:   pfl=12020040
+01-30 00:16:13.683 26157 26157 I ViewRootImpl@cace44a[InstrumentationActivityInvoker$EmptyActivity]:   bhv=DEFAULT
+01-30 00:16:13.683 26157 26157 I ViewRootImpl@cace44a[InstrumentationActivityInvoker$EmptyActivity]:   fitSides= naviIconColor=0}
+01-30 00:16:13.686 26157 26157 I ViewRootImpl@cace44a[InstrumentationActivityInvoker$EmptyActivity]: performTraversals mFirst=true windowShouldResize=true viewVisibilityChanged=false mForceNextWindowRelayout=false params={(0,0)(fillxfill) sim={adjust=pan forwardNavigation} ty=BASE_APPLICATION
+01-30 00:16:13.686 26157 26157 I ViewRootImpl@cace44a[InstrumentationActivityInvoker$EmptyActivity]:   fl=81810100
+01-30 00:16:13.686 26157 26157 I ViewRootImpl@cace44a[InstrumentationActivityInvoker$EmptyActivity]:   pfl=12020040
+01-30 00:16:13.686 26157 26157 I ViewRootImpl@cace44a[InstrumentationActivityInvoker$EmptyActivity]:   bhv=DEFAULT
+01-30 00:16:13.686 26157 26157 I ViewRootImpl@cace44a[InstrumentationActivityInvoker$EmptyActivity]:   fitSides= naviIconColor=0}
+01-30 00:16:13.686  1426  4482 V WindowManager: Relayout Window{f23eed9 u0 com.example.sportmatch/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity}: viewVisibility=0 req=1080x2400 d0
+01-30 00:16:13.687  1100  1152 I SurfaceFlinger: id=113850 createSurf flag=40004, com.example.sportmatch/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity$_26157#113850
+01-30 00:16:13.689  1426  4482 W WindowManager: lockNow pending, ignore updating lockscreen timeout
+01-30 00:16:13.692  1100  1336 I SurfaceFlinger: id=113851 createSurf flag=24000, Surface(name=c2abcc7 StatusBar)/@0x2f665b7 - animation-leash of insets_animation#113851
+01-30 00:16:13.693  1100  1336 I SurfaceFlinger: id=113852 createSurf flag=24000, Surface(name=719c3fd NavigationBar0)/@0xe9d3c89 - animation-leash of insets_animation#113852
+01-30 00:16:13.695  1426  4482 V WindowManager: Relayout hash=f23eed9, pid=26157, syncId=-1: mAttrs={(0,0)(fillxfill) sim={adjust=pan forwardNavigation} ty=BASE_APPLICATION
+01-30 00:16:13.695  1426  4482 V WindowManager:   fl=81810100
+01-30 00:16:13.695  1426  4482 V WindowManager:   pfl=12020040
+01-30 00:16:13.695  1426  4482 V WindowManager:   bhv=DEFAULT
+01-30 00:16:13.695  1426  4482 V WindowManager:   fitSides= naviIconColor=0}
+01-30 00:16:13.698 26157 26157 D InsetsController: onStateChanged: InsetsState: {mDisplayFrame=Rect(0, 0 - 1080, 2400), mDisplayCutout=DisplayCutout{insets=Rect(0, 88 - 0, 0) waterfall=Insets{left=0, top=0, right=0, bottom=0} boundingRect={Bounds=[Rect(0, 0 - 0, 0), Rect(512, 0 - 568, 88), Rect(0, 0 - 0, 0), Rect(0, 0 - 0, 0)]} cutoutPathParserInfo={CutoutPathParserInfo{displayWidth=1080 displayHeight=2400 physicalDisplayWidth=1080 physicalDisplayHeight=2400 density={2.8125} cutoutSpec={M 0,0 M 0,11.43427858034597 a 9.899054752987353,9.899054752987353 0 1,0 0,19.79810950597471 a 9.899054752987353,9.899054752987353 0 1,0 0,-19.79810950597471 Z @dp} rotation={0} scale={1.0} physicalPixelDisplaySizeRatio={1.0}}}}, mRoundedCorners=RoundedCorners{[RoundedCorner{position=TopLeft, radius=90, center=Point(90, 90)}, RoundedCorner{position=TopRight, radius=90, center=Point(990, 90)}, RoundedCorner{position=BottomRight, radius=90, center=Point(990, 2310)}, RoundedCorner{position=BottomLeft, radius=90, center=Point(90, 2310)}]}  mRoundedCornerFrame=Rect(0, 0 - 1080, 2400), mPrivacyIndicatorBounds=PrivacyIndicatorBounds {static bounds=Rect(956, 0 - 1080, 88) rotation=0}, mSources= { InsetsSource: {mType=ITYPE_STATUS_BAR, mFrame=[0,0][1080,88], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_NAVIGATION_BAR, mFrame=[0,2265][1080,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_LEFT_GESTURES, mFrame=[0,0][0,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_RIGHT_GESTURES, mFrame=[1080,0][1080,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_TOP_MANDATORY_GESTURES, mFrame=[0,0][1080,122], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_BOTTOM_MANDATORY_GESTURES, mFrame=[0,2265][1080,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_LEFT_DISPLAY_CUTOUT, mFrame=[0,0][-100000,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_TOP_DISPLAY_CUTOUT, mFrame=[0,0][1080,88], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_RIGHT_DISPLAY_CUTOUT, mFrame=[100000,0][1080,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_BOTTOM_DISPLAY_CUTOUT, mFrame=[0,100000][1080,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_TOP_TAPPABLE_ELEMENT, mFrame=[0,0][1080,88], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_BOTTOM_TAPPABLE_ELEMENT, mFrame=[0,2265][1080,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_IME, mFrame=[0,0][0,0], mVisibleFrame=[0,1392][1080,2400], mVisible=false, mInsetsRoundedCornerFrame=false} } host=com.example.sportmatch/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity from=android.view.ViewRootImpl.relayoutWindow:9802
+01-30 00:16:13.699  1037 26246 I HYPER-HAL: [RequestManager.cpp]releaseLocked(): Released ID : 1049098
+01-30 00:16:13.700 26157 26157 I ViewRootImpl@cace44a[InstrumentationActivityInvoker$EmptyActivity]: updateBlastSurfaceIfNeeded mBlastBufferQueue=null isSameSurfaceControl=false
+01-30 00:16:13.701 26157 26157 I BLASTBufferQueue: new BLASTBufferQueue, mName= ViewRootImpl@cace44a[InstrumentationActivityInvoker$EmptyActivity] mNativeObject= 0xb40000722b67aa10 sc.mNativeObject= 0xb4000071bb699230 caller= android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:2909 android.view.ViewRootImpl.relayoutWindow:9847 android.view.ViewRootImpl.performTraversals:3884 android.view.ViewRootImpl.doTraversal:3116 android.view.ViewRootImpl$TraversalRunnable.run:10885 android.view.Choreographer$CallbackRecord.run:1301 android.view.Choreographer$CallbackRecord.run:1309 android.view.Choreographer.doCallbacks:923 android.view.Choreographer.doFrame:852 android.view.Choreographer$FrameDisplayEventReceiver.run:1283
+01-30 00:16:13.701 26157 26157 I BLASTBufferQueue: update, w= 1080 h= 2400 mName = ViewRootImpl@cace44a[InstrumentationActivityInvoker$EmptyActivity] mNativeObject= 0xb40000722b67aa10 sc.mNativeObject= 0xb4000071bb699230 format= -1 caller= android.graphics.BLASTBufferQueue.<init>:84 android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:2909 android.view.ViewRootImpl.relayoutWindow:9847 android.view.ViewRootImpl.performTraversals:3884 android.view.ViewRootImpl.doTraversal:3116 android.view.ViewRootImpl$TraversalRunnable.run:10885
+01-30 00:16:13.702 26157 26157 I ViewRootImpl@cace44a[InstrumentationActivityInvoker$EmptyActivity]: Relayout returned: old=(0,0,1080,2400) new=(0,0,1080,2400) req=(1080,2400)0 dur=14 res=0x3 s={true 0xb4000072bb6bc730} ch=true seqId=0
+01-30 00:16:13.705 26157 26204 D OpenGLRenderer: eglCreateWindowSurface
+01-30 00:16:13.705 26157 26157 I ViewRootImpl@cace44a[InstrumentationActivityInvoker$EmptyActivity]: mThreadedRenderer.initialize() mSurface={isValid=true 0xb4000072bb6bc730} hwInitialized=true
+01-30 00:16:13.713 26157 26157 I ViewRootImpl@cace44a[InstrumentationActivityInvoker$EmptyActivity]: reportNextDraw android.view.ViewRootImpl.performTraversals:4438 android.view.ViewRootImpl.doTraversal:3116 android.view.ViewRootImpl$TraversalRunnable.run:10885 android.view.Choreographer$CallbackRecord.run:1301 android.view.Choreographer$CallbackRecord.run:1309
+01-30 00:16:13.714 26157 26157 I ViewRootImpl@cace44a[InstrumentationActivityInvoker$EmptyActivity]: Setup new sync id=0
+01-30 00:16:13.714 26157 26157 I ViewRootImpl@cace44a[InstrumentationActivityInvoker$EmptyActivity]: Setting syncFrameCallback
+01-30 00:16:13.714 26157 26157 I ViewRootImpl@cace44a[InstrumentationActivityInvoker$EmptyActivity]: registerCallbacksForSync syncBuffer=false
+01-30 00:16:13.715 26157 26242 I ViewRootImpl@cace44a[InstrumentationActivityInvoker$EmptyActivity]: Received frameDrawingCallback syncResult=0 frameNum=1.
+01-30 00:16:13.715 26157 26242 I ViewRootImpl@cace44a[InstrumentationActivityInvoker$EmptyActivity]: Setting up sync and frameCommitCallback
+01-30 00:16:13.717  1100  1100 I Layer   : id=113844 removeFromCurrentState Surface(name=c2abcc7 StatusBar)/@0x2f665b7 - animation-leash of insets_animation#113844 (235)
+01-30 00:16:13.717  1100  1100 I Layer   : id=113845 removeFromCurrentState Surface(name=719c3fd NavigationBar0)/@0xe9d3c89 - animation-leash of insets_animation#113845 (235)
+01-30 00:16:13.717  1100  1100 I SurfaceFlinger: [f23eed9 com.example.sportmatch/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity#113849] FrameRatePriority: 1
+01-30 00:16:13.717  1100  1100 D SurfaceFlinger: [input] inputWindowCommands.focusRequests size is 1
+01-30 00:16:13.718 26157 26204 I BLASTBufferQueue: [ViewRootImpl@cace44a[InstrumentationActivityInvoker$EmptyActivity]#1](f:0,a:0) onFrameAvailable the first frame is available
+01-30 00:16:13.718 26157 26204 I ViewRootImpl@cace44a[InstrumentationActivityInvoker$EmptyActivity]: Received frameCommittedCallback lastAttemptedDrawFrameNum=1 didProduceBuffer=true
+01-30 00:16:13.719 26157 26204 D OpenGLRenderer: CFMS:: SetUp Pid : 26157    Tid : 26204
+01-30 00:16:13.719 26157 26204 W Parcel  : Expecting binder but got null!
+01-30 00:16:13.720 26157 26157 I ViewRootImpl@cace44a[InstrumentationActivityInvoker$EmptyActivity]: onSyncComplete
+01-30 00:16:13.720 26157 26157 I ViewRootImpl@cace44a[InstrumentationActivityInvoker$EmptyActivity]: setupSync seqId=0 mSyncId=0 fn=1 caller=android.view.ViewRootImpl$$ExternalSyntheticLambda11.accept:6 android.window.SurfaceSyncer.lambda$setupSync$1$android-window-SurfaceSyncer:128 android.window.SurfaceSyncer$$ExternalSyntheticLambda1.accept:8 android.window.SurfaceSyncer$SyncSet.checkIfSyncIsComplete:382 android.window.SurfaceSyncer$SyncSet.markSyncReady:359 android.window.SurfaceSyncer.markSyncReady:151 android.view.ViewRootImpl.performTraversals:4503
+01-30 00:16:13.720 26157 26157 I ViewRootImpl@cace44a[InstrumentationActivityInvoker$EmptyActivity]: reportDrawFinished seqId=0 mSyncId=-1 fn=1 mSurfaceChangedTransaction=0xb4000071eb66dab0
+01-30 00:16:13.721 26157 26157 I ViewRootImpl@97f4791[LoginActivity]: MSG_WINDOW_FOCUS_CHANGED 0 0
+01-30 00:16:13.721  1100  1210 D SurfaceFlinger: [input] setFocusedWindow: f23eed9 com.example.sportmatch/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity
+01-30 00:16:13.722 25557 25726 I RecentModel: onTaskStackChangedBackground
+01-30 00:16:13.722  1426  3022 D InputDispatcher: Focus request (0): f23eed9 com.example.sportmatch/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity but waiting because NOT_VISIBLE
+01-30 00:16:13.726  1426  1485 W WindowManager: lockNow pending, ignore updating lockscreen timeout
+01-30 00:16:13.733  1426  1485 I SemDvfsHyPerManager: acquire hyper - AMS_RESUME_TAIL/1426@22, type = -999
+01-30 00:16:13.734  1426  1485 I SemDvfsHyPerManager: acquire hyper - AMS_ACT_LAZY/1426@23, type = -999
+01-30 00:16:13.734  1037  1116 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 1049098  [1426 / 22]    HINT : AMS_RESUME_TAIL    list :
+01-30 00:16:13.735  1037  1116 I HYPER-HAL: [RequestManager.cpp]releaseLocked(): Released ID : 1047649
+01-30 00:16:13.736  1426  1485 W WindowManager: lockNow pending, ignore updating lockscreen timeout
+01-30 00:16:13.737  1426  1479 I ActivityTaskManager: Displayed com.example.sportmatch/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity: +139ms
+01-30 00:16:13.740  1100  1331 I SurfaceFlinger: id=113853 createSurf flag=80000, b01fb1c ActivityRecordInputSink com.example.sportmatch/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity#113853
+01-30 00:16:13.740 15268 26247 V FA-SVC  : Logging event: origin=auto,name=screen_view(_vs),params=Bundle[{ga_event_origin(_o)=auto, ga_previous_class(_pc)=LoginActivity, ga_previous_id(_pi)=8787742430023688842, ga_screen_class(_sc)=EmptyActivity, ga_screen_id(_si)=8787742430023688843}]
+01-30 00:16:13.740  3326  3326 E pageboostd: Received HALT command code 2
+01-30 00:16:13.749  1426  1485 W WindowManager: lockNow pending, ignore updating lockscreen timeout
+01-30 00:16:13.749 15268 26247 V FA-SVC  : Upload scheduled in approximately ms: 1592076
+01-30 00:16:13.749 15268 26247 V FA-SVC  : Unscheduling upload
+01-30 00:16:13.750  1100  1100 I Layer   : Layer [com.example.sportmatch/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity$_26157#113850] hidden!! flag(0)
+01-30 00:16:13.750  1100  1100 I Layer   : Layer [com.example.sportmatch/com.example.sportmatch.LoginActivity$_26157#113843] hidden!! flag(1)
+01-30 00:16:13.758  1426  2959 D InputDispatcher: Focus entered window (0): f23eed9 com.example.sportmatch/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity
+01-30 00:16:13.760  1100  1100 D SurfaceFlinger: Display 4633128672291735932 HWC layers:
+01-30 00:16:13.760  1100  1100 D SurfaceFlinger:      DEVICE | 0xb400007704b5a650 | 0102 | RGBA_8888    |    0.0    0.0 1080.0 2400.0 |    0    0 1080 2400 | com.example.sportmatch/androidx.test[...]yInvoker$EmptyActivity$_26157#113850
+01-30 00:16:13.760  1100  1100 D SurfaceFlinger:      DEVICE | 0xb400007704b5ff90 | 0100 | RGBA_8888    |    0.0    0.0 1080.0   88.0 |    0    0 1080   88 | StatusBar$_2448#94
+01-30 00:16:13.760  1100  1100 D SurfaceFlinger:      DEVICE | 0xb400007704b6bad0 | 0100 | RGBA_8888    |    0.0    0.0   67.0  342.0 |    0 1504   67 1846 | com.samsung.android.app.cocktailbars[...]vice.CocktailBarService$_5767#113823
+01-30 00:16:13.760  1100  1100 D SurfaceFlinger:      DEVICE | 0xb400007704b65fd0 | 0100 | RGBA_8888    |    0.0    0.0 1080.0  135.0 |    0 2265 1080 2400 | NavigationBar0$_2448#88
+01-30 00:16:13.760  1100  1100 D SurfaceFlinger:
+01-30 00:16:13.760  1100  1331 I SurfaceFlinger: id=113845 Removed Surface(name=719c3fd NavigationBar0)/@0xe9d3c89 - animation-leash of insets_animation#113845 (236)
+01-30 00:16:13.760  1100  1331 I SurfaceFlinger: id=113844 Removed Surface(name=c2abcc7 StatusBar)/@0x2f665b7 - animation-leash of insets_animation#113844 (236)
+01-30 00:16:13.761 26157 26157 I ViewRootImpl@97f4791[LoginActivity]: handleAppVisibility mAppVisible = true visible = false
+01-30 00:16:13.762 26157 26157 I ViewRootImpl@97f4791[LoginActivity]: stopped(true) old = false
+01-30 00:16:13.762 26157 26157 I ViewRootImpl@97f4791[LoginActivity]: WindowStopped on com.example.sportmatch/com.example.sportmatch.LoginActivity set to true
+01-30 00:16:13.763 15268 26247 V FA-SVC  : Scheduling upload, millis: 1592076
+01-30 00:16:13.764 26157 26157 D LifecycleMonitor: Lifecycle status change: com.example.sportmatch.LoginActivity@97f042 in: STOPPED
+01-30 00:16:13.764 26157 26157 V ActivityScenario: Update currentActivityStage to STOPPED, currentActivity=com.example.sportmatch.LoginActivity@97f042
+01-30 00:16:13.765 15268 26247 V FA-SVC  : Background event processing time, ms: 26
+01-30 00:16:13.766 26157 26157 I MSHandlerLifeCycle: removeMultiSplitHandler: no exist. decor=DecorView@2a12554[LoginActivity]
+01-30 00:16:13.767  1100  1100 I Layer   : id=113844 Destroyed Surface(name=c2abcc7 StatusBar)/@0x2f665b7 - animation-leash of insets_animation#113844
+01-30 00:16:13.767  1100  1100 I Layer   : id=113845 Destroyed Surface(name=719c3fd NavigationBar0)/@0xe9d3c89 - animation-leash of insets_animation#113845
+01-30 00:16:13.769 26157 26157 D LifecycleMonitor: Lifecycle status change: com.example.sportmatch.LoginActivity@97f042 in: DESTROYED
+01-30 00:16:13.769 26157 26157 V ActivityScenario: Update currentActivityStage to DESTROYED, currentActivity=null
+01-30 00:16:13.773 31061 31061 V InlineSuggestionRenderService: handleDestroySuggestionViews called for 0:1373784566
+01-30 00:16:13.774 26157 26157 I MSHandlerLifeCycle: removeMultiSplitHandler: no exist. decor=DecorView@2a12554[LoginActivity]
+01-30 00:16:13.775 26157 26204 D OpenGLRenderer: setSurface called with nullptr
+01-30 00:16:13.775 26157 26204 D OpenGLRenderer: setSurface() destroyed EGLSurface
+01-30 00:16:13.775 26157 26204 D OpenGLRenderer: destroyEglSurface
+01-30 00:16:13.777 26157 26157 I ViewRootImpl@97f4791[LoginActivity]: dispatchDetachedFromWindow
+01-30 00:16:13.777  1426  2959 D InputTransport: Input channel destroyed: '5a12873', fd=1149
+01-30 00:16:13.777  1426  2959 W InputManager-JNI: Input channel object '5a12873 com.example.sportmatch/com.example.sportmatch.LoginActivity (client)' was disposed without first being removed with the input manager!
+01-30 00:16:13.777  1426  2959 D InputTransport: Input channel destroyed: '5a12873', fd=1151
+01-30 00:16:13.778  1100  1336 I SurfaceFlinger: id=113854 createSurf flag=24004, Surface(name=1e49913 InputMethod)/@0x940201a - animation-leash of insets_animation#113854
+01-30 00:16:13.781  1426  2959 W WindowManager: lockNow pending, ignore updating lockscreen timeout
+01-30 00:16:13.782  8039 25847 W NetworkScheduler: Error inserting flex_time=1592000 job_id=-1 period=3185000 source=16 requires_charging=0 preferred_network_type=1 target_class=com.google.android.gms.measurement.PackageMeasurementTaskService user_id=0 target_package=com.google.android.gms tag=Measurement.PackageMeasurementTaskService.UPLOAD_TASK_TAG task_type=0 required_idleness_state=0 service_kind=0 source_version=240213000 persistence_level=1 preferred_charging_state=1 required_network_type=0 runtime=1706566573777 retry_strategy={"maximum_backoff_seconds":{"3600":0},"initial_backoff_seconds":{"30":0},"retry_policy":{"0":0}} last_runtime=0 [CONTEXT service_id=218 ]
+01-30 00:16:13.782  8039 25847 W NetworkScheduler: android.database.sqlite.SQLiteConstraintException: UNIQUE constraint failed: pending_ops.tag, pending_ops.target_class, pending_ops.target_package, pending_ops.user_id (code 2067 SQLITE_CONSTRAINT_UNIQUE[2067])
+01-30 00:16:13.782  8039 25847 W NetworkScheduler: 	at android.database.sqlite.SQLiteConnection.nativeExecuteForLastInsertedRowId(Native Method)
+01-30 00:16:13.782  8039 25847 W NetworkScheduler: 	at android.database.sqlite.SQLiteConnection.executeForLastInsertedRowId(SQLiteConnection.java:1275)
+01-30 00:16:13.782  8039 25847 W NetworkScheduler: 	at android.database.sqlite.SQLiteSession.executeForLastInsertedRowId(SQLiteSession.java:790)
+01-30 00:16:13.782  8039 25847 W NetworkScheduler: 	at android.database.sqlite.SQLiteStatement.executeInsert(SQLiteStatement.java:89)
+01-30 00:16:13.782  8039 25847 W NetworkScheduler: 	at android.database.sqlite.SQLiteDatabase.insertWithOnConflict(SQLiteDatabase.java:2410)
+01-30 00:16:13.782  8039 25847 W NetworkScheduler: 	at android.database.sqlite.SQLiteDatabase.insertOrThrow(SQLiteDatabase.java:2305)
+01-30 00:16:13.782  8039 25847 W NetworkScheduler: 	at crnw.d(:com.google.android.gms@240213038@24.02.13 (190400-599553831):743)
+01-30 00:16:13.782  8039 25847 W NetworkScheduler: 	at crmd.n(:com.google.android.gms@240213038@24.02.13 (190400-599553831):29)
+01-30 00:16:13.782  8039 25847 W NetworkScheduler: 	at crmd.u(:com.google.android.gms@240213038@24.02.13 (190400-599553831):362)
+01-30 00:16:13.782  8039 25847 W NetworkScheduler: 	at crmd.h(:com.google.android.gms@240213038@24.02.13 (190400-599553831):51)
+01-30 00:16:13.782  8039 25847 W NetworkScheduler: 	at crhi.run(:com.google.android.gms@240213038@24.02.13 (190400-599553831):72)
+01-30 00:16:13.782  8039 25847 W NetworkScheduler: 	at akki.c(:com.google.android.gms@240213038@24.02.13 (190400-599553831):50)
+01-30 00:16:13.782  8039 25847 W NetworkScheduler: 	at akki.run(:com.google.android.gms@240213038@24.02.13 (190400-599553831):76)
+01-30 00:16:13.782  8039 25847 W NetworkScheduler: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+01-30 00:16:13.782  8039 25847 W NetworkScheduler: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+01-30 00:16:13.782  8039 25847 W NetworkScheduler: 	at akpt.run(:com.google.android.gms@240213038@24.02.13 (190400-599553831):8)
+01-30 00:16:13.782  8039 25847 W NetworkScheduler: 	at java.lang.Thread.run(Thread.java:1012)
+01-30 00:16:13.783 26250 26250 I DIAGMON_SDK[605065]: DiagMonAgent type: 2
+01-30 00:16:13.783  1100  1100 I Layer   : id=113843 removeFromCurrentState com.example.sportmatch/com.example.sportmatch.LoginActivity$_26157#113843 (235)
+01-30 00:16:13.783 26157 26157 D InputTransport: Input channel destroyed: '5a12873', fd=110
+01-30 00:16:13.783 26250 26250 I DIAGMON_SDK[605065][r7xeailczv] : generated SR object
+01-30 00:16:13.784  1100  1100 I Layer   : id=113842 removeFromCurrentState 5a12873 com.example.sportmatch/com.example.sportmatch.LoginActivity#113842 (235)
+01-30 00:16:13.784  1100  1100 I Layer   : id=113847 removeFromCurrentState Surface(name=1e49913 InputMethod)/@0x940201a - animation-leash of insets_animation#113847 (235)
+01-30 00:16:13.784  1100  1100 I Layer   : id=290 removeFromCurrentState 1e49913 InputMethod#290 (235)
+01-30 00:16:13.784  1100  1100 I Layer   : id=290 addToCurrentState 1e49913 InputMethod#290 (235)
+01-30 00:16:13.784  1100  1100 I SurfaceFlinger: id=113842 Removed 5a12873 com.example.sportmatch/com.example.sportmatch.LoginActivity#113842 (235)
+01-30 00:16:13.784  1100  1100 I SurfaceFlinger: id=113847 Removed Surface(name=1e49913 InputMethod)/@0x940201a - animation-leash of insets_animation#113847 (235)
+01-30 00:16:13.784  1100  1100 I SurfaceFlinger: id=113843 Removed com.example.sportmatch/com.example.sportmatch.LoginActivity$_26157#113843 (235)
+01-30 00:16:13.785  1100  1100 I Layer   : id=113842 Destroyed 5a12873 com.example.sportmatch/com.example.sportmatch.LoginActivity#113842
+01-30 00:16:13.786  1100  1100 I Layer   : id=113843 Destroyed com.example.sportmatch/com.example.sportmatch.LoginActivity$_26157#113843
+01-30 00:16:13.787  1426  4482 D InputDispatcher: Focused application(0): ActivityRecord{661aac4 u0 com.sec.android.app.launcher/.activities.LauncherActivity} t16917}
+01-30 00:16:13.787  1100  1100 I Layer   : id=113847 Destroyed Surface(name=1e49913 InputMethod)/@0x940201a - animation-leash of insets_animation#113847
+01-30 00:16:13.790  1426  4482 W WindowManager: lockNow pending, ignore updating lockscreen timeout
+01-30 00:16:13.792  1426  2341 D AS.MultiSoundManager: mForegroundUid = 10130
+01-30 00:16:13.793 26157 26157 I ViewRootImpl@cace44a[InstrumentationActivityInvoker$EmptyActivity]: MSG_WINDOW_FOCUS_CHANGED 1 0
+01-30 00:16:13.793 26157 26157 I ViewRootImpl@cace44a[InstrumentationActivityInvoker$EmptyActivity]: mThreadedRenderer.initializeIfNeeded()#2 mSurface={isValid=true 0xb4000072bb6bc730}
+01-30 00:16:13.794 26157 26157 D InputMethodManager: startInputInner - Id : 0
+01-30 00:16:13.794 26157 26157 I InputMethodManager: startInputInner - mService.startInputOrWindowGainedFocus
+01-30 00:16:13.795  1426  1485 W WindowManager: lockNow pending, ignore updating lockscreen timeout
+01-30 00:16:13.798  1100  1152 I SurfaceFlinger: id=113737 Removed Surface(name=1e49913 InputMethod)/@0x940201a - animation-leash of insets_animation#113737 (232)
+01-30 00:16:13.798  1426  4477 D InputMethodManagerService: mDesktopModeManager null!
+01-30 00:16:13.798  1426  4477 V InputMethodManagerService: getDisplayIdOfInputMethodWindowToBeAdded: displayId=0
+01-30 00:16:13.798  1426  4477 D InputMethodManagerService: isImeSwitcherDisabledPackage : false
+01-30 00:16:13.800  1100  1100 I SurfaceFlinger: [f23eed9 com.example.sportmatch/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity#113849] FrameRatePriority: -1
+01-30 00:16:13.800  1100  1100 I Layer   : id=113737 Destroyed Surface(name=1e49913 InputMethod)/@0x940201a - animation-leash of insets_animation#113737
+01-30 00:16:13.801  1426  4477 D InputMethodManagerService: checkDisplayOfStartInputAndUpdateKeyboard: displayId=0, mFocusedDisplayId=0
+01-30 00:16:13.801  1426  4477 D InputTransport: Input channel constructed: 'ClientS', fd=1149
+01-30 00:16:13.801  1426  4477 D InputTransport: Input channel destroyed: 'ClientS', fd=1149
+01-30 00:16:13.802  6115  6115 I HBD     : HoneyBoardService onFinishInput
+01-30 00:16:13.803  6115  6115 I HBD     : a IC have been unbinding,  RemoteInputConnection{idHash=#b353bfe}
+01-30 00:16:13.803  6115  6115 I HBD     : HoneyBoardService [PF_CL][onFinishInput]  1 ms
+01-30 00:16:13.803 26157 26157 D LifecycleMonitor: Lifecycle status change: androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@36d19a8 in: PAUSED
+01-30 00:16:13.803  6115  6115 I HBD     : HoneyBoardService [IMI] onStartInput - caller pid : 26157 , caller uid : 10438
+01-30 00:16:13.803  6115  6115 I HBD     : j updateConfigs
+01-30 00:16:13.803  6115  6115 I HBD     : j isEnabledNightMode : true
+01-30 00:16:13.804  6115  6115 I HBD     : a IC have been binding, RemoteInputConnection{idHash=#b353bfe}
+01-30 00:16:13.804  6115  6115 I HBD     : h [EditorInputType]setPrivateImeOptionsToTable privateImeOptions ( null )
+01-30 00:16:13.804  6115  6115 I HBD     : b incognitoMode : false
+01-30 00:16:13.804  6115  6115 I HBD     : b needOff = true , isForceOff = false, isNullInputClass : true
+01-30 00:16:13.804 26157 26157 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.example.sportmatch/.LoginActivity }, activity.getIntent()=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.example.sportmatch/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity }, activity=androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@36d19a8
+01-30 00:16:13.804  1100  1152 I SurfaceFlinger: id=113841 Removed bc78e22 ActivityRecordInputSink com.example.sportmatch/.LoginActivity#113841 (231)
+01-30 00:16:13.805 25557 25557 I TopTaskTracker: onTaskMovedToFront : taskId = 16917
+01-30 00:16:13.806  6115  6115 I HBD     : h getDefaultInputRange : UNKNOWN
+01-30 00:16:13.806  6115  6115 I HBD     : h getDefaultInputRange : UNKNOWN
+01-30 00:16:13.807  6115  6115 I HBD     : h getDefaultInputRange : UNKNOWN
+01-30 00:16:13.807  1426  4247 I SemDvfsHyPerManager: acquire hyper - AMS_APP_HOME/1426@19, type = -999
+01-30 00:16:13.807  1037  1116 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 1044754  [1426 / 19]    HINT : AMS_APP_HOME    list :
+01-30 00:16:13.809  5704  5704 I SemDvfsHyPerManager: acquire hyper - APP_START_HOME/5704@17, type = -999
+01-30 00:16:13.809  1037  1116 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 16367798  [5704 / 17]    HINT : APP_START    list : [KERNEL_APP_START_NOTIFY / 0] [TIMEOUT / 1500]
+01-30 00:16:13.812 25557 25557 I ViewRootImpl@7304e6b[LauncherActivity]: handleAppVisibility mAppVisible = false visible = true
+01-30 00:16:13.813 28615 28615 I ViewRootImpl@ec52b01[LauncherActivity]: handleAppVisibility mAppVisible = false visible = true
+01-30 00:16:13.813 26157 26198 V FA      : Screen exposed for less than 1000 ms. Event not sent. time: 150
+01-30 00:16:13.814 26250 26250 I [PASS][CMN]d: clearData LruCache[maxSize=32768,hits=0,misses=0,hitRate=0%]
+01-30 00:16:13.815 25557 25557 I ViewRootImpl@7304e6b[LauncherActivity]: stopped(false) old = true
+01-30 00:16:13.815 25557 25557 I ViewRootImpl@7304e6b[LauncherActivity]: WindowStopped on com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity set to false
+01-30 00:16:13.816  1100  1100 D SurfaceFlinger: [input] inputWindowCommands.focusRequests size is 1
+01-30 00:16:13.816  1426  4247 W WindowManager: lockNow pending, ignore updating lockscreen timeout
+01-30 00:16:13.818  6115  6115 I HBD     : b needOff = true , isForceOff = false, isNullInputClass : true
+01-30 00:16:13.818  6115  6115 I HBD     : b update cached prediction status : false
+01-30 00:16:13.818  6115  6115 I HBD     : h getDefaultInputRange : UNKNOWN
+01-30 00:16:13.818  6115  6115 I HBD     : a currentState : 0
+01-30 00:16:13.818  6115  6115 I HBD     : a [UpdatePolicy] [post] a: 0 cl: 65538 kit: [0/0] vt: 0 ir: 1
+01-30 00:16:13.819  6115  6115 I HBD     : a [NRIC] resetNoResponseState
+01-30 00:16:13.819  6115  6115 I HBD     : b needOff = true , isForceOff = false, isNullInputClass : true
+01-30 00:16:13.819  6115  6115 I HBD     : b update cached prediction status : false
+01-30 00:16:13.819  1100  1210 D SurfaceFlinger: [input] setFocusedWindow: <null>
+01-30 00:16:13.820  6115  6115 I HBD     : HoneyBoardService [PF_OP][onStartInput]  17 ms
+01-30 00:16:13.820  6115  6115 I InputMethodService: removeImeSurface
+01-30 00:16:13.821 28615 28615 I ViewRootImpl@ec52b01[LauncherActivity]: performTraversals mFirst=false windowShouldResize=false viewVisibilityChanged=true mForceNextWindowRelayout=false params=null
+01-30 00:16:13.822  1426  2959 D InputDispatcher: Focus left window (0): f23eed9 com.example.sportmatch/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity
+01-30 00:16:13.822  6115  6115 I MSHandlerLifeCycle: check: return. pkg=com.samsung.android.honeyboard isActivity=false callers=com.android.internal.policy.DecorView.setVisibility:4412 android.app.Dialog.hide:767 android.inputmethodservice.InputMethodService.removeImeSurface:1290 android.inputmethodservice.InputMethodService.scheduleImeSurfaceRemoval:1279 android.inputmethodservice.InputMethodService.-$$Nest$mscheduleImeSurfaceRemoval:0
+01-30 00:16:13.822  6115  6115 I MSHandlerLifeCycle: removeMultiSplitHandler: no exist. decor=DecorView@f7681bd[InputMethod]
+01-30 00:16:13.823  1100  1336 I SurfaceFlinger: id=113855 createSurf flag=24004, Surface(name=1e49913 InputMethod)/@0x940201a - animation-leash of insets_animation#113855
+01-30 00:16:13.824 26250 26250 I [PASS][CMN]d: clearData LruCache[maxSize=32768,hits=0,misses=0,hitRate=0%]
+01-30 00:16:13.825 25557 25557 I Launcher: !@Boot_DEBUG: Launcher.onStart()
+01-30 00:16:13.825 25557 25557 I Launcher: !@Boot_EBS_D: Launcher.onStart()
+01-30 00:16:13.825 25557 25557 I BaseActivity: addActivityFlags, flags : 1
+01-30 00:16:13.825 25557 25557 W LauncherAppWidgetHost: setShouldListenFlag, mFlags:2 flag:start on:true isFront:false
+01-30 00:16:13.825 25557 25557 W Launcher: onStart isListening : false isLoading false
+01-30 00:16:13.826 26157 26198 V FA      : Activity paused, time: 506161768
+01-30 00:16:13.827  1426  1485 W WindowManager: lockNow pending, ignore updating lockscreen timeout
+01-30 00:16:13.827 26157 26157 I ViewRootImpl@cace44a[InstrumentationActivityInvoker$EmptyActivity]: MSG_WINDOW_FOCUS_CHANGED 0 0
+01-30 00:16:13.828  1426  4479 V WindowManager: Relayout Window{aa8570e u0 com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity}: viewVisibility=0 req=1080x2400 d0
+01-30 00:16:13.828  1100  1152 I SurfaceFlinger: id=113856 createSurf flag=40004, com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity$_28615#113856
+01-30 00:16:13.830  1426  4479 W WindowManager: lockNow pending, ignore updating lockscreen timeout
+01-30 00:16:13.831  1426  4479 V WindowManager: Relayout hash=aa8570e, pid=28615, syncId=-1: mAttrs={(0,0)(fillxfill) gr=LEFT CENTER_HORIZONTAL sim={adjust=resize} layoutInDisplayCutoutMode=shortEdges ty=DRAWN_APPLICATION fmt=TRANSPARENT wanim=0x10302f4 alpha=0.0
+01-30 00:16:13.831  1426  4479 V WindowManager:   fl=81850118
+01-30 00:16:13.831  1426  4479 V WindowManager:   pfl=16020040
+01-30 00:16:13.831  1426  4479 V WindowManager:   bhv=DEFAULT
+01-30 00:16:13.831  1426  4479 V WindowManager:   fitSides=
+01-30 00:16:13.831  1426  4479 V WindowManager:  dimAmount=0.0 screenDimDuration=200000 naviIconColor=0}
+01-30 00:16:13.832 28615 28615 I ViewRootImpl@ec52b01[LauncherActivity]: updateBlastSurfaceIfNeeded mBlastBufferQueue=null isSameSurfaceControl=false
+01-30 00:16:13.833 28615 28615 I BLASTBufferQueue: new BLASTBufferQueue, mName= ViewRootImpl@ec52b01[LauncherActivity] mNativeObject= 0xb40000722b6adcd0 sc.mNativeObject= 0xb4000071bb852af0 caller= android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:2909 android.view.ViewRootImpl.relayoutWindow:9847 android.view.ViewRootImpl.performTraversals:3884 android.view.ViewRootImpl.doTraversal:3116 android.view.ViewRootImpl$TraversalRunnable.run:10885 android.view.Choreographer$CallbackRecord.run:1301 android.view.Choreographer$CallbackRecord.run:1309 android.view.Choreographer.doCallbacks:923 android.view.Choreographer.doFrame:852 android.view.Choreographer$FrameDisplayEventReceiver.run:1283
+01-30 00:16:13.833 28615 28615 I BLASTBufferQueue: update, w= 1080 h= 2400 mName = ViewRootImpl@ec52b01[LauncherActivity] mNativeObject= 0xb40000722b6adcd0 sc.mNativeObject= 0xb4000071bb852af0 format= -2 caller= android.graphics.BLASTBufferQueue.<init>:84 android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:2909 android.view.ViewRootImpl.relayoutWindow:9847 android.view.ViewRootImpl.performTraversals:3884 android.view.ViewRootImpl.doTraversal:3116 android.view.ViewRootImpl$TraversalRunnable.run:10885
+01-30 00:16:13.833  1100  1100 I Layer   : id=113836 removeFromCurrentState ActivityRecord{19210b3 u0 com.example.sportmatch/.LoginActivity} t17221}#113836 (233)
+01-30 00:16:13.833  1100  1100 I Layer   : id=113841 removeFromCurrentState bc78e22 ActivityRecordInputSink com.example.sportmatch/.LoginActivity#113841 (233)
+01-30 00:16:13.833 28615 28615 I ViewRootImpl@ec52b01[LauncherActivity]: Relayout returned: old=(0,0,1080,2400) new=(0,0,1080,2400) req=(1080,2400)0 dur=11 res=0x3 s={true 0xb4000072bb6f3cd0} ch=true seqId=0
+01-30 00:16:13.833  1100  1100 I Layer   : id=113854 removeFromCurrentState Surface(name=1e49913 InputMethod)/@0x940201a - animation-leash of insets_animation#113854 (233)
+01-30 00:16:13.834  1100  1100 I SurfaceFlinger: id=113836 Removed ActivityRecord{19210b3 u0 com.example.sportmatch/.LoginActivity} t17221}#113836 (233)
+01-30 00:16:13.834 28615 10269 D OpenGLRenderer: eglCreateWindowSurface
+01-30 00:16:13.834 28615 28615 I ViewRootImpl@ec52b01[LauncherActivity]: mThreadedRenderer.initialize() mSurface={isValid=true 0xb4000072bb6f3cd0} hwInitialized=true
+01-30 00:16:13.834 28615 28615 I ViewRootImpl@ec52b01[LauncherActivity]: reportNextDraw android.view.ViewRootImpl.performTraversals:4438 android.view.ViewRootImpl.doTraversal:3116 android.view.ViewRootImpl$TraversalRunnable.run:10885 android.view.Choreographer$CallbackRecord.run:1301 android.view.Choreographer$CallbackRecord.run:1309
+01-30 00:16:13.834 28615 28615 I ViewRootImpl@ec52b01[LauncherActivity]: Setup new sync id=81
+01-30 00:16:13.834 28615 28615 I ViewRootImpl@ec52b01[LauncherActivity]: Setting syncFrameCallback
+01-30 00:16:13.834 28615 28615 I ViewRootImpl@ec52b01[LauncherActivity]: registerCallbacksForSync syncBuffer=false
+01-30 00:16:13.834  1100  1100 I Layer   : id=113836 Destroyed ActivityRecord{19210b3 u0 com.example.sportmatch/.LoginActivity} t17221}#113836
+01-30 00:16:13.835  1100  1100 I Layer   : id=113841 Destroyed bc78e22 ActivityRecordInputSink com.example.sportmatch/.LoginActivity#113841
+01-30 00:16:13.836 26157 26196 I TestRunner: finished: testLoginComponentsDisplayed(com.example.sportmatch.LoginTest)
