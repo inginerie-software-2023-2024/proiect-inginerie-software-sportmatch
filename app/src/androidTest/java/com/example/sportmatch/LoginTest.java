@@ -1,48 +1,41 @@
 package com.example.sportmatch;
 
-import static androidx.test.espresso.intent.Intents.intended;
-import static androidx.test.espresso.intent.matcher.IntentMatchers.hasComponent;
-import static androidx.test.espresso.matcher.ViewMatchers.withId;
-
-import androidx.test.core.app.ActivityScenario;
 import androidx.test.espresso.Espresso;
 import androidx.test.espresso.action.ViewActions;
+import androidx.test.espresso.intent.rule.IntentsTestRule;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 
-import com.google.firebase.auth.FirebaseAuth;
-
-import org.junit.After;
-import org.junit.Before;
+import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
+import static androidx.test.espresso.assertion.ViewAssertions.matches;
+import static androidx.test.espresso.intent.Intents.intended;
+import static androidx.test.espresso.intent.matcher.IntentMatchers.hasComponent;
+import static androidx.test.espresso.matcher.ViewMatchers.isDisplayed;
+import static androidx.test.espresso.matcher.ViewMatchers.withId;
+
 @RunWith(AndroidJUnit4.class)
 public class LoginTest {
-    @Before
-    public void setUp() {
-        // initialize FirebaseAuth for testing
-        FirebaseAuth.getInstance().useEmulator("10.0.2.2", 9099);
+
+    @Rule
+    public IntentsTestRule<LoginActivity> loginActivityRule = new IntentsTestRule<>(LoginActivity.class);
+
+    @Test
+    public void testLoginComponents() {
+
+        Espresso.onView(withId(R.id.activity_main_usernameEditText)).check(matches(isDisplayed()));
+        Espresso.onView(withId(R.id.activity_main_passwordEditText)).check(matches(isDisplayed()));
+        Espresso.onView(withId(R.id.button_login)).check(matches(isDisplayed()));
     }
 
     @Test
-    public void loginWithValidCredentials() {
-
-        ActivityScenario.launch(LoginActivity.class);
-
-        Espresso.onView(withId(R.id.activity_main_usernameEditText))
-                .perform(ViewActions.typeText("buna@yahoo.com"));
-        Espresso.onView(withId(R.id.activity_main_passwordEditText))
-                .perform(ViewActions.typeText("123456"));
+    public void testLoginWithValidCredentials() {
+        Espresso.onView(withId(R.id.activity_main_usernameEditText)).perform(ViewActions.typeText("buna@yahoo.com"));
+        Espresso.onView(withId(R.id.activity_main_passwordEditText)).perform(ViewActions.typeText("123456"));
 
         Espresso.onView(withId(R.id.button_login)).perform(ViewActions.click());
-
-
         intended(hasComponent(BottomNavActivity.class.getName()));
     }
 
-    @After
-    public void tearDown() {
-        // sign out after testing
-        FirebaseAuth.getInstance().signOut();
-    }
 }
