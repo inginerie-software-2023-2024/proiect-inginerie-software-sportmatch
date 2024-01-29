@@ -42,7 +42,7 @@
             android:layout_marginLeft="10dp"
             android:layout_toRightOf="@+id/profile_image"
             android:includeFontPadding="false"
-            android:text="Petrica Cristi"
+            android:text="Adam Emanuel"
             android:textColor="#ffff"
             android:fontFamily="sans-serif-medium"
             android:textSize="40sp" />
@@ -82,7 +82,7 @@
             android:layout_marginLeft="10dp"
             android:layout_toRightOf="@+id/profile_image"
             android:includeFontPadding="false"
-            android:text="petrica69@gmail.com"
+            android:text="adamemi02@gmail.com"
             android:textColor="#ffff"
             android:textSize="20dp" /> -->
 
@@ -101,12 +101,12 @@
             android:layout_margin="10dp"
             android:layout_weight="1"
             android:layout_width="0dp"
-            app:cardBackgroundColor="@color/verde4"
+            app:cardBackgroundColor="@color/verde5"
             app:cardElevation="10dp">
             <RelativeLayout
                 android:layout_height="match_parent"
                 android:layout_width="match_parent"
-                android:background="@color/verde5"
+                android:background="@color/verde4"
                 android:padding="5dp">
 
                 <ImageView
