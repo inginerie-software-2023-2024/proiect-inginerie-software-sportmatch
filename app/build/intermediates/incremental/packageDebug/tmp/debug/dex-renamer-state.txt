@@ -1,9 +1,9 @@
-#Thu Jan 25 20:04:40 EET 2024
-base.0=C\:\\Bianca\\Facultate\\an 3\\sem1\\IS\\proiect-inginerie-software-sportmatch\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
-base.1=C\:\\Bianca\\Facultate\\an 3\\sem1\\IS\\proiect-inginerie-software-sportmatch\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
-base.2=C\:\\Bianca\\Facultate\\an 3\\sem1\\IS\\proiect-inginerie-software-sportmatch\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\3\\classes.dex
-base.3=C\:\\Bianca\\Facultate\\an 3\\sem1\\IS\\proiect-inginerie-software-sportmatch\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\8\\classes.dex
-base.4=C\:\\Bianca\\Facultate\\an 3\\sem1\\IS\\proiect-inginerie-software-sportmatch\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
+#Mon Jan 29 19:12:58 EET 2024
+base.0=C\:\\FACULTATE\\Anul III\\proiect-inginerie-software-sportmatch\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.1=C\:\\FACULTATE\\Anul III\\proiect-inginerie-software-sportmatch\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.2=C\:\\FACULTATE\\Anul III\\proiect-inginerie-software-sportmatch\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\3\\classes.dex
+base.3=C\:\\FACULTATE\\Anul III\\proiect-inginerie-software-sportmatch\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\8\\classes.dex
+base.4=C\:\\FACULTATE\\Anul III\\proiect-inginerie-software-sportmatch\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
 path.0=classes.dex
 path.1=0/classes.dex
 path.2=3/classes.dex

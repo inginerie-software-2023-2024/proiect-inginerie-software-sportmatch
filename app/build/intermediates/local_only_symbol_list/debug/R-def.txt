@@ -191,6 +191,7 @@ id bottons
 id btnConfirm
 id btnDelete
 id btn_close
+id button
 id buttonCEvent
 id buttonEEvent
 id buttonToChat
@@ -251,6 +252,7 @@ id editEventPlayers
 id editEventSport
 id editEventTime
 id editEventTimeEdt
+id editText
 id editTextMessage
 id editTitle
 id email_profile
@@ -266,6 +268,7 @@ id full_name_profile
 id fullname_field
 id googleLogo
 id greenBackground
+id history
 id hometext
 id imageView
 id item_image
@@ -380,6 +383,7 @@ layout category_row_items
 layout content_choose_avatar
 layout content_menu
 layout date_item
+layout for_unit_test_activity
 layout fragment_first
 layout fragment_second
 layout item_message
@@ -416,6 +420,8 @@ string google_crash_reporting_api_key
 string google_storage_bucket
 string hello_first_fragment
 string hello_second_fragment
+string input_text_hint
+string new_text
 string next
 string previous
 string project_id
@@ -423,6 +429,7 @@ string register_text
 string second_fragment_label
 string title_activity_maps
 string title_activity_menu
+string update_text
 style DialogActivityTheme
 style SlideActivityAnimation
 style Theme.SportMatch

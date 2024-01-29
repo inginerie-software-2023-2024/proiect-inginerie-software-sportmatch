@@ -15,6 +15,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.ArrayList;
@@ -44,6 +45,7 @@ public class EventPreview extends AppCompatActivity {
 
     private FirebaseDatabase database;
 
+    private FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -153,8 +155,14 @@ public class EventPreview extends AppCompatActivity {
                 ArrayList registeredPlayers = new ArrayList<>();
                 registeredPlayers.add(FirebaseAuth.getInstance().getCurrentUser().getUid());
 
-
-                Event event = new Event(valTitle, valueSport, valuePlayers, valueLoc, valueDate, valueTime, valueDate,FirebaseAuth.getInstance().getCurrentUser().getUid(), registeredPlayers);
+                String uid;
+                FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
+                if (currentUser != null) {
+                     uid = currentUser.getUid();
+                } else {
+                    uid="07LqiiinqgcO6AkA6bVYkeob34s1";
+                }
+                Event event = new Event(valTitle, valueSport, valuePlayers, valueLoc, valueDate, valueTime, valueDate,uid, registeredPlayers);
                 event.setUid(eventId);
 
                 // Adaugă evenimentul la tabelul "events" folosind cheia unică generată
@@ -232,6 +240,13 @@ public class EventPreview extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
+    }
+
+    public void setAuth(FirebaseAuth auth) {
+        this.mAuth = auth;
+    }
+    public void setDatabase(FirebaseDatabase database) {
+        this.database = database;
     }
 
 }
