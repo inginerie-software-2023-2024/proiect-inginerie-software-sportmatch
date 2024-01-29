@@ -20,4 +20,10 @@
     <string name="title_activity_maps">MapsActivity</string>
     <string name="register_text">Ready to embrace the thrill of friendly matches and meet fellow sports enthusiasts?                                                                Join our community today!</string>
 
+
+
+
+    <string name="update_text">Update history</string>
+    <string name="input_text_hint">Text to add</string>
+    <string name="new_text">Empty log</string>
 </resources>

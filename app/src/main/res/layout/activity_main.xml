@@ -7,41 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-<!--    unit testing-->
-    <TextView
-        android:id="@+id/history"
-        android:visibility="gone"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:text="@string/new_text"
-        android:minLines="4"
-        android:layout_weight="1"/>
 
-    <LinearLayout
-        android:visibility="gone"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="bottom">
-
-        <EditText
-            android:id="@+id/editText"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:hint="@string/input_text_hint"
-            android:layout_weight="1"/>
-
-        <Button
-            android:id="@+id/button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/update_text"
-            android:layout_gravity="end"
-            android:onClick="updateHistory"/>
-    </LinearLayout>
-
-
-<!--    final unit testing -->
     <LinearLayout
         android:id="@+id/splashtext"
         android:elevation="6dp"

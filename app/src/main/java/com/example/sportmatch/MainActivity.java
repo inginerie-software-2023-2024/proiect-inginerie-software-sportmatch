@@ -57,14 +57,7 @@ public class MainActivity extends AppCompatActivity {
     int month = calendar.get(Calendar.MONTH) + 1;
     int day = calendar.get(Calendar.DAY_OF_MONTH);
 
-    //for unit testing
-    private static final String KEY_HISTORY_DATA = "KEY_HISTORY_DATA";
 
-    LogHistory mLogHistory;
-    boolean mIsHistoryEmpty = true;
-    private TextView mHistoryTextView;
-    private DateFormat mSimpleDateFormatter;
-    ///
 
 
     //TODO: DUPA SIGN IN SAU SIGN UP DE LEGAT CU FEEDUL
@@ -83,20 +76,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        ///for unit testing
-        mLogHistory = new LogHistory();
 
-        mHistoryTextView = ((TextView) findViewById(R.id.history));
-        mSimpleDateFormatter = new SimpleDateFormat("HH:mm:ss:SSS", Locale.getDefault());
-
-        if (savedInstanceState != null) {
-            // We've got a past state, apply it to the UI.
-            mLogHistory = savedInstanceState.getParcelable(KEY_HISTORY_DATA);
-            for (Pair<String, Long> entry : mLogHistory.getData()) {
-                appendEntryToView(entry.first, entry.second);
-            }
-        }
-        ///
 
 
         //sursa: https://www.youtube.com/watch?v=k_OJt71wEbc&t=260s&ab_channel=DesignWithHassan
@@ -358,53 +338,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-    //unit testing
 
-
-    /**
-     * Called when the user wants to append an entry to the history.
-     */
-    public void updateHistory(View view) {
-        // Get the text to add and timestamp.
-        EditText editText = (EditText) view.getRootView().findViewById(R.id.editText);
-        CharSequence textToAdd = editText.getText();
-        long timestamp = System.currentTimeMillis();
-
-        // Show it back to the user.
-        appendEntryToView(textToAdd.toString(), timestamp);
-
-        // Update the history.
-        mLogHistory.addEntry(textToAdd.toString(), timestamp);
-
-        // Reset the EditText.
-        editText.setText("");
-    }
-
-
-
-    @Override
-    protected void onRestoreInstanceState(Bundle savedInstanceState) {
-        super.onRestoreInstanceState(savedInstanceState);
-    }
-
-    @Override
-    protected void onSaveInstanceState(Bundle outState) {
-        super.onSaveInstanceState(outState);
-        outState.putParcelable(KEY_HISTORY_DATA, mLogHistory);
-    }
-
-    private void appendEntryToView(String text, long timestamp) {
-        Date date = new Date(timestamp);
-        if (!mIsHistoryEmpty) {
-            mHistoryTextView.append("\n");
-        } else {
-            mHistoryTextView.setText("");
-        }
-        
-        mHistoryTextView.append(String.format("%s [%s]", text, mSimpleDateFormatter.format(date)));
-
-        mIsHistoryEmpty = false;
-    }
 }
 
 
