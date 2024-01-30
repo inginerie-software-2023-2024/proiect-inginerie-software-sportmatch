@@ -1,3 +1,0 @@
-com.example.sportmatch.test
-style WhiteBackgroundDialogTheme
-style WhiteBackgroundTheme

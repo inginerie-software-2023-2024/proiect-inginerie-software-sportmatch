@@ -11,6 +11,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.text.DecimalFormat;
+import java.text.DecimalFormatSymbols;
 
 //todo:make so that one person can only give 1 review to a location
 //todo: show the review in the location details
@@ -176,14 +177,19 @@ public class SportLocation
     }
 
     public double getReview() {
-        // Use DecimalFormat to format the double value with 2 digits after the decimal point
-        DecimalFormat decimalFormat = new DecimalFormat("#.##");
+        // Use DecimalFormatSymbols to explicitly set the decimal separator to dot
+        DecimalFormatSymbols symbols = new DecimalFormatSymbols();
+        symbols.setDecimalSeparator('.');
+
+        // Use DecimalFormat with the specified symbols to format the double value
+        DecimalFormat decimalFormat = new DecimalFormat("#.##", symbols);
+
+        // Format the review value as a string
         String formattedReview = decimalFormat.format(review);
 
         // Parse the formatted string back to double
         return Double.parseDouble(formattedReview);
     }
-
 
     public void setReview(double review) {
         this.review = review;

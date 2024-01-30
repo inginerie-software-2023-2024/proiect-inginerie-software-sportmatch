@@ -10,7 +10,7 @@ Proiect realizat pentru Metode de Dezvoltare Software
 * [Radulescu Bianca](https://github.com/biancaradulescu28)
 * [Adam Emanuel](https://github.com/adamemi02)
 
-Cerintele din barem sunt detaliate in [Wiki](https://github.com/elenaaad/SportMatch/wiki)
+
 
 # Descrierea Aplicatiei
 

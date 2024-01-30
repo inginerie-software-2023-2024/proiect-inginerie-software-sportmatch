@@ -1,7 +1,0 @@
-com.example.sportmatch.test.app-core-1.5.0-0 C:\Users\isach\.gradle\caches\transforms-3\339ed7347c18592e797670dd99e0f98a\transformed\core-1.5.0\res
-com.example.sportmatch.test.app-annotation-experimental-1.3.0-1 C:\Users\isach\.gradle\caches\transforms-3\eb81fb53378604cc0225f33f394c7ec0\transformed\annotation-experimental-1.3.0\res
-com.example.sportmatch.test.app-androidTest-2 C:\Users\isach\AndroidStudioProjects\SportMatch1\app\build\generated\res\resValues\androidTest\debug
-com.example.sportmatch.test.app-androidTest-3 C:\Users\isach\AndroidStudioProjects\SportMatch1\app\build\generated\res\rs\androidTest\debug
-com.example.sportmatch.test.app-mergeDebugAndroidTestResources-4 C:\Users\isach\AndroidStudioProjects\SportMatch1\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
-com.example.sportmatch.test.app-mergeDebugAndroidTestResources-5 C:\Users\isach\AndroidStudioProjects\SportMatch1\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
-com.example.sportmatch.test.app-merged_res-6 C:\Users\isach\AndroidStudioProjects\SportMatch1\app\build\intermediates\merged_res\debugAndroidTest
