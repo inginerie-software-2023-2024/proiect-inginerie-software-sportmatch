@@ -1,53 +1,9 @@
 <?xml version='1.0' encoding='UTF-8' ?>
-<testsuite name="com.example.sportmatch.LoginTest" tests="2" failures="1" errors="0" skipped="0" time="6.478" timestamp="2024-01-29T22:16:19" hostname="localhost">
+<testsuite name="com.example.sportmatch.RegisterTest" tests="1" failures="0" errors="0" skipped="0" time="8.986" timestamp="2024-01-30T18:26:59" hostname="localhost">
   <properties>
     <property name="device" value="SM-A536B - 13" />
     <property name="flavor" value="" />
     <property name="project" value=":app" />
   </properties>
-  <testcase name="testLoginComponentsDisplayed" classname="com.example.sportmatch.LoginTest" time="0.756" />
-  <testcase name="testLoginWithValidCredentialsNavigatesToBottomNavActivity" classname="com.example.sportmatch.LoginTest" time="4.059">
-    <failure>androidx.test.espresso.base.AssertionErrorHandler$AssertionFailedWithCauseError: Wanted to match 1 intents. Actually matched 0 intents.
-
-IntentMatcher: has component: has component with: class name: is "com.example.sportmatch.BottomNavActivity" package name: an instance of java.lang.String short class name: an instance of java.lang.String
-
-Matched intents:[]
-
-Recorded intents:[]
-at dalvik.system.VMStack.getThreadStackTrace(Native Method)
-at java.lang.Thread.getStackTrace(Thread.java:1841)
-at androidx.test.espresso.base.AssertionErrorHandler.handleSafely(AssertionErrorHandler.java:3)
-at androidx.test.espresso.base.AssertionErrorHandler.handleSafely(AssertionErrorHandler.java:1)
-at androidx.test.espresso.base.DefaultFailureHandler$TypedFailureHandler.handle(DefaultFailureHandler.java:4)
-at androidx.test.espresso.base.DefaultFailureHandler.handle(DefaultFailureHandler.java:5)
-at androidx.test.espresso.ViewInteraction.waitForAndHandleInteractionResults(ViewInteraction.java:5)
-at androidx.test.espresso.ViewInteraction.check(ViewInteraction.java:12)
-at androidx.test.espresso.intent.Intents.intended(Intents.java:185)
-at androidx.test.espresso.intent.Intents.intended(Intents.java:164)
-at com.example.sportmatch.LoginTest.testLoginWithValidCredentialsNavigatesToBottomNavActivity(LoginTest.java:67)
-... 35 trimmed
-Caused by: junit.framework.AssertionFailedError: Wanted to match 1 intents. Actually matched 0 intents.
-
-IntentMatcher: has component: has component with: class name: is "com.example.sportmatch.BottomNavActivity" package name: an instance of java.lang.String short class name: an instance of java.lang.String
-
-Matched intents:[]
-
-Recorded intents:[]
-at junit.framework.Assert.fail(Assert.java:50)
-at androidx.test.espresso.intent.VerificationModes$Times.verify(VerificationModes.java:80)
-at androidx.test.espresso.intent.Intents.internalIntended(Intents.java:340)
-at androidx.test.espresso.intent.Intents$2.check(Intents.java:189)
-at androidx.test.espresso.ViewInteraction$SingleExecutionViewAssertion.check(ViewInteraction.java:2)
-at androidx.test.espresso.ViewInteraction$2.call(ViewInteraction.java:14)
-at androidx.test.espresso.ViewInteraction$2.call(ViewInteraction.java:1)
-at java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at android.os.Handler.handleCallback(Handler.java:942)
-at android.os.Handler.dispatchMessage(Handler.java:99)
-at android.os.Looper.loopOnce(Looper.java:226)
-at android.os.Looper.loop(Looper.java:313)
-at android.app.ActivityThread.main(ActivityThread.java:8762)
-at java.lang.reflect.Method.invoke(Native Method)
-at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:604)
-at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1067)</failure>
-  </testcase>
+  <testcase name="testLoginWithValidCredentialsNavigatesToBottomNavActivity" classname="com.example.sportmatch.RegisterTest" time="7.956" />
 </testsuite>

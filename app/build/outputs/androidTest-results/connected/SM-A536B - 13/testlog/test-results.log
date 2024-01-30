@@ -1,169 +1,23 @@
-INSTRUMENTATION_STATUS: class=com.example.sportmatch.LoginTest
+INSTRUMENTATION_STATUS: class=com.example.sportmatch.RegisterTest
 INSTRUMENTATION_STATUS: current=1
 INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
-INSTRUMENTATION_STATUS: numtests=2
+INSTRUMENTATION_STATUS: numtests=1
 INSTRUMENTATION_STATUS: stream=
-com.example.sportmatch.LoginTest:
-INSTRUMENTATION_STATUS: test=testLoginComponentsDisplayed
+com.example.sportmatch.RegisterTest:
+INSTRUMENTATION_STATUS: test=testLoginWithValidCredentialsNavigatesToBottomNavActivity
 INSTRUMENTATION_STATUS_CODE: 1
-INSTRUMENTATION_STATUS: class=com.example.sportmatch.LoginTest
+INSTRUMENTATION_STATUS: class=com.example.sportmatch.RegisterTest
 INSTRUMENTATION_STATUS: current=1
 INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
-INSTRUMENTATION_STATUS: numtests=2
+INSTRUMENTATION_STATUS: numtests=1
 INSTRUMENTATION_STATUS: stream=.
-INSTRUMENTATION_STATUS: test=testLoginComponentsDisplayed
+INSTRUMENTATION_STATUS: test=testLoginWithValidCredentialsNavigatesToBottomNavActivity
 INSTRUMENTATION_STATUS_CODE: 0
-INSTRUMENTATION_STATUS: class=com.example.sportmatch.LoginTest
-INSTRUMENTATION_STATUS: current=2
-INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
-INSTRUMENTATION_STATUS: numtests=2
-INSTRUMENTATION_STATUS: stream=
-INSTRUMENTATION_STATUS: test=testLoginWithValidCredentialsNavigatesToBottomNavActivity
-INSTRUMENTATION_STATUS_CODE: 1
-INSTRUMENTATION_STATUS: class=com.example.sportmatch.LoginTest
-INSTRUMENTATION_STATUS: current=2
-INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
-INSTRUMENTATION_STATUS: numtests=2
-INSTRUMENTATION_STATUS: stack=androidx.test.espresso.base.AssertionErrorHandler$AssertionFailedWithCauseError: Wanted to match 1 intents. Actually matched 0 intents.
-
-IntentMatcher: has component: has component with: class name: is "com.example.sportmatch.BottomNavActivity" package name: an instance of java.lang.String short class name: an instance of java.lang.String
-
-Matched intents:[]
-
-Recorded intents:[]
-at dalvik.system.VMStack.getThreadStackTrace(Native Method)
-at java.lang.Thread.getStackTrace(Thread.java:1841)
-at androidx.test.espresso.base.AssertionErrorHandler.handleSafely(AssertionErrorHandler.java:3)
-at androidx.test.espresso.base.AssertionErrorHandler.handleSafely(AssertionErrorHandler.java:1)
-at androidx.test.espresso.base.DefaultFailureHandler$TypedFailureHandler.handle(DefaultFailureHandler.java:4)
-at androidx.test.espresso.base.DefaultFailureHandler.handle(DefaultFailureHandler.java:5)
-at androidx.test.espresso.ViewInteraction.waitForAndHandleInteractionResults(ViewInteraction.java:5)
-at androidx.test.espresso.ViewInteraction.check(ViewInteraction.java:12)
-at androidx.test.espresso.intent.Intents.intended(Intents.java:185)
-at androidx.test.espresso.intent.Intents.intended(Intents.java:164)
-at com.example.sportmatch.LoginTest.testLoginWithValidCredentialsNavigatesToBottomNavActivity(LoginTest.java:67)
-... 35 trimmed
-Caused by: junit.framework.AssertionFailedError: Wanted to match 1 intents. Actually matched 0 intents.
-
-IntentMatcher: has component: has component with: class name: is "com.example.sportmatch.BottomNavActivity" package name: an instance of java.lang.String short class name: an instance of java.lang.String
-
-Matched intents:[]
-
-Recorded intents:[]
-at junit.framework.Assert.fail(Assert.java:50)
-at androidx.test.espresso.intent.VerificationModes$Times.verify(VerificationModes.java:80)
-at androidx.test.espresso.intent.Intents.internalIntended(Intents.java:340)
-at androidx.test.espresso.intent.Intents$2.check(Intents.java:189)
-at androidx.test.espresso.ViewInteraction$SingleExecutionViewAssertion.check(ViewInteraction.java:2)
-at androidx.test.espresso.ViewInteraction$2.call(ViewInteraction.java:14)
-at androidx.test.espresso.ViewInteraction$2.call(ViewInteraction.java:1)
-at java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at android.os.Handler.handleCallback(Handler.java:942)
-at android.os.Handler.dispatchMessage(Handler.java:99)
-at android.os.Looper.loopOnce(Looper.java:226)
-at android.os.Looper.loop(Looper.java:313)
-at android.app.ActivityThread.main(ActivityThread.java:8762)
-at java.lang.reflect.Method.invoke(Native Method)
-at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:604)
-at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1067)
-
-INSTRUMENTATION_STATUS: stream=
-Error in testLoginWithValidCredentialsNavigatesToBottomNavActivity(com.example.sportmatch.LoginTest):
-androidx.test.espresso.base.AssertionErrorHandler$AssertionFailedWithCauseError: Wanted to match 1 intents. Actually matched 0 intents.
-
-IntentMatcher: has component: has component with: class name: is "com.example.sportmatch.BottomNavActivity" package name: an instance of java.lang.String short class name: an instance of java.lang.String
-
-Matched intents:[]
-
-Recorded intents:[]
-at dalvik.system.VMStack.getThreadStackTrace(Native Method)
-at java.lang.Thread.getStackTrace(Thread.java:1841)
-at androidx.test.espresso.base.AssertionErrorHandler.handleSafely(AssertionErrorHandler.java:3)
-at androidx.test.espresso.base.AssertionErrorHandler.handleSafely(AssertionErrorHandler.java:1)
-at androidx.test.espresso.base.DefaultFailureHandler$TypedFailureHandler.handle(DefaultFailureHandler.java:4)
-at androidx.test.espresso.base.DefaultFailureHandler.handle(DefaultFailureHandler.java:5)
-at androidx.test.espresso.ViewInteraction.waitForAndHandleInteractionResults(ViewInteraction.java:5)
-at androidx.test.espresso.ViewInteraction.check(ViewInteraction.java:12)
-at androidx.test.espresso.intent.Intents.intended(Intents.java:185)
-at androidx.test.espresso.intent.Intents.intended(Intents.java:164)
-at com.example.sportmatch.LoginTest.testLoginWithValidCredentialsNavigatesToBottomNavActivity(LoginTest.java:67)
-... 35 trimmed
-Caused by: junit.framework.AssertionFailedError: Wanted to match 1 intents. Actually matched 0 intents.
-
-IntentMatcher: has component: has component with: class name: is "com.example.sportmatch.BottomNavActivity" package name: an instance of java.lang.String short class name: an instance of java.lang.String
-
-Matched intents:[]
-
-Recorded intents:[]
-at junit.framework.Assert.fail(Assert.java:50)
-at androidx.test.espresso.intent.VerificationModes$Times.verify(VerificationModes.java:80)
-at androidx.test.espresso.intent.Intents.internalIntended(Intents.java:340)
-at androidx.test.espresso.intent.Intents$2.check(Intents.java:189)
-at androidx.test.espresso.ViewInteraction$SingleExecutionViewAssertion.check(ViewInteraction.java:2)
-at androidx.test.espresso.ViewInteraction$2.call(ViewInteraction.java:14)
-at androidx.test.espresso.ViewInteraction$2.call(ViewInteraction.java:1)
-at java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at android.os.Handler.handleCallback(Handler.java:942)
-at android.os.Handler.dispatchMessage(Handler.java:99)
-at android.os.Looper.loopOnce(Looper.java:226)
-at android.os.Looper.loop(Looper.java:313)
-at android.app.ActivityThread.main(ActivityThread.java:8762)
-at java.lang.reflect.Method.invoke(Native Method)
-at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:604)
-at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1067)
-
-INSTRUMENTATION_STATUS: test=testLoginWithValidCredentialsNavigatesToBottomNavActivity
-INSTRUMENTATION_STATUS_CODE: -2
 INSTRUMENTATION_RESULT: stream=
 
-Time: 5.471
-There was 1 failure:
-1) testLoginWithValidCredentialsNavigatesToBottomNavActivity(com.example.sportmatch.LoginTest)
-androidx.test.espresso.base.AssertionErrorHandler$AssertionFailedWithCauseError: Wanted to match 1 intents. Actually matched 0 intents.
+Time: 8.582
 
-IntentMatcher: has component: has component with: class name: is "com.example.sportmatch.BottomNavActivity" package name: an instance of java.lang.String short class name: an instance of java.lang.String
-
-Matched intents:[]
-
-Recorded intents:[]
-at dalvik.system.VMStack.getThreadStackTrace(Native Method)
-at java.lang.Thread.getStackTrace(Thread.java:1841)
-at androidx.test.espresso.base.AssertionErrorHandler.handleSafely(AssertionErrorHandler.java:3)
-at androidx.test.espresso.base.AssertionErrorHandler.handleSafely(AssertionErrorHandler.java:1)
-at androidx.test.espresso.base.DefaultFailureHandler$TypedFailureHandler.handle(DefaultFailureHandler.java:4)
-at androidx.test.espresso.base.DefaultFailureHandler.handle(DefaultFailureHandler.java:5)
-at androidx.test.espresso.ViewInteraction.waitForAndHandleInteractionResults(ViewInteraction.java:5)
-at androidx.test.espresso.ViewInteraction.check(ViewInteraction.java:12)
-at androidx.test.espresso.intent.Intents.intended(Intents.java:185)
-at androidx.test.espresso.intent.Intents.intended(Intents.java:164)
-at com.example.sportmatch.LoginTest.testLoginWithValidCredentialsNavigatesToBottomNavActivity(LoginTest.java:67)
-... 35 trimmed
-Caused by: junit.framework.AssertionFailedError: Wanted to match 1 intents. Actually matched 0 intents.
-
-IntentMatcher: has component: has component with: class name: is "com.example.sportmatch.BottomNavActivity" package name: an instance of java.lang.String short class name: an instance of java.lang.String
-
-Matched intents:[]
-
-Recorded intents:[]
-at junit.framework.Assert.fail(Assert.java:50)
-at androidx.test.espresso.intent.VerificationModes$Times.verify(VerificationModes.java:80)
-at androidx.test.espresso.intent.Intents.internalIntended(Intents.java:340)
-at androidx.test.espresso.intent.Intents$2.check(Intents.java:189)
-at androidx.test.espresso.ViewInteraction$SingleExecutionViewAssertion.check(ViewInteraction.java:2)
-at androidx.test.espresso.ViewInteraction$2.call(ViewInteraction.java:14)
-at androidx.test.espresso.ViewInteraction$2.call(ViewInteraction.java:1)
-at java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at android.os.Handler.handleCallback(Handler.java:942)
-at android.os.Handler.dispatchMessage(Handler.java:99)
-at android.os.Looper.loopOnce(Looper.java:226)
-at android.os.Looper.loop(Looper.java:313)
-at android.app.ActivityThread.main(ActivityThread.java:8762)
-at java.lang.reflect.Method.invoke(Native Method)
-at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:604)
-at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1067)
-
-FAILURES!!!
-Tests run: 2,  Failures: 1
+OK (1 test)
 
 
 INSTRUMENTATION_CODE: -1
