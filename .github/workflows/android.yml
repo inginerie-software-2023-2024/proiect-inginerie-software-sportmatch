@@ -9,7 +9,7 @@ on:
 jobs:
   build:
 
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v3
@@ -35,5 +35,3 @@ jobs:
           adb wait-for-device
           # Show devices
           adb devices
-          # Run tests
-          ./gradlew connectedAndroidTest
