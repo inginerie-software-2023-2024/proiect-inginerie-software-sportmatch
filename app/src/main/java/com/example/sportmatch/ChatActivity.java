@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
@@ -106,7 +107,18 @@ public class ChatActivity extends AppCompatActivity implements View.OnClickListe
         messages = new ArrayList<>();
         Log.d("init", "init");
         String eventId = getIntent().getStringExtra("eventId");
+        if (eventId == null) {
+            Bundle extras = getIntent().getExtras();
+            if (extras != null) {
+                // Retrieve values using key names
+                eventId = extras.getString("eventId");
 
+                // Now you can use the retrieved values as needed
+                // For example, log the eventId
+                Log.d("ChatActivity", "Event ID: " + eventId);
+            }
+
+        }
 
         Log.d("init", "init");
         DatabaseReference eventRef = database.getReference("Events").child(eventId);
@@ -168,8 +180,11 @@ public class ChatActivity extends AppCompatActivity implements View.OnClickListe
                                 Log.d("ChatActivity", "Device token: " + deviceToken);
 
                                 if (deviceToken != null) {
+                                    // Get the Intent for opening ChatActivity
+                                    Intent chatIntent = openChatActivityIntent(chatId);
+
                                     // Send push notification using FCM
-                                    pushNotification(getApplicationContext(), deviceToken, eventTitle, message.getSender()+": " +'\n' + message.getMessage());
+                                    pushNotification(getApplicationContext(), deviceToken, eventTitle, message.getSender() + ": " + '\n' + message.getMessage(), chatIntent);
                                 }
                             }
 
@@ -188,6 +203,13 @@ public class ChatActivity extends AppCompatActivity implements View.OnClickListe
             }
         });
     }
+    private Intent openChatActivityIntent(String chatId) {
+        Intent intent = new Intent(this, ChatActivity.class);
+        intent.putExtra("eventId", chatId); // Pass the chat ID to the ChatActivity
+        intent.setAction("OPEN_CHAT");
+        return intent;
+    }
+
 
     private boolean hasNotificationPermission() {
         NotificationManagerCompat notificationManager = NotificationManagerCompat.from(this);
