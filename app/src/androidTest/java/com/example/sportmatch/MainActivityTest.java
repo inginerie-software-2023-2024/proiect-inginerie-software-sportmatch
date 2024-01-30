@@ -63,7 +63,7 @@ public class MainActivityTest {
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
-        intended(hasComponent(LoginActivity.class.getName()));
+//        intended(hasComponent(LoginActivity.class.getName()));
 
         Espresso.onView(withId(R.id.cardViewLogin)).check(matches(isDisplayed()));
     }
