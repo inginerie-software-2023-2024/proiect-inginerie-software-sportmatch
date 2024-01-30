@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8' ?>
-<testsuite name="com.example.sportmatch.MainActivityTest" tests="1" failures="0" errors="0" skipped="0" time="5.66" timestamp="2024-01-30T21:25:28" hostname="localhost">
+<testsuite name="com.example.sportmatch.MainActivityTest" tests="1" failures="0" errors="0" skipped="0" time="3.834" timestamp="2024-01-30T22:23:20" hostname="localhost">
   <properties>
     <property name="device" value="SM-A536B - 13" />
     <property name="flavor" value="" />
     <property name="project" value=":app" />
   </properties>
-  <testcase name="testMainActivityComponents" classname="com.example.sportmatch.MainActivityTest" time="4.848" />
+  <testcase name="testMainActivityComponents" classname="com.example.sportmatch.MainActivityTest" time="1.938" />
 </testsuite>

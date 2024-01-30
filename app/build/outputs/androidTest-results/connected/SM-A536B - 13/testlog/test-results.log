@@ -15,7 +15,7 @@ INSTRUMENTATION_STATUS: test=testMainActivityComponents
 INSTRUMENTATION_STATUS_CODE: 0
 INSTRUMENTATION_RESULT: stream=
 
-Time: 5.369
+Time: 3.906
 
 OK (1 test)
 
