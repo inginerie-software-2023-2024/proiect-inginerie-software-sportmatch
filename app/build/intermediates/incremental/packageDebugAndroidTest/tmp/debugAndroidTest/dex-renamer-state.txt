@@ -1,0 +1,16 @@
+#Wed Jan 31 00:22:50 EET 2024
+base.0=C\:\\FACULTATE\\Anul III\\proiect-inginerie-software-sportmatch\\app\\build\\intermediates\\dex\\debugAndroidTest\\mergeExtDexDebugAndroidTest\\classes.dex
+base.1=C\:\\FACULTATE\\Anul III\\proiect-inginerie-software-sportmatch\\app\\build\\intermediates\\dex\\debugAndroidTest\\mergeLibDexDebugAndroidTest\\0\\classes.dex
+base.2=C\:\\FACULTATE\\Anul III\\proiect-inginerie-software-sportmatch\\app\\build\\intermediates\\dex\\debugAndroidTest\\mergeProjectDexDebugAndroidTest\\0\\classes.dex
+base.3=C\:\\FACULTATE\\Anul III\\proiect-inginerie-software-sportmatch\\app\\build\\intermediates\\dex\\debugAndroidTest\\mergeProjectDexDebugAndroidTest\\2\\classes.dex
+base.4=C\:\\FACULTATE\\Anul III\\proiect-inginerie-software-sportmatch\\app\\build\\intermediates\\dex\\debugAndroidTest\\mergeProjectDexDebugAndroidTest\\8\\classes.dex
+path.0=classes.dex
+path.1=0/classes.dex
+path.2=0/classes.dex
+path.3=2/classes.dex
+path.4=8/classes.dex
+renamed.0=classes.dex
+renamed.1=classes2.dex
+renamed.2=classes3.dex
+renamed.3=classes4.dex
+renamed.4=classes5.dex

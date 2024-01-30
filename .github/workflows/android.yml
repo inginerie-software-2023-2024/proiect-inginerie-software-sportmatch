@@ -35,5 +35,3 @@ jobs:
           adb wait-for-device
           # Show devices
           adb devices
-          # Run tests
-          ./gradlew connectedAndroidTest

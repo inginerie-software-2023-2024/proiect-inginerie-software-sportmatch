@@ -14,6 +14,7 @@
         android:layout_gravity="center"
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"
+        android:id="@+id/cardViewLogin"
         android:layout_marginBottom="80dp"
         android:background="#BCF8BA"
         card_view:cardCornerRadius="8dp"

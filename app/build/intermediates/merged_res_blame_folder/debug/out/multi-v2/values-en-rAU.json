@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.sportmatch.app-mergeDebugResources-53:/values-en-rAU/values-en-rAU.xml",
+            "outputFile": "com.example.sportmatch.app-mergeDebugResources-4:/values-en-rAU/values-en-rAU.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\isach\\.gradle\\caches\\transforms-3\\b6f78f3378f0d5dd52db5326c44817e3\\transformed\\browser-1.4.0\\res\\values-en-rAU\\values-en-rAU.xml",
+                    "source": "C:\\Users\\Raluca\\.gradle\\caches\\transforms-3\\b6f78f3378f0d5dd52db5326c44817e3\\transformed\\browser-1.4.0\\res\\values-en-rAU\\values-en-rAU.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -21,24 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\isach\\.gradle\\caches\\transforms-3\\b1bf0b0a4ec201c002b0c1f2fdc60e61\\transformed\\core-1.9.0\\res\\values-en-rAU\\values-en-rAU.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "36",
-                        "startColumns": "4",
-                        "startOffsets": "3471",
-                        "endColumns": "100",
-                        "endOffsets": "3567"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\isach\\.gradle\\caches\\transforms-3\\4ea62ba020a5b1c803030466f2932bd3\\transformed\\navigation-ui-2.5.3\\res\\values-en-rAU\\values-en-rAU.xml",
+                    "source": "C:\\Users\\Raluca\\.gradle\\caches\\transforms-3\\d6b73923fba10f0b23e85be5a82eec3c\\transformed\\navigation-ui-2.7.6\\res\\values-en-rAU\\values-en-rAU.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -55,7 +38,24 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\isach\\.gradle\\caches\\transforms-3\\323510e0dcad9fab3f612cf857ce5691\\transformed\\appcompat-1.6.1\\res\\values-en-rAU\\values-en-rAU.xml",
+                    "source": "C:\\Users\\Raluca\\.gradle\\caches\\transforms-3\\b1bf0b0a4ec201c002b0c1f2fdc60e61\\transformed\\core-1.9.0\\res\\values-en-rAU\\values-en-rAU.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "36",
+                        "startColumns": "4",
+                        "startOffsets": "3471",
+                        "endColumns": "100",
+                        "endOffsets": "3567"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Raluca\\.gradle\\caches\\transforms-3\\323510e0dcad9fab3f612cf857ce5691\\transformed\\appcompat-1.6.1\\res\\values-en-rAU\\values-en-rAU.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

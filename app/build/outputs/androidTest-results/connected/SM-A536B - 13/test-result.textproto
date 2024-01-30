@@ -1,0 +1,68 @@
+# 2024-01-30T22:23:20.691Z:
+test_suite_meta_data {
+  scheduled_test_case_count: 1
+}
+test_status: PASSED
+test_result {
+  test_case {
+    test_class: "MainActivityTest"
+    test_package: "com.example.sportmatch"
+    test_method: "testMainActivityComponents"
+    start_time {
+      seconds: 1706653396
+      nanos: 283000000
+    }
+    end_time {
+      seconds: 1706653399
+      nanos: 633000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\FACULTATE\\Anul III\\proiect-inginerie-software-sportmatch\\app\\build\\outputs\\androidTest-results\\connected\\SM-A536B - 13\\logcat-com.example.sportmatch.MainActivityTest-testMainActivityComponents.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\FACULTATE\\Anul III\\proiect-inginerie-software-sportmatch\\app\\build\\outputs\\androidTest-results\\connected\\SM-A536B - 13\\device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\FACULTATE\\Anul III\\proiect-inginerie-software-sportmatch\\app\\build\\outputs\\androidTest-results\\connected\\SM-A536B - 13\\meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\FACULTATE\\Anul III\\proiect-inginerie-software-sportmatch\\app\\build\\outputs\\androidTest-results\\connected\\SM-A536B - 13\\cpuinfo"
+    }
+  }
+}
+output_artifact {
+  label {
+    label: "test-results.log"
+    namespace: "com.google.testing.platform.runtime.android.driver.AndroidInstrumentationDriver"
+  }
+  source_path {
+    path: "C:\\FACULTATE\\Anul III\\proiect-inginerie-software-sportmatch\\app\\build\\outputs\\androidTest-results\\connected\\SM-A536B - 13\\testlog\\test-results.log"
+  }
+  type: TEST_DATA
+  mime_type: "text/plain"
+}
