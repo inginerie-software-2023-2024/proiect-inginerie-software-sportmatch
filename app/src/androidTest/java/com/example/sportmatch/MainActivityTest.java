@@ -21,6 +21,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 
 import static androidx.test.espresso.assertion.ViewAssertions.matches;
+import static androidx.test.espresso.intent.Intents.intended;
 import static androidx.test.espresso.intent.matcher.IntentMatchers.hasComponent;
 import static androidx.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static androidx.test.espresso.matcher.ViewMatchers.withId;
@@ -62,7 +63,9 @@ public class MainActivityTest {
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
-        Intents.intended(IntentMatchers.hasComponent(LoginActivity.class.getName()));
+        intended(hasComponent(LoginActivity.class.getName()));
+
+        Espresso.onView(withId(R.id.cardViewLogin)).check(matches(isDisplayed()));
     }
 
 }

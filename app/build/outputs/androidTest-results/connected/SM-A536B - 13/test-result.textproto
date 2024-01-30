@@ -1,20 +1,20 @@
-# 2024-01-30T18:26:59.767Z:
+# 2024-01-30T21:25:28.865Z:
 test_suite_meta_data {
   scheduled_test_case_count: 1
 }
 test_status: PASSED
 test_result {
   test_case {
-    test_class: "RegisterTest"
+    test_class: "MainActivityTest"
     test_package: "com.example.sportmatch"
-    test_method: "testLoginWithValidCredentialsNavigatesToBottomNavActivity"
+    test_method: "testMainActivityComponents"
     start_time {
-      seconds: 1706639210
-      nanos: 670000000
+      seconds: 1706649923
+      nanos: 65000000
     }
     end_time {
-      seconds: 1706639218
-      nanos: 661000000
+      seconds: 1706649927
+      nanos: 972000000
     }
   }
   test_status: PASSED
@@ -24,7 +24,7 @@ test_result {
       namespace: "android"
     }
     source_path {
-      path: "C:\\FACULTATE\\Anul III\\proiect-inginerie-software-sportmatch\\app\\build\\outputs\\androidTest-results\\connected\\SM-A536B - 13\\logcat-com.example.sportmatch.RegisterTest-testLoginWithValidCredentialsNavigatesToBottomNavActivity.txt"
+      path: "C:\\FACULTATE\\Anul III\\proiect-inginerie-software-sportmatch\\app\\build\\outputs\\androidTest-results\\connected\\SM-A536B - 13\\logcat-com.example.sportmatch.MainActivityTest-testMainActivityComponents.txt"
     }
   }
   output_artifact {

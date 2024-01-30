@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.sportmatch.app-mergeDebugResources-53:/values-w600dp-land-v13/values-w600dp-land-v13.xml",
+            "outputFile": "com.example.sportmatch.app-mergeDebugResources-4:/values-w600dp-land-v13/values-w600dp-land-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\isach\\.gradle\\caches\\transforms-3\\d01a8951a24873c35f4398f397b8b549\\transformed\\material-1.8.0\\res\\values-w600dp-land-v13\\values-w600dp-land-v13.xml",
+                    "source": "C:\\Users\\Raluca\\.gradle\\caches\\transforms-3\\31c6191d0cfe2afe5f30dd74f81c18a1\\transformed\\material-1.11.0\\res\\values-w600dp-land-v13\\values-w600dp-land-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

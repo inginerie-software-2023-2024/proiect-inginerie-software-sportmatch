@@ -1,10 +1,10 @@
 
-ü
-}
-RegisterTestcom.example.sportmatch9testLoginWithValidCredentialsNavigatesToBottomNavActivity2êþä­€Ç½¿:òþä­Àž˜»"û
+Å
+a
+MainActivityTestcom.example.sportmatchtestMainActivityComponents2ÃÒå­À¤ÿ:ÇÒå­€–¾Ï"à
 
-logcatandroidå
-âC:\FACULTATE\Anul III\proiect-inginerie-software-sportmatch\app\build\outputs\androidTest-results\connected\SM-A536B - 13\logcat-com.example.sportmatch.RegisterTest-testLoginWithValidCredentialsNavigatesToBottomNavActivity.txt"¦
+logcatandroidÊ
+ÇC:\FACULTATE\Anul III\proiect-inginerie-software-sportmatch\app\build\outputs\androidTest-results\connected\SM-A536B - 13\logcat-com.example.sportmatch.MainActivityTest-testMainActivityComponents.txt"¦
 
 device-infoandroid‹
 ˆC:\FACULTATE\Anul III\proiect-inginerie-software-sportmatch\app\build\outputs\androidTest-results\connected\SM-A536B - 13\device-info.pb"§
