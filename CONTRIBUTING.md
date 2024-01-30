@@ -39,7 +39,7 @@ Contributing code enhancements is exciting. Follow these steps:
 3. Make necessary changes and ensure tests pass.
 4. Submit a pull request with a clear description of your changes.
 
-### Requesting Enhancements  <a name="submitting-changes"></a>
+### Requesting Enhancements  <a name="requesting-enhancements"></a>
 
 Have a great idea for an enhancement? Follow these steps:
 1. Navigate to the Issues section.
