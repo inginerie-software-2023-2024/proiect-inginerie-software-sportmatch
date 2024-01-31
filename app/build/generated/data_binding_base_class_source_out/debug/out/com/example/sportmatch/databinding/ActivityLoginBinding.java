@@ -10,7 +10,6 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.cardview.widget.CardView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.sportmatch.R;
@@ -36,21 +35,17 @@ public final class ActivityLoginBinding implements ViewBinding {
   public final Button buttonLogin;
 
   @NonNull
-  public final CardView cardViewLogin;
-
-  @NonNull
   public final ImageView imageView;
 
   private ActivityLoginBinding(@NonNull LinearLayout rootView, @NonNull TextView Login,
       @NonNull TextInputEditText activityMainPasswordEditText,
       @NonNull TextInputEditText activityMainUsernameEditText, @NonNull Button buttonLogin,
-      @NonNull CardView cardViewLogin, @NonNull ImageView imageView) {
+      @NonNull ImageView imageView) {
     this.rootView = rootView;
     this.Login = Login;
     this.activityMainPasswordEditText = activityMainPasswordEditText;
     this.activityMainUsernameEditText = activityMainUsernameEditText;
     this.buttonLogin = buttonLogin;
-    this.cardViewLogin = cardViewLogin;
     this.imageView = imageView;
   }
 
@@ -105,12 +100,6 @@ public final class ActivityLoginBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.cardViewLogin;
-      CardView cardViewLogin = ViewBindings.findChildViewById(rootView, id);
-      if (cardViewLogin == null) {
-        break missingId;
-      }
-
       id = R.id.imageView;
       ImageView imageView = ViewBindings.findChildViewById(rootView, id);
       if (imageView == null) {
@@ -118,7 +107,7 @@ public final class ActivityLoginBinding implements ViewBinding {
       }
 
       return new ActivityLoginBinding((LinearLayout) rootView, Login, activityMainPasswordEditText,
-          activityMainUsernameEditText, buttonLogin, cardViewLogin, imageView);
+          activityMainUsernameEditText, buttonLogin, imageView);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

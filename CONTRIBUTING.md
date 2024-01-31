@@ -15,7 +15,7 @@ Thank you for your interest in contributing to SportMatch. Your contributions ar
 
 Welcome to the SportMatch community! We appreciate your interest in contributing to our Android application. This guide outlines various ways you can contribute, from reporting bugs to submitting code changes.
 Here are some relevant resources to understand our app better: 
-[Software Architecture Report](https://github.com/inginerie-software-2023-2024/proiect-inginerie-software-sportmatch/blob/main/Software%20Architecture%20Report-Sportmatch.docx)
+[Software Architecture Report]()
 
 ## How to Contribute
 
@@ -39,7 +39,7 @@ Contributing code enhancements is exciting. Follow these steps:
 3. Make necessary changes and ensure tests pass.
 4. Submit a pull request with a clear description of your changes.
 
-### Requesting Enhancements  <a name="requesting-enhancements"></a>
+### Requesting Enhancements  <a name="submitting-changes"></a>
 
 Have a great idea for an enhancement? Follow these steps:
 1. Navigate to the Issues section.

@@ -22,7 +22,17 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class EventDetailsAdminActivity extends AppCompatActivity {
+
+    private List<String> convertStringToList(String stringValue) {
+        // Implement the logic to convert the comma-separated string to a list
+        // For example:
+        String[] stringArray = stringValue.split(",");
+        return Arrays.asList(stringArray);
+    }
 
     public static final int REQUEST_CODE_MAPS_ACTIVITY = 1001;
     private static final int REQUEST_DIALOG_ACTIVITY = 1;
@@ -48,16 +58,50 @@ public class EventDetailsAdminActivity extends AppCompatActivity {
     ImageView buttonToChat1;
     ImageView backhomeA;
 
-//    EventDetailsAdapter eventDetailsAdapter;
+    //    EventDetailsAdapter eventDetailsAdapter;
     @SuppressLint({"WrongViewCast", "MissingInflatedId"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_event_details_admin);
         FirebaseDatabase database = FirebaseDatabase.getInstance();
+        if (getIntent().getExtras() != null) {
+            mEvent = (Event) getIntent().getSerializableExtra("eventul");
+        }
 
         Intent intent = getIntent();
-        mEvent = (Event) intent.getSerializableExtra("eventul");
+        Log.d("intent", "onCreate: " + intent);
+        Bundle bundle = intent.getExtras();
+        for (String key : bundle.keySet()) {
+            Object value = bundle.get(key);
+            if ("valSport".equals(key)){
+                Log.d(TAG, "onCreate: " + value.toString());
+                mEvent.setSport(value.toString());}
+            if ("valPlayers".equals(key))
+                mEvent.setNrPlayers(value.toString());
+            if ("valLoc".equals(key))
+                mEvent.setLocation(value.toString());
+            if ("valDate".equals(key))
+                mEvent.setDate(value.toString());
+            if ("valTime".equals(key))
+                mEvent.setTime(value.toString());
+            if ("valDesc".equals(key))
+                mEvent.setDescription(value.toString());
+            if ("valTitle".equals(key))
+                mEvent.setEventName(value.toString());
+            if ("valRequests".equals(key)) {
+                List<String> requests = value.toString().equals("") ? null : convertStringToList(value.toString());
+                mEvent.setRequests(requests);
+            }
+            if ("valParticipants".equals(key)) {
+                List<String> participants = value.toString().equals("") ? null : convertStringToList(value.toString());
+                mEvent.setParticipants(participants);
+            }
+            Log.d(TAG, String.format("%s %s (%s)", key,
+                    value.toString(), value.getClass().getName()));
+
+
+        }
         if(mEvent == null) {
             Log.d(TAG, "onCreate la details: event is null");
         } else {
@@ -197,7 +241,17 @@ public class EventDetailsAdminActivity extends AppCompatActivity {
         popupButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if (mEvent.getRequests().toArray()[0].getClass().equals(String.class)) {
+                    Log.d(TAG, "onClick: " + mEvent.getRequests().toArray()[0].getClass());
+                    Log.d(TAG, "onClick: " + mEvent.getRequests().toArray()[0]);
+                }
+                else
+                {
+                    mEvent.setRequests((List<String>) mEvent.getRequests());
 
+                }
+                Log.d(TAG, "onClick: " + mEvent.getRequests());
+                Log.d(TAG, "onClick: " + mEvent);
                 Intent intent = new Intent(EventDetailsAdminActivity.this, RequestActivity.class);
                 intent.putExtra("eventul actual", mEvent);
                 startActivity(intent);

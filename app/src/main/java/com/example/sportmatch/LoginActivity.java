@@ -14,10 +14,9 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.annotation.VisibleForTesting;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.test.espresso.IdlingResource;
+import androidx.work.PeriodicWorkRequest;
+import androidx.work.WorkManager;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -30,6 +29,8 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.messaging.FirebaseMessaging;
+
+import java.util.concurrent.TimeUnit;
 
 public class  LoginActivity extends AppCompatActivity {
     private TextInputEditText usernameEditText;
@@ -62,6 +63,7 @@ public class  LoginActivity extends AppCompatActivity {
     private static final String SHARED_PREF = "pref";
     private static final String Username = "username";
     private static final String Password = "password";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -137,6 +139,7 @@ public class  LoginActivity extends AppCompatActivity {
 
                                                                 // Save the device token in the database under the user's node
                                                                 saveDeviceToken(user.getUid(), deviceToken);
+                                                                enqueuePeriodicWork();
 
                                                                 // Start the ViewProfileActivity
                                         Intent intent = new Intent(LoginActivity.this, BottomNavActivity.class);
@@ -148,9 +151,7 @@ public class  LoginActivity extends AppCompatActivity {
                                                     });
                                         }
                                     }  else {
-                                        Log.d("Eroare",task.getException().getMessage());
                                         Toast.makeText(LoginActivity.this, "Login failed!", Toast.LENGTH_SHORT).show();
-                                        Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                                     }
                                 }
                             });
@@ -159,5 +160,16 @@ public class  LoginActivity extends AppCompatActivity {
 
             }
         });
+    }
+    private void enqueuePeriodicWork() {
+        long repeatInterval = Math.max(PeriodicWorkRequest.MIN_PERIODIC_INTERVAL_MILLIS * 15, PeriodicWorkRequest.MIN_PERIODIC_FLEX_MILLIS);
+        //print the repeat interva
+        Log.d("TAG", "Repeat interval: " + repeatInterval);
+        PeriodicWorkRequest periodicWorkRequest =
+                new PeriodicWorkRequest.Builder(EventCheckWorker.class, repeatInterval, TimeUnit.MILLISECONDS)
+                        .build();
+
+        WorkManager.getInstance().enqueue(periodicWorkRequest);
+
     }
 }
