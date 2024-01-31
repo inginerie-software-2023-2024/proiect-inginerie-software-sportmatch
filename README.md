@@ -1,6 +1,10 @@
 # SportMatch
 
-Proiect realizat pentru Metode de Dezvoltare Software
+Proiect realizat pentru Metode de Dezvoltare Software.  
+[CONTRIBUTING.md](https://github.com/inginerie-software-2023-2024/proiect-inginerie-software-sportmatch/blob/main/CONTRIBUTING.md) , 
+[Livrabil intermediar](https://github.com/inginerie-software-2023-2024/proiect-inginerie-software-sportmatch/blob/main/IS-Intermediar%20.docx) , [CI pipeline](https://github.com/inginerie-software-2023-2024/proiect-inginerie-software-sportmatch/blob/main/.github/workflows/android.yml) , [Sprint Reports](https://github.com/inginerie-software-2023-2024/proiect-inginerie-software-sportmatch/tree/main/Sprint%20Reports)
+
+
 
 # Studenti: 
 * [Deleanu Debora](https://github.com/simonadeboradeleanu)
@@ -9,8 +13,6 @@ Proiect realizat pentru Metode de Dezvoltare Software
 * [Isache Catalina](https://github.com/catalina-isache)
 * [Radulescu Bianca](https://github.com/biancaradulescu28)
 * [Adam Emanuel](https://github.com/adamemi02)
-
-
 
 # Descrierea Aplicatiei
 
